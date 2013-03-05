@@ -24,7 +24,7 @@ If you want to build the gem from source:
 
 ## Development
 
-If you would like to run the tests set you API key and secret on the command line.
+If you would like to run the tests, set your API key and secret on the command line.
 
 ```bash
 LOBBYIST_API_KEY='your key' LOBBYIST_API_SECRET='your secret' rspec
