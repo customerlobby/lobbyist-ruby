@@ -28,7 +28,7 @@ module Lobbyist
       return instance
     end
     
-    def self.find_all(params = nil)
+    def self.find_all(params = {})
       return self.create_from(Lobbyist.request(:get, url, nil, params))
     end
     

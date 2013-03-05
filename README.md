@@ -14,13 +14,18 @@ If you want to build the gem from source:
 ## Documentation
 
   TODO: Get Documentation URL.
+  
   Please see ### API DOCUMENTATION URL ### for up-to-date documentation.
 
 ## Requirements
 
 * Ruby 1.9.0 or above.
-* rest-client, multi_json
+* rest-client, json
 
 ## Development
 
-Test cases can be run with: `bundle exec rake test`
+If you would like to run the tests set you API key and secret on the command line.
+
+```bash
+LOBBYIST_API_KEY='your key' LOBBYIST_API_SECRET='your secret' rspec
+```
