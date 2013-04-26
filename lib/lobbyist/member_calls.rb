@@ -9,20 +9,21 @@ module Lobbyist
       end
     end
     
-    def self.list(user_id, params = {})
-      from_response(_get('/v1/member_calls.json', params))
+    def self.list(admin_user_id, params = {})
+      params['admin_user_id'] = admin_user_id
+      from_response(get('/v1/member_calls.json', params))
     end
     
     def self.find(id, params = {})
-      from_response(_get("/v1/member_calls/#{id}.json"), params)
+      from_response(get("/v1/member_calls/#{id}.json"), params)
     end
     
     def update()
-      from_response(_put("/v1/member_calls/#{id}.json", to_hash))
+      from_response(put("/v1/member_calls/#{id}.json", to_hash))
     end
     
     def delete()
-      from_response(_delete("/v1/member_calls/#{self.id}.json", to_hash))
+      from_response(delete("/v1/member_calls/#{self.id}.json", to_hash))
     end
 
     protected

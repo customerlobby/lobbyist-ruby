@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
   s.required_ruby_version = '>=1.9'
   s.require_paths = %w{lib}
   
-  s.add_dependency('httparty')
+  s.add_dependency('faraday')
   s.add_dependency('multi_json')
   
   s.add_development_dependency('rspec')

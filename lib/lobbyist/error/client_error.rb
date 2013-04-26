@@ -1,5 +1,3 @@
-require 'lobbyist/error/error'
-
 module Lobbyist
   class Error
     # Raised when Customer Lobby returns a 4xx HTTP status code or there's an error in Faraday

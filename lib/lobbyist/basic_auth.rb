@@ -1,3 +1,5 @@
+require 'openssl'
+
 module Lobbyist
   class BasicAuth
     
@@ -12,14 +14,13 @@ module Lobbyist
 
       sorted = params.sort
 
-      puts "Sorted params: #{sorted}"
       signature = OpenSSL::HMAC.hexdigest('sha256', credentials[:api_secret], message(sorted))
 
       # Remove parameters that will be generated automaticaly by Rails.
       params.delete('method')
       params.delete('id')
     
-      return signature;
+      return signature
     end
 
     def self.message(params)

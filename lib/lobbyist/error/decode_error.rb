@@ -1,5 +1,3 @@
-require 'lobbyist/error/error'
-
 module Lobbyist
   class Error
     # Raised when JSON parsing fails

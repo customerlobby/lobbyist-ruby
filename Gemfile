@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'httparty'
+gem 'faraday'
 gem 'multi_json'
 
 group :test do

@@ -1,5 +1,3 @@
-require 'lobbyist/erro/errorr'
-
 module Lobbyist
   class Error
     # Raised when Lobbyist returns a 5xx HTTP status code

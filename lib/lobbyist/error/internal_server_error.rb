@@ -1,5 +1,3 @@
-require 'lobbyist/error/server_error'
-
 module Lobbyist
   class Error
     # Raised when Lobbyist returns the HTTP status code 500
