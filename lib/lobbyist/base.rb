@@ -2,7 +2,7 @@ module Lobbyist
   class Base
     
     def to_hash
-      self.instance_variables.inject({}) { |hash, val| hash[val[1..-1]] = self.instance_variable_get(val); hash }
+      hash = self.instance_variables.inject({}) { |hash, val| hash[val[1..-1]] = self.instance_variable_get(val).to_s unless val == :@id; hash }
     end
 
     private
@@ -20,30 +20,41 @@ module Lobbyist
     
     def self.post(path, params = {})
       add_nonce(params)
-      #HTTParty.post(path, :query => params, :headers => headers('post', path, params))
+      handle_response do
+        http.post do |request|
+          request.url path, params
+          request.headers['Accept'] = 'application/json'
+          request.headers['Authorization'] = auth_header('post', path, params)
+        end
+      end
     end
 
     def self.put(path, params = {})
       add_nonce(params)
-      #HTTParty.put(path, :query => params, :headers => headers('put', path, params))
+      handle_response do
+        http.put do |request|
+          request.url path, params
+          request.headers['Accept'] = 'application/json'
+          request.headers['Authorization'] = auth_header('put', path, params)
+        end
+      end
     end
     
     def self.delete(path, params = {})
       add_nonce(params)
-      #HTTParty.delete(path, :query => params, :headers => headers('delete', path, params))
+      handle_response do
+        http.delete do |request|
+          request.url path, params
+          request.headers['Accept'] = 'application/json'
+          request.headers['Authorization'] = auth_header('delete', path, params)
+        end
+      end
     end
     
     def self.add_nonce(params)
       params.merge!({'nonce' => Time.now.utc.to_s})
     end
     
-    def self.headers(method, path, params)
-      {
-        'Accept' => 'application/json',
-        'Authorization' => auth_header(method, path, params)
-      }
-    end
-      
     def self.auth_header(method, path, params = {})
       Lobbyist::BasicAuth.header(method, params, { api_key: Lobbyist.api_key, api_secret: Lobbyist.api_secret})
     end
@@ -63,13 +74,13 @@ module Lobbyist
         raise Lobbyist::Error::Forbidden.new
       when 404
         raise Lobbyist::Error::NotFound.new
-      when '412'
-        raise Lobbyist::Error::
-      when '422'
+      when 412
+        raise Lobbyist::Error::PreconditionFailed.new
+      when 422
         raise Lobbyist::Error::UnprocessableEntity.new
       else
-        puts "Response body: #{response.body}"
-        response = MultiJson.load(response.body).with_indifferent_access
+        response = MultiJson.load(response.body)
+        return response
       end
     rescue MultiJson::DecodeError
       raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"

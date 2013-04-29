@@ -14,6 +14,7 @@ require 'lobbyist/error/gateway_timeout'
 require 'lobbyist/error/internal_server_error'
 require 'lobbyist/error/not_acceptable'
 require 'lobbyist/error/not_found'
+require 'lobbyist/error/precondition_failed'
 require 'lobbyist/error/service_unavailable'
 require 'lobbyist/error/unauthorized'
 require 'lobbyist/error/unprocessable_entity'
@@ -21,7 +22,7 @@ require 'lobbyist/error/unprocessable_entity'
 # Library
 require 'lobbyist/base'
 require 'lobbyist/basic_auth'
-require 'lobbyist/member_calls'
+require 'lobbyist/member_call'
 require 'lobbyist/version'
 
 
