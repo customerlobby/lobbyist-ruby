@@ -9,7 +9,7 @@ spec = Gem::Specification.new do |s|
   s.description = 'Access the Customer Lobby API easily with this client. See documentation at ###TBD###'
   s.authors = ['David Lains', 'Shiv Indap']
   s.email   = ['dlains@customerlobby.com', 'sindap@customerlobby.com']
-  s.homepage = 'TBD'
+  s.homepage = 'https://github.com/customerlobby/lobbyist-ruby'
   s.licenses = ['MIT']
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = '>=1.9'
