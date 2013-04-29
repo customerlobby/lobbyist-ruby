@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'lobbyist/version'
 
 spec = Gem::Specification.new do |s|
-  s.name = 'lobbyist'
+  s.name = 'lobbyist-ruby'
   s.version = Lobbyist::Version
   s.summary = 'Ruby client library for the Customer Lobby API.'
   s.description = 'Access the Customer Lobby API easily with this client. See documentation at ###TBD###'
