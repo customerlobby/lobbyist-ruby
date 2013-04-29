@@ -1,10 +1,30 @@
 module Lobbyist
   class Base
     
+    def initialize(attributes)
+      attributes.each do |k,v|
+        self.send "#{k}=", v
+      end
+    end
+    
     def to_hash
       hash = self.instance_variables.inject({}) { |hash, val| hash[val[1..-1]] = self.instance_variable_get(val).to_s unless val == :@id; hash }
     end
 
+    protected
+    
+    def self.create_from_response(response)
+      if response.is_a?(Array)
+        list = []
+        response.each do |element|
+          list << self.new(element)
+        end
+        return list
+      else
+        self.new(response)
+      end
+    end
+    
     private
     
     def self.get(path, params = {})

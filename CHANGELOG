@@ -1,3 +1,24 @@
+=== 0.0.6 2013-04-29
+
+* Member Call model completed and tested.
+* Review Flag model completed and tested.
+
+=== 0.0.5 2013-04-25
+
+* Member Call model added and some initial tests in place.
+
+=== 0.0.4 2013-04-25
+
+* Removed some residual code from previous architectures.
+
+=== 0.0.3 2013-04-17
+
+* Refactoring over complex client mechanism and meta programming code.
+
+=== 0.0.2 2013-04-15
+
+* Rebuilding library to clean up code and be more Ruby like.
+
 === 0.0.1 2013-02-01
 
 * Initial development covering contacts API.

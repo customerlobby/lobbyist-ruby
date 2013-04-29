@@ -1,7 +1,7 @@
 module Lobbyist
   class Contact < Lobbyist::Base
     
-    attr_reader :id, :contact_id, :company_id, :first_name, :last_name,
+    attr_accessor :id, :contact_id, :company_id, :first_name, :last_name,
       :phone_daytime, :phone_alt, :email, :address1, :address2,
       :city, :state, :zip, :country, :last_service_date, :notes,
       :email_disturb_status, :unsubscribe_reason, :unsubscribed_at,
