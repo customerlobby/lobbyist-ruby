@@ -16,9 +16,11 @@ describe Lobbyist::ReviewFlag do
     end
     
     it 'should return the found review flag' do
-      call = Lobbyist::ReviewFlag.find(1)
-      call.should_not be_nil
-      call.should be_a(Lobbyist::ReviewFlag)
+      flag = Lobbyist::ReviewFlag.find(1)
+      flag.should_not be_nil
+      flag.should be_a(Lobbyist::ReviewFlag)
+      flag.review.topics.should_not be_nil
+      flag.review.topics.should be_a(Array)
     end
   end
   

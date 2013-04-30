@@ -27,6 +27,7 @@ require 'lobbyist/contact'
 require 'lobbyist/member_call'
 require 'lobbyist/review'
 require 'lobbyist/review_flag'
+require 'lobbyist/review_topic'
 require 'lobbyist/version'
 
 

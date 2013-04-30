@@ -1,3 +1,7 @@
+=== 0.0.10 2013-04-30
+
+* Added review topics to the review model for use in the accounts probject.
+
 === 0.0.9 2013-04-29
 
 * Cleaned up gemspec file.

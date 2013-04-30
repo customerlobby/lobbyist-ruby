@@ -21,6 +21,18 @@ module Lobbyist
     def contact=(attributes)
       @contact = Contact.new(attributes)
     end
+    
+    def topics
+      @topics
+    end
+    
+    def topics=(attributes)
+      @topics = []
+      attributes.each do |attribute|
+        @topics << ReviewTopic.new(attribute)
+      end
+    end
+    
   end
 end
   
