@@ -22,12 +22,16 @@ require 'lobbyist/error/unprocessable_entity'
 # Library
 require 'lobbyist/base'
 require 'lobbyist/basic_auth'
+require 'lobbyist/category'
 require 'lobbyist/company'
 require 'lobbyist/contact'
 require 'lobbyist/member_call'
-require 'lobbyist/review'
+require 'lobbyist/review_challenge'
+require 'lobbyist/review_comment'
 require 'lobbyist/review_flag'
 require 'lobbyist/review_topic'
+require 'lobbyist/review_withdrawal_request'
+require 'lobbyist/review'
 require 'lobbyist/version'
 
 

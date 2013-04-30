@@ -12,5 +12,16 @@ module Lobbyist
       :api_user_name, :api_key_hash, :sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
       :created_at, :updated_at, :status
 
+    def categories
+      @categories
+    end
+
+    def categories=(attributes)
+      @categories = []
+      attributes.each do |attribute|
+        @categories << Category.new(attribute)
+      end
+    end
+
   end
 end
