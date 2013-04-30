@@ -1,3 +1,7 @@
+=== 0.1.11 2013-04-30
+
+* Added partial Review functionality and several models to handle the review response.
+
 === 0.1.10 2013-04-30
 
 * Added review topics to the review model for use in the accounts probject.
