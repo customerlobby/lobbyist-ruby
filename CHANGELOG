@@ -1,3 +1,7 @@
+=== 0.1.12 2013-05-01
+
+* Renamed review flag 'flag_note' field to 'note'.
+
 === 0.1.11 2013-04-30
 
 * Added partial Review functionality and several models to handle the review response.
