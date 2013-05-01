@@ -1,3 +1,7 @@
+=== 0.1.13 2013-05-01
+
+* Remove created_at and updated_at from review update parameters.
+
 === 0.1.12 2013-05-01
 
 * Renamed review flag 'flag_note' field to 'note'.

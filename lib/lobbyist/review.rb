@@ -87,8 +87,6 @@ module Lobbyist
         'reviewer_location_city'  => self.reviewer_location_city.to_s,
         'date_modified'           => self.date_modified.to_s,
         'post_to_facebook'        => self.post_to_facebook.to_s,
-        'created_at'              => self.created_at.to_s,
-        'updated_at'              => self.updated_at.to_s
       }
     end
 
