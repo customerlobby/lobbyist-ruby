@@ -1,2 +1,3 @@
 # Ignore simplecov reports.
 /coverage
+.rspec

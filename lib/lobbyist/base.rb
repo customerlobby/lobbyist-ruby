@@ -7,10 +7,6 @@ module Lobbyist
       end
     end
     
-    def to_hash
-      hash = self.instance_variables.inject({}) { |hash, val| hash[val[1..-1]] = self.instance_variable_get(val).to_s unless val == :@id; hash }
-    end
-
     protected
     
     def self.create_from_response(response)

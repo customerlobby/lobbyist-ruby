@@ -1,3 +1,10 @@
+=== 0.1.14 2013-05-08
+
+* Added company api calls and rspec tests.
+* Fixed the existing review_flag and member_call tests.
+* Company update and delete are class level methods. The existing instance level update and delete
+  calls will be changed soon.
+
 === 0.1.13 2013-05-01
 
 * Remove created_at and updated_at from review update parameters.

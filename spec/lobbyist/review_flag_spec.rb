@@ -34,13 +34,13 @@ describe Lobbyist::ReviewFlag do
         'review_id'  => '205962',
         'flagged'    => '1',
         'flagger_ip' => '127.0.0.1',
-        'flag_note'  => 'This review is flagged because I say so!',
+        'note'  => 'This review is flagged because I say so!',
         'category'   => 'customer_created'
       })
       @created.should_not be_nil
       @created.should be_a(Lobbyist::ReviewFlag)
       @created.flagged.should be_true
-      @created.flag_note.should == 'This review is flagged because I say so!'
+      @created.note.should == 'This review is flagged because I say so!'
       @created.review.should_not be_nil
       @created.review.review_id.should == 205962
     end
@@ -48,7 +48,7 @@ describe Lobbyist::ReviewFlag do
   
   describe '#update' do
     before do
-      @flag = Lobbyist::ReviewFlag.create({'review_id' => '205962','flagged' => '1','flagger_ip' => '127.0.0.1','flag_note' => 'This review is flagged because I say so!','category' => 'customer_created'})
+      @flag = Lobbyist::ReviewFlag.create({'review_id' => '205962','flagged' => '1','flagger_ip' => '127.0.0.1','note' => 'This review is flagged because I say so!','category' => 'customer_created'})
     end
     
     after do
@@ -56,9 +56,9 @@ describe Lobbyist::ReviewFlag do
     end
     
     it 'should update the review flag' do
-      @flag.flag_note = 'This is a new note.'
+      @flag.note = 'This is a new note.'
       updated_flag = @flag.update
-      updated_flag.flag_note.should == 'This is a new note.'
+      updated_flag.note.should == 'This is a new note.'
     end
   end
   
