@@ -24,6 +24,7 @@ module Lobbyist
     private
     
     def self.get(path, params = {})
+      puts "Params are: #{params}"
       add_nonce(params)
       handle_response do
         http.get do |request|

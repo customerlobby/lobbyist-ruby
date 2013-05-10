@@ -11,6 +11,10 @@ describe Lobbyist::Company do
       company = Lobbyist::Company.find(127)
       company.should_not be_nil
       company.should be_a(Lobbyist::Company)
+      company.categories.should_not be_nil
+      company.categories.should be_a(Array)
+      company.smart_invite_setting.should_not be_nil
+      company.smart_invite_setting.should be_a(Lobbyist::SmartInviteSetting)
     end
   end
 

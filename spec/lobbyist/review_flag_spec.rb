@@ -26,7 +26,7 @@ describe Lobbyist::ReviewFlag do
   
   describe ':create' do
     after do
-      @created.delete
+      Lobbyist::ReviewFlag.destroy(@created.id)
     end
     
     it 'should create a new review flag' do
@@ -52,12 +52,11 @@ describe Lobbyist::ReviewFlag do
     end
     
     after do
-      @flag.delete
+      Lobbyist::ReviewFlag.destroy(@flag.id)
     end
     
     it 'should update the review flag' do
-      @flag.note = 'This is a new note.'
-      updated_flag = @flag.update
+      updated_flag = Lobbyist::ReviewFlag.update(@flag.id, {'note' => 'This is a new note.'})
       updated_flag.note.should == 'This is a new note.'
     end
   end

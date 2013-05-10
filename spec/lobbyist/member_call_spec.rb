@@ -39,7 +39,7 @@ describe Lobbyist::MemberCall do
     end
   end
   
-  describe '#update' do
+  describe ':update' do
     before do
       @call = Lobbyist::MemberCall.find(1)
     end
@@ -47,26 +47,21 @@ describe Lobbyist::MemberCall do
     it 'should update the member call' do
       old_notes = @call.notes
       @call.notes = 'This is the new note.'
-      updated_call = @call.update
+      updated_call = Lobbyist::MemberCall.update(@call.id, {'notes' => 'This is the new note.'})
       updated_call.should_not be_nil
       updated_call.should be_a(Lobbyist::MemberCall)
       updated_call.notes.should == 'This is the new note.'
-      @call.notes = old_notes
-      @call.update
+      Lobbyist::MemberCall.update(@call.id, {'notes' => old_notes})
     end
   end
   
   describe '#enqueue' do
-    before do
-      @call = Lobbyist::MemberCall.find(10614)
-    end
-    
     after do
-      @call.dequeue
+      Lobbyist::MemberCall.dequeue(10614)
     end
     
     it 'should assign the admin user to the call' do
-      updated_call = @call.enqueue(152)
+      updated_call = Lobbyist::MemberCall.enqueue(10614, 152)
       updated_call.admin_user_id.should == 152
       updated_call.status.should == 'queued'
     end
@@ -74,12 +69,11 @@ describe Lobbyist::MemberCall do
 
   describe '#dequeue' do
     before do
-      @call = Lobbyist::MemberCall.find(10614)
-      @call.enqueue(152)
+      Lobbyist::MemberCall.enqueue(10614, 152)
     end
     
     it 'should unassign the admin user' do
-      updated_call = @call.dequeue()
+      updated_call = Lobbyist::MemberCall.dequeue(10614)
       updated_call.admin_user_id.should == nil
       updated_call.status.should == 'new'
     end
