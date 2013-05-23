@@ -15,6 +15,8 @@ describe Lobbyist::Company do
       company.categories.should be_a(Array)
       company.smart_invite_setting.should_not be_nil
       company.smart_invite_setting.should be_a(Lobbyist::SmartInviteSetting)
+      company.reviews_count.should be_a(Lobbyist::ReviewsCount)
+      # company.reviews_count.pending_reviews.should == 11
     end
   end
 

@@ -31,6 +31,14 @@ module Lobbyist
       @smart_invite_setting = SmartInviteSetting.new(attributes)
     end
     
+    def reviews_count
+      @reviews_count
+    end
+
+    def reviews_count=(attributes)
+      @reviews_count = ReviewsCount.new(attributes)
+    end
+
     def self.find(id)
       create_from_response(get("/v1/companies/#{id}.json"))
     end
