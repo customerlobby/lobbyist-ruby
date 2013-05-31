@@ -16,13 +16,12 @@ module Lobbyist
       create_from_response(get('/v1/appointments.json', params))
     end
     
-    def self.find(company_id, id)
-      create_from_response(get("/v1/appointments/#{id}.json", { 'company_id' => "#{company_id}" }))
+    def self.find(id)
+      create_from_response(get("/v1/appointments/#{id}.json"))
     end
     
-    def self.create(company_id, params = {})
-      send_params = { 'company_id' => "#{company_id}", 'appointment' => params }
-      create_from_response(post("/v1/appointments.json", send_params))
+    def self.create(params = {})
+      create_from_response(post("/v1/appointments.json", {'appointment' => params}))
     end
     
     def self.destroy(id)

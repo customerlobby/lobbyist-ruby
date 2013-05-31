@@ -1,3 +1,7 @@
+=== 0.2.4 2013-05-31
+
+* Refactored the Appointment rest api.
+
 === 0.2.3 2013-05-31
 
 * Added the Appointment model and tests.

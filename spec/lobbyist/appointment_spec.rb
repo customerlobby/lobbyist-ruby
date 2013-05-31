@@ -4,7 +4,7 @@ describe Lobbyist::Appointment do
   
   describe ':list' do
     it 'should get a list of appointments' do
-      list = Lobbyist::Appointment.list({ 'company_id' => '127' })
+      list = Lobbyist::Appointment.list()
       list.should be_a(Array)
       list[0].first_name.should_not be_nil
     end
@@ -12,11 +12,11 @@ describe Lobbyist::Appointment do
   
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      expect{Lobbyist::Appointment.find('127', 'invalid')}.to raise_error(Lobbyist::Error::NotFound)
+      expect{Lobbyist::Appointment.find('invalid')}.to raise_error(Lobbyist::Error::NotFound)
     end
     
     it 'should return the found appointment' do
-      appointment = Lobbyist::Appointment.find('127', '99')
+      appointment = Lobbyist::Appointment.find('99')
       appointment.should_not be_nil
       appointment.should be_a(Lobbyist::Appointment)
       appointment.company.should_not be_nil
@@ -30,7 +30,8 @@ describe Lobbyist::Appointment do
     end
     
     it 'should create a new appointment' do
-      @created = Lobbyist::Appointment.create('127', {
+      @created = Lobbyist::Appointment.create({
+        'company_id'        => '127',
         'first_name'        => 'Tom',
         'last_name'         => 'Jerry',
         'email'             => 'tomjerry@gmail.com',
