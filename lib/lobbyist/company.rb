@@ -23,6 +23,17 @@ module Lobbyist
       end
     end
 
+    def review_topics
+      @review_topics
+    end
+
+    def review_topics=(attributes)
+      @review_topics = []
+      attributes.each do |attribute|
+        @review_topics << ReviewTopic.new(attribute)
+      end
+    end
+
     def smart_invite_setting
       @smart_invite_setting
     end

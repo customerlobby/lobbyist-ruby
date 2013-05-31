@@ -1,3 +1,8 @@
+=== 0.2.5 2013-05-31
+
+* Renamed the ReviewTopic model to Topic and updated the Review model and relavent tests
+* Added the ReviewTopic model, its associated with Company and tested the association
+
 === 0.2.4 2013-05-31
 
 * Refactored the Appointment rest api.
