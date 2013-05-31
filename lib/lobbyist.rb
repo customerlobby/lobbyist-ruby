@@ -21,6 +21,7 @@ require 'lobbyist/error/unprocessable_entity'
 
 # Library
 require 'lobbyist/base'
+require 'lobbyist/appointment'
 require 'lobbyist/basic_auth'
 require 'lobbyist/category'
 require 'lobbyist/company'

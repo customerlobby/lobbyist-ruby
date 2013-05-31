@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbyist (0.1.0)
+    lobbyist-ruby (0.2.3)
       faraday
       multi_json
 
@@ -33,7 +33,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   faraday
-  lobbyist!
+  lobbyist-ruby!
   multi_json
   rake
   rspec (>= 2.11)
