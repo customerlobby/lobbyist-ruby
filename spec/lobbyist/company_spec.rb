@@ -30,7 +30,7 @@ describe Lobbyist::Company do
       Lobbyist::Company.destroy(@created.company_id)
     end
     
-    it 'should create a new review flag' do
+    it 'should create a new company' do
       @created = Lobbyist::Company.create({
         'company_name'        => 'API Created',
         'company_description' => 'This company is a test created by the API.',
