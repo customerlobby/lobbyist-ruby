@@ -1,3 +1,8 @@
+=== 0.2.8 2013-06-06
+
+* Added SocialNetworkProfile model with only the search endpoint. Complete the
+  model when switching to the secure api.
+
 === 0.2.7 2013-06-06
 
 * Added the list method to the CompanyUser model and assiciated test.
