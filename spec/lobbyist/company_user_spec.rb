@@ -2,9 +2,17 @@ require 'spec_helper'
 
 describe Lobbyist::CompanyUser do
   
+  describe ':list' do
+    it 'should get the list of company users' do
+      list = Lobbyist::CompanyUser.list({'company_id' => '127'})
+      list.should_not be_nil
+      list.should be_a(Array)
+    end
+  end
+  
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      expect{Lobbyist::Company.find('invalid')}.to raise_error(Lobbyist::Error::NotFound)
+      expect{Lobbyist::CompanyUser.find('invalid')}.to raise_error(Lobbyist::Error::NotFound)
     end
   end
 

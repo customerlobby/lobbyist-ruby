@@ -1,3 +1,7 @@
+=== 0.2.7 2013-06-06
+
+* Added the list method to the CompanyUser model and assiciated test.
+
 === 0.2.6 2013-06-03
 
 * Added the CompanyUser model and tests.
