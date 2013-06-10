@@ -1,3 +1,7 @@
+=== 0.2.9 2013-06-10
+
+* Improved the error message handling code in Lobbyist::Base.handle_response
+
 === 0.2.8 2013-06-06
 
 * Added SocialNetworkProfile model with only the search endpoint. Complete the
