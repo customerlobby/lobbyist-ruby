@@ -84,17 +84,17 @@ module Lobbyist
       response = yield
       case response.status
       when 400
-        raise Lobbyist::Error::BadRequest.from_response(response)
+        raise Lobbyist::Error::BadRequest.new
       when 401
-        raise Lobbyist::Error::Unauthorized.from_response(response)
+        raise Lobbyist::Error::Unauthorized.new
       when 403
-        raise Lobbyist::Error::Forbidden.from_response(response)
+        raise Lobbyist::Error::Forbidden.new
       when 404
-        raise Lobbyist::Error::NotFound.from_response(response)
+        raise Lobbyist::Error::NotFound.new
       when 412
-        raise Lobbyist::Error::PreconditionFailed.from_response(response)
+        raise Lobbyist::Error::PreconditionFailed.new
       when 422
-        raise Lobbyist::Error::UnprocessableEntity.from_response(response)
+        raise Lobbyist::Error::UnprocessableEntity.new
       else
         response = MultiJson.load(response.body)
         return response
