@@ -1,3 +1,7 @@
+=== 0.2.10 2013-06-10
+
+* Fixed problem with exception error messages.
+
 === 0.2.9 2013-06-10
 
 * Improved the error message handling code in Lobbyist::Base.handle_response
