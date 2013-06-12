@@ -1,6 +1,7 @@
 # Libraries
 require 'faraday'
 require 'multi_json'
+require 'active_support/all'
 
 # Errors
 require 'lobbyist/error/error'

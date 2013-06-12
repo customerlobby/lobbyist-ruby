@@ -1,3 +1,7 @@
+=== 0.2.10 2013-06-12
+
+* Adding a unsubscribe method to Contact 
+
 === 0.2.10 2013-06-10
 
 * Fixed problem with exception error messages.

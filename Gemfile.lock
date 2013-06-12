@@ -1,16 +1,20 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.2.5)
+    lobbyist-ruby (0.2.10)
       faraday
       multi_json
 
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (3.2.13)
+      i18n (= 0.6.1)
+      multi_json (~> 1.0)
     diff-lcs (1.2.4)
     faraday (0.8.7)
       multipart-post (~> 1.1)
+    i18n (0.6.1)
     multi_json (1.7.2)
     multipart-post (1.2.0)
     rake (10.0.4)
@@ -31,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bundler
   faraday
   lobbyist-ruby!

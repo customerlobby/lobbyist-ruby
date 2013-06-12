@@ -10,5 +10,9 @@ module Lobbyist
       :date_added, :auto_review_id, :auto_invite_id, :auto_customer_call_id,
       :auto_review_draft_id, :facebook_uid, :facebook_access_token,
       :facebook_session_key
+      
+     def self.unsubscribe(attributes = {})
+       create_from_response(put("/v1/contacts/unsubscribe.json", attributes))
+     end  
   end
 end
