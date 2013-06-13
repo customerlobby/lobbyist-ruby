@@ -36,10 +36,11 @@ require 'lobbyist/review_flag'
 require 'lobbyist/topic'
 require 'lobbyist/review_withdrawal_request'
 require 'lobbyist/review'
+require 'lobbyist/reviews_count'
 require 'lobbyist/smart_invite_setting'
 require 'lobbyist/social_network_profile'
+require 'lobbyist/termination_notice'
 require 'lobbyist/version'
-require 'lobbyist/reviews_count'
 
 
 
