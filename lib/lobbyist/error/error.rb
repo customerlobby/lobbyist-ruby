@@ -11,6 +11,7 @@ module Lobbyist
         if messages.respond_to?("shift")
           super(messages.shift)
           messages.each do |message|
+            @errors = []
             @errors << message
           end
         else

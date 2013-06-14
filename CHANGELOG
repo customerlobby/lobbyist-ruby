@@ -1,3 +1,7 @@
+=== 0.2.13 2013-06-14
+
+* Fixed nil access in error.rb
+
 === 0.2.12 2013-06-13
 
 * Added the TerminationNotice model and tests.
