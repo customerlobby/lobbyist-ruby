@@ -1,4 +1,16 @@
-=== 0.2.10 2013-06-12
+=== 0.2.14 2013-06-14
+
+* Added the SuggestionTopic model, its associated with Company and tested the association
+
+=== 0.2.13 2013-06-14
+
+* Fixed nil access in error.rb
+
+=== 0.2.12 2013-06-13
+
+* Added the TerminationNotice model and tests.
+
+=== 0.2.11 2013-06-12
 
 * Adding a unsubscribe method to Contact 
 

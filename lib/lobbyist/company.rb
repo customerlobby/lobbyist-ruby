@@ -34,6 +34,17 @@ module Lobbyist
       end
     end
 
+    def suggestion_topics
+      @suggestion_topics
+    end
+
+    def suggestion_topics=(attributes)
+      @suggestion_topics = []
+      attributes.each do |suggestion|
+        @suggestion_topics << SuggestionTopic.new(suggestion)
+      end
+    end
+
     def smart_invite_setting
       @smart_invite_setting
     end
