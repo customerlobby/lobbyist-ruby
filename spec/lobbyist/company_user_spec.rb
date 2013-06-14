@@ -2,9 +2,20 @@ require 'spec_helper'
 
 describe Lobbyist::CompanyUser do
   
+  before(:all) do
+    Lobbyist.api_base = "http://localhost:3000"
+    Lobbyist.api_key  = "jQuchd091cns"
+    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
+    @nonce = Time.now.utc.to_s
+  end
+
   describe ':list' do
     it 'should get the list of company users' do
-      list = Lobbyist::CompanyUser.list({'company_id' => '127'})
+      params = {'nonce' => @nonce}
+      headers = set_headers('get', path, params)
+      body = [{company_user_id: 1, date_added: Time.now.to_s, email: 'johndoe@gmail.com', first_name: 'John', last_name: 'Doe', is_active: 1},{company_user_id: 1, date_added: Time.now.to_s, email: 'janedoe@gmail.com', first_name: 'Jane', last_name: 'Doe', is_active: 1}]
+      stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
+      list = Lobbyist::CompanyUser.list(params)
       list.should_not be_nil
       list.should be_a(Array)
     end
@@ -12,63 +23,72 @@ describe Lobbyist::CompanyUser do
   
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      expect{Lobbyist::CompanyUser.find('invalid')}.to raise_error(Lobbyist::Error::NotFound)
+      headers = set_headers('get', path(999), {'nonce' => @nonce})
+      body = {errors: ["Unable to find company user with that id."]}
+      stub_get(path(999)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 404)
+      expect{Lobbyist::CompanyUser.find(999)}.to raise_error(Lobbyist::Error::NotFound)
+    end
+
+    it 'should return the found company user' do
+      headers = set_headers('get', path(10), {'nonce' => @nonce})
+      body = {company_user_id: 1, date_added: Time.now.to_s, email: 'johndoe@gmail.com', first_name: 'John', last_name: 'Doe', is_active: 1}
+      stub_get(path(10)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
+      user = Lobbyist::CompanyUser.find(10)
+      
+      user.should_not be_nil
+      user.should be_a(Lobbyist::CompanyUser)
+      user.email.should == 'johndoe@gmail.com'
     end
   end
 
   describe '#create' do
-    after do
-      Lobbyist::CompanyUser.destroy(@created.company_user_id, @created.company_id)
-    end
     
     it 'should create a new company user' do
-      @created = Lobbyist::CompanyUser.create('127', {
-        'date_added'          => Time.now.to_s,
-        'email'               => 'johndoe@gmail.com',
-        'first_name'          => 'John',
-        'last_name'           => 'Doe',
-        'password'            => '3hg8dkfje4uf9dufs90ufskfjeil',
-        'is_active'           => '1',
-        'is_manager'          => '1',
-        'primary_contact'     => '1',
-        'accepts_terms'       => '1',
-        'sugar_contact_id'    => '1234567890'
-      })
-      @created.should_not be_nil
-      @created.should be_a(Lobbyist::CompanyUser)
-      @created.first_name.should == 'John'
-      @created.last_name.should == 'Doe'
-      @created.is_active.should be_true
+      headers = set_headers('post', path, {'nonce' => @nonce, 'company_id' => 12, 'company_user' => params})
+      body = {company_user_id: 1, date_added: Time.now.to_s, email: 'johndoe@gmail.com', first_name: 'John', last_name: 'Doe', is_active: 1}
+      stub_post(path).with(:query => {'nonce' => @nonce, 'company_id' => 12, 'company_user' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      company = Lobbyist::CompanyUser.create('12', params)
+      company.should_not be_nil
+      company.should be_a(Lobbyist::CompanyUser)
+      company.first_name.should == 'John'
+      company.last_name.should == 'Doe'
+      company.is_active.should be_true
     end
   end
   
   describe '#update' do
     
-    before do
-      @created = Lobbyist::CompanyUser.create('127', {
-        'date_added'          => Time.now.to_s,
-        'email'               => 'johndoe@gmail.com',
-        'first_name'          => 'John',
-        'last_name'           => 'Doe',
-        'password'            => '3hg8dkfje4uf9dufs90ufskfjeil',
-        'is_active'           => '1',
-        'is_manager'          => '1',
-        'primary_contact'     => '1',
-        'accepts_terms'       => '1',
-        'sugar_contact_id'    => '1234567890'
-      })
-    end
-    
-    after do
-      Lobbyist::CompanyUser.destroy(@created.company_user_id, @created.company_id)
-    end
-    
     it 'should update the company' do
-      updated_user = Lobbyist::CompanyUser.update(@created.company_user_id, @created.company_id, { 'first_name' => 'New Name' })
-      updated_user.should_not be_nil
-      updated_user.should be_a(Lobbyist::CompanyUser)
-      updated_user.first_name.should == 'New Name'
+      headers = set_headers('put', path(1), {'nonce' => @nonce, 'company_id' => 12, 'company_user' => params})
+      body = {company_user_id: 1, date_added: Time.now.to_s, email: 'johndoe@gmail.com', first_name: 'John', last_name: 'Doe', is_active: 1}
+      stub_put(path(1)).with(:query => {'nonce' => @nonce, 'company_id' => 12, 'company_user' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      user = Lobbyist::CompanyUser.update(1, 12, params)
+      user.should_not be_nil
+      user.should be_a(Lobbyist::CompanyUser)
     end
+  end
+  
+  def path(id = nil)
+    if id
+      "/v1/company_users/#{id}.json"
+    else
+      "/v1/company_users.json"
+    end
+  end
+  
+  def params
+    {
+      'date_added'          => Time.now.to_s,
+      'email'               => 'johndoe@gmail.com',
+      'first_name'          => 'John',
+      'last_name'           => 'Doe',
+      'password'            => '3hg8dkfje4uf9dufs90ufskfjeil',
+      'is_active'           => '1',
+      'is_manager'          => '1',
+      'primary_contact'     => '1',
+      'accepts_terms'       => '1',
+      'sugar_contact_id'    => '1234567890'
+    }
   end
   
 end

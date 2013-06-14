@@ -20,7 +20,9 @@ spec = Gem::Specification.new do |s|
   
   s.add_dependency('faraday')
   s.add_dependency('multi_json')
+  s.add_dependency('activesupport')
   
   s.add_development_dependency('rspec')
+  s.add_development_dependency('webmock')
   s.add_development_dependency('bundler')
 end

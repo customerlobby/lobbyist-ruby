@@ -76,10 +76,6 @@ module Lobbyist
       create_from_response(put("/v1/reviews/#{id}.json", {'review' => params}))
     end
 
-    def self.destroy(id)
-      create_from_response(delete("/v1/reviews/#{id}.json"))
-    end
-
   end
 end
   

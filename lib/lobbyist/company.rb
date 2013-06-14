@@ -72,9 +72,5 @@ module Lobbyist
     def self.update(id, params = {})
       create_from_response(put("/v1/companies/#{id}.json", {'company' => params}))
     end
-
-    def self.destroy(id)
-      create_from_response(delete("/v1/companies/#{id}.json"))
-    end
   end
 end
