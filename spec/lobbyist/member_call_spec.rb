@@ -74,7 +74,7 @@ describe Lobbyist::MemberCall do
   
   describe '#enqueue' do
     it 'should assign the admin user to the call' do
-      headers = set_headers('put', path(10), {'nonce' => @nonce, 'admin_user_id' => 152})
+      headers = set_headers('put', '/v1/member_calls/10/enqueue.json', {'nonce' => @nonce, 'admin_user_id' => 152})
       body = {id: 1, company_id: 1, admin_user_id: 152, call_number: 1, status: 'queued'}
       stub_put('/v1/member_calls/10/enqueue.json').with(:query => {'nonce' => @nonce, 'admin_user_id' => 152}, headers => headers).to_return(body: body.to_json, status: 200)
       updated_call = Lobbyist::MemberCall.enqueue(10, 152)
@@ -85,7 +85,7 @@ describe Lobbyist::MemberCall do
 
   describe '#dequeue' do
     it 'should unassign the admin user' do
-      headers = set_headers('put', path(10), {'nonce' => @nonce})
+      headers = set_headers('put', '/v1/member_calls/10/dequeue.json', {'nonce' => @nonce})
       body = {id: 1, company_id: 1, admin_user_id: nil, call_number: 1, status: 'new'}
       stub_put('/v1/member_calls/10/dequeue.json').with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
       updated_call = Lobbyist::MemberCall.dequeue(10)

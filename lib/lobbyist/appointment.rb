@@ -24,9 +24,5 @@ module Lobbyist
       create_from_response(post("/v1/appointments.json", {'appointment' => params}))
     end
     
-    def self.destroy(id)
-      create_from_response(delete("/v1/appointments/#{id}.json"))
-    end
-    
   end
 end
