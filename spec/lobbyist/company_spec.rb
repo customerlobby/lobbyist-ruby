@@ -21,6 +21,11 @@ describe Lobbyist::Company do
       company.review_topics.each do |review_topic|
         review_topic.should be_a(Lobbyist::ReviewTopic)
       end
+      company.suggestion_topics.should be_a(Array)
+      company.suggestion_topics.count.should == 3
+      company.suggestion_topics.each do |suggestion_topic|
+        suggestion_topic.should be_a(Lobbyist::SuggestionTopic)
+      end
       # company.reviews_count.pending_reviews.should == 11
     end
   end

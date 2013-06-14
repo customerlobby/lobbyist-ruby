@@ -1,3 +1,7 @@
+=== 0.2.14 2013-06-14
+
+* Added the SuggestionTopic model, its associated with Company and tested the association
+
 === 0.2.13 2013-06-14
 
 * Fixed nil access in error.rb
