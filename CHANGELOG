@@ -1,3 +1,8 @@
+=== 0.3.0 2013-06-14
+
+* Tests converted to use webmock.
+* Removed unneeded fixture.
+
 === 0.2.14 2013-06-14
 
 * Added the SuggestionTopic model, its associated with Company and tested the association

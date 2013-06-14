@@ -20,12 +20,10 @@ If you want to build the gem from source:
 ## Requirements
 
 * Ruby 1.9.0 or above.
-* rest-client, json
+* faraday, multi-json, activesupport
 
 ## Development
 
-If you would like to run the tests, set your API key and secret on the command line.
+If you would like to run the tests simply run `rspec` in the root of the project.
 
-```bash
-LOBBYIST_API_KEY='your key' LOBBYIST_API_SECRET='your secret' rspec
-```
+Open `coverage/index.html` to see a code coverage report generated from the test run.
