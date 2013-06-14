@@ -2,65 +2,78 @@ require 'spec_helper'
 
 describe Lobbyist::Review do
   
+  before(:all) do
+    Lobbyist.api_base = "http://localhost:3000"
+    Lobbyist.api_key  = "jQuchd091cns"
+    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
+    @nonce = Time.now.utc.to_s
+  end
+
   describe ':list' do
     it 'should get the list of reviews' do
-      list = Lobbyist::Review.list({'company_id' => '127', 'status' => 'publish'})
-      list.should_not be_nil
-      list.should be_a(Array)
+      params = {'nonce' => @nonce, 'company_id' => '20154', 'status' => 'publish'}
+      headers = set_headers('get', path, params)
+      body = [{review_id: 1, review_summary: 'Review Summary', review_body: 'Review Body', review_status: 'publish'},{review_id: 2, review_summary: 'Review Summary 1', review_body: 'Review Body 1', review_status: 'publish'}]
+      stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
+      reviews = Lobbyist::Review.list(params)
+
+      reviews.should_not be_nil
+      reviews.should be_a(Array)
+      reviews[0].review_body.should == 'Review Body'
+      reviews[1].review_body.should == 'Review Body 1'
     end
   end
   
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      expect{Lobbyist::Review.find('invalid')}.to raise_error(Lobbyist::Error::NotFound)
+      headers = set_headers('get', path(999), {'nonce' => @nonce})
+      body = {errors: ["Unable to find review with that id."]}
+      stub_get(path(999)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 404)
+      expect{Lobbyist::Review.find(999)}.to raise_error(Lobbyist::Error::NotFound)
     end
     
     it 'should return the found review' do
-      review = Lobbyist::Review.find(206002)
+      headers = set_headers('get', path(10), {'nonce' => @nonce})
+      body = {review_id: 10, review_summary: 'Review Summary', review_body: 'Review Body', review_status: 'publish'}
+      stub_get(path(10)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
+      review = Lobbyist::Review.find(10)
+      
       review.should_not be_nil
       review.should be_a(Lobbyist::Review)
-      review.contact.should_not be_nil
-      review.contact.should be_a(Lobbyist::Contact)
-      review.company.should_not be_nil
-      review.company.should be_a(Lobbyist::Company)
-      review.comments.should_not be_nil
-      review.comments.should be_a(Array)
-      review.challenge.should_not be_nil
-      review.challenge.should be_a(Lobbyist::ReviewChallenge)
-      review.topics.should_not be_nil
-      review.topics.should be_a(Array)
-      review.withdrawal_request.should_not be_nil
-      review.withdrawal_request.should be_a(Lobbyist::ReviewWithdrawalRequest)
+      review.review_body.should == 'Review Body'
     end
   end
 
   describe ':create' do
     
-    after do
-      Lobbyist::Review.destroy(@review.review_id)
-    end
-    
     it 'should create a new review' do
-      @review = Lobbyist::Review.create(params)
-      @review.company.company_id.should == 127
-      @review.review_summary.should == "New Review Summary"
-      @review.review_body.should == "This is the body."
+      headers = set_headers('post', path, {'nonce' => @nonce, 'review' => params})
+      body = {review_id: 100, review_summary: 'New Review Summary', review_body: 'This is the body.', review_status: 'publish', total_score: 1.0, source: 'web', reviewer_location_state: 'CA', reviewer_location_city: 'Yuba'}
+      stub_post(path).with(:query => {'nonce' => @nonce, 'review' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      review = Lobbyist::Review.create(params)
+      
+      review.review_summary.should == "New Review Summary"
+      review.review_body.should == "This is the body."
     end
     
   end
   
   describe ':update' do
-    before do
-      @created = Lobbyist::Review.create(params)
-    end
-
-    after do
-      Lobbyist::Review.destroy(@created.review_id)
-    end
     
     it 'should update the review' do
-      updated_review = Lobbyist::Review.update(@created.review_id, {'review_summary' => 'This is a new summary.'})
-      updated_review.review_summary.should == 'This is a new summary.'
+      headers = set_headers('put', path(10), {'nonce' => @nonce, 'review' => params})
+      body = {review_id: 100, review_summary: 'New Review Summary', review_body: 'This is the body.', review_status: 'publish', total_score: 1.0, source: 'web', reviewer_location_state: 'CA', reviewer_location_city: 'Yuba'}
+      stub_put(path(10)).with(:query => {'nonce' => @nonce, 'review' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      updated_review = Lobbyist::Review.update(10, params)
+      updated_review.review_summary.should == 'New Review Summary'
+    end
+  end
+  
+  def path(id = nil)
+    if id
+      "/v1/reviews/#{id}.json"
+    else
+      "/v1/reviews.json"
     end
   end
   

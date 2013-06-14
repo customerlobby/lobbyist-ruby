@@ -7,9 +7,8 @@ describe Lobbyist::Contact do
     Lobbyist.api_key  = "jQuchd091cns"
     Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
   end
-    
-  context "when unsubscribing a contact" do
-    
+  
+  describe 'PUT unsubscribe' do
     it "should return the contact when it was unsubscribed" do
       path = '/v1/contacts/unsubscribe.json';params = {"email" => 'jon.doe@gmail.com', "reason" => 'I dont like your service', "company_id" => 1} 
       Lobbyist::Base.add_nonce(params)

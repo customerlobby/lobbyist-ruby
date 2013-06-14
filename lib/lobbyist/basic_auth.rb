@@ -29,7 +29,6 @@ module Lobbyist
         message << '&' unless x == 0
         message << "#{params[x][0]}=#{params[x][1]}"
       end
-      puts "Client Message: #{message}"
       return CGI.escape(message)
     end
     
