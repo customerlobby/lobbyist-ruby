@@ -95,7 +95,6 @@ module Lobbyist
       when 422
         raise Lobbyist::Error::UnprocessableEntity.new(response.body)
       else
-        puts "Response body: #{response.body}"
         response = MultiJson.load(response.body)
         return response
       end
