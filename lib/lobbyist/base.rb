@@ -1,5 +1,7 @@
 module Lobbyist
   class Base
+    # Initialize the nonce to nil.
+    @@nonce = nil
     
     def initialize(attributes)
       attributes.each do |k,v|
