@@ -12,7 +12,7 @@ module Lobbyist
     def self.generate_signature(method, params, credentials)
       params['method'] = method.to_s.downcase
 
-      sorted = params.sort
+      sorted = params.with_indifferent_access.sort
 
       signature = OpenSSL::HMAC.hexdigest('sha256', credentials[:api_secret], message(sorted))
 
@@ -27,8 +27,9 @@ module Lobbyist
       message = ''
       params.each_index do |x|
         message << '&' unless x == 0
-        message << "#{params[x][0]}=#{params[x][1]}"
+        message << "#{params[x][0].to_s}=#{params[x][1]}"
       end
+      puts "Client Message: #{message}"
       return CGI.escape(message)
     end
     

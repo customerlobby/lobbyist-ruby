@@ -1,3 +1,7 @@
+=== 0.3.1 2013-06-17
+
+* Converting symbols to strings before creating the message.
+
 === 0.3.0 2013-06-14
 
 * Tests converted to use webmock.

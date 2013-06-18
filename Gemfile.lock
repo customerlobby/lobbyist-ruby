@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.2.13)
+    lobbyist-ruby (0.3.0)
       activesupport
       faraday
       multi_json
@@ -43,6 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bundler
   faraday
   lobbyist-ruby!
