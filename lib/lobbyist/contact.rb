@@ -23,6 +23,10 @@ module Lobbyist
       create_from_response(put("/v1/contacts/#{id}.json", {'contact' => params}))
     end
 
+    def self.search(params = {})
+      create_from_response(get("/v1/contacts/search.json", params))
+    end
+    
     def self.unsubscribe(params = {})
       create_from_response(put("/v1/contacts/unsubscribe.json", params))
     end

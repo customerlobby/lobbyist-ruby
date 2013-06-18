@@ -53,6 +53,19 @@ describe Lobbyist::Contact do
     end
   end
 
+  describe ':search' do
+    it 'should get a list of contacts' do
+      params = {'nonce' => @nonce}
+      headers = set_headers('get', '/v1/contacts/search.json', params)
+      body = [{contact_id: 10, company_id: 12, first_name: 'John', last_name: 'Doe', email: 'jdoe@gmail.com', wants_emails: '1'},{contact_id: 11, company_id: 12, first_name: 'Jane', last_name: 'Doe', email: 'janedoe@gmail.com', wants_emails: '0'}]
+      stub_get('/v1/contacts/search.json').with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
+      list = Lobbyist::Contact.search(params)
+
+      list.should be_a(Array)
+      list[0].wants_emails.should == '1'
+    end
+  end
+  
   describe 'PUT unsubscribe' do
     it "should return the contact when it was unsubscribed" do
       path = '/v1/contacts/unsubscribe.json';params = {"email" => 'jon.doe@gmail.com', "reason" => 'I dont like your service', "company_id" => 1} 
