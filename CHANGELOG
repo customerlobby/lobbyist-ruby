@@ -1,3 +1,7 @@
+=== 0.3.5 2013-06-19
+
+* Convert values to string while creating the message.
+
 === 0.3.4 2013-06-18
 
 * Added search method to Contact model.
