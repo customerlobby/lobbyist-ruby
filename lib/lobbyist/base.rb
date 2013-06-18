@@ -7,6 +7,22 @@ module Lobbyist
       end
     end
     
+    def self.nonce
+      return @@nonce || Time.now.utc.to_s
+    end
+    
+    def self.nonce=(nonce)
+      @@nonce = nonce
+    end
+    
+    def self.last_message
+      return @@last_message
+    end
+    
+    def self.last_message=(message)
+      @@last_message = message
+    end
+    
     protected
     
     def self.create_from_response(response)
@@ -68,7 +84,7 @@ module Lobbyist
     end
     
     def self.add_nonce(params)
-      params.merge!({'nonce' => Time.now.utc.to_s})
+      params.merge!({'nonce' => nonce})
     end
     
     def self.auth_header(method, path, params = {})
@@ -85,6 +101,9 @@ module Lobbyist
       when 400
         raise Lobbyist::Error::BadRequest.new(response.body)
       when 401
+        # Uncomment the following lines to debug messages.
+        # puts "Server Message: #{response.body}"
+        # puts "Client Message: #{last_message}"
         raise Lobbyist::Error::Unauthorized.new(response.body)
       when 403
         raise Lobbyist::Error::Forbidden.new(response.body)

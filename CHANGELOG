@@ -1,3 +1,9 @@
+=== 0.3.2 2013-06-18
+
+* Cleaned up message generation.
+* Better nonce handling for spec tests. There should not be random failures due to the nonce now.
+* Filled out the Contact model methods.
+
 === 0.3.1 2013-06-17
 
 * Converting symbols to strings before creating the message.

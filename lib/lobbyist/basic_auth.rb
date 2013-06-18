@@ -19,17 +19,14 @@ module Lobbyist
       # Remove parameters that will be generated automaticaly by Rails.
       params.delete('method')
       params.delete('id')
-    
+      params.delete('activation_code')
+      
       return signature
     end
 
     def self.message(params)
-      message = ''
-      params.each_index do |x|
-        message << '&' unless x == 0
-        message << "#{params[x][0].to_s}=#{params[x][1]}"
-      end
-      puts "Client Message: #{message}"
+      message = params.map {|x| [x[0].to_s,x[1]] * "="} * "&"
+      Lobbyist::Base.last_message = message
       return CGI.escape(message)
     end
     

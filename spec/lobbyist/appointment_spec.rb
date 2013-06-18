@@ -6,7 +6,8 @@ describe Lobbyist::Appointment do
     Lobbyist.api_base = "http://localhost:3000"
     Lobbyist.api_key  = "jQuchd091cns"
     Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
-    @nonce = Time.now.utc.to_s
+    Lobbyist::Base.nonce = Time.now.utc.to_s
+    @nonce = Lobbyist::Base.nonce
   end
 
   describe ':list' do
@@ -48,6 +49,7 @@ describe Lobbyist::Appointment do
     
     it 'should create a new appointment' do
       headers = set_headers('post', path, {'nonce' => @nonce, 'appointment' => params})
+      headers = set_headers('post', path, {'nonce' => @nonce})
       body = {id: 1, company_id: 3, first_name: 'Tom', last_name: 'Jerry', email: 'tomjerry@gmail.com', phone: '(876) 876-8765', appointment_date1: Time.now, comments: 'Please come clean up.'}
       stub_post(path).with(:query => {'nonce' => @nonce, 'appointment' => params}, headers => headers).to_return(body: body.to_json, status: 200)
       appointment = Lobbyist::Appointment.create(params)

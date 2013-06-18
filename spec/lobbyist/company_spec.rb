@@ -6,7 +6,8 @@ describe Lobbyist::Company do
     Lobbyist.api_base = "http://localhost:3000"
     Lobbyist.api_key  = "jQuchd091cns"
     Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
-    @nonce = Time.now.utc.to_s
+    Lobbyist::Base.nonce = Time.now.utc.to_s
+    @nonce = Lobbyist::Base.nonce
   end
 
   describe ':find' do
