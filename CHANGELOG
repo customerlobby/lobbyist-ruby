@@ -1,4 +1,8 @@
-=== 0.3.5 2013-06-19
+=== 0.3.6 2013-06-19
+
+* Fix field names for the contact model.
+
+=== 0.3.5 2013-06-18
 
 * Convert values to string while creating the message.
 
