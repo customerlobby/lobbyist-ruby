@@ -12,6 +12,14 @@ module Lobbyist
       :api_user_name, :api_key_hash, :sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
       :created_at, :updated_at, :status
 
+    def setting
+      @setting
+    end
+
+    def setting=(attributes)
+      @setting = Setting.new(attributes)
+    end
+      
     def categories
       @categories
     end

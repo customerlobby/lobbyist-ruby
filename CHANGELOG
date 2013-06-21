@@ -1,3 +1,8 @@
+=== 0.3.7 2013-06-20
+
+* Fix duplicate field names for the contact model.
+* Added Settings Model and associated it with company
+
 === 0.3.6 2013-06-19
 
 * Fix field names for the contact model.
