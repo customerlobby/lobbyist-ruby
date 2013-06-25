@@ -1,5 +1,5 @@
 module Lobbyist
-  class Setting < Lobbyist::Base
+  class CompanySetting < Lobbyist::Base
 
     attr_accessor :id, :company_id, :no_review_reminder_status, :no_review_reminder_frequency, :no_review_reminder_period, 
     :no_review_reminder_last_sent_at, :no_contact_reminder_status, :no_contact_reminder_frequency, :no_contact_reminder_last_sent_at,

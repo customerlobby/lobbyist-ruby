@@ -1,3 +1,8 @@
+=== 0.3.8 2013-06-25
+
+* Add the EmailKey model and tests.
+* Changed the Setting model to CompanySetting to be consistent with the database.
+
 === 0.3.7 2013-06-20
 
 * Fix duplicate field names for the contact model.

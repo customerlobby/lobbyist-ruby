@@ -17,7 +17,7 @@ module Lobbyist
     end
 
     def setting=(attributes)
-      @setting = Setting.new(attributes)
+      @setting = CompanySetting.new(attributes)
     end
       
     def categories
