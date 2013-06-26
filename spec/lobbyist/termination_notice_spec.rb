@@ -35,10 +35,10 @@ describe Lobbyist::TerminationNotice do
   describe ':dismiss' do
     
     it 'should update a termination notice' do
-      headers = set_headers('put', '/v1/termination_notices/dismiss.json', {'nonce' => @nonce, 'company_id' => 17175})
-      body = {notice_id: 1, company_id: 152, notice_date: Time.now, dismissed: 1}
-      stub_put('/v1/termination_notices/dismiss.json').with(:query => {'nonce' => @nonce, 'company_id' => 17175}, headers => headers).to_return(body: body.to_json, status: 200)
-      notice = Lobbyist::TerminationNotice.dismiss({'company_id' => '17175'})
+      headers = set_headers('put', '/v1/termination_notices/12/dismiss.json', {'nonce' => @nonce})
+      body = {notice_id: 12, company_id: 152, notice_date: Time.now, dismissed: 1}
+      stub_put('/v1/termination_notices/12/dismiss.json').with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
+      notice = Lobbyist::TerminationNotice.dismiss(12)
       notice.should_not be_nil
       notice.should be_a(Lobbyist::TerminationNotice)
       notice.dismissed.should == 1

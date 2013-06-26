@@ -15,8 +15,8 @@ module Lobbyist
       create_from_response(get('/v1/termination_notices.json', params))
     end
     
-    def self.dismiss(params = {})
-      create_from_response(put("/v1/termination_notices/dismiss.json", params))
+    def self.dismiss(id)
+      create_from_response(put("/v1/termination_notices/#{id}/dismiss.json"))
     end
     
   end
