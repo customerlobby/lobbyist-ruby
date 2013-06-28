@@ -33,9 +33,9 @@ describe Lobbyist::Review do
   describe ':create' do
     
     it 'should create a new review' do
-      headers = set_headers('post', path, {'nonce' => @nonce, 'withdrawal_request' => params})
+      headers = set_headers('post', path, {'nonce' => @nonce, 'review_withdrawal_request' => params})
       body = {id: 10, review_id: 20548, status: 'requested', request_date: "#{Time.now.to_s}", note: 'Withdrawal requested.'}
-      stub_post(path).with(:query => {'nonce' => @nonce, 'withdrawal_request' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      stub_post(path).with(:query => {'nonce' => @nonce, 'review_withdrawal_request' => params}, headers => headers).to_return(body: body.to_json, status: 200)
       withdrawal_request = Lobbyist::ReviewWithdrawalRequest.create(params)
       
       withdrawal_request.status.should == "requested"
@@ -47,9 +47,9 @@ describe Lobbyist::Review do
   describe ':update' do
     
     it 'should update the review' do
-      headers = set_headers('put', path(10), {'nonce' => @nonce, 'withdrawal_request' => params})
+      headers = set_headers('put', path(10), {'nonce' => @nonce, 'review_withdrawal_request' => params})
       body = {id: 10, review_id: 20948, status: 'requested', request_date: "#{Time.now.to_s}", note: 'Withdrawal requested.'}
-      stub_put(path(10)).with(:query => {'nonce' => @nonce, 'withdrawal_request' => params}, headers => headers).to_return(body: body.to_json, status: 200)
+      stub_put(path(10)).with(:query => {'nonce' => @nonce, 'review_withdrawal_request' => params}, headers => headers).to_return(body: body.to_json, status: 200)
       updated_withdrawal_request = Lobbyist::ReviewWithdrawalRequest.update(10, params)
       updated_withdrawal_request.note.should == 'Withdrawal requested.'
     end

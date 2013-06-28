@@ -16,11 +16,11 @@ module Lobbyist
     end
     
     def self.create(params = {})
-      create_from_response(post("/v1/review_withdrawal_requests.json", {'withdrawal_request' => params}))
+      create_from_response(post("/v1/review_withdrawal_requests.json", {'review_withdrawal_request' => params}))
     end
     
     def self.update(id, params = {})
-      create_from_response(put("/v1/review_withdrawal_requests/#{id}.json", {'withdrawal_request' => params}))
+      create_from_response(put("/v1/review_withdrawal_requests/#{id}.json", {'review_withdrawal_request' => params}))
     end
     
     def self.find_by_email_key(email_key, params = {})
