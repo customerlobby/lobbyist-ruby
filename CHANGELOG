@@ -1,3 +1,7 @@
+=== 0.3.10 2013-06-28
+
+* Added the ReviewWithdrawalRequest api calls.
+
 === 0.3.9 2013-06-26
 
 * Change the parameters for TerminationNotice.dismiss
