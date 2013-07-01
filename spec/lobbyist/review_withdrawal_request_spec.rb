@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Lobbyist::Review do
+describe Lobbyist::ReviewWithdrawalRequest do
   
   before(:all) do
     Lobbyist.api_base = "http://localhost:3000"
@@ -46,7 +46,7 @@ describe Lobbyist::Review do
   
   describe ':update' do
     
-    it 'should update the review' do
+    it 'should update the review_withdrawal_request' do
       headers = set_headers('put', path(10), {'nonce' => @nonce, 'review_withdrawal_request' => params})
       body = {id: 10, review_id: 20948, status: 'requested', request_date: "#{Time.now.to_s}", note: 'Withdrawal requested.'}
       stub_put(path(10)).with(:query => {'nonce' => @nonce, 'review_withdrawal_request' => params}, headers => headers).to_return(body: body.to_json, status: 200)
