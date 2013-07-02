@@ -2,7 +2,7 @@ module Lobbyist
   class Review < Lobbyist::Base
 
     attr_accessor :review_id, :count, :review_date, :review_summary, :review_body, :review_status, 
-      :total_score, :source, :is_featured, :ip_address, :admin_user_id, :open_invitation, :invite_id,
+      :total_score, :source, :is_featured, :ip_address, :admin_user_id, :invite_id,
       :reviewer_location_state, :reviewer_location_city, :date_modified, :post_to_facebook,
       :created_at, :updated_at
     
