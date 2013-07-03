@@ -1,7 +1,7 @@
 module Lobbyist
   class TerminationNotice < Lobbyist::Base
     
-    attr_accessor :notice_id, :company_id, :notice_date, :dismissed
+    attr_accessor :id, :company_id, :dismissed, :created_at, :updated_at
     
     def company
       @company

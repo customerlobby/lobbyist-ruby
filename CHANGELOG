@@ -1,3 +1,8 @@
+=== 0.3.15 2013-07-02
+
+* update TerminationNotice model with the new model
+* update the tests accordingly
+
 === 0.3.14 2013-07-02
 
 * Add company_id and contact_id back into the Review modal as simple attributes when

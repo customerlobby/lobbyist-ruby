@@ -14,7 +14,7 @@ describe Lobbyist::TerminationNotice do
     it 'should get a list of termination notices' do
       params = {'nonce' => @nonce}
       headers = set_headers('get', '/v1/termination_notices.json', params)
-      body = [{notice_id: 1, company_id: 152, notice_date: Time.now, dismissed: 0},{notice_id: 2, company_id: 153, notice_date: Time.now, dismissed: 0}]
+      body = [{id: 1, company_id: 152, created_at: Time.now, updated_at: Time.now, dismissed: 0},{id: 2, company_id: 153, created_at: Time.now, updated_at: Time.now, dismissed: 0}]
       stub_get('/v1/termination_notices.json').with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
       list = Lobbyist::TerminationNotice.list()
       list.should be_a(Array)
@@ -24,7 +24,7 @@ describe Lobbyist::TerminationNotice do
     it 'should get a list of dismissed notices' do
       params = {'nonce' => @nonce, 'dismissed_list' => 'true'}
       headers = set_headers('get', '/v1/termination_notices.json', params)
-      body = [{notice_id: 3, company_id: 201, notice_date: Time.now, dismissed: 1},{notice_id: 4, company_id: 555, notice_date: Time.now, dismissed: 1}]
+      body = [{id: 3, company_id: 201, created_at: Time.now, updated_at: Time.now, dismissed: 1},{id: 4, company_id: 555, created_at: Time.now, updated_at: Time.now, dismissed: 1}]
       stub_get('/v1/termination_notices.json').with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
       list = Lobbyist::TerminationNotice.list({'dismissed_list' => 'true'})
       list.should be_a(Array)
@@ -36,7 +36,7 @@ describe Lobbyist::TerminationNotice do
     
     it 'should update a termination notice' do
       headers = set_headers('put', '/v1/termination_notices/12/dismiss.json', {'nonce' => @nonce})
-      body = {notice_id: 12, company_id: 152, notice_date: Time.now, dismissed: 1}
+      body = {id: 12, company_id: 152, created_at: Time.now, updated_at: Time.now, dismissed: 1}
       stub_put('/v1/termination_notices/12/dismiss.json').with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
       notice = Lobbyist::TerminationNotice.dismiss(12)
       notice.should_not be_nil
