@@ -1,3 +1,7 @@
+=== 0.3.16 2013-07-03
+
+* Add CompanyUser.primary call to get the companies primary user.
+
 === 0.3.15 2013-07-02
 
 * update TerminationNotice model with the new model

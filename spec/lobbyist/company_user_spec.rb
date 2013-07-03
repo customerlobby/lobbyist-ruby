@@ -69,6 +69,20 @@ describe Lobbyist::CompanyUser do
     end
   end
   
+  describe '#primary' do
+    it 'should return the primary company user' do
+      headers = set_headers('get', '/v1/company_users/primary.json', {'nonce' => @nonce, 'company_id' => '127'})
+      body = {company_user_id: 1, date_added: Time.now.to_s, email: 'johndoe@gmail.com', first_name: 'John', last_name: 'Doe', is_active: 1, primary_contact: 1}
+      stub_get('/v1/company_users/primary.json').with(:query => {'nonce' => @nonce, 'company_id' => '127'}, headers => headers).to_return(body: body.to_json, status: 200)
+      user = Lobbyist::CompanyUser.primary(127)
+      
+      user.should_not be_nil
+      user.should be_a(Lobbyist::CompanyUser)
+      user.email.should == 'johndoe@gmail.com'
+      user.primary_contact.should == 1
+    end
+  end
+  
   def path(id = nil)
     if id
       "/v1/company_users/#{id}.json"
