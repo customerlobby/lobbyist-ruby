@@ -1,3 +1,7 @@
+=== 0.3.17 2013-07-03
+
+* Fix problem with ChallengeCommunication review challenge reference.
+
 === 0.3.16 2013-07-03
 
 * Add CompanyUser.primary call to get the companies primary user.

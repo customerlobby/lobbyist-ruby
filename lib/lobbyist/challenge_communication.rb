@@ -9,15 +9,7 @@ module Lobbyist
     end
   
     def review_challenge=(attributes)
-      @review = ReviewChallenge.new(attributes)
-    end
-
-    def review
-      @review
-    end
-    
-    def review=(attributes)
-      @review = Review.new(attributes)
+      @review_challenge = ReviewChallenge.new(attributes)
     end
 
     def self.list(params = {})
