@@ -1,3 +1,12 @@
+
+=== 0.3.22 2013-07-10
+
+* cremoved the discontinue method and added update
+
+=== 0.3.21 2013-07-09
+
+* code for default_promos list to lobbyist.
+
 === 0.3.20 2013-07-08
 
 * Add promo nd account_level to lobbyist.

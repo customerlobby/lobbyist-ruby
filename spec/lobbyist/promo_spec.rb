@@ -17,7 +17,7 @@ describe Lobbyist::Promo do
       body = [{promo_id: 1,account_level_id: 1 ,account_class: "basic", promo_code: "promo1" ,promo_description: "promo1",is_current: 1,is_visible: 1,setup_fee: 0,monthly_fee: 0,first_month_fee: 0,split_activation_fee: 1 ,days_available: 0},
         {promo_id: 2,account_level_id: 1 ,account_class: "basic", promo_code: "promo1" ,promo_description: "promo1",is_current: 1,is_visible: 1,setup_fee: 0,monthly_fee: 0,first_month_fee: 0,split_activation_fee: 1 ,days_available: 0}]
     
-      stub_get('/v1/promos.json').with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
+      stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
       list = Lobbyist::Promo.list()
       list.should be_a(Array)
       list.count.should == 2
@@ -36,17 +36,17 @@ describe Lobbyist::Promo do
     # end
   end
   
-  describe ':discontinue' do
+  describe ':update' do
     
     it 'should update a promo' do
-      headers = set_headers('put', '/v1/promos/12/dismiss.json', {'nonce' => @nonce})
-      params = {account_level_id: 1 ,account_class: "basic", promo_code: "promo1" ,promo_description: "promo1",is_current: 1,is_visible: 1,setup_fee: 0,monthly_fee: 0,first_month_fee: 0,split_activation_fee: 1 ,days_available: 0}
+      headers = set_headers('put', path(12), {'nonce' => @nonce})
+      params = {'is_current' => 0}
       body = {promo_id: 12,account_level_id: 1 ,account_class: "basic", promo_code: "promo1" ,promo_description: "promo1",is_current: 0,is_visible: 1,setup_fee: 0,monthly_fee: 0,first_month_fee: 0,split_activation_fee: 1 ,days_available: 0}
-      stub_put('/v1/promos/12/discontinue.json').with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
-      promo = Lobbyist::Promo.discontinue(12)
-      promo.should_not be_nil
-      promo.should be_a(Lobbyist::Promo)
-      promo.is_current.should == 0
+      stub_put(path(12)).with(:query => {'nonce' => @nonce, 'promo' => {'is_current' => 0}}, headers => headers).to_return(body: body.to_json, status: 200)
+      promo_up = Lobbyist::Promo.update(12, {'is_current' => 0})
+      promo_up.should_not be_nil
+      promo_up.should be_a(Lobbyist::Promo)
+      promo_up.is_current.should == 0
     end
   end
   
@@ -67,4 +67,13 @@ describe Lobbyist::Promo do
       
     end
   end
+
+  def path(id = nil)
+    if id
+      "/v1/promos/#{id}.json"
+    else
+      "/v1/promos.json"
+    end
+  end
+
 end

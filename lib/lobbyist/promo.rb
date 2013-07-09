@@ -19,9 +19,9 @@ module Lobbyist
     def self.list(params = {})
       create_from_response(get('/v1/promos.json', params))
     end
-    
-    def self.discontinue(promo_id)
-      create_from_response(put("/v1/promos/#{promo_id}/discontinue.json"))
+
+    def self.update(id, params = {})
+      create_from_response(put("/v1/promos/#{id}.json", {'promo' => params}))
     end
     
   end
