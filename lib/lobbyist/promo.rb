@@ -4,13 +4,6 @@ module Lobbyist
     attr_accessor :promo_id, :account_level_id, :account_class, :promo_code, :promo_description, :is_current, :is_visible, :setup_fee, :monthly_fee, 
     :first_month_fee, :split_activation_fee, :days_available
     
-    def account_level
-      @account_level
-    end
-    
-    def account_level=(attributes)
-      @account_level = AccountLevel.new(attributes)
-    end
 
     def self.create(params = {})
       create_from_response(post("/v1/promos.json", {'promo' => params}))
