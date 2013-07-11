@@ -1,3 +1,6 @@
+=== 0.3.23 2013-07-11
+
+* Added the last message to the Unauthorized exception.
 
 === 0.3.22 2013-07-10
 
@@ -9,11 +12,11 @@
 
 === 0.3.20 2013-07-08
 
-* Add promo nd account_level to lobbyist.
+* Add promo and account_level to lobbyist.
 
 === 0.3.19 2013-07-04
 
-* Add promo nd account_level to lobbyist.
+* Add promo and account_level to lobbyist.
 
 === 0.3.18 2013-07-03
 

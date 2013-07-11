@@ -4,9 +4,10 @@ module Lobbyist
     # Raised when Customer Lobby returns a 4xx HTTP status code or there's an error in Faraday
     class ClientError < Lobbyist::Error
 
-      def initialize(response)
+      def initialize(response, client_message)
         data = MultiJson.load(response)
         super(data['errors'])
+        errors << client_message
       end
       
     end

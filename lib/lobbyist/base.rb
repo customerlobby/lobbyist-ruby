@@ -103,10 +103,7 @@ module Lobbyist
       when 400
         raise Lobbyist::Error::BadRequest.new(response.body)
       when 401
-        # Uncomment the following lines to debug messages.
-        # puts "Server Message: #{response.body}"
-        # puts "Client Message: #{last_message}"
-        raise Lobbyist::Error::Unauthorized.new(response.body)
+        raise Lobbyist::Error::Unauthorized.new(response.body, last_message)
       when 403
         raise Lobbyist::Error::Forbidden.new(response.body)
       when 404
