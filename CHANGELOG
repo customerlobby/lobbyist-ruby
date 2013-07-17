@@ -1,3 +1,7 @@
+=== 0.3.26 2013-07-17
+
+* change the field name key to email_key for email_invitations model
+
 === 0.3.25 2013-07-15
 
 * Add email_key and accessed_at to EmailInviation model
