@@ -8,6 +8,22 @@ module Lobbyist
     attr_accessor :id, :company_id, :contact_id, :customer_call_credit_id, :admin_user_id,
       :status, :attempts, :notes, :last_call_date, :next_call_date, :completed_at, :created_at, :updated_at
     
+    def company
+      @company
+    end
+  
+    def company=(attributes)
+      @company = Company.new(attributes)
+    end
+  
+    def contact
+      @contact
+    end
+  
+    def contact=(attributes)
+      @contact = Contact.new(attributes)
+    end
+  
     def self.list(params = {})
       create_from_response(get('/v1/customer_calls.json', params))
     end
