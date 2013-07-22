@@ -1,3 +1,7 @@
+=== 0.3.31 2013-07-22
+
+* Added the timezone field to the company proxy model.
+
 === 0.3.30 2013-07-19
 
 * Added more associations to company and customer call proxy model.
