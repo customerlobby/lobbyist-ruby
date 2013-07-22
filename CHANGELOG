@@ -1,3 +1,7 @@
+=== 0.3.30 2013-07-19
+
+* Added more associations to company and customer call proxy model.
+
 === 0.3.29 2013-07-19
 
 * Added company and contact attributes to the customer call proxy model.

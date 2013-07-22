@@ -24,6 +24,14 @@ module Lobbyist
       @contact = Contact.new(attributes)
     end
   
+    def review
+      @review
+    end
+  
+    def review=(attributes)
+      @review = Review.new(attributes)
+    end
+
     def self.list(params = {})
       create_from_response(get('/v1/customer_calls.json', params))
     end
