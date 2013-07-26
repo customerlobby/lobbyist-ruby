@@ -33,6 +33,17 @@ module Lobbyist
       end
     end
     
+    def suggestions
+      @suggestions
+    end
+    
+    def suggestions=(attributes)
+      @suggestions = []
+      attributes.each do |attribute|
+        @suggestions << ReviewSuggestion.new(attribute)
+      end
+    end
+    
     def challenge
       @challenge
     end
