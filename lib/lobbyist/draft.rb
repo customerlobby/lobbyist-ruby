@@ -1,16 +1,9 @@
 module Lobbyist
   class Draft < Lobbyist::Base
 
-    attr_accessor  :inviteable_id, :inviteable_type, :review_summary, :review_body, :review_status, 
+    attr_accessor :id,  :inviteable_id, :inviteable_type, :review_summary, :review_body, :review_status, 
       :reviewer_location_state, :reviewer_location_city, :admin_user_id, :created_at, :updated_at
-    
-    def contact
-      @contact
-    end
-    
-    def contact=(attributes)
-      @contact = ContactDraft.new(attributes)
-    end
+
 
     def suggestions
       @suggestions
@@ -34,6 +27,17 @@ module Lobbyist
       end
     end
 
+    def self.find(id)
+      create_from_response(get("/v1/draft/#{id}.json"))
+    end
+    
+    def self.create(params = {})
+      create_from_response(post("/v1/draft.json", {'draft' => params}))
+    end
+    
+    def self.update(id, params = {})
+      create_from_response(put("/v1/drafts/#{id}.json", {'draft' => params}))
+    end
   end
 end
   
