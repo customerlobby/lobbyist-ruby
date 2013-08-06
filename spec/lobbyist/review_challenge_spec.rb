@@ -60,7 +60,7 @@ describe Lobbyist::ReviewChallenge do
   
   describe ':update' do
     
-    it 'should update the review' do
+    it 'should update the review challenge' do
       headers = set_headers('put', path(10), {'nonce' => @nonce, 'review_challenge' => params})
       body = {id: 10, review_id: 20948, reason: 'not_a_customer', status: 'requested', read: 0, created_at: "#{Time.now.to_s}", updated_at: "#{Time.now.to_s}"}
       stub_put(path(10)).with(:query => {'nonce' => @nonce, 'review_challenge' => params}, headers => headers).to_return(body: body.to_json, status: 200)

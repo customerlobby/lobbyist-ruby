@@ -53,6 +53,17 @@ module Lobbyist
       end
     end
 
+    def company_users
+      @company_users
+    end
+
+    def company_users=(attributes)
+      @company_users = []
+      attributes.each do |user|
+        @company_users << CompanyUser.new(user)
+      end
+    end
+    
     def smart_invite_setting
       @smart_invite_setting
     end

@@ -1,7 +1,37 @@
-=== 0.3.27 2013-07-22
+=== 0.3.33 2013-07-24
+
+* Added review_suggestion model.
+
+=== 0.3.32 2013-07-23
+
+* Added additional attributes to the customer call proxy model.
+
+=== 0.3.31 2013-07-22
 
 * Added the timezone field to the company proxy model.
 
+=== 0.3.30 2013-07-19
+
+* Added more associations to company and customer call proxy model.
+
+=== 0.3.29 2013-07-19
+
+* Added company and contact attributes to the customer call proxy model.
+
+=== 0.3.28 2013-07-19
+
+* Added tests for the customer call proxy model.
+* Added the count meta attribute to the customer call proxy model.
+
+=== 0.3.27a 2013-07-22
+
+* Added the timezone field to the company proxy model.
+
+=== 0.3.27 2013-07-18
+
+* Added the CustomerCall proxy model.
+
+>>>>>>> origin/customer_calls
 === 0.3.26 2013-07-17
 
 * change the field name key to email_key for email_invitations model

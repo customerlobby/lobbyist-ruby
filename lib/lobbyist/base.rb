@@ -5,6 +5,7 @@ module Lobbyist
     
     def initialize(attributes)
       attributes.each do |k,v|
+        define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
         self.send "#{k}=", v
       end
     end
@@ -120,5 +121,18 @@ module Lobbyist
       raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
     end
 
+    private
+
+    # Create the getter and setter for the attribute named 'name'. If reference is true
+    # create the alternate version of the setter.
+    def define_attribute(name, reference = false)
+      self.class_eval("def #{name};@#{name};end")
+      if reference
+        self.class_eval("def #{name}=(val);@#{name}=Lobbyist::#{name.camelize}.new(val);end")
+      else
+        self.class_eval("def #{name}=(val);@#{name}=val;end")
+      end
+    end
+    
   end
 end
