@@ -28,7 +28,7 @@ module Lobbyist
     end
     
     def self.list(params = {})
-      create_from_response(get('/v1/email_invitations.json', params))
+      create_collection_from_response(get('/v1/email_invitations.json', params))
     end
     
     def self.find(id)
