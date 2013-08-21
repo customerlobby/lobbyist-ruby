@@ -1,3 +1,8 @@
+=== 0.3.34 2013-08-24
+
+* Converted the customer call, review, email invitation and review challenge proxy models to use the collection object.
+* Added Collection object to handle index calls that return meta-data.
+
 === 0.3.33 2013-07-24
 
 * Added review_suggestion model.
