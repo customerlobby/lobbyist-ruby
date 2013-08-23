@@ -2,7 +2,7 @@ module Lobbyist
   class CustomerCall < Lobbyist::Base
     
     def self.list(params = {})
-      create_from_response(get('/v1/customer_calls.json', params))
+      create_collection_from_response(get('/v1/customer_calls.json', params))
     end
     
     def self.find(id)

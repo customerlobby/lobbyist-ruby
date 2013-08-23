@@ -72,7 +72,7 @@ module Lobbyist
     end
     
     def self.list(params = {})
-      create_from_response(get("/v1/reviews.json", params))
+      create_collection_from_response(get("/v1/reviews.json", params))
     end
     
     def self.find(id)

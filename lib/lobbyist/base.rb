@@ -40,6 +40,10 @@ module Lobbyist
       end
     end
     
+    def self.create_collection_from_response(response)
+      return Collection.new(create_from_response(response['elements']), response['count'], response['page'])
+    end
+    
     private
     
     def self.get(path, params = {})
