@@ -1,3 +1,5 @@
+* Added the reset_password call to the CompanyUser proxy model.
+
 === 0.3.34 2013-08-24
 
 * Converted the customer call, review, email invitation and review challenge proxy models to use the collection object.
