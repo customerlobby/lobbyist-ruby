@@ -27,14 +27,6 @@ module Lobbyist
       end
     end
 
-    def self.find(id)
-      create_from_response(get("/v1/draft/#{id}.json"))
-    end
-
-    def self.create(params = {})
-      create_from_response(post("/v1/draft.json", {'draft' => params}))
-    end
-
     def self.update(id, params = {})
       create_from_response(put("/v1/drafts/#{id}.json", {'draft' => params}))
     end
