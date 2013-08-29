@@ -2,32 +2,32 @@ module Lobbyist
   class Base
     # Initialize the nonce to nil.
     @@nonce = nil
-    
+
     def initialize(attributes)
       attributes.each do |k,v|
         define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
         self.send "#{k}=", v
       end
     end
-    
+
     def self.nonce
       return @@nonce || Time.now.utc.to_s
     end
-    
+
     def self.nonce=(nonce)
       @@nonce = nonce
     end
-    
+
     def self.last_message
       return @@last_message
     end
-    
+
     def self.last_message=(message)
       @@last_message = message
     end
-    
+
     protected
-    
+
     def self.create_from_response(response)
       if response.is_a?(Array)
         list = []
@@ -39,13 +39,13 @@ module Lobbyist
         self.new(response)
       end
     end
-    
+
     def self.create_collection_from_response(response)
       return Collection.new(create_from_response(response['elements']), response['count'], response['page'])
     end
-    
+
     private
-    
+
     def self.get(path, params = {})
       add_nonce(params)
       handle_response do
@@ -56,7 +56,7 @@ module Lobbyist
         end
       end
     end
-    
+
     def self.post(path, params = {})
       add_nonce(params)
       handle_response do
@@ -82,7 +82,7 @@ module Lobbyist
         end
       end
     end
-    
+
     def self.delete(path, params = {})
       add_nonce(params)
       handle_response do
@@ -93,11 +93,11 @@ module Lobbyist
         end
       end
     end
-    
+
     def self.add_nonce(params)
       params.merge!({'nonce' => nonce})
     end
-    
+
     def self.auth_header(method, path, params = {})
       Lobbyist::BasicAuth.header(method, params, { api_key: Lobbyist.api_key, api_secret: Lobbyist.api_secret})
     end
@@ -141,6 +141,6 @@ module Lobbyist
         self.class_eval("def #{name}=(val);@#{name}=val;end")
       end
     end
-    
+
   end
 end
