@@ -30,7 +30,7 @@ describe Lobbyist::ReviewConfirmation do
       
       confirmation.should_not be_nil
       confirmation.should be_a(Lobbyist::ReviewConfirmation)
-      confirmation.status.should == 'sent'
+      confirmation.status.should == 'confirmed'
       confirmation.confirmation_key.should == '123456789'
     end
   end

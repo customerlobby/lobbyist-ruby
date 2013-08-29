@@ -1,3 +1,4 @@
+* Fixed collection related test failures.
 * Added the review confirmation proxy model and tests.
 
 === 0.3.34 2013-08-24
