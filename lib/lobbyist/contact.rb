@@ -7,9 +7,8 @@ module Lobbyist
       :wants_emails, :unsubscribe_reason, :unsubscribed_at,
       :exclude_referral_marketing, :exclude_retention_marketing,
       :facebook_like, :facebook_login_review, :twitter_follow,
-      :date_added, :auto_review_id, :auto_invite_id, :auto_customer_call_id,
-      :auto_review_draft_key, :facebook_uid, :facebook_access_token,
-      :facebook_session_key
+      :date_added, :auto_review_id,:auto_review_draft_key, :facebook_uid, 
+      :facebook_access_token, :facebook_session_key
     
     def self.find(id)
       create_from_response(get("/v1/contacts/#{id}.json"))

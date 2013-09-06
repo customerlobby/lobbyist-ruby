@@ -20,6 +20,7 @@ module Lobbyist
       params.delete('method')
       params.delete('id')
       params.delete('activation_code')
+      params.delete('key')
       
       return signature
     end
