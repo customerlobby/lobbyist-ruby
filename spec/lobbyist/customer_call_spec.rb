@@ -13,13 +13,15 @@ describe Lobbyist::CustomerCall do
   describe ':list' do
     it 'should return the found customer calls' do
       headers = set_headers('get', '/v1/customer_calls.json', {'nonce' => @nonce})
-      body = [{id: 10, company_id: 14, contact_id: 7, status: 'ready', attempts: 0, notes: 'Call notes.'},{id: 11, company_id: 12, contact_id: 9, status: 'queued', attempts: 1, notes: 'Additional information required.'}]
+      body = {count: 2, page: 1, elements: [{id: 10, company_id: 14, contact_id: 7, status: 'ready', attempts: 0, notes: 'Call notes.'},{id: 11, company_id: 12, contact_id: 9, status: 'queued', attempts: 1, notes: 'Additional information required.'}]}
       stub_get('/v1/customer_calls.json').with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
       calls = Lobbyist::CustomerCall.list
       calls.should_not be_nil
-      calls.should be_a(Array)
-      calls[0].status.should == 'ready'
-      calls[0].contact_id.should == 7
+      calls.should be_a(Lobbyist::Collection)
+      calls.count.should == 2
+      calls.page.should == 1
+      calls.elements[0].status.should == 'ready'
+      calls.elements[0].contact_id.should == 7
     end
   end
   

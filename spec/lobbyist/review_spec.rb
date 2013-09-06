@@ -14,14 +14,15 @@ describe Lobbyist::Review do
     it 'should get the list of reviews' do
       params = {'nonce' => @nonce, 'company_id' => '20154', 'status' => 'publish'}
       headers = set_headers('get', path, params)
-      body = [{review_id: 1, review_summary: 'Review Summary', review_body: 'Review Body', review_status: 'publish'},{review_id: 2, review_summary: 'Review Summary 1', review_body: 'Review Body 1', review_status: 'publish'}]
+      body = { count: 2, elements: [{review_id: 1, review_summary: 'Review Summary', review_body: 'Review Body', review_status: 'publish'},{review_id: 2, review_summary: 'Review Summary 1', review_body: 'Review Body 1', review_status: 'publish'}]}
       stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
       reviews = Lobbyist::Review.list(params)
 
       reviews.should_not be_nil
-      reviews.should be_a(Array)
-      reviews[0].review_body.should == 'Review Body'
-      reviews[1].review_body.should == 'Review Body 1'
+      reviews.should be_a(Lobbyist::Collection)
+      reviews.count.should == 2
+      reviews.elements[0].review_body.should == 'Review Body'
+      reviews.elements[1].review_body.should == 'Review Body 1'
     end
   end
   
