@@ -61,8 +61,10 @@ module Lobbyist
       add_nonce(params)
       handle_response do
         http.post do |request|
-          request.url path, params
+          request.url path
+          request.body = params
           request.headers['Accept'] = 'application/json'
+          request.headers['Content-Type'] = 'application/json'
           request.headers['Authorization'] = auth_header('post', path, params)
         end
       end
@@ -72,8 +74,10 @@ module Lobbyist
       add_nonce(params)
       handle_response do
         http.put do |request|
-          request.url path, params
+          request.url path
+          request.body = params
           request.headers['Accept'] = 'application/json'
+          request.headers['Content-Type'] = 'application/json'
           request.headers['Authorization'] = auth_header('put', path, params)
         end
       end
