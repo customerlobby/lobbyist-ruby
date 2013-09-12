@@ -1,3 +1,4 @@
+* Added terminate method to the company proxy model.
 * Added reset_password call to company user proxy model.
 
 === 0.3.35 2013-09-04
