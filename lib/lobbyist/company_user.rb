@@ -29,7 +29,7 @@ module Lobbyist
     end
 
     def self.reset_password(email)
-      create_from_response(put("/v1/company_users/reset_password.json", {'reset_email' => email}))
+      create_from_response(put("/v1/company_users/reset_password.json", 'company_user' => {'reset_email' => email}))
     end
     
     def self.find_by_confirmation_key(key)
