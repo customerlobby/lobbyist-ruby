@@ -23,7 +23,7 @@ module Lobbyist
     end
 
     def self.dequeue(id)
-      create_from_response(put("/v1/customer_calls/#{id}/dequeue.json"))
+      create_from_response(put("/v1/customer_calls/#{id}/dequeue.json", {'customer_call' => {}}))
     end
 
   end
