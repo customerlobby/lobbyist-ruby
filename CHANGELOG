@@ -3,6 +3,7 @@
 * Fixed reset_password parameters for the company_user proxy model.
 * Added terminate method to the company proxy model.
 * Added reset_password call to company user proxy model.
+* Added new gem file 'faraday_middleware' for multi-part posts and logic for multi-part post
 
 === 0.3.35 2013-09-04
 
