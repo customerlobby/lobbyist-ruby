@@ -91,5 +91,9 @@ module Lobbyist
     def self.update(id, params = {})
       create_from_response(put("/v1/companies/#{id}.json", {'company' => params}))
     end
+    
+    def self.terminate(id)
+      create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
+    end
   end
 end

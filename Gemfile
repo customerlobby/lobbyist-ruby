@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'faraday'
+gem 'faraday_middleware'
 gem 'multi_json'
 gem 'activesupport'
 
