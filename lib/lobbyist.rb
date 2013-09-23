@@ -1,5 +1,6 @@
 # Libraries
 require 'faraday'
+require 'faraday_middleware'
 require 'multi_json'
 require 'active_support/all'
 
@@ -27,17 +28,23 @@ require 'lobbyist/appointment'
 require 'lobbyist/basic_auth'
 require 'lobbyist/category'
 require 'lobbyist/challenge_communication'
+require 'lobbyist/collection'
 require 'lobbyist/company_setting'
 require 'lobbyist/company_user'
 require 'lobbyist/company'
 require 'lobbyist/contact'
+require 'lobbyist/contact_draft'
+require 'lobbyist/customer_call'
+require 'lobbyist/draft'
 require 'lobbyist/email_invitation'
 require 'lobbyist/email_key'
 require 'lobbyist/member_call'
 require 'lobbyist/promo'
 require 'lobbyist/review_challenge'
 require 'lobbyist/review_comment'
+require 'lobbyist/review_confirmation'
 require 'lobbyist/review_flag'
+require 'lobbyist/review_suggestion'
 require 'lobbyist/review_topic'
 require 'lobbyist/review_withdrawal_request'
 require 'lobbyist/review'
@@ -84,7 +91,8 @@ module Lobbyist
   
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
-      faraday.request  :url_encoded             # form-encode POST params
+      faraday.request  :url_encoded             #for GET params
+      faraday.request  :json             #for PUT/POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
   end

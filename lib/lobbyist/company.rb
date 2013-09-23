@@ -2,7 +2,7 @@ module Lobbyist
   class Company < Lobbyist::Base
 
     attr_accessor :company_id, :enterprise_id, :account_level_id, :company_name, :company_description,
-      :address1, :address2, :city, :state, :zip, :latitude, :longitude, :formatted_address, :phone,
+      :address1, :address2, :city, :state, :zip, :latitude, :longitude, :timezone, :formatted_address, :phone,
       :website,:is_active, :abbreviated_name, :creation_date, :signup_admin_id, :signup_ip_addr,
       :account_terminated, :termination_date, :activation_code, :account_class, :promo_id, :average_changed,
       :average_score, :admin_notes, :customer_call_notes, :trial_source, :partner_id, :partner_account_id,
@@ -53,6 +53,17 @@ module Lobbyist
       end
     end
 
+    def company_users
+      @company_users
+    end
+
+    def company_users=(attributes)
+      @company_users = []
+      attributes.each do |user|
+        @company_users << CompanyUser.new(user)
+      end
+    end
+    
     def smart_invite_setting
       @smart_invite_setting
     end
@@ -79,6 +90,10 @@ module Lobbyist
     
     def self.update(id, params = {})
       create_from_response(put("/v1/companies/#{id}.json", {'company' => params}))
+    end
+    
+    def self.terminate(id)
+      create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
     end
   end
 end

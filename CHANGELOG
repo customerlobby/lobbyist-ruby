@@ -1,3 +1,63 @@
+* Added enterprise model.
+* Added enterprise_settings model.
+* Added default functionality to match API's default responses to Lobbyist::Base.
+
+=== 0.3.36 2013-09-17
+
+* Fixed reset_password parameters for the company_user proxy model.
+* Added terminate method to the company proxy model.
+* Added reset_password call to company user proxy model.
+* Added new gem file 'faraday_middleware' for multi-part posts and logic for multi-part post
+
+=== 0.3.35 2013-09-04
+
+* Added the reset_password call to the CompanyUser proxy model.
+* Fixed collection related test failures.
+* Added the review confirmation proxy model and tests.
+
+=== 0.3.34 2013-08-24
+
+* Converted the customer call, review, email invitation and review challenge proxy models to use the collection object.
+* Added Collection object to handle index calls that return meta-data.
+
+=== 0.3.33 2013-07-24
+
+* Added review_suggestion model.
+
+=== 0.3.32 2013-07-23
+
+* Added additional attributes to the customer call proxy model.
+
+=== 0.3.31 2013-07-22
+
+* Added the timezone field to the company proxy model.
+
+=== 0.3.30 2013-07-19
+
+* Added more associations to company and customer call proxy model.
+
+=== 0.3.29 2013-07-19
+
+* Added company and contact attributes to the customer call proxy model.
+
+=== 0.3.28 2013-07-19
+
+* Added tests for the customer call proxy model.
+* Added the count meta attribute to the customer call proxy model.
+
+=== 0.3.27a 2013-07-22
+
+* Added the timezone field to the company proxy model.
+
+=== 0.3.27 2013-07-18
+
+* Added the CustomerCall proxy model.
+
+>>>>>>> origin/customer_calls
+=== 0.3.26 2013-07-17
+
+* change the field name key to email_key for email_invitations model
+
 === 0.3.25 2013-07-15
 
 * Add email_key and accessed_at to EmailInviation model

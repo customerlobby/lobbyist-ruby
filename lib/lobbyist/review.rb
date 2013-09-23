@@ -33,6 +33,17 @@ module Lobbyist
       end
     end
     
+    def suggestions
+      @suggestions
+    end
+    
+    def suggestions=(attributes)
+      @suggestions = []
+      attributes.each do |attribute|
+        @suggestions << ReviewSuggestion.new(attribute)
+      end
+    end
+    
     def challenge
       @challenge
     end
@@ -61,7 +72,7 @@ module Lobbyist
     end
     
     def self.list(params = {})
-      create_from_response(get("/v1/reviews.json", params))
+      create_collection_from_response(get("/v1/reviews.json", params))
     end
     
     def self.find(id)

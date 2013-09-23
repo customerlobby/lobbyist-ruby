@@ -1,7 +1,7 @@
 module Lobbyist
   class EmailInvitation < Lobbyist::Base
     
-    attr_accessor :id, :contact_id, :status, :attempts, :max_attempts, :created_at, :updated_at, :key, :accessed_at
+    attr_accessor :id, :contact_id, :status, :attempts, :max_attempts, :created_at, :updated_at, :email_key, :accessed_at
 
     def company
       @company
@@ -28,7 +28,7 @@ module Lobbyist
     end
     
     def self.list(params = {})
-      create_from_response(get('/v1/email_invitations.json', params))
+      create_collection_from_response(get('/v1/email_invitations.json', params))
     end
     
     def self.find(id)
