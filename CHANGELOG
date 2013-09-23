@@ -1,3 +1,7 @@
+* Added enterprise model.
+* Added enterprise_settings model.
+* Added default functionality to match API's default responses to Lobbyist::Base.
+
 === 0.3.36 2013-09-17
 
 * Fixed reset_password parameters for the company_user proxy model.
