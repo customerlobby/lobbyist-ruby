@@ -26,6 +26,31 @@ module Lobbyist
       @@last_message = message
     end
 
+    def self.index(params = {})
+      entity = self.get_entity_pluralized
+      create_collection_from_response(get("/v1/#{entity}.json", params))
+    end
+
+    def self.find(id)
+      entity = self.get_entity_pluralized
+      create_from_response(get("/v1/#{entity}/#{id}.json"))
+    end
+
+    def self.create(params = {})
+      entity = self.get_entity_pluralized
+      create_from_response(post("/v1/#{entity}.json", {entity.singularize => params}))
+    end
+
+    def self.update(id, params = {})
+      entity = self.get_entity_pluralized
+      create_from_response(put("/v1/#{entity}/#{id}.json", {entity.singularize => params}))
+    end
+
+    def self.destroy(id)
+      entity = self.get_entity_pluralized
+      create_from_response(delete("/v1/#{entity}/#{id.json}"))
+    end
+
     protected
 
     def self.create_from_response(response)
@@ -42,6 +67,10 @@ module Lobbyist
 
     def self.create_collection_from_response(response)
       return Collection.new(create_from_response(response['elements']), response['count'], response['page'])
+    end
+
+    def self.get_entity_pluralized
+      self.name.split('::').last.tableize.pluralize
     end
 
     private
