@@ -1,3 +1,5 @@
+* Removed unneeded attr_accessor calls from termination_notice and member_call proxy models.
+* Added admin_performance_event proxy model and tests.
 * Added enterprise model.
 * Added enterprise_settings model.
 * Added default functionality to match API's default responses to Lobbyist::Base.

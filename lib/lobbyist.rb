@@ -24,6 +24,7 @@ require 'lobbyist/error/unprocessable_entity'
 # Library
 require 'lobbyist/base'
 require 'lobbyist/account_level'
+require 'lobbyist/admin_performance_event'
 require 'lobbyist/appointment'
 require 'lobbyist/basic_auth'
 require 'lobbyist/category'
