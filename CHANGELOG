@@ -3,6 +3,7 @@
 * Added enterprise model.
 * Added enterprise_settings model.
 * Added default functionality to match API's default responses to Lobbyist::Base.
+* Passing empty hash for termination_notice put request
 
 === 0.3.36 2013-09-17
 
