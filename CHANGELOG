@@ -1,3 +1,5 @@
+* Passing empty hash for termination_notice put request
+
 === 0.3.36 2013-09-17
 
 * Fixed reset_password parameters for the company_user proxy model.
