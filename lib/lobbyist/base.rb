@@ -66,7 +66,7 @@ module Lobbyist
     end
 
     def self.create_collection_from_response(response)
-      return Collection.new(create_from_response(response['elements']), response['count'], response['page'])
+      return Collection.new(create_from_response(response['elements']), response['count'], response['total'], response['rpp'], response['page'])
     end
 
     def self.get_entity_pluralized
