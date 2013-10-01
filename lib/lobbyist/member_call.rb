@@ -16,7 +16,7 @@ module Lobbyist
     
     def self.enqueue(id, admin_user_id)
       params = {'admin_user_id' => admin_user_id}
-      create_from_response(put("/v1/member_calls/#{id}/enqueue.json", params))
+      create_from_response(put("/v1/member_calls/#{id}/enqueue.json", {'member_call' => params}))
     end
 
     def self.dequeue(id)
