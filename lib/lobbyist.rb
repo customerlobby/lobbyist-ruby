@@ -24,6 +24,8 @@ require 'lobbyist/error/unprocessable_entity'
 # Library
 require 'lobbyist/base'
 require 'lobbyist/account_level'
+require 'lobbyist/admin_performance_event'
+require 'lobbyist/admin_user'
 require 'lobbyist/appointment'
 require 'lobbyist/basic_auth'
 require 'lobbyist/category'
@@ -38,6 +40,8 @@ require 'lobbyist/customer_call'
 require 'lobbyist/draft'
 require 'lobbyist/email_invitation'
 require 'lobbyist/email_key'
+require 'lobbyist/enterprise'
+require 'lobbyist/enterprise_setting'
 require 'lobbyist/member_call'
 require 'lobbyist/promo'
 require 'lobbyist/review_challenge'
@@ -49,6 +53,7 @@ require 'lobbyist/review_topic'
 require 'lobbyist/review_withdrawal_request'
 require 'lobbyist/review'
 require 'lobbyist/reviews_count'
+require 'lobbyist/sales_team'
 require 'lobbyist/smart_invite_setting'
 require 'lobbyist/social_network_profile'
 require 'lobbyist/suggestion_topic'
@@ -92,7 +97,7 @@ module Lobbyist
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
       faraday.request  :url_encoded             #for GET params
-      faraday.request  :json             #for PUT/POST params
+      faraday.request  :json                    #for PUT/POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
   end

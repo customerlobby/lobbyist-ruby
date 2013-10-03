@@ -48,7 +48,7 @@ module Lobbyist
 
     def self.destroy(id)
       entity = self.get_entity_pluralized
-      create_from_response(delete("/v1/#{entity}/#{id.json}"))
+      create_from_response(delete("/v1/#{entity}/#{id}.json"))
     end
 
     protected
@@ -66,7 +66,7 @@ module Lobbyist
     end
 
     def self.create_collection_from_response(response)
-      return Collection.new(create_from_response(response['elements']), response['count'], response['page'])
+      return Collection.new(create_from_response(response['elements']), response['count'], response['total'], response['rpp'], response['page'])
     end
 
     def self.get_entity_pluralized
