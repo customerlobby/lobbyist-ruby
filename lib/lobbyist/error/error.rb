@@ -10,9 +10,13 @@ module Lobbyist
       else
         if messages.respond_to?("shift")
           super(messages.shift)
-          messages.each do |message|
+          if messages.empty?
             @errors = []
-            @errors << message
+          else
+            messages.each do |message|
+              @errors = []
+              @errors << message
+            end
           end
         else
           super(messages)
