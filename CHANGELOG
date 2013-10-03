@@ -1,5 +1,7 @@
 * Reverted models that were sending empty hashes back to their previous form.
 * Removed unneeded attr_accessor calls from termination_notice and member_call proxy models.
+* Added sales_team model
+* Added admin_user model
 * Added admin_performance_event proxy model and tests.
 * Added enterprise model.
 * Added enterprise_settings model.
