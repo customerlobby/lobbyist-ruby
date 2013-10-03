@@ -1,3 +1,6 @@
+0.3.37 2013-10-03
+
+* Fixed unauthorized exception creation edge case when no message is sent from the server.
 * Reverted models that were sending empty hashes back to their previous form.
 * Removed unneeded attr_accessor calls from termination_notice and member_call proxy models.
 * Added sales_team model
