@@ -10,7 +10,7 @@ module Lobbyist
     end
     
     def self.create(params = {})
-      create_from_response(put("/v1/customer_calls.json", {'customer_call' => params}))
+      create_from_response(post("/v1/customer_calls.json", {'customer_call' => params}))
     end
     
     def self.update(id, params = {})
@@ -23,7 +23,7 @@ module Lobbyist
     end
 
     def self.dequeue(id)
-      create_from_response(put("/v1/customer_calls/#{id}/dequeue.json", {'customer_call' => {}}))
+      create_from_response(put("/v1/customer_calls/#{id}/dequeue.json"))
     end
 
   end
