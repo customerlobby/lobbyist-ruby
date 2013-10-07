@@ -1,4 +1,4 @@
-0.3.37 2013-10-03
+=== 0.3.37 2013-10-03
 
 * Fixed unauthorized exception creation edge case when no message is sent from the server.
 * Reverted models that were sending empty hashes back to their previous form.
