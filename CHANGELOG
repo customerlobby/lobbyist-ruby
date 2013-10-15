@@ -1,3 +1,4 @@
+* Adding company id parameter for Contact update call.
 * Adding company id parameter for CustomerCall, EmailInvitation and Contact create calls.
 * Removed the syndicate attribute from the Company proxy model.
 
