@@ -1,11 +1,9 @@
+* Removed CompanyUser attributes.
 * Adding company id parameter for Contact update call.
 * Adding company id parameter for CustomerCall, EmailInvitation and Contact create calls.
 * Removed the syndicate attribute from the Company proxy model.
-
-=== 0.3.37 2013-10-09
-
-* Added free_trials model
-* Added handwritten_reviews model
+* Added free_trials proxy model
+* Added handwritten_reviews proxy model
 
 === 0.3.37 2013-10-03
 
