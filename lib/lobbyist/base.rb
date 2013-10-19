@@ -11,7 +11,7 @@ module Lobbyist
     end
 
     def self.nonce
-      return @@nonce || Time.now.utc.to_s
+      return @@nonce || Time.now.utc.iso8601
     end
 
     def self.nonce=(nonce)
