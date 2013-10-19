@@ -10,6 +10,7 @@
 * Added sales_team model
 * Added admin_user model
 * Added admin_performance_event proxy model and tests.
+>>>>>>> release/r69
 * Added enterprise model.
 * Added enterprise_settings model.
 * Added default functionality to match API's default responses to Lobbyist::Base.
