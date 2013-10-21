@@ -28,7 +28,7 @@ module Lobbyist
     def self.message(params)
       message = params.map {|x| [x[0].to_s,x[1].to_s] * "="} * "&"
       Lobbyist::Base.last_message = message
-      return CGI.escape(message)
+      return message
     end
     
   end
