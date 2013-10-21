@@ -1,3 +1,4 @@
+* Removed unnecessary CGI escape of message.
 * Removed CompanyUser attributes.
 * Adding company id parameter for Contact update call.
 * Adding company id parameter for CustomerCall, EmailInvitation and Contact create calls.
