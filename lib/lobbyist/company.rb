@@ -80,6 +80,10 @@ module Lobbyist
       @reviews_count = ReviewsCount.new(attributes)
     end
 
+    def self.list(params = {})
+      create_collection_from_response(get('/v1/companies.json', params))
+    end
+    
     def self.find(id)
       create_from_response(get("/v1/companies/#{id}.json"))
     end
