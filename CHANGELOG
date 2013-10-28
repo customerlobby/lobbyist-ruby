@@ -1,3 +1,17 @@
+=== 0.3.38 2013-10-28
+
+* Added insufficient_handwritten_credits endpoint to the contact proxy model.
+* Added handwritten_review_credit proxy model.
+* Added Company list method.
+* Removed unnecessary CGI escape of message.
+* Removed CompanyUser attributes.
+* Adding company id parameter for Contact update call.
+* Adding company id parameter for CustomerCall, EmailInvitation and Contact create calls.
+* Removed the syndicate attribute from the Company proxy model.
+* Added free_trials proxy model
+* Added handwritten_reviews proxy model
+* Altered ChallengeCommunication to use Lobbyist ReviewChallenge reference.
+* Added metrics proxy model
 * Adding company id parameter for Contact update call.
 * Adding company id parameter for CustomerCall, EmailInvitation and Contact create calls.
 * Removed the syndicate attribute from the Company proxy model.
