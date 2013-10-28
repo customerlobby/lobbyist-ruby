@@ -8,8 +8,7 @@ module Lobbyist
       :average_score, :admin_notes, :customer_call_notes, :trial_source, :partner_id, :partner_account_id,
       :last_synd_stat_date, :last_credit_grant, :send_transaction_receipts, :send_transaction_receipts_to,
       :sales_status, :date_live, :country, :user_notes, :smart_invite, :enable_referral_marketing, :enable_retention_marketing,
-      :rss_queue_push, :rss_queue_attempts, :rss_change_date, :rss_push_date, :feedburner_url, :last_handwritten_review_credit_grant,
-      :api_user_name, :api_key_hash, :sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
+      :last_handwritten_review_credit_grant,:sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
       :created_at, :updated_at, :status
 
     def setting
