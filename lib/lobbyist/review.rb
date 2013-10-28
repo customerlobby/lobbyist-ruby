@@ -69,7 +69,7 @@ module Lobbyist
     end
 
     def self.create(params = {})
-      create_from_response(post("/v1/reviews.json", {'review' => params[:review], 'contact' => params[:contact], 'contact_suggestion_topics'=> params[:contact_suggestion_topics]}))
+      create_from_response(post("/v1/reviews.json", {'review' => params[:review], 'contact' => params[:contact], 'contact_suggestions'=> params[:contact_suggestions]}))
     end
 
     def self.update(id, params = {})

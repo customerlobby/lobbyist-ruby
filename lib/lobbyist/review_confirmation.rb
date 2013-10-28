@@ -2,7 +2,11 @@ module Lobbyist
   class ReviewConfirmation < Lobbyist::Base
     
     def self.update(id, params = {})
-      create_from_response(put("/v1/review_confirmations/#{id}.json", {'review_confirmation' => params}))
+      passed_params = {'disposition' => params['disposition'], 'review_confirmation' => params['review_confirmation']}
+      passed_params.merge!({'review' => params[:review]}) if params.has_key?(:review)
+      passed_params.merge!({'contact' => params[:contact]}) if params.has_key?(:contact)
+      passed_params.merge!({'contact_suggestion_topics' => params[:contact_suggestion_topics]}) if params.has_key?(:contact_suggestion_topics)
+      create_from_response(put("/v1/review_confirmations/#{id}.json", passed_params))
     end
     
     def self.find_by_confirmation_key(key, params = {})
