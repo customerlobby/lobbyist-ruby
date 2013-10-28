@@ -1,3 +1,4 @@
+* Added handwritten_review_credit proxy model.
 * Added Company list method.
 * Removed unnecessary CGI escape of message.
 * Removed CompanyUser attributes.
