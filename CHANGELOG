@@ -8,6 +8,7 @@
 * Removed the syndicate attribute from the Company proxy model.
 * Added free_trials proxy model
 * Added handwritten_reviews proxy model
+* Altered ChallengeCommunication to use Lobbyist ReviewChallenge reference.
 
 === 0.3.37 2013-10-03
 
