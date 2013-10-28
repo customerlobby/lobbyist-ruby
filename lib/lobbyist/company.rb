@@ -19,7 +19,7 @@ module Lobbyist
     def setting=(attributes)
       @setting = CompanySetting.new(attributes)
     end
-      
+
     def categories
       @categories
     end
@@ -63,15 +63,15 @@ module Lobbyist
         @company_users << CompanyUser.new(user)
       end
     end
-    
+
     def smart_invite_setting
       @smart_invite_setting
     end
-    
+
     def smart_invite_setting=(attributes)
       @smart_invite_setting = SmartInviteSetting.new(attributes)
     end
-    
+
     def reviews_count
       @reviews_count
     end
@@ -87,15 +87,15 @@ module Lobbyist
     def self.find(id)
       create_from_response(get("/v1/companies/#{id}.json"))
     end
-    
+
     def self.create(company_params = {}, user_params = {})
       create_from_response(post("/v1/companies.json", {'company' => company_params, 'company_user' => user_params}))
     end
-    
+
     def self.update(id, params = {})
       create_from_response(put("/v1/companies/#{id}.json", {'company' => params}))
     end
-    
+
     def self.terminate(id)
       create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
     end
