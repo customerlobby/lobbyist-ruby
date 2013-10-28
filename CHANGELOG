@@ -1,3 +1,4 @@
+* Added insufficient_handwritten_credits endpoint to the contact proxy model.
 * Added handwritten_review_credit proxy model.
 * Added Company list method.
 * Removed unnecessary CGI escape of message.
