@@ -1,8 +1,7 @@
 module Lobbyist
   class MemberCall < Lobbyist::Base
 
-    def self.list(admin_user_id, params = {})
-      params['admin_user_id'] = admin_user_id
+    def self.list(params = {})
       create_from_response(get('/v1/member_calls.json', params))
     end
 

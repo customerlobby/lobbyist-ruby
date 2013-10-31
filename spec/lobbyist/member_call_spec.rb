@@ -16,7 +16,7 @@ describe Lobbyist::MemberCall do
       headers = set_headers('get', path, params)
       body = [{id: 1, company_id: 1, admin_user_id: 15, call_number: 1, status: 'completed'},{id: 2, company_id: 1, admin_user_id: 543, call_number: 3, status: 'completed'},{id: 3, company_id: 1, admin_user_id: 35, call_number: 2, status: 'completed'}]
       stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
-      list = Lobbyist::MemberCall.list(15, params)
+      list = Lobbyist::MemberCall.list(params)
       list.should be_a(Array)
       list[0].status.should == 'completed'
     end
@@ -26,7 +26,7 @@ describe Lobbyist::MemberCall do
       headers = set_headers('get', path, params)
       body = [{id: 1, company_id: 1, admin_user_id: 15, call_number: 1, status: 'queued'},{id: 2, company_id: 1, admin_user_id: 543, call_number: 3, status: 'queued'},{id: 3, company_id: 1, admin_user_id: 35, call_number: 2, status: 'queued'}]
       stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
-      list = Lobbyist::MemberCall.list(15, params)
+      list = Lobbyist::MemberCall.list(params)
       list.should be_a(Array)
       list[0].status.should == 'queued'
     end
@@ -36,7 +36,7 @@ describe Lobbyist::MemberCall do
       headers = set_headers('get', path, params)
       body = [{id: 1, company_id: 1, admin_user_id: 15, call_number: 1, status: 'new'},{id: 2, company_id: 1, admin_user_id: 543, call_number: 3, status: 'new'},{id: 3, company_id: 1, admin_user_id: 35, call_number: 2, status: 'new'}]
       stub_get(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
-      list = Lobbyist::MemberCall.list(15, params)
+      list = Lobbyist::MemberCall.list(params)
       list.should be_a(Array)
       list[0].status.should == 'new'
     end
