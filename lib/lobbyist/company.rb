@@ -6,10 +6,9 @@ module Lobbyist
       :website,:is_active, :abbreviated_name, :creation_date, :signup_admin_id, :signup_ip_addr,
       :account_terminated, :termination_date, :activation_code, :account_class, :promo_id, :average_changed,
       :average_score, :admin_notes, :customer_call_notes, :trial_source, :partner_id, :partner_account_id,
-      :syndicate, :last_synd_stat_date, :last_credit_grant, :send_transaction_receipts, :send_transaction_receipts_to,
+      :last_synd_stat_date, :last_credit_grant, :send_transaction_receipts, :send_transaction_receipts_to,
       :sales_status, :date_live, :country, :user_notes, :smart_invite, :enable_referral_marketing, :enable_retention_marketing,
-      :rss_queue_push, :rss_queue_attempts, :rss_change_date, :rss_push_date, :feedburner_url, :last_handwritten_review_credit_grant,
-      :api_user_name, :api_key_hash, :sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
+      :last_handwritten_review_credit_grant,:sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :company_info_changed,
       :created_at, :updated_at, :status
 
     def setting
@@ -19,7 +18,7 @@ module Lobbyist
     def setting=(attributes)
       @setting = CompanySetting.new(attributes)
     end
-      
+
     def categories
       @categories
     end
@@ -63,15 +62,15 @@ module Lobbyist
         @company_users << CompanyUser.new(user)
       end
     end
-    
+
     def smart_invite_setting
       @smart_invite_setting
     end
-    
+
     def smart_invite_setting=(attributes)
       @smart_invite_setting = SmartInviteSetting.new(attributes)
     end
-    
+
     def reviews_count
       @reviews_count
     end
@@ -80,18 +79,22 @@ module Lobbyist
       @reviews_count = ReviewsCount.new(attributes)
     end
 
+    def self.list(params = {})
+      create_collection_from_response(get('/v1/companies.json', params))
+    end
+    
     def self.find(id)
       create_from_response(get("/v1/companies/#{id}.json"))
     end
-    
-    def self.create(params = {})
-      create_from_response(post("/v1/companies.json", {'company' => params}))
+
+    def self.create(company_params = {}, user_params = {})
+      create_from_response(post("/v1/companies.json", {'company' => company_params, 'company_user' => user_params}))
     end
-    
+
     def self.update(id, params = {})
       create_from_response(put("/v1/companies/#{id}.json", {'company' => params}))
     end
-    
+
     def self.terminate(id)
       create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
     end
