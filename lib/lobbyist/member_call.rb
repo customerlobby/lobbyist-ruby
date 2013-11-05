@@ -2,7 +2,15 @@ module Lobbyist
   class MemberCall < Lobbyist::Base
 
     def self.list(params = {})
-      create_from_response(get('/v1/member_calls.json', params))
+      create_collection_from_response(get('/v1/member_calls.json', params))
+    end
+
+    def self.call_counts_by_attempts
+      create_collection_from_response(get('/v1/member_calls/call_counts_by_attempts.json'))
+    end
+
+    def self.filter(params={})
+      create_collection_from_response(get('/v1/member_calls/filter.json', params))
     end
 
     def self.find(id)
