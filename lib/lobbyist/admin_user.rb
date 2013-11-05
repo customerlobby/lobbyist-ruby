@@ -1,8 +1,7 @@
 module Lobbyist
   class AdminUser < Lobbyist::Base
-    attr_accessor :admin_user_id, :email, :first_name, :last_name, :password,
-      :is_total_admin, :date_added, :is_active, :screen_name, :sales_team_id, :sugar_pass,
-      :sugar_user_id, :created_at, :updated_at, :auth_key, :persistence_token, :role
+    attr_accessor :admin_user_id, :email, :first_name, :last_name, :password, :is_total_admin, :date_added, 
+    :is_active, :screen_name, :sales_team_id, :created_at, :updated_at, :auth_key, :persistence_token, :role
 
     def self.list(params = {})
       create_collection_from_response(get('/v1/admin_users.json', params))
