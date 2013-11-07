@@ -13,6 +13,10 @@ module Lobbyist
       create_collection_from_response(get('/v1/member_calls/filter.json', params))
     end
 
+    def self.history(params={})
+      create_collection_from_response(get('/v1/member_calls/history.json', params))
+    end
+
     def self.find(id)
       create_from_response(get("/v1/member_calls/#{id}.json"))
     end
