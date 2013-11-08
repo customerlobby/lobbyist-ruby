@@ -1,7 +1,7 @@
-* removed admin_user_id from MemberCall.list arguments
+* Added contact transcribe_allowed api call.
+* Removed admin_user_id from MemberCall.list arguments.
+* Removing field average_changed from company.
 
-=== 0.3.39 2013-10-31
-* removing field average_changed from company
 === 0.3.38 2013-10-28
 
 * Added insufficient_handwritten_credits endpoint to the contact proxy model.
