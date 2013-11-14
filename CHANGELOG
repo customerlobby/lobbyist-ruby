@@ -1,3 +1,4 @@
+* Removed average_changed field from company.
 * Removed transaction receipt fields from the Company proxy model.
 * Added contact transcribe_allowed api call.
 * Removed admin_user_id from MemberCall.list arguments.
