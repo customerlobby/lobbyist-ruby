@@ -1,3 +1,7 @@
+* Added company_transaction proxy model.
+
+=== 0.3.39 2013-11-12
+
 * Removed average_changed field from company.
 * Removed transaction receipt fields from the Company proxy model.
 * Added contact transcribe_allowed api call.
