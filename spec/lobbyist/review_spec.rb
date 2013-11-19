@@ -83,7 +83,6 @@ describe Lobbyist::Review do
     {
       "company_id"              => "127",
       "contact_id"              => "1",
-      "review_date"             => "#{Time.now}",
       "review_summary"          => "New Review Summary",
       "review_body"             => "This is the body.",
       "review_status"           => "publish",
