@@ -41,6 +41,14 @@ module Lobbyist
       @challenge = ReviewChallenge.new(attributes)
     end
 
+    def review_confirmation
+      @review_confirmation
+    end
+    
+    def review_confirmation=(attributes)
+      @review_confirmation = ReviewConfirmation.new(attributes)
+    end
+
     def topics
       @topics
     end

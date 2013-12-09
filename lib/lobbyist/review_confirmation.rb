@@ -1,6 +1,10 @@
 module Lobbyist
   class ReviewConfirmation < Lobbyist::Base
 
+    attr_accessor :id, :review_id, :confirmation_type, :confirmation_key, :attempts, 
+      :max_attempts, :status, :from_phone_number, :to_phone_number, :from_ip_address, 
+      :delivered_at, :created_at, :updated_at
+
     def self.update(id, params = {})
       passed_params = {'disposition' => params['disposition'], 'review_confirmation' => params['review_confirmation']}
       passed_params.merge!({'review' => params[:review]}) if params.has_key?(:review)

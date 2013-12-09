@@ -36,17 +36,19 @@ require 'lobbyist/company_subscription'
 require 'lobbyist/company_transaction'
 require 'lobbyist/company_user'
 require 'lobbyist/company'
-require 'lobbyist/contact'
 require 'lobbyist/contact_draft'
+require 'lobbyist/contact'
 require 'lobbyist/customer_call'
 require 'lobbyist/draft'
 require 'lobbyist/email_invitation'
 require 'lobbyist/email_key'
-require 'lobbyist/enterprise'
 require 'lobbyist/enterprise_setting'
-require 'lobbyist/handwritten_review'
+require 'lobbyist/enterprise'
 require 'lobbyist/free_trial'
+require 'lobbyist/handwritten_review_credit'
+require 'lobbyist/handwritten_review'
 require 'lobbyist/member_call'
+require 'lobbyist/metrics'
 require 'lobbyist/promo'
 require 'lobbyist/review_challenge'
 require 'lobbyist/review_comment'
@@ -66,10 +68,8 @@ require 'lobbyist/topic'
 require 'lobbyist/version'
 
 
-
 module Lobbyist
   
-#  @@api_base = 'https://api.customerlobby.com'
   @@api_base = 'http://localhost:3000'
   @@api_key = nil
   @@api_secret = nil
