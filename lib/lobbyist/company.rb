@@ -98,5 +98,9 @@ module Lobbyist
     def self.terminate(id)
       create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
     end
+
+    def self.subscription(id)
+      create_from_response(get("/v1/companies/#{id}/subscription.json"))
+    end
   end
 end

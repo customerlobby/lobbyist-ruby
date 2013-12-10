@@ -15,9 +15,5 @@ module Lobbyist
     def self.update(id, params = {})
       create_from_response(put("/v1/company_subscriptions/#{id}.json", company_subscription: params))
     end
-    
-    def self.find_by_company(id)
-      create_from_response(get("/v1/company_subscriptions/company/#{id}.json"))
-    end
   end
 end
