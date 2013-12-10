@@ -1,3 +1,4 @@
+* Added company_subscription list, find and update methods.
 * Added company_transaction proxy model.
 * Added missing requires in lobbyist.rb.
 * Slowly adding back attr_accessor calls. Review confimation accessors added here.
