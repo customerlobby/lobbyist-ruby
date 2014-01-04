@@ -1,3 +1,5 @@
+* Added the scheduled payment proxy model.
+* Added skip and unskip methods to the company subscription proxy model.
 * Added company_subscription list, find and update methods.
 * Updated appointment proxy model list method to use collection.
 * Added company_transaction proxy model.

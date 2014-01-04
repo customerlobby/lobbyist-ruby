@@ -16,6 +16,14 @@ module Lobbyist
       create_from_response(put("/v1/company_subscriptions/#{id}.json", company_subscription: params))
     end
     
+    def self.skip(company_id)
+      create_from_response(put("/v1/company_subscriptions/skip-payment.json", company_subscription: {company_id: company_id}))
+    end
+    
+    def self.unskip(company_id)
+      create_from_response(put("/v1/company_subscriptions/unskip-payment.json", company_subscription: {company_id: company_id}))
+    end
+    
     def self.find_by_company_id(id)
       create_from_response(get("/v1/companies/#{id}/subscription.json"))
     end
