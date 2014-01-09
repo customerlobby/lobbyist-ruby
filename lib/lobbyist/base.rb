@@ -141,6 +141,8 @@ module Lobbyist
       when 400
         raise Lobbyist::Error::BadRequest.new(response.body)
       when 401
+        puts last_message
+        puts response.body
         raise Lobbyist::Error::Unauthorized.new(response.body, last_message)
       when 403
         raise Lobbyist::Error::Forbidden.new(response.body)
