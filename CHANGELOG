@@ -3,6 +3,7 @@
 * Added company_subscription list, find and update methods.
 * Updated appointment proxy model list method to use collection.
 * Added company_transaction proxy model.
+* Added the company_subscription create method
 
 === 0.4.0 2013-12-10
 
