@@ -1,3 +1,5 @@
+* Added wants_sms, wants_calls, wants_direct_mail to contact proxy model.
+* Added attr_accessor calls back into the contact proxy model.
 * Added the scheduled payment proxy model.
 * Added skip and unskip methods to the company subscription proxy model.
 * Added company_subscription list, find and update methods.
