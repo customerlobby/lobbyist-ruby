@@ -16,8 +16,12 @@ module Lobbyist
       create_from_response(post("/v1/company_subscriptions.json", params.slice(:billing,:card,:company,:company_id).merge(company_subscription: {company_id: company_id})))
     end
     
-    def self.update(id, params = {})
-      create_from_response(put("/v1/company_subscriptions/#{id}.json", company_subscription: params))
+    def self.update(id, company_id, params = {})
+      create_from_response(put("/v1/company_subscriptions/#{id}.json", params.slice(:billing,:card,:company,:company_id).merge(company_subscription: {company_id: company_id})))
+    end
+
+    def self.update_billing(id, company_id, params = {})
+      create_from_response(put("/v1/company_subscriptions/#{id}/update_billing.json", params.slice(:billing,:card,:company,:company_id).merge(company_subscription: {company_id: company_id})))
     end
     
     def self.skip(company_id)
