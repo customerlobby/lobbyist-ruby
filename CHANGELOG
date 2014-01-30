@@ -1,5 +1,5 @@
 === 0.4.0 2013-12-10
-
+* Updated appointment proxy model list method to use collection.
 * Added missing requires in lobbyist.rb.
 * Slowly adding back attr_accessor calls. Review confimation accessors added here.
 * Added the review confirmation child attribute to the review proxy model.
@@ -332,3 +332,5 @@
 === 0.1.1 2013-02-01
 
 * Initial development covering contacts API.
+=======
+>>>>>>> External Changes
