@@ -2,23 +2,17 @@ module Lobbyist
   module V2
 
     class Base
-      attr_accessor :urls
-
       def initialize(attributes)
-        attributes.each do |k,v|
-          define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
-          self.send "#{k}=", v
-        end
+        process_attributes(attributes)
       end
 
-      def add_urls(urls)
-        @urls = Lobbyist::V2::Urls.new(urls)
+      def add_references(attributes)
+        process_attributes(attributes)
       end
 
       protected
 
       def self.create_from_response(response)
-        byebug
         if response.is_a?(Array)
           list = []
           response.each do |element|
@@ -35,12 +29,16 @@ module Lobbyist
       end
 
       def self.build_entity(data)
-        entity = self.new(data[entity_name])
-        entity.add_urls(data['urls']) if data.has_key?('urls')
+        entity = self.new(data.delete(entity_name))
+        entity.add_references(data)
         return entity
       end
 
       private
+
+      def self.entity_name
+        return self.name.demodulize.underscore
+      end
 
       def self.get(path, params = {})
         handle_response do
@@ -94,10 +92,6 @@ module Lobbyist
         Lobbyist.http
       end
 
-      def self.entity_name
-        return self.name.demodulize.underscore
-      end
-
       def self.handle_response
         response = yield
         case response.status
@@ -119,6 +113,13 @@ module Lobbyist
         end
       rescue MultiJson::DecodeError
         raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
+      end
+
+      def process_attributes(attributes)
+        attributes.each do |k,v|
+          define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
+          self.send "#{k}=", v
+        end
       end
 
       # Create the getter and setter for the attribute named 'name'. If reference is true
