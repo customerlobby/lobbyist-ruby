@@ -7,7 +7,7 @@ module Lobbyist
     attr_accessor :unsubscribed_at, :exclude_referral_marketing, :exclude_retention_marketing
     attr_accessor :facebook_like, :facebook_login_review, :twitter_follow, :date_added, :auto_review_id
     attr_accessor :auto_invite_id, :auto_customer_call_id, :auto_review_draft_key, :created_at, :updated_at
-    attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id
+    attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id, :company_name, :commercial, :status
     
     def self.find(id)
       create_from_response(get("/v1/contacts/#{id}.json"))

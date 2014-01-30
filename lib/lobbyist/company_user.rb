@@ -1,5 +1,8 @@
 module Lobbyist
   class CompanyUser < Lobbyist::Base
+    attr_accessor :company_user_id, :company_id, :date_added, :email, :confirm_reset_password
+    attr_accessor :first_name, :last_name, :is_active, :is_manager, :primary_contact
+    attr_accessor :accepts_terms, :sugar_contact_id, :created_at, :updated_at
 
     def self.list(params = {})
       create_from_response(get('/v1/company_users.json', params))
