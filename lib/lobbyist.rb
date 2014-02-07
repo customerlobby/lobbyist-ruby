@@ -21,7 +21,7 @@ require 'lobbyist/error/service_unavailable'
 require 'lobbyist/error/unauthorized'
 require 'lobbyist/error/unprocessable_entity'
 
-# Library
+# Library V1
 require 'lobbyist/base'
 require 'lobbyist/account_level'
 require 'lobbyist/admin_performance_event'
@@ -32,6 +32,8 @@ require 'lobbyist/category'
 require 'lobbyist/challenge_communication'
 require 'lobbyist/collection'
 require 'lobbyist/company_setting'
+require 'lobbyist/company_subscription'
+require 'lobbyist/company_transaction'
 require 'lobbyist/company_user'
 require 'lobbyist/company'
 require 'lobbyist/contact_draft'
@@ -58,20 +60,34 @@ require 'lobbyist/review_withdrawal_request'
 require 'lobbyist/review'
 require 'lobbyist/reviews_count'
 require 'lobbyist/sales_team'
+require 'lobbyist/scheduled_payment'
 require 'lobbyist/smart_invite_setting'
 require 'lobbyist/social_network_profile'
 require 'lobbyist/suggestion_topic'
 require 'lobbyist/termination_notice'
 require 'lobbyist/topic'
 require 'lobbyist/version'
+require 'lobbyist/workflow_system'
 
+# Library V2
+require 'lobbyist/v2/base'
+require 'lobbyist/v2/authorization'
+require 'lobbyist/v2/company_user'
+require 'lobbyist/v2/company'
+require 'lobbyist/v2/contact'
+require 'lobbyist/v2/data_upload'
+require 'lobbyist/v2/enterprise_setting'
+require 'lobbyist/v2/enterprise_user'
+require 'lobbyist/v2/enterprise'
+require 'lobbyist/v2/scotty_setting'
+require 'lobbyist/v2/workflow_system'
 
 module Lobbyist
-  
+
   @@api_base = 'http://localhost:3000'
   @@api_key = nil
   @@api_secret = nil
-  
+
   def self.api_base
     @@api_base
   end
@@ -79,27 +95,27 @@ module Lobbyist
   def self.api_base=(base)
     @@api_base = base
   end
-  
+
   def self.api_key
     @@api_key ||= ENV['LOBBYIST_API_KEY']
   end
-  
+
   def self.api_key=(key)
     @@api_key = key
   end
-  
+
   def self.api_secret
     @@api_secret ||= ENV['LOBBYIST_API_SECRET']
   end
-  
+
   def self.api_secret=(secret)
     @@api_secret = secret
   end
-  
+
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
-      faraday.request  :url_encoded             #for GET params
-      faraday.request  :json                    #for PUT/POST params
+      faraday.request  :url_encoded             # for GET params
+      faraday.request  :json                    # for PUT/POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
   end

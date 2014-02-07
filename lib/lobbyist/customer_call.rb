@@ -1,6 +1,9 @@
 module Lobbyist
   class CustomerCall < Lobbyist::Base
-
+    attr_accessor :id, :company_id, :contact_id, :customer_call_credit_id, :admin_user_id
+    attr_accessor :status, :attempts, :notes, :last_call_date, :next_call_date
+    attr_accessor :completed_at, :created_at, :updated_at
+    
     def self.list(params = {})
       create_collection_from_response(get('/v1/customer_calls.json', params))
     end

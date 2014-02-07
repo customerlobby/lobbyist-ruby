@@ -1,6 +1,8 @@
 module Lobbyist
   class Enterprise < Lobbyist::Base
-    # attr_accessor
+    attr_accessor :id, :name, :address1, :address2, :city, :state, :zipcode, :country
+    attr_accessor :phone_number, :website, :status, :classification, :account_level_id
+    attr_accessor :created_at, :updated_at
 
     def setting
       @setting_attributes

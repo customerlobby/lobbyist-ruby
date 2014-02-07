@@ -1,3 +1,16 @@
+=== 0.5.0 2014-02-06
+
+* Added API V2 support.
+* Added attr_accessor attributes back to V1 models.
+* Added wants_sms, wants_calls, wants_direct_mail to contact proxy model.
+* Added attr_accessor calls back into the contact proxy model.
+* Added the scheduled payment proxy model.
+* Added skip and unskip methods to the company subscription proxy model.
+* Added company_subscription list, find and update methods.
+* Updated appointment proxy model list method to use collection.
+* Added company_transaction proxy model.
+* Added the company_subscription create method
+
 === 0.4.0 2013-12-10
 * Updated appointment proxy model list method to use collection.
 * Added missing requires in lobbyist.rb.
@@ -6,6 +19,8 @@
 
 === 0.3.39 2013-11-12
 
+* Removed average_changed field from company.
+* Removed transaction receipt fields from the Company proxy model.
 * Added contact transcribe_allowed api call.
 * Removed admin_user_id from MemberCall.list arguments.
 * Removing field average_changed from company.

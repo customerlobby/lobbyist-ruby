@@ -1,6 +1,7 @@
 module Lobbyist
   class TerminationNotice < Lobbyist::Base
-    
+    attr_accessor :id, :company_id, :dismissed, :created_at, :updated_at
+
     def self.list(params = {})
       create_from_response(get('/v1/termination_notices.json', params))
     end

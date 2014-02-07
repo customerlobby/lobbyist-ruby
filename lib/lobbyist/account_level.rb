@@ -16,5 +16,9 @@ module Lobbyist
       create_from_response(get('/v1/account_levels.json', params))
     end
     
+    def self.paid(params = {})
+      create_from_response(get('/v1/account_levels/paid.json', params))
+    end
+    
   end
 end

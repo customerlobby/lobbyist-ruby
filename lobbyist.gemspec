@@ -19,6 +19,7 @@ spec = Gem::Specification.new do |s|
   s.has_rdoc              = false
   
   s.add_dependency('faraday')
+  s.add_dependency('faraday_middleware')
   s.add_dependency('multi_json')
   s.add_dependency('activesupport')
   
