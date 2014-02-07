@@ -1,3 +1,5 @@
+=== 0.5.0 2014-02-06
+
 * Added API V2 support.
 * Added attr_accessor attributes back to V1 models.
 * Added wants_sms, wants_calls, wants_direct_mail to contact proxy model.
