@@ -1,3 +1,7 @@
+=== 0.5.1 2014-02-19
+
+* Added system_of_record to company.
+
 === 0.5.0 2014-02-06
 
 * Added API V2 support.
