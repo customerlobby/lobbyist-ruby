@@ -1,7 +1,7 @@
 module Lobbyist
   class CompanyTransaction < Lobbyist::Base
 
-    attr_accessor :id, :company_id, :event_type, :event_description, :status,
+    attr_accessor :id, :company_id, :event_type, :event_description, :source, :status,
     :reconciliation_id, :amount, :transaction_date, :created_at, :updated_at
 
     # Special accessor for form processing in accounts.
