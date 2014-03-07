@@ -1,3 +1,8 @@
+
+=== 0.5.2 2014-03-06
+
+* Added link_established attribute to scotty_setting proxy model
+* Added data_uploads proxy model.
 * Added source to company transactions.
 * Added wants_member_calls attribute to enterprise setting.
 
