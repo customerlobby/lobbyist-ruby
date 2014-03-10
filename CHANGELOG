@@ -1,3 +1,6 @@
+=== 0.5.3 2014-03-19
+
+* removed the customer_query, transaction_query from scotty_setting model
 
 === 0.5.2 2014-03-06
 
