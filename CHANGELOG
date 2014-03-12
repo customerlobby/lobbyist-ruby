@@ -1,3 +1,6 @@
+=== 0.5.2 2014-03-11
+
+add list call to V2::data_upload, direst_connect_summary to V2::companies, add new proxy model Summary
 
 === 0.5.2 2014-03-06
 
