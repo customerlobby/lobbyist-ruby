@@ -87,6 +87,10 @@ module Lobbyist
       create_from_response(get("/v1/companies/#{id}.json"))
     end
 
+    def self.scotty_upload_summary(id)
+      create_from_response(get("/v1/companies/#{id}/scotty-upload-summary.json"))
+    end
+
     def self.create(company_params = {}, user_params = {})
       create_from_response(post("/v1/companies.json", {'company' => company_params, 'company_user' => user_params}))
     end
