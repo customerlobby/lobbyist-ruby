@@ -1,6 +1,6 @@
 module Lobbyist
   class EmailInvitation < Lobbyist::Base
-    attr_accessor :id, :contact_id, :status, :old_invite_id, :attempts, :max_attempts
+    attr_accessor :id, :contact_id, :status, :attempts, :max_attempts
     attr_accessor :created_at, :updated_at, :email_key, :accessed_at
 
     def self.list(params = {})
