@@ -1,6 +1,7 @@
 === 0.5.3 2014-04-03
 * removed old_ionvite_id from email_invitations
 * Added customer proxy model for the V2 API.
+* removed date_added from adminUser
 
 === 0.5.3 2014-03-19
 
