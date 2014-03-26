@@ -1,3 +1,7 @@
+
+=== 0.5.3 2014-04-03
+* removed old_ionvite_id from email_invitations
+
 === 0.5.3 2014-03-19
 * added destroy method to V2::scotty_setting proxy model
 * add list call to V2::data_upload, direst_connect_summary to V2::companies, add new proxy model Summary
