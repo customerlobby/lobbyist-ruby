@@ -1,3 +1,5 @@
+=== 0.5.4 2014-04-02
+
 * Added metrics call to enterprises V2 API.
 * Removed old_invite_id from email_invitations.
 * Added customer proxy model for the V2 API.
