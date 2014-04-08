@@ -1,3 +1,5 @@
+* Integrated V2 Category model with Company.
+* Added V2 Category proxy model.
 * Added update call to Customer V2 proxy model.
 
 === 0.5.4 2014-04-02
@@ -134,7 +136,6 @@
 
 * Added the CustomerCall proxy model.
 
->>>>>>> origin/customer_calls
 === 0.3.26 2013-07-17
 
 * change the field name key to email_key for email_invitations model
@@ -374,5 +375,3 @@
 === 0.1.1 2013-02-01
 
 * Initial development covering contacts API.
-=======
->>>>>>> External Changes
