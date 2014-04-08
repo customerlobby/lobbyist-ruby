@@ -1,3 +1,4 @@
+* Added Category list method.
 * Integrated V2 Category model with Company.
 * Added V2 Category proxy model.
 * Added update call to Customer V2 proxy model.
