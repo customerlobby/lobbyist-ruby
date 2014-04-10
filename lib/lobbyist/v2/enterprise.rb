@@ -5,6 +5,18 @@ module Lobbyist
       attr_accessor :id, :name, :address1, :address2, :city, :state, :zipcode, :country
       attr_accessor :phone_number, :website, :status, :classification, :account_level_id
       attr_accessor :created_at, :updated_at
+      
+      def categories
+        @categories
+      end
+      
+      def categories=(attributes)
+        @categories = []
+        attributes.each do |attribute|
+          @categories << Category.new(attribute)
+        end
+      end
+      
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/enterprises.json", params))
@@ -29,6 +41,11 @@ module Lobbyist
       def self.metrics(id)
         create_from_response(get("/v2/enterprises/#{id}/metrics.json"))
       end
+      
+      def self.find(id)
+        create_from_response(get("/v2/enterprises/#{id}.json"))
+      end
+      
 
     end
 
