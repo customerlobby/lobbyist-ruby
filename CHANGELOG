@@ -1,3 +1,5 @@
+* Added the Company Settings update method for V2.
+* Updated the Smart Invite Settings updated method to not require an id.
 * Updated the requires in lobbyist.rb to include newest additions.
 * Added Company Settings and Smart Invite Settings proxy models for V2.
 * Added Category list method.
