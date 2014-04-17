@@ -15,6 +15,9 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{company_id}/customers/#{id}.json"))
       end
 
+      def self.update(id, company_id, params = {})
+        create_from_response(put("/v2/companies/#{company_id}/customers/#{id}.json", {'contact' => params}))
+      end
     end
 
   end

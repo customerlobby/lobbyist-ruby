@@ -16,6 +16,33 @@ module Lobbyist
       attr_accessor :sugar_opportunity_id, :company_info_changed, :created_at, :updated_at
       attr_accessor :status, :sales_user_id
 
+      def categories
+        @categories
+      end
+      
+      def categories=(attributes)
+        @categories = []
+        attributes.each do |attribute|
+          @categories << Category.new(attribute)
+        end
+      end
+
+      def company_setting
+        @company_setting
+      end
+
+      def company_setting=(attributes)
+        @company_setting = CompanySetting.new(attributes)
+      end
+      
+      def smart_invite_setting
+        @smart_invite_setting
+      end
+
+      def smart_invite_setting=(attributes)
+        @smart_invite_setting = SmartInviteSetting.new(attributes)
+      end
+
       def self.list(params = {})
         create_collection_from_response(get('/v2/companies.json', params))
       end
