@@ -29,7 +29,11 @@ module Lobbyist
       end
 
       def self.build_entity(data)
-        entity = self.new(data.delete(entity_name))
+        if data.has_key?(entity_name.to_s)
+          entity = self.new(data.delete(entity_name))
+        else
+          entity = Object.const_get("Lobbyist").const_get("V2").const_get(data.keys.first.classify).new(data.delete(data.keys.first))
+        end
         entity.add_references(data)
         return entity
       end
