@@ -1,3 +1,4 @@
+* Fixed enterprise user parameter name.
 * Adjusted V2 base parsing code to allow for parsing a different model in the returned json.
 * Added Enterprise Locations call to the V2 enterprise model.
 

@@ -19,7 +19,7 @@ module Lobbyist
       end
       
       def self.update(id, params)
-        create_from_response(put("/v2/enterprise_users/#{id}.json", {enterprise: params}))
+        create_from_response(put("/v2/enterprise_users/#{id}.json", {enterprise_user: params}))
       end
       
       def self.destroy(id, params)
