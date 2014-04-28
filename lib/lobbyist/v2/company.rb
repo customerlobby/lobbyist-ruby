@@ -66,7 +66,11 @@ module Lobbyist
       def self.terminate(id)
         create_from_response(put("/v2/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
       end
-    
+
+      def self.reactivate(id)
+        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true', 'termination_date' => nil}}))
+      end
+
       def self.metrics(id)
         create_from_response(get("/v2/companies/#{id}/metrics.json"))
       end
