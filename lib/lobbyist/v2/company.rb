@@ -27,6 +27,28 @@ module Lobbyist
         end
       end
 
+      def review_topics
+        @review_topics
+      end
+      
+      def review_topics=(attributes)
+        @review_topics = []
+        attributes.each do |attribute|
+          @review_topics << ReviewTopic.new(attribute)
+        end
+      end
+
+      def private_feedback_topics
+        @private_feedback_topics
+      end
+      
+      def private_feedback_topics=(attributes)
+        @private_feedback_topics = []
+        attributes.each do |attribute|
+          @private_feedback_topics << PrivateFeedbackTopic.new(attribute)
+        end
+      end
+
       def company_setting
         @company_setting
       end
