@@ -1,3 +1,4 @@
+* Added reset password method to V2 enterprise user.
 * Added company reactivate method to V2.
 * Fixed enterprise user create method.
 * Fixed enterprise user parameter name.
