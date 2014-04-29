@@ -26,6 +26,10 @@ module Lobbyist
       def self.destroy(id, params)
         create_from_response(delete("/v2/enterprise_users/#{id}.json", params))
       end
+      
+      def self.reset_password(id)
+        create_from_response(get("/v2/enterprise_users/#{id}/reset-password.json"))
+      end
     end
 
   end
