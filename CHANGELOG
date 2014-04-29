@@ -1,3 +1,5 @@
+=== 0.5.6 2014-04-29
+
 * Added reset password method to V2 enterprise user.
 * Added company reactivate method to V2.
 * Fixed enterprise user create method.
