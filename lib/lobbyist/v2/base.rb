@@ -120,6 +120,7 @@ module Lobbyist
       end
 
       def process_attributes(attributes)
+        return if attributes.blank?
         attributes.each do |k,v|
           define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
           self.send "#{k}=", v
