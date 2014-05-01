@@ -17,7 +17,6 @@ module Lobbyist
         end
       end
       
-
       def self.list(params = {})
         create_collection_from_response(get("/v2/enterprises.json", params))
       end
@@ -45,8 +44,10 @@ module Lobbyist
       def self.find(id)
         create_from_response(get("/v2/enterprises/#{id}.json"))
       end
-      
 
+      def self.locations(id, params = {})
+        create_collection_from_response(get("/v2/enterprises/#{id}/companies", params))
+      end
     end
 
   end

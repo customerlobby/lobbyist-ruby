@@ -27,6 +27,28 @@ module Lobbyist
         end
       end
 
+      def review_topics
+        @review_topics
+      end
+      
+      def review_topics=(attributes)
+        @review_topics = []
+        attributes.each do |attribute|
+          @review_topics << ReviewTopic.new(attribute)
+        end
+      end
+
+      def private_feedback_topics
+        @private_feedback_topics
+      end
+      
+      def private_feedback_topics=(attributes)
+        @private_feedback_topics = []
+        attributes.each do |attribute|
+          @private_feedback_topics << PrivateFeedbackTopic.new(attribute)
+        end
+      end
+
       def company_setting
         @company_setting
       end
@@ -55,8 +77,8 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
       end
     
-      def self.create(company_params = {}, user_params = {})
-        create_from_response(post("/v2/companies.json", {'company' => company_params, 'company_user' => user_params}))
+      def self.create(company_params = {})
+        create_from_response(post("/v2/companies.json", {'company' => company_params}))
       end
 
       def self.update(id, params = {})
@@ -66,7 +88,11 @@ module Lobbyist
       def self.terminate(id)
         create_from_response(put("/v2/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
       end
-    
+
+      def self.reactivate(id)
+        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true', 'termination_date' => nil}}))
+      end
+
       def self.metrics(id)
         create_from_response(get("/v2/companies/#{id}/metrics.json"))
       end

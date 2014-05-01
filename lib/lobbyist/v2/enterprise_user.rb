@@ -14,16 +14,21 @@ module Lobbyist
         create_from_response(get("/v2/enterprise_users/#{id}.json", params))
       end
       
-      def self.create(params)
-        create_from_response(post("/v2/enterprise_users.json", {enterprise_user: params}))
+      def self.create(id, params)
+        user_params = {enterprise_id: id, enterprise_user: params}
+        create_from_response(post("/v2/enterprise_users.json", user_params))
       end
       
       def self.update(id, params)
-        create_from_response(put("/v2/enterprise_users/#{id}.json", {enterprise: params}))
+        create_from_response(put("/v2/enterprise_users/#{id}.json", {enterprise_user: params}))
       end
       
       def self.destroy(id, params)
         create_from_response(delete("/v2/enterprise_users/#{id}.json", params))
+      end
+      
+      def self.reset_password(id)
+        create_from_response(get("/v2/enterprise_users/#{id}/reset-password.json"))
       end
     end
 

@@ -3,8 +3,8 @@ module Lobbyist
 
     class CompanyUser < Lobbyist::V2::Base
       attr_accessor :company_user_id, :company_id, :date_added, :email, :confirm_reset_password
-      attr_accessor :first_name, :last_name, :is_active, :is_manager, :primary_contact
-      attr_accessor :accepts_terms, :sugar_contact_id, :created_at, :updated_at
+      attr_accessor :name, :first_name, :last_name, :is_active, :is_manager, :primary_contact
+      attr_accessor :accepts_terms, :sugar_contact_id, :created_at, :updated_at, :role, :status
       
       def self.list(params = {})
         create_collection_from_response(get('/v2/company_users.json', params))

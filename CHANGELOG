@@ -1,3 +1,13 @@
+=== 0.5.6 2014-04-29
+
+* Remove company user params from company create call.
+* Added reset password method to V2 enterprise user.
+* Added company reactivate method to V2.
+* Fixed enterprise user create method.
+* Fixed enterprise user parameter name.
+* Adjusted V2 base parsing code to allow for parsing a different model in the returned json.
+* Added Enterprise Locations call to the V2 enterprise model.
+
 === 0.5.5 2014-04-15
 
 * Added the Company Settings update method for V2.
