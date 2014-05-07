@@ -1,3 +1,4 @@
+* Added reset functionality for email invitations.
 * Added EmailInvitation proxy model for V2 API.
 * Added HandwrittenReview model for V2 with find, list and metrics methods.
 
