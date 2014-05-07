@@ -15,12 +15,7 @@ module Lobbyist
 
       def self.update(id, company_id)
         create_from_response(put("/v2/companies/#{company_id}/handwritten_reviews/#{id}.json"))
-      end
-
-      def self.metrics(company_id)
-        create_from_response(get("/v2/companies/#{company_id}/handwritten_reviews/metrics.json"))
-      end
- 
+      end 
     end
 
   end
