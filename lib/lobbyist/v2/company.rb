@@ -3,7 +3,7 @@ module Lobbyist
 
     class Company < Lobbyist::V2::Base
 
-      attr_accessor :company_id, :enterprise_id, :workflow_system_id, :account_level_id
+      attr_accessor :id, :company_id, :enterprise_id, :workflow_system_id, :account_level_id
       attr_accessor :company_name, :company_description, :address1, :address2, :city, :state
       attr_accessor :zip, :latitude, :longitude, :timezone, :formatted_address, :phone
       attr_accessor :website, :is_active, :abbreviated_name, :creation_date, :signup_admin_id
