@@ -17,9 +17,6 @@ module Lobbyist
         create_from_response(put("/v2/companies/#{company_id}/email_invitations/#{id}/reset", {contact: params}))
       end
 
-      def self.metrics(company_id, params = {})
-        create_from_response(get("/v2/companies/#{company_id}/email_invitations/metrics.json", params))
-      end
     end
 
   end
