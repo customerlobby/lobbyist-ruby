@@ -1,3 +1,7 @@
+* Added customer_call_credit V2 API proxy model.
+* Added customer call metrics V2 API method.
+* Added company subscription proxy model for V2.
+* Added primary company user endpoint to V2 company user.
 * Added Appointment model for V2 with list method.
 * Added email invitation metrics proxy model.
 * Added reset functionality for email invitations.
