@@ -13,6 +13,7 @@ module Lobbyist
       protected
 
       def self.create_from_response(response)
+        return nil if response.blank?
         if response.is_a?(Array)
           list = []
           response.each do |element|

@@ -1,3 +1,16 @@
+=== 0.5.7 2014-05-13
+
+* Added customer_call_credit V2 API proxy model.
+* Added customer call metrics V2 API method.
+* Added company subscription proxy model for V2.
+* Added primary company user endpoint to V2 company user.
+* Added Appointment model for V2 with list method.
+* Added email invitation metrics proxy model.
+* Added reset functionality for email invitations.
+* Added EmailInvitation proxy model for V2 API.
+* Added HandwrittenReview model for V2 with find, list, update methods.
+* Added HandwrittenReviewMetrics model for V2 with list method.
+
 === 0.5.6 2014-04-29
 
 * Remove company user params from company create call.
@@ -5,6 +18,7 @@
 * Added company reactivate method to V2.
 * Fixed enterprise user create method.
 * Fixed enterprise user parameter name.
+* Added reviewTopic and PrivateFeedbackTopic to ve
 * Adjusted V2 base parsing code to allow for parsing a different model in the returned json.
 * Added Enterprise Locations call to the V2 enterprise model.
 

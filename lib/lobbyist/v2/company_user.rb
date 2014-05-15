@@ -21,6 +21,11 @@ module Lobbyist
       def self.update(id, company_id, params = {})
         create_from_response(put("/v2/company_users/#{id}.json", {company_id: company_id, company_user: params}))
       end
+
+      def self.primary(company_id)
+        create_from_response(get("/v2/company_users/primary.json", {company_id: company_id}))
+      end
+
     end
     
   end
