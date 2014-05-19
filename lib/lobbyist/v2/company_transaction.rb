@@ -14,6 +14,10 @@ module Lobbyist
         create_from_response(post("/v2/companies/#{company_id}/company_transactions.json", {company_transaction: params}))
       end
 
+      def self.generate_receipt(company_id, params = {})
+        create_from_response(get("/v2/companies/#{company_id}/company_transactions/generate-receipt.json", params))
+      end
+
     end
   end
 end
