@@ -11,11 +11,11 @@ module Lobbyist
       end
     
       def self.create(company_id, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/company_subscription.json", {company_subscription: params}))
+        create_from_response(post("/v2/companies/#{company_id}/company_subscription.json", params))
       end
     
       def self.update(company_id, params = {})
-        create_from_response(put("/v2/companies/#{company_id}/company_subscription.json", {company_subscription: params}))
+        create_from_response(put("/v2/companies/#{company_id}/company_subscription.json", params))
       end
     end
     
