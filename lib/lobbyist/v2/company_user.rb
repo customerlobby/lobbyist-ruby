@@ -26,6 +26,10 @@ module Lobbyist
         create_from_response(get("/v2/company_users/primary.json", {company_id: company_id}))
       end
 
+      def self.reset_password(id, company_id)
+        create_from_response(get("/v2/company_users/#{id}/reset-password.json", {company_id: company_id}))
+      end
+
     end
     
   end
