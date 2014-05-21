@@ -1,3 +1,6 @@
+* Modified the way company subscription parameters are sent.
+* Added Promo proxy model for V2
+* Added Account Level proxy model for V2.
 * Added generate-receipt company transaction method.
 * Added company transaction proxy model for V2.
 
