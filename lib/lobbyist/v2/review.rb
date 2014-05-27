@@ -1,0 +1,26 @@
+module Lobbyist
+  module V2
+
+    class Review < Lobbyist::V2::Base
+      attr_accessor :review_id, :review_summary, :review_body, :review_status, :total_score, :source, 
+      :is_featured, :admin_user_id, :invite_id, :reviewer_location_state, :reviewer_location_city,
+      :created_at, :updated_at
+
+      def self.list(company_id, params = {})
+        create_collection_from_response(get("/v2/companies/#{company_id}/reviews.json", params))
+      end
+      
+      def self.update(id, company_id, params = {})
+        create_from_response(put("/v2/companies/#{company_id}/reviews/#{id}.json", {'review' => params}))
+        # create_from_response(put("/v2/companies/#{company_id}/reviews/#{1d}.json", {review: params}))
+      end
+
+      def self.find(id, company_id, params = {})
+        create_from_response(get("/v2/companies/#{company_id}/reviews/#{id}.json", {review: params}))
+        
+      end
+
+    end
+
+  end
+end
