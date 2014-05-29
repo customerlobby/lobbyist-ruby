@@ -37,10 +37,6 @@ module Lobbyist
         create_from_response(delete("/v2/enterprises/#{id}.json", params))
       end
       
-      def self.metrics(id)
-        create_from_response(get("/v2/enterprises/#{id}/metrics.json"))
-      end
-      
       def self.find(id)
         create_from_response(get("/v2/enterprises/#{id}.json"))
       end
