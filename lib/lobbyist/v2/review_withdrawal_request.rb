@@ -8,11 +8,11 @@ module Lobbyist
         create_collection_from_response(get("/v2/reviews/#{review_id}/withdrawal_requests.json", params))
       end
       
-      def self.update(id, company_id, params = {})
+      def self.update(id, review_id, params = {})
         create_from_response(put("/v2/reviews/#{review_id}/withdrawal_requests/#{id}.json", {'review_withdrawal_request' => params}))
       end
 
-      def self.find(id, company_id, params = {})
+      def self.find(id, review_id, params = {})
         create_from_response(get("/v2/reviews/#{review_id}/withdrawal_requests/#{id}.json", {review_withdrawal_request: params}))
       end
 

@@ -8,15 +8,16 @@ module Lobbyist
         create_collection_from_response(get("/v2/reviews/#{review_id}/comments.json", params))
       end
       
-      def self.update(id, company_id, params = {})
+      def self.update(id, review_id, params = {})
         create_from_response(put("/v2/reviews/#{review_id}/comments/#{id}.json", {'review_comment' => params}))
       end
 
-      def self.create(company_id, params = {})
-        create_from_response(post("/v2/reviews/#{review_id}/comments.json", {'review_comment' => params}))
+      def self.create(review_id, params = {})
+        create_from_response(post("/v2/reviews/#{review_id}/comments.json", {'review_comment' => params['review_comment'], 
+          'email_reviewer' =>params['email_reviewer']}))
       end
 
-      def self.find(id, company_id, params = {})
+      def self.find(id, review_id, params = {})
         create_from_response(get("/v2/reviews/#{review_id}/comments/#{id}.json", {review_comment: params}))
       end
 
