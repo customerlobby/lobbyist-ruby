@@ -17,6 +17,15 @@ module Lobbyist
       def self.update(company_id, params = {})
         create_from_response(put("/v2/companies/#{company_id}/company_subscription.json", params))
       end
+
+      def self.skip(company_id, company_user_id)
+        create_from_response(put("/v2/companies/#{company_id}/company_subscription/skip-payment.json", {'report_retention' => {'company_user_id' => company_user_id}}))
+      end
+
+      def self.unskip(company_id)
+        create_from_response(put("/v2/companies/#{company_id}/company_subscription/unskip-payment.json"))
+      end
+
     end
     
   end
