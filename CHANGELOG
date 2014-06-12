@@ -1,3 +1,9 @@
+=== 0.5.9 2014-06-11
+
+* Added Custom Invitation proxy model for V2 API.
+* Added Review Metrics proxy model for V2 API.
+* Added Customer Call proxy model for V2 API.
+
 === 0.5.8 2014-05-28
 
 * Removed old metrics calls from Enterprise and Company.
