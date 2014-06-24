@@ -11,6 +11,10 @@ module Lobbyist
       def self.list(params = {})
         create_collection_from_response(get('/v2/data_uploads.json', params))
       end
+
+      def self.process_file(id, params = {})
+        create_from_response(put("/v2/data_uploads/#{id}/process-file.json", params))
+      end
     end
 
   end
