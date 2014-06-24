@@ -3,6 +3,7 @@
 * Added reset endpoint to ReviewConfirmation proxy model.
 * Rename kiosk review proxy model to ReviewConfirmation.
 * Added Kiosk Review proxy model.
+* Added create/find/update to WorkflowSystem.
 
 === 0.5.9 2014-06-11
 
