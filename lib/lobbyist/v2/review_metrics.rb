@@ -10,6 +10,9 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{company_id}/review_metrics.json", params))
       end
       
+      def self.manage_metrics(company_id, params = {})
+        create_from_response(get("/v2/companies/#{company_id}/review_metrics/manage-metrics.json", params))
+      end
     end
 
   end

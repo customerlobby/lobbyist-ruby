@@ -1,3 +1,4 @@
+* Added the manage-metrics endpoint to the ReviewMetrics model.
 * Added the create method to the Customer proxy model.
 * Added reset endpoint to ReviewConfirmation proxy model.
 * Rename kiosk review proxy model to ReviewConfirmation.
