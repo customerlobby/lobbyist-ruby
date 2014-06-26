@@ -1,3 +1,12 @@
+=== 0.5.10 2014-06-25
+
+* Added the manage-metrics endpoint to the ReviewMetrics model.
+* Added the create method to the Customer proxy model.
+* Added reset endpoint to ReviewConfirmation proxy model.
+* Rename kiosk review proxy model to ReviewConfirmation.
+* Added Kiosk Review proxy model.
+* Added create/find/update to WorkflowSystem.
+
 === 0.5.9 2014-06-11
 
 * Added Custom Invitation proxy model for V2 API.
