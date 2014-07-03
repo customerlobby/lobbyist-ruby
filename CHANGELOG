@@ -1,3 +1,5 @@
+* SocialNetworkProfile proxy model added.
+
 === 0.5.10 2014-06-25
 
 * Added the manage-metrics endpoint to the ReviewMetrics model.
