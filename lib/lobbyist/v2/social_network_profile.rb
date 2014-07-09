@@ -20,4 +20,3 @@ module Lobbyist
 
   end
 end
-
