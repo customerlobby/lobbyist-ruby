@@ -6,7 +6,10 @@ module Lobbyist
       attr_accessor :phone_number, :source, :source_id, :match_score, :status, :created_at, :updated_at
 
       def self.list(company_id, params = {})
-        create_collection_from_response(get("/v2/companies/#{company_id}/company_places.json", params))
+        response = get("/v2/companies/#{company_id}/company_places.json", params)
+        colllection = create_collection_from_response(response)
+        colllection.match_copied = response['match_copied']
+        return colllection
       end
 
       def self.update(company_id, place_id, params = {})
