@@ -1,3 +1,4 @@
+* Added CsvUpload proxy model for V2.
 * Added CompanyPlace proxy model for V2.
 
 === 0.5.11 2014-07-10
