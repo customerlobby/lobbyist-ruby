@@ -1,3 +1,4 @@
+* Added phone_ext attribute to Company proxy model for both V1 and V2.
 * Added CsvUpload proxy model for V2.
 * Added CompanyPlace proxy model for V2.
 
