@@ -14,7 +14,7 @@ module Lobbyist
       attr_accessor :enable_referral_marketing, :enable_retention_marketing
       attr_accessor :last_handwritten_review_credit_grant, :sugar_lead_id, :sugar_account_id
       attr_accessor :sugar_opportunity_id, :company_info_changed, :created_at, :updated_at
-      attr_accessor :status, :sales_user_id, :qualifies_for_free_month
+      attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
 
       def categories
         @categories
