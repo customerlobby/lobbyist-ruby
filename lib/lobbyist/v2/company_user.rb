@@ -30,6 +30,10 @@ module Lobbyist
         create_from_response(get("/v2/company_users/#{id}/reset-password.json", {company_id: company_id}))
       end
 
+      def self.request_support(id, company_id, params = {})
+        create_from_response(get("/v2/company_users/#{id}/request-support.json", {company_id: company_id, company_user: params}))
+      end
+
     end
     
   end
