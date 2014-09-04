@@ -1,3 +1,7 @@
+=== 0.5.14 2014-09-03
+
+* Added request_support method to v2/company_user.rb
+* Added V2::Configuration model
 * Added Company activate method to V2 model.
 
 === 0.5.13 2014-08-05

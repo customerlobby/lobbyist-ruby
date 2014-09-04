@@ -11,6 +11,7 @@ module Lobbyist
       attr_accessor :facebook_access_token, :facebook_session_key, :created_at, :updated_at
       attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id, :company_name, :commercial, :status
       attr_accessor :has_activity, :has_customer_call, :has_email_invitation
+      
       def self.find(id, company_id)
         create_from_response(get("/v2/companies/#{company_id}/customers/#{id}.json"))
       end
