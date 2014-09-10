@@ -1,3 +1,4 @@
+* Added enterprise email settings proxy model.
 * New enterprise settings added to the EnterpriseSetting proxy mode.
 
 === 0.5.14 2014-09-03
