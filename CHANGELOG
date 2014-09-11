@@ -1,3 +1,4 @@
+* Added notification_user_id to the enterprise_setting proxy model.
 * Added enterprise email settings proxy model.
 * New enterprise settings added to the EnterpriseSetting proxy mode.
 
