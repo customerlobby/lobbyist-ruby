@@ -9,6 +9,10 @@ module Lobbyist
         create_from_response(get("/v2/partner_users/#{id}/reset-password.json", params))
       end
 
+      def self.list(params = {})
+        create_collection_from_response(get('/v2/partner_users.json', params))
+      end
+
     end
     
   end
