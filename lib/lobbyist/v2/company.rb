@@ -82,6 +82,9 @@ module Lobbyist
       end
 
       def self.update(id, params = {})
+        if params[:is_active].present?
+          params.merge!(:status => params[:is_active] == 'true' ? 'active' : 'inactive')
+        end
         create_from_response(put("/v2/companies/#{id}.json", {'company' => params}))
       end
 
