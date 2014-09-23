@@ -89,15 +89,15 @@ module Lobbyist
       end
 
       def self.activate(id)
-        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true'}}))
+        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true','status' => 'active'}}))
       end
 
       def self.terminate(id)
-        create_from_response(put("/v2/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
+        create_from_response(put("/v2/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'status' => 'terminated','termination_date' => Time.now.to_s}}))
       end
 
       def self.reactivate(id)
-        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true', 'termination_date' => nil}}))
+        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true','status' => 'active', 'termination_date' => nil}}))
       end
 
       def self.scotty_info(id)
