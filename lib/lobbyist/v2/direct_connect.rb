@@ -10,6 +10,11 @@ module Lobbyist
       def self.companies_with_no_recent_uploads(params={})
         result = get('/v2/direct_connect/no_files_uploaded_in_last_week.json', params)
       end
+
+      def self.link_established_data_processing_disabled(params={})
+        result = get('/v2/direct_connect/link_established_data_processing_disabled.json', params)
+      end
+
     end
   end
 end
