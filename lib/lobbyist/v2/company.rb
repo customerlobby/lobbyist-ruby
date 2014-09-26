@@ -82,11 +82,14 @@ module Lobbyist
       end
 
       def self.update(id, params = {})
+        if params[:is_active].present?
+          params.merge!(:status => params[:is_active] == 'true' ? 'active' : 'inactive')
+        end
         create_from_response(put("/v2/companies/#{id}.json", {'company' => params}))
       end
 
       def self.activate(id)
-        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true'}}))
+        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true','status' => 'active'}}))
       end
 
       def self.terminate(id, termination_params)
@@ -96,7 +99,7 @@ module Lobbyist
       end
 
       def self.reactivate(id)
-        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true', 'termination_date' => nil}}))
+        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true','status' => 'active', 'termination_date' => nil}}))
       end
 
       def self.scotty_info(id)
