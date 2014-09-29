@@ -15,6 +15,10 @@ module Lobbyist
         result = get('/v2/direct_connect/link_established_data_processing_disabled.json', params)
       end
 
+      def self.files_uploaded_today(params={})
+        result = get('/v2/direct_connect/files_uploaded_today.json', params)
+      end
+
     end
   end
 end
