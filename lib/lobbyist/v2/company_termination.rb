@@ -15,7 +15,7 @@ module Lobbyist
       end
 
       def self.update(id, params = {})
-        create_from_response(post("/v2/company_terminations/#{id}.json", {company_termination: params}))
+        create_from_response(put("/v2/company_terminations/#{id}.json", {company_termination: params}))
       end
 
     end
