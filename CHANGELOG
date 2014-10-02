@@ -1,3 +1,7 @@
+== 0.5.16 2014-10-02
+* Added V2::CompanyTermination proxy model
+* changed terminate method in V1/V2 Company proxy model to take company_termination parameter
+
 == 0.5.16 2014-09-24
 * Added DirectConnect proxy model
 * Added stats endpoint to DirectConnect proxy model
