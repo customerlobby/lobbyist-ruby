@@ -6,9 +6,8 @@ module Lobbyist
       attr_accessor :email, :address1, :address2, :city, :state, :zip, :country, :last_service_date
       attr_accessor :notes, :wants_emails, :wants_sms, :wants_calls, :wants_direct_mail, :unsubscribe_reason
       attr_accessor :unsubscribed_at, :exclude_referral_marketing, :exclude_retention_marketing
-      attr_accessor :facebook_like, :facebook_login_review, :twitter_follow, :auto_review_id
-      attr_accessor :auto_invite_id, :auto_customer_call_id, :auto_review_draft_key, :facebook_uid
-      attr_accessor :facebook_access_token, :facebook_session_key, :created_at, :updated_at
+      attr_accessor :auto_review_id, :auto_invite_id, :auto_customer_call_id, :auto_review_draft_key
+      attr_accessor :created_at, :updated_at
       attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id, :company_name, :commercial, :status
       attr_accessor :has_activity, :has_customer_call, :has_email_invitation
       
