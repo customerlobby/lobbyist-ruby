@@ -18,6 +18,10 @@ module Lobbyist
         create_from_response(put("/v2/company_terminations/#{id}.json", {company_termination: params}))
       end
 
+      def self.save_company(id, params = {})
+        create_from_response(put("/v2/company_terminations/#{id}/save-company.json", {company_termination: params}))
+      end
+
     end
   end
 end
