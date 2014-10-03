@@ -1,3 +1,7 @@
+== 0.5.16 2014-09-24
+* Added DirectConnect proxy model
+* Added stats endpoint to DirectConnect proxy model
+
 == 0.5.15 2014-09-17
 
 * Added notification_user_id to the enterprise_setting proxy model.
