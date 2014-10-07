@@ -2,7 +2,7 @@ module Lobbyist
   module V2
 
     class ReviewComment < Lobbyist::V2::Base
-      attr_accessor :id, :review_id , :status, :request_date, :note, :author_action_date, :email_key, :created_at, :updated_at
+      attr_accessor :id, :review_id , :comment, :user_id, :user_type, :created_at, :updated_at
 
       def self.list(review_id, params = {})
         create_collection_from_response(get("/v2/reviews/#{review_id}/comments.json", params))
