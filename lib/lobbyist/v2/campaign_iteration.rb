@@ -8,8 +8,6 @@ module Lobbyist
       def self.list(campaign_id, params = {})
         create_collection_from_response(get("/v2/campaigns/#{campaign_id}/iterations.json", params))
       end
-
     end
-
   end
 end
