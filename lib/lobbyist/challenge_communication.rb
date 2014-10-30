@@ -1,7 +1,7 @@
 module Lobbyist
   class ChallengeCommunication < Lobbyist::Base
 
-    attr_accessor :id, :review_challenge_id, :contact_id, :admin_user_id, :company_user_id,
+    attr_accessor :id, :review_challenge_id, :contact_id, :admin_user_id, :user_id, :user_type,
       :communication_body, :email_key, :created_at, :updated_at
 
     def review_challenge

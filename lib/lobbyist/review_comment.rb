@@ -1,7 +1,7 @@
 module Lobbyist
   class ReviewComment < Lobbyist::Base
     
-    attr_accessor :id, :review_id, :comment, :company_user_id, :created_at, :updated_at
+    attr_accessor :id, :review_id, :comment, :user_id, :user_type, :created_at, :updated_at
     
     def self.list(params = {})
       create_from_response(get('/v1/review_comments.json', params))

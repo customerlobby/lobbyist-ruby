@@ -14,7 +14,7 @@ module Lobbyist
       attr_accessor :enable_referral_marketing, :enable_retention_marketing
       attr_accessor :last_handwritten_review_credit_grant, :sugar_lead_id, :sugar_account_id
       attr_accessor :sugar_opportunity_id, :company_info_changed, :created_at, :updated_at
-      attr_accessor :status, :sales_user_id, :qualifies_for_free_month
+      attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
 
       def categories
         @categories
@@ -82,15 +82,24 @@ module Lobbyist
       end
 
       def self.update(id, params = {})
+        if params[:is_active].present?
+          params.merge!(:status => params[:is_active] == 'true' ? 'active' : 'inactive')
+        end
         create_from_response(put("/v2/companies/#{id}.json", {'company' => params}))
       end
 
-      def self.terminate(id)
-        create_from_response(put("/v2/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
+      def self.activate(id)
+        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true','status' => 'active'}}))
+      end
+
+      def self.terminate(id, termination_params)
+        create_from_response(put("/v2/companies/#{id}/terminate.json", 
+          {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}, 
+          'termination' => termination_params}))
       end
 
       def self.reactivate(id)
-        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true', 'termination_date' => nil}}))
+        create_from_response(put("/v2/companies/#{id}/reactivate.json", {'company' => {'account_terminated' => 'false', 'is_active' => 'true','status' => 'active', 'termination_date' => nil}}))
       end
 
       def self.scotty_info(id)
