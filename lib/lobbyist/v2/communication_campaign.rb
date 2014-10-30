@@ -7,7 +7,7 @@ module Lobbyist
         :last_run_date, :call_to_action_tracking, :created_at, :updated_at, :completed, :in_process
 
       def self.list(params = {})
-        create_collection_from_response(get("/v2/campaigns.json", params = {}))
+        create_collection_from_response(get("/v2/campaigns.json", params))
       end
 
       def self.results(id, params = {})
