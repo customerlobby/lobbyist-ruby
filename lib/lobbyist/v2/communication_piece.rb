@@ -8,7 +8,7 @@ module Lobbyist
       :tracking_status, :delivered_at, :created_at, :updated_at
 
       def self.list(id, params = {})
-        create_collection_from_response(get("/v2/iterations/#{id}/communications.json", params = {}))
+        create_collection_from_response(get("/v2/iterations/#{id}/communications.json", params))
       end
 
     end
