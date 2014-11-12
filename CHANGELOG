@@ -1,4 +1,6 @@
-=== 0.5.17 2014-10-16
+* Updated SocialNetworkProfile and SocialNetworkPage proxy models.
+
+=== 0.5.17 2014-10-15
 
 * Adding MemberInsightMetrics proxy model.
 
