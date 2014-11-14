@@ -1,6 +1,5 @@
 module Lobbyist
   module V2
-
     class CommunicationPiece < Lobbyist::V2::Base
       attr_accessor :id, :communication_campaign_id, :campaign_iteration_id, :customer_first_name, 
       :customer_last_name, :customer_address1, :customer_address2, :customer_state, 
@@ -12,6 +11,5 @@ module Lobbyist
       end
 
     end
-
   end
 end
