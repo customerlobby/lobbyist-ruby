@@ -3,7 +3,7 @@ module Lobbyist
     class PrintBatchJob < Lobbyist::V2::Base
 
       def self.communication_pieces(id, params={})
-        response = get("/v2/print-jobs/#{id}/communication-pieces.json", params)
+        response = get("v2/communication-pieces/#{id}/print_job.json", params)
         create_collection_from_response(response)
       end
     end
