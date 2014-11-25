@@ -6,7 +6,7 @@ module Lobbyist
       attr_accessor :status, :sent_count, :revenue_generated, :roi, :amount_spent, :created_at, :updated_at
 
       def self.list(campaign_id, params = {})
-        create_collection_from_response(get("/v2/campaigns/#{campaign_id}/iterations.json", params))
+        create_collection_from_response(get("/v2/campaigns/#{campaign_id}/campaign-iterations.json", params))
       end
     end
 
