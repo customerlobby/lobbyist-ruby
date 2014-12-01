@@ -1,3 +1,5 @@
+* Added CommunicationCampaign create method.
+
 === 0.5.18 2014-11-12
 
 * Updated SocialNetworkProfile and SocialNetworkPage proxy models.

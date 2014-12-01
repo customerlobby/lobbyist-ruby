@@ -14,6 +14,10 @@ module Lobbyist
         create_from_response(get("/v2/campaigns/#{id}.json", params))
       end
 
+      def self.create(company_id, params)
+        create_from_response(post("/v2/campaigns.json", {company_id: company_id, communication_campaign: params}))
+      end
+
       def self.update(id, params)
         create_from_response(put("/v2/campaigns/#{id}.json", {communication_campaign: params}))
       end
