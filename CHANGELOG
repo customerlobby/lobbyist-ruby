@@ -1,5 +1,5 @@
+* Added temp_s3_url attribute for FrontTemplate objects.
 * Added FrontTemplate proxy model.
-* Added CategoryDefaultFrontTemplate proxy model.
 * Added CommunicationCampaign create method.
 
 === 0.5.18 2014-11-12
