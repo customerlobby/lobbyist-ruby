@@ -2,7 +2,7 @@ module Lobbyist
   module V2
     
     class OfferTemplate < Lobbyist::V2::Base
-      attr_accessor :id, :communication_campaign_id, :upper_bound, :lower_bound, :content, :status, :sequence, :created_at, :updated_at
+      attr_accessor :id, :communication_campaign_id, :upper_bound, :lower_bound, :content, :status, :created_at, :updated_at
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/offer-templates.json', params))
