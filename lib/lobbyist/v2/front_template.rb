@@ -2,7 +2,7 @@ module Lobbyist
   module V2
     
     class FrontTemplate < Lobbyist::V2::Base
-      attr_accessor :id, :communication_campaign_id, :image_filename, :message_position, :content, :status, :sequence, :created_at, :updated_at
+      attr_accessor :id, :communication_campaign_id, :image_filename, :temp_s3_url, :message_position, :content, :status, :sequence, :created_at, :updated_at
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/front-templates.json', params))

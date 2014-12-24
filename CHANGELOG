@@ -1,3 +1,7 @@
+=== 0.5.19 2014-12-22
+
+* Added AlgorithmTestRun and AlgorithmTestRunContact proxy models.
+* Added temp_s3_url attribute for FrontTemplate objects.
 * Added FrontTemplate proxy model.
 * Added CommunicationCampaign create method.
 
