@@ -1,3 +1,5 @@
+* Added CsvUpload index and process_file methods
+
 === 0.5.19 2014-12-22
 
 * Added AlgorithmTestRun and AlgorithmTestRunContact proxy models.
