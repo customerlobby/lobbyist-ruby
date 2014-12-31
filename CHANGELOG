@@ -1,3 +1,4 @@
+* Added recommended_budget to V2::CommunicationCampaign proxy model.
 * Removed unneeded attribute from V2::FrontTemplate.
 
 === 0.5.19 2014-12-22
