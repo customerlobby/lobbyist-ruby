@@ -14,7 +14,7 @@ module Lobbyist
       end
 
       def self.process_file(id, params = {})
-        create_from_response(put("/v2/csv_uploads/#{id}/process-file.json", params))
+        create_from_response(put("/v2/csv-uploads/#{id}/process-file.json", params))
       end
     end
   end
