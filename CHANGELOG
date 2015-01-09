@@ -1,3 +1,9 @@
+=== 0.5.20 2015-01-07
+
+* Added recommended_budget to V2::CommunicationCampaign proxy model.
+* Removed unneeded attribute from V2::FrontTemplate.
+* Added CsvUpload index and process_file methods
+
 === 0.5.19 2014-12-22
 
 * Added AlgorithmTestRun and AlgorithmTestRunContact proxy models.
