@@ -2,9 +2,10 @@ module Lobbyist
   module V2
 
     class CommunicationCampaign < Lobbyist::V2::Base
-      attr_accessor :id, :company_id, :name, :description, :cost_per_postcard, :monthly_budget, :recommended_budget, :minimum_roi, 
-        :accelerator, :min_days_between_mailings, :ignore_thirty_day_bucket, :status, :campaign_type, 
-        :last_run_date, :call_to_action_tracking, :created_at, :updated_at, :completed, :in_process
+      attr_accessor :id, :company_id, :name, :description, :cost_per_postcard, :threshold, :monthly_budget, :recommended_budget, :minimum_roi, 
+        :accelerator, :transaction_grouping_interval, :min_days_between_mailings, :ignore_thirty_day_bucket, :status, :campaign_type, 
+        :last_run_date, :run_count, :call_to_action_tracking, :include_commercial_customers, :services_offered, :logo_filename, :created_at, :updated_at,
+        :mail_delay_offset, :send_followup_email, :completed, :in_process
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/campaigns.json", params))
