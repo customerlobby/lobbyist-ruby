@@ -1,3 +1,4 @@
+* Added feature fields to AccountLevel.
 * Added new fields to the Communication Campaign.
 * Updated the CommunicationCampaign proxy model attributes.
 * Added transaction_grouping_interval to AlgorithmTestRun proxy model.
