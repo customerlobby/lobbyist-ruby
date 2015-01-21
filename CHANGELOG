@@ -1,3 +1,4 @@
+* Added MemberInsightMetrics fields: recommended_budget and top_five_customers
 * Added feature fields to AccountLevel.
 * Added new fields to the Communication Campaign.
 * Updated the CommunicationCampaign proxy model attributes.
