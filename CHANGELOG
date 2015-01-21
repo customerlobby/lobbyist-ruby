@@ -1,5 +1,6 @@
 === 0.5.21 2015-01-21
 
+* Removed sequence from front_template, category_default_offer_template, marketing_message_template
 * Added MemberInsightMetrics fields: recommended_budget and top_five_customers
 * Added feature fields to AccountLevel.
 * Added new fields to the Communication Campaign.
