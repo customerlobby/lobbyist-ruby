@@ -1,3 +1,14 @@
+=== 0.5.21 2015-01-21
+
+* Added payment related fields to CompanySubscription proxy model.
+* Removed sequence from front_template, category_default_offer_template, marketing_message_template
+* Added MemberInsightMetrics fields: recommended_budget and top_five_customers
+* Added feature fields to AccountLevel.
+* Added new fields to the Communication Campaign.
+* Updated the CommunicationCampaign proxy model attributes.
+* Added transaction_grouping_interval to AlgorithmTestRun proxy model.
+* Added new algorithm test result fields.
+
 === 0.5.20 2015-01-07
 
 * Added recommended_budget to V2::CommunicationCampaign proxy model.

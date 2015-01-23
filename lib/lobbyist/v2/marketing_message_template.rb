@@ -2,7 +2,7 @@ module Lobbyist
   module V2
     
     class MarketingMessageTemplate < Lobbyist::V2::Base
-      attr_accessor :id, :communication_campaign_id, :content, :status, :sequence, :created_at, :updated_at
+      attr_accessor :id, :communication_campaign_id, :content, :status, :lower_bound, :upper_bound, :created_at, :updated_at
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/marketing-message-templates.json', params))
