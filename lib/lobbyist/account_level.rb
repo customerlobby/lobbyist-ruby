@@ -2,7 +2,8 @@ module Lobbyist
   class AccountLevel < Lobbyist::Base
     
     attr_accessor :account_class_id, :account_class, :description, :call_credit_cost, :default_promo_id, :enabled, :monthly_call_credit_allowance,
-    :ccall_credits_accumulate, :monthly_handwritten_credit_allowance, :handwritten_credits_accumulate, :conversion_handwritten_credit_grant, :conversion_ccall_credit_grant
+    :ccall_credits_accumulate, :monthly_handwritten_credit_allowance, :handwritten_credits_accumulate, :conversion_handwritten_credit_grant, :conversion_ccall_credit_grant,
+    :cost_per_postcard, :customer_count_lower_bound, :customer_count_upper_bound
       
     def default_promo
       @default_promo
