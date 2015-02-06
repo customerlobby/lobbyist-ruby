@@ -2,7 +2,7 @@ module Lobbyist
   class Promo < Lobbyist::Base
     
     attr_accessor :promo_id, :account_level_id, :account_class, :promo_code, :promo_description, :is_current, :is_visible, :setup_fee, :monthly_fee, 
-    :first_month_fee, :split_activation_fee, :days_available
+    :first_month_fee, :split_activation_fee, :days_available, :cost_per_postcard, :customer_count_lower_bound, :customer_count_upper_bound
     
 
     def self.create(params = {})
