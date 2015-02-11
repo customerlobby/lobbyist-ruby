@@ -64,17 +64,17 @@ describe Lobbyist::Company do
   
   def params
     {
-      'company_name'        => 'API Created',
-      'company_description' => 'This company is a test created by the API.',
-      'address1'            => '209 Flax Street',
-      'city'                => 'Testville',
-      'state'               => 'Texas',
-      'zip'                 => '43987',
-      'phone'               => '999-777-6666',
-      'website'             => 'http://www.nowhere.com',
-      'abbreviated_name'    => 'api-created',
-      'creation_date'       => Time.now.to_s,
-      'account_class'       => 'internal'
+      'company_name'          => 'API Created',
+      'company_description'   => 'This company is a test created by the API.',
+      'address1'              => '209 Flax Street',
+      'city'                  => 'Testville',
+      'state'                 => 'Texas',
+      'zip'                   => '43987',
+      'phone'                 => '999-777-6666',
+      'website'               => 'http://www.nowhere.com',
+      'abbreviated_name'      => 'api-created',
+      'free_trial_start_date' => Time.now.to_s,
+      'account_class'         => 'internal'
     }
   end
   
