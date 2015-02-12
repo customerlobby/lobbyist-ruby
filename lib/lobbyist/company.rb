@@ -104,7 +104,7 @@ module Lobbyist
     end
     
     def self.reactivate(id, params = {})
-      create_from_response(put("/v1/companies/#{id}/reactivate.json", params.slice(:billing,:card,:company,:company_id)))
+      create_from_response(put("/v1/companies/#{id}/reactivate.json", params.slice(:billing,:card,:company,:company_id,:account_level_transition)))
     end
   end
 end
