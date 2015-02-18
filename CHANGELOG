@@ -1,3 +1,5 @@
+=== 0.5.23 2015-02-18
+
 * Updated parameter lists when changing a company account level.
 * Renamed Company.creation_date to freetrial_start_date for both V1 and V2.
 
