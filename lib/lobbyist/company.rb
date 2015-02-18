@@ -3,7 +3,7 @@ module Lobbyist
 
     attr_accessor :company_id, :enterprise_id, :account_level_id, :company_name, :company_description,
       :address1, :address2, :city, :state, :zip, :latitude, :longitude, :timezone, :formatted_address, :phone, :phone_ext,
-      :website,:is_active, :abbreviated_name, :free_trial_start_date, :signup_admin_id, :signup_ip_addr,
+      :website,:is_active, :abbreviated_name, :freetrial_start_date, :signup_admin_id, :signup_ip_addr,
       :account_terminated, :termination_date, :activation_code, :account_class, :promo_id,
       :average_score, :admin_notes, :customer_call_notes, :trial_source, :partner_id, :partner_account_id,
       :last_synd_stat_date, :last_credit_grant, :sales_status, :date_live, :country, :user_notes,

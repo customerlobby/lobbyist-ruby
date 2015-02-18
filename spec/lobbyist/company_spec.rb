@@ -73,7 +73,7 @@ describe Lobbyist::Company do
       'phone'                 => '999-777-6666',
       'website'               => 'http://www.nowhere.com',
       'abbreviated_name'      => 'api-created',
-      'free_trial_start_date' => Time.now.to_s,
+      'freetrial_start_date'  => Time.now.to_s,
       'account_class'         => 'internal'
     }
   end

@@ -6,7 +6,7 @@ module Lobbyist
       attr_accessor :id, :company_id, :enterprise_id, :workflow_system_id, :account_level_id
       attr_accessor :company_name, :company_description, :address1, :address2, :city, :state
       attr_accessor :zip, :latitude, :longitude, :timezone, :formatted_address, :phone, :phone_ext
-      attr_accessor :website, :is_active, :abbreviated_name, :free_trial_start_date, :signup_admin_id
+      attr_accessor :website, :is_active, :abbreviated_name, :freetrial_start_date, :signup_admin_id
       attr_accessor :signup_ip_addr, :account_terminated, :termination_date, :activation_code
       attr_accessor :account_class, :promo_id, :average_score, :admin_notes, :customer_call_notes
       attr_accessor :trial_source, :partner_id, :partner_account_id, :last_synd_stat_date
