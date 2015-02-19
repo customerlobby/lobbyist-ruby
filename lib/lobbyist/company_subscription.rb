@@ -14,7 +14,7 @@ module Lobbyist
     end
     
     def self.create(company_id, params = {})
-      create_from_response(post("/v1/company_subscriptions.json", params.slice(:billing,:card,:company,:company_id).merge(company_subscription: {company_id: company_id})))
+      create_from_response(post("/v1/company_subscriptions.json", params.slice(:billing,:card,:company,:company_id,:account_level_transition).merge(company_subscription: {company_id: company_id})))
     end
     
     def self.update(id, params = {})
