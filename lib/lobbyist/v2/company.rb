@@ -106,6 +106,10 @@ module Lobbyist
       def self.scotty_info(id)
         create_from_response(get("/v2/companies/#{id}/scotty_info.json"))
       end
+
+      def self.debit(company_id, amount)
+        create_from_response(post("/v2/companies/#{id}/debit.json"))
+      end
     end
 
   end
