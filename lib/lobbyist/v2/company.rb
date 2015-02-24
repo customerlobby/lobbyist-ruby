@@ -108,7 +108,7 @@ module Lobbyist
       end
 
       def self.debit(company_id, amount)
-        create_from_response(post("/v2/companies/#{id}/debit.json"))
+        create_from_response(post("/v2/companies/#{company_id}/debit.json", {amount: amount}))
       end
     end
 
