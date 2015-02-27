@@ -1,3 +1,6 @@
+* Add V2::Company debit method
+* Add GenericStatus model
+
 === 0.5.23 2015-02-18
 
 * Add account_level_transition parameter to company_subscription.create
