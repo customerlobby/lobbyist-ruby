@@ -1,3 +1,5 @@
+* Added send_postcard_preview attribute to communication_campaign.
+
 === 0.5.23 2015-02-18
 
 * Add account_level_transition parameter to company_subscription.create
