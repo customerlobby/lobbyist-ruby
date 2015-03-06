@@ -10,6 +10,7 @@ module Lobbyist
       attr_accessor :auto_publish_pending_low_score_notification, :auto_email_invitation
       attr_accessor :auto_queue_customer_calls, :syndicate_low_score_reviews, :syndicate_reviews
       attr_accessor :created_at, :updated_at, :wants_invoice_emails, :send_invoice_emails_to
+      attr_accessor :smart_call_queuing
 
       def self.find(company_id, params = {})
         create_from_response(get("/v2/companies/#{company_id}/company_settings.json", params))

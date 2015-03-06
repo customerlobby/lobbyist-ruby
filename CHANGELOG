@@ -1,5 +1,6 @@
 * Add V2::Company debit method
 * Add GenericStatus model
+* Added send_postcard_preview attribute to communication_campaign.
 
 === 0.5.23 2015-02-18
 
