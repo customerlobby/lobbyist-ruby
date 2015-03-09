@@ -1,4 +1,9 @@
 * Added the search method to V2::CommunicationCampaign.
+* Added send_postcard_preview attribute to communication_campaign.
+
+=== 0.5.23 2015-02-18
+
+* Add account_level_transition parameter to company_subscription.create
 * Updated parameter lists when changing a company account level.
 * Renamed Company.creation_date to freetrial_start_date for both V1 and V2.
 
