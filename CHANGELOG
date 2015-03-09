@@ -1,3 +1,4 @@
+* Added the search method to V2::CommunicationCampaign.
 * Updated parameter lists when changing a company account level.
 * Renamed Company.creation_date to freetrial_start_date for both V1 and V2.
 
