@@ -27,6 +27,10 @@ module Lobbyist
       def self.results(id, params = {})
         create_from_response(get("/v2/campaigns/#{id}/results.json", params))
       end
+
+      def self.search(params = {})
+        create_from_response(get("/v2/campaigns/search.json", params))
+      end
     end
 
   end
