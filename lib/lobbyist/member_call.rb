@@ -7,8 +7,8 @@ module Lobbyist
       create_collection_from_response(get('/v1/member_calls.json', params))
     end
 
-    def self.call_counts_by_attempts
-      create_collection_from_response(get('/v1/member_calls/call_counts_by_attempts.json'))
+    def self.call_counts_by_priority
+      create_collection_from_response(get('/v1/member_calls/call_counts_by_priority.json'))
     end
 
     def self.filter(params={})
