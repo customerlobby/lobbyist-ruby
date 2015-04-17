@@ -10,6 +10,11 @@ module Lobbyist
         create_from_response(response)
       end
 
+      def self.mrr_summary(admin_user_id)
+        response = get("/v2/account-managers/#{admin_user_id}/mrr-summary.json")
+        create_from_response(response)
+      end
+
     end
   end
 end
