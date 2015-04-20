@@ -1,3 +1,4 @@
+* Added MonthlyRecurringRevenues proxy model.
 * Renamed call_counts_by_attempt to call_counts_by_priority.
 * Added priority to MemberCall proxy model.
 
