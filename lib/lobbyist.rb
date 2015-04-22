@@ -137,6 +137,7 @@ require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
 require 'lobbyist/v2/campaign_iteration'
+require 'lobbyist/v2/account_manager'
 
 module Lobbyist
 
