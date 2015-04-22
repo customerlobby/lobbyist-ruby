@@ -3,8 +3,8 @@ module Lobbyist
     class AccountManagerTodo < Lobbyist::V2::Base
       attr_accessor :todo_list
 
-      def self.todo_list(admin_user_id)
-        response = get("/v2/account-managers/#{admin_user_id}/todo-list.json")
+      def self.list(admin_user_id)
+        response = get("/v2/account-managers/#{admin_user_id}/todos.json")
         create_from_response(response['items'])
       end
     end
