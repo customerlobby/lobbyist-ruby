@@ -1,4 +1,6 @@
 * Added MonthlyRecurringRevenues proxy model.
+* added V2::AccountManagerTodo todo_list method
+* added V2::AccountManager member_call_summary method
 * Renamed call_counts_by_attempt to call_counts_by_priority.
 * Added priority to MemberCall proxy model.
 
