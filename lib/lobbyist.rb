@@ -72,6 +72,8 @@ require 'lobbyist/workflow_system'
 # Library V2
 require 'lobbyist/v2/base'
 require 'lobbyist/v2/account_level'
+require 'lobbyist/v2/account_manager_metrics'
+require 'lobbyist/v2/account_manager'
 require 'lobbyist/v2/activity_summary'
 require 'lobbyist/v2/algorithm_test_run_contact'
 require 'lobbyist/v2/algorithm_test_run'
@@ -136,8 +138,6 @@ require 'lobbyist/v2/social_network_profile'
 require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
-require 'lobbyist/v2/campaign_iteration'
-require 'lobbyist/v2/account_manager'
 
 module Lobbyist
 

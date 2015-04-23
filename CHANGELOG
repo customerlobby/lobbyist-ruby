@@ -1,3 +1,4 @@
+* Added AccountManagerMetrics proxy model.
 * Added MonthlyRecurringRevenues proxy model.
 * added V2::AccountManagerTodo todo_list method
 * added V2::AccountManager member_call_summary method
