@@ -1,3 +1,4 @@
+* Added filtered_list method to Company proxy model.
 * Added AccountManagerMetrics proxy model.
 * Added MonthlyRecurringRevenues proxy model.
 * added V2::AccountManagerTodo todo_list method

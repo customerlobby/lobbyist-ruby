@@ -110,6 +110,10 @@ module Lobbyist
       def self.debit(company_id, campaign_iteration_id, amount)
         create_from_response(post("/v2/companies/#{company_id}/debit.json", {campaign_iteration_id: campaign_iteration_id, amount: amount}))
       end
+
+      def self.filtered_list(params = {})
+        create_collection_from_response(get('/v2/companies/filtered-list.json', params))
+      end
     end
 
   end
