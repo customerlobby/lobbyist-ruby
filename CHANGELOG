@@ -1,3 +1,4 @@
+* Added MemberCall create method for V1.
 * Added filtered_list method to Company proxy model.
 * Added AccountManagerMetrics proxy model.
 * Added MonthlyRecurringRevenues proxy model.

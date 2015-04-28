@@ -23,6 +23,10 @@ module Lobbyist
       create_from_response(get("/v1/member_calls/#{id}.json"))
     end
 
+    def self.create(params = {})
+      create_from_response(post("/v1/member_calls.json", {'member_call' => params}))
+    end
+
     def self.update(id, params = {})
       create_from_response(put("/v1/member_calls/#{id}.json", {'member_call' => params}))
     end
