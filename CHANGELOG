@@ -1,3 +1,4 @@
+* Added V2::AccountManagerTodo todo_list create method
 * Added MemberCall create method for V1.
 * Added filtered_list method to Company proxy model.
 * Added AccountManagerMetrics proxy model.
