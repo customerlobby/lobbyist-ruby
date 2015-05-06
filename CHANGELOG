@@ -1,3 +1,7 @@
+=== 0.5.27
+
+* Fixed V2 require statement for category_default_offer_template.
+
 === 0.5.26 2015-05-06
 
 * Updated V2 require statements to include all V2 classes.
