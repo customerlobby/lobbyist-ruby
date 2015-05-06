@@ -1,3 +1,9 @@
+=== 0.5.26 2015-05-06
+
+* Updated V2 require statements to include all V2 classes.
+
+=== 0.5.25 2015-04-30
+
 * Added V2::AccountManagerTodo todo_list create method
 * Added MemberCall create method for V1.
 * Added filtered_list method to Company proxy model.
