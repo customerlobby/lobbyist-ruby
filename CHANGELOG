@@ -1,3 +1,5 @@
+=== 0.5.28
+* added description, abbreviated_name, latitude, longitude fields to enterprise
 * Fixed mispelling of calendared attributes.
 * Added update and delete methods to V2::AccountManagerTodo.
 
