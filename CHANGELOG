@@ -1,5 +1,8 @@
 === 0.5.29
-* added enable_reviews_page to enterprise_settings
+
+* Added Enterprise review list method to V2::Review
+* Added count attributes to enterprise.
+
 === 0.5.28
 * added description, abbreviated_name, latitude, longitude fields to enterprise
 * Fixed mispelling of calendared attributes.
