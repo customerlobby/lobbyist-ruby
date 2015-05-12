@@ -1,3 +1,7 @@
+=== 0.5.29
+
+* Added Enterprise review list method to V2::Review
+
 === 0.5.28
 * added description, abbreviated_name, latitude, longitude fields to enterprise
 * Fixed mispelling of calendared attributes.
