@@ -1,3 +1,13 @@
+=== 0.5.29
+
+* Added Enterprise review list method to V2::Review
+* Added count attributes to enterprise.
+
+=== 0.5.28
+* added description, abbreviated_name, latitude, longitude fields to enterprise
+* Fixed mispelling of calendared attributes.
+* Added update and delete methods to V2::AccountManagerTodo.
+
 === 0.5.27
 
 * Fixed V2 require statement for category_default_offer_template.
