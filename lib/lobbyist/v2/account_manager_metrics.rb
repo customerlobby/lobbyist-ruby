@@ -10,6 +10,10 @@ module Lobbyist
         create_from_response(get("/v2/account-manager-metrics/#{id}/company-filter-counts.json", params))
       end
 
+      def self.company_status_counts(params = {})
+        create_collection_from_response(get("/v2/account-manager-metrics/company-status-counts", params))
+      end
+
       def self.revenue_by_account_manager
         response = get("/v2/account-manager-metrics/revenue-by-account-manager.json")
         create_from_response(response)

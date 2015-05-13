@@ -1,3 +1,5 @@
+* Added company_status_counts call to the V2::AccountManagerMetrics class.
+
 === 0.5.29
 
 * Added Enterprise review list method to V2::Review
