@@ -19,6 +19,9 @@ module Lobbyist
         create_from_response(response)
       end
 
+      def self.activity_by_account_manager(params = {})
+        create_collection_from_response(get("/v2/account-manager-metrics/activity-by-account-manager", params))
+      end
     end
 
   end
