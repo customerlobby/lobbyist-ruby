@@ -22,6 +22,10 @@ module Lobbyist
       def self.activity_by_account_manager(params = {})
         create_collection_from_response(get("/v2/account-manager-metrics/activity-by-account-manager", params))
       end
+
+      def self.member_services_totals(params = {})
+        create_from_response(get("/v2/account-manager-metrics/member-services-totals", params))
+      end
     end
 
   end

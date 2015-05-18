@@ -1,3 +1,4 @@
+* Added member_services_totals call the the V2::AccountManagerMetrics class.
 * Added activity_by_account_manager call to the V2::AccountManagerMetrics class.
 * Added company_status_counts call to the V2::AccountManagerMetrics class.
 
