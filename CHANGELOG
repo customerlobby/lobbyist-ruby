@@ -1,3 +1,6 @@
+=== 0.5.31
+* added status and generated_at to MemberInsightMetrics
+=== 0.5.30
 === 0.5.29
 
 * Added Enterprise review list method to V2::Review
