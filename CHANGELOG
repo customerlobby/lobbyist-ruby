@@ -1,3 +1,6 @@
+=== 0.5.32
+* added use_closed_invoices to ScottySetting
+
 === 0.5.31
 * added status and generated_at to MemberInsightMetrics
 === 0.5.30
