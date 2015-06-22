@@ -1,3 +1,8 @@
+=== 0.5.33
+
+* Added create method for V2::FrontTemplate.
+* Added new company_id and custom_image attributes to V2::FrontTemplate.
+
 === 0.5.32
 * added use_closed_invoices to ScottySetting
 
