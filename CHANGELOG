@@ -1,3 +1,13 @@
+=== 0.5.32
+
+* added use_closed_invoices to ScottySetting
+
+=== 0.5.31
+
+* added status and generated_at to MemberInsightMetrics
+
+=== 0.5.30
+
 * Added member_services_totals call the the V2::AccountManagerMetrics class.
 * Added activity_by_account_manager call to the V2::AccountManagerMetrics class.
 * Added company_status_counts call to the V2::AccountManagerMetrics class.
