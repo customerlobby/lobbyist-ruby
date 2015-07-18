@@ -12,7 +12,10 @@ module Lobbyist
       def self.find(id, params = {})
         create_from_response(get("/v2/categories/#{id}.json", params))
       end
-  
+
+      def self.create(params = {})
+        create_from_response(post("v2/categories", params))
+      end
     end
     
   end
