@@ -16,6 +16,10 @@ module Lobbyist
       def self.create(params = {})
         create_from_response(post("v2/categories", params))
       end
+
+      def self.update(id, params = {})
+        create_from_response(put("/v2/categories/#{id}.json", params))
+      end
     end
     
   end
