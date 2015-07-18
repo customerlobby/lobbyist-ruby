@@ -8,6 +8,10 @@ module Lobbyist
       def self.list(params = {})
         create_collection_from_response(get('/v2/categories.json', params))
       end
+
+      def self.find(id, params = {})
+        create_from_response(get("/v2/categories/#{id}.json", params))
+      end
   
     end
     
