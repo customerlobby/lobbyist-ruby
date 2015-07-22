@@ -14,8 +14,20 @@ If you want to build the gem from source:
 ## Documentation
 
   TODO: Get Documentation URL.
-  
+
   Please see ### API DOCUMENTATION URL ### for up-to-date documentation.
+
+### Usage Note
+
+  If you need to check for the presence of an object returned from Lobbyist you will need
+  to check for the presence of an actual attribute. For example:
+
+  ```ruby
+  company = Lobbyist::V2::Company.find(10000)
+  company.present? # This will always be true because 'company' is a valid Lobbyist object.
+  # This is probably what you want. It checks that data was actually returned from the API.
+  company.company_id.present?
+  ```
 
 ## Requirements
 
