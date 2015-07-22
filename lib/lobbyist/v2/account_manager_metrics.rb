@@ -3,7 +3,7 @@ module Lobbyist
 
     class AccountManagerMetrics < Lobbyist::V2::Base
       attr_accessor :all_count, :active_count, :inactive_count, :terminated_count, :pending_termination_count
-      attr_accessor :on_hold_count, :skipped_payment_count, :direct_connect_issues_count, :first_call_count
+      attr_accessor :declined_count, :skipped_payment_count, :direct_connect_issues_count, :first_call_count
       attr_accessor :calendared_today_count, :not_calendared_count, :account_managers
 
       def self.company_filter_counts(id, params = {})
@@ -30,4 +30,3 @@ module Lobbyist
 
   end
 end
-

@@ -1,3 +1,8 @@
+
+=== 0.5.34
+* added rank to AccountLevel 
+* Renamed on hold count to declined count for Account Manager metrics.
+
 === 0.5.33
 
 * Added create method for V2::FrontTemplate.
@@ -459,7 +464,7 @@
 
 === 0.2.11 2013-06-12
 
-* Adding a unsubscribe method to Contact 
+* Adding a unsubscribe method to Contact
 
 === 0.2.10 2013-06-10
 
