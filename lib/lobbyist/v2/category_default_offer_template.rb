@@ -20,8 +20,8 @@ module Lobbyist
         create_from_response(put("/v2/categories/#{category_id}/category_default_offer_templates/#{id}.json", params))
       end
 
-      def self.destroy(category_id, id, params = {})
-        create_from_response(delete("/v2/categories/#{category_id}/category_default_offer_templates/#{id}.json", params))
+      def self.destroy(category_id, id)
+        create_from_response(delete("/v2/categories/#{category_id}/category_default_offer_templates/#{id}.json"))
       end
 
     end
