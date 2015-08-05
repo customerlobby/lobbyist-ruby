@@ -1,3 +1,5 @@
+=== 0.5.35
+* added email, phone_alt, phone_mobile, phone_daytime, name, admin_name to V2::CustomerCall
 
 === 0.5.34
 * added rank to AccountLevel 
