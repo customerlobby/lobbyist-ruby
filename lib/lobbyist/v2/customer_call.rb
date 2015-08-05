@@ -5,6 +5,7 @@ module Lobbyist
       attr_accessor :id, :company_id, :contact_id, :customer_call_credit_id, :admin_user_id, :status
       attr_accessor :attempts, :notes, :last_call_date, :next_call_date, :completed_at
       attr_accessor :created_at, :updated_at
+      attr_accessor :email, :phone_alt, :phone_mobile, :phone_daytime, :full_name, :admin_name
 
       def self.list(company_id, params = {})
         create_collection_from_response(get("/v2/companies/#{company_id}/customer_calls.json", params))

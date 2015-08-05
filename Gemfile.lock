@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.3.36)
+    lobbyist-ruby (0.5.35)
       activesupport
       faraday
+      faraday_middleware
       multi_json
 
 GEM
