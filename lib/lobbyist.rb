@@ -146,6 +146,7 @@ require 'lobbyist/v2/social_network_profile'
 require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
+require 'lobbyist/v2/admin/campaign_iteration'
 
 module Lobbyist
 
