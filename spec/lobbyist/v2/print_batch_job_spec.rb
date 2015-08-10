@@ -1,0 +1,21 @@
+require 'spec_helper'
+
+describe Lobbyist::V2::PrintBatchJob do
+  before(:all) do
+    Lobbyist.api_base = "http://localhost:3000"
+    Lobbyist.api_key  = "jQuchd091cns"
+    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
+
+    @headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
+  end
+
+  describe "#list" do
+    it 'should return list of print_batch_jobs' do
+      body = { count: 1, items: [{ print_batch_jobs: { filename: 'abc', status: 'abc', sent_at: Time.now } }] }
+      stub_get("/v2/print_batch_jobs.json").with(:headers => @headers).to_return(body: body.to_json, status: 200)
+
+      print_batch_jobs = Lobbyist::V2::PrintBatchJob.list
+      print_batch_jobs.elements.should_not be_blank
+    end
+  end
+end
