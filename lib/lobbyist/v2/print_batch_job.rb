@@ -4,7 +4,7 @@ module Lobbyist
       attr_accessor :filename, :status, :sent_at
 
       def self.list(params = {})
-        create_collection_from_response(get('/v2/print_batch_jobs.json', params))
+        create_collection_from_response(get('/v2/print-batch-jobs.json', params))
       end
 
       def self.communication_pieces(id, params={})
