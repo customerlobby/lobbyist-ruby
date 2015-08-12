@@ -1,3 +1,6 @@
+=== 0.5.37
+* fixed bug with handling params of customer_transaction list method.
+
 === 0.5.36
 * added CRUD operations to CategoryDefaultOfferTemplate
 
