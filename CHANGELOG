@@ -1,3 +1,6 @@
+=== 0.5.36
+* added CRUD operations to CategoryDefaultOfferTemplate
+
 === 0.5.35
 * added email, phone_alt, phone_mobile, phone_daytime, name, admin_name to V2::CustomerCall
 
