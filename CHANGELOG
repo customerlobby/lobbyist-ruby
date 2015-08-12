@@ -1,5 +1,6 @@
 === 0.5.35
 
+* Added Data Upload update method.
 * Added Direct Connect Contact and Transaction proxy models.
 
 === 0.5.34
