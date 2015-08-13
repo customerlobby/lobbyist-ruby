@@ -11,5 +11,15 @@ module Lobbyist
       @page = page
     end
 
+    def sum(column, key = nil, value = nil)
+      begin
+        @elements.inject(0) do |sum, element|
+          num = key && element.send(key) != value ? 0 : Float(element.send(column))
+          sum + num
+        end
+      rescue
+        nil
+      end
+    end
   end
 end
