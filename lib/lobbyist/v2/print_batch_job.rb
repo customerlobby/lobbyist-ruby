@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class PrintBatchJob < Lobbyist::V2::Base
-      attr_accessor :filename, :status, :sent_at
+      attr_accessor :id, :filename, :status, :sent_at, :created_at
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/print-batch-jobs.json', params))
