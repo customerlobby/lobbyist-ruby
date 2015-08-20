@@ -1,3 +1,6 @@
+=== 0.5.38
+* Updated fields for PrintBatchJob
+
 === 0.5.37
 * fixed bug with handling params of customer_transaction list method.
 
