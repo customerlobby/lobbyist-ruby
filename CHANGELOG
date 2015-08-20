@@ -1,3 +1,6 @@
+=== 0.5.41
+* Added new invitation_delay_interval attributes to V2::CompanySetting class.
+
 === 0.5.40
 * Add sum functionality to Collection
 
