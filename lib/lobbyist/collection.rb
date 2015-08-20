@@ -11,5 +11,22 @@ module Lobbyist
       @page = page
     end
 
+    def sum(column, conditions = {})
+      selected = conditions.blank? ? @elements :
+        @elements.select { |element| valid_element? element, conditions }
+
+      selected.inject(0) do |sum, element|
+        num = element.send(column).to_i
+        sum + Float(num)
+      end
+    end
+
+    private
+
+    def valid_element?(element, conditions)
+      conditions.each do |key, value|
+        return false if element.send(key) != value
+      end
+    end
   end
 end
