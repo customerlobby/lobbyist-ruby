@@ -1,3 +1,6 @@
+=== 0.5.39
+* Added V2::CampaignIteration
+
 === 0.5.38
 * Updated fields for PrintBatchJob
 
