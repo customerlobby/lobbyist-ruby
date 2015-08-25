@@ -10,7 +10,7 @@ describe Lobbyist::V2::Admin::CampaignIteration do
 
   describe "#list" do
     it 'should return list of contracts' do
-      stub_get('/v2/admin/campaign_iterations.json').with( header: @headers ).to_return(body: { items: [] }.to_json, status: 200)
+      stub_get('/v2/admin/campaign-iterations.json').with( header: @headers ).to_return(body: { items: [] }.to_json, status: 200)
 
       offer_template = Lobbyist::V2::Admin::CampaignIteration.list
       offer_template.class.should eq Lobbyist::Collection
