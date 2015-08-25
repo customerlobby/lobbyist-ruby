@@ -1,3 +1,6 @@
+=== 0.5.43
+* Added V2::Admin::CommunicationPiece
+
 === 0.5.42
 * Change campaign_iterations URL to hyphen from underscore.
 
