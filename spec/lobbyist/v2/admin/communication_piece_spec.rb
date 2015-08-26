@@ -21,6 +21,7 @@ describe Lobbyist::V2::Admin::CommunicationPiece do
     it { should respond_to :customer_state }
     it { should respond_to :customer_zip }
     it { should respond_to :status }
+    it { should respond_to :verification_errors }
   end
 
   describe ".list" do
