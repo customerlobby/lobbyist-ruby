@@ -1,3 +1,6 @@
+=== 0.5.42
+* Change campaign_iterations URL to hyphen from underscore.
+
 === 0.5.41
 * Added new invitation_delay_interval attributes to V2::CompanySetting class.
 
