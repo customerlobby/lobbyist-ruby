@@ -14,6 +14,11 @@ module Lobbyist
         end
 
         def verification_errors=(attributes)
+          unless attributes
+            @verification_errors = []
+            return
+          end
+
           @verification_errors = attributes.split("\n").from(1).map do |attr|
             attr.from(2)
           end
