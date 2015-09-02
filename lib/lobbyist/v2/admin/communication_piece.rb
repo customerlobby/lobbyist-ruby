@@ -9,6 +9,10 @@ module Lobbyist
           create_collection_from_response(get("/v2/admin/campaign-iterations/#{campaign_iteration_id}/communication-pieces.json", params))
         end
 
+        def self.destroy(campaign_iteration_id, id)
+          create_from_response(delete("/v2/admin/campaign-iterations/#{campaign_iteration_id}/communication-pieces/#{id}.json"))
+        end
+
         def verification_errors
           @verification_errors
         end

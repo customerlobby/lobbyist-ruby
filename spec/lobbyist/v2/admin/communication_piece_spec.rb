@@ -34,6 +34,15 @@ describe Lobbyist::V2::Admin::CommunicationPiece do
     end
   end
 
+  describe "#destroy" do
+    it 'should return a communication piece' do
+      stub_delete('/v2/admin/campaign-iterations/1/communication-pieces/1.json').to_return(body: { communication_piece: { id: 1 } }.to_json, status: 200)
+
+      sut = Lobbyist::V2::Admin::CommunicationPiece.destroy(1,1)
+      sut.should be_a Lobbyist::V2::Admin::CommunicationPiece
+    end
+  end
+
   describe ".verification_error" do
     it "should return an value" do
       sut = Lobbyist::V2::Admin::CommunicationPiece.new({verification_errors: "---\n- sample"})
