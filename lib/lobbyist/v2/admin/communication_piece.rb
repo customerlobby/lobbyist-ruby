@@ -13,6 +13,10 @@ module Lobbyist
           create_from_response(delete("/v2/admin/campaign-iterations/#{campaign_iteration_id}/communication-pieces/#{id}.json"))
         end
 
+        def self.update(campaign_iteration_id, id, params = {})
+          create_from_response(put("/v2/admin/campaign-iterations/#{campaign_iteration_id}/communication-pieces/#{id}.json", params))
+        end
+
         def verification_errors
           @verification_errors
         end

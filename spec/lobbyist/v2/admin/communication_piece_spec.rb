@@ -43,6 +43,17 @@ describe Lobbyist::V2::Admin::CommunicationPiece do
     end
   end
 
+  describe "#update" do
+    it 'should return a communication piece' do
+      params = { communication_piece: { first_name: "sample" } }
+      return_params = { communication_piece: { customer_first_name: "sample" } }
+      stub_put('/v2/admin/campaign-iterations/1/communication-pieces/1.json').with(body: params).to_return(body: return_params.to_json, status: 200)
+
+      communication_piece = Lobbyist::V2::Admin::CommunicationPiece.update(1,1, params)
+      communication_piece.should be_a(Lobbyist::V2::Admin::CommunicationPiece)
+    end
+  end
+
   describe ".verification_error" do
     it "should return an value" do
       sut = Lobbyist::V2::Admin::CommunicationPiece.new({verification_errors: "---\n- sample"})
