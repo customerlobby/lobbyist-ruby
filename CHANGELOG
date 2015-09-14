@@ -1,3 +1,7 @@
+=== 0.5.44
+
+* Added Workflow System Template proxy model.
+
 === 0.5.43
 * Added V2::Admin::CommunicationPiece
 
@@ -26,7 +30,7 @@
 * added email, phone_alt, phone_mobile, phone_daytime, name, admin_name to V2::CustomerCall
 
 === 0.5.34
-* added rank to AccountLevel 
+* added rank to AccountLevel
 * Renamed on hold count to declined count for Account Manager metrics.
 
 === 0.5.33
