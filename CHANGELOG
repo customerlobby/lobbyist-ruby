@@ -15,6 +15,8 @@
 
 === 0.5.38
 * Updated fields for PrintBatchJob
+* Added Data Upload update method.
+* Added Direct Connect Contact and Transaction proxy models.
 
 === 0.5.37
 * fixed bug with handling params of customer_transaction list method.
@@ -26,7 +28,7 @@
 * added email, phone_alt, phone_mobile, phone_daytime, name, admin_name to V2::CustomerCall
 
 === 0.5.34
-* added rank to AccountLevel 
+* added rank to AccountLevel
 * Renamed on hold count to declined count for Account Manager metrics.
 
 === 0.5.33
