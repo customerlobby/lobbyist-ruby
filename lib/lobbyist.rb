@@ -149,6 +149,10 @@ require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
 
+#Library V2/admin/
+require 'lobbyist/v2/admin/campaign_iteration'
+require 'lobbyist/v2/admin/communication_piece'
+
 module Lobbyist
 
   @@api_base = 'http://localhost:3000'

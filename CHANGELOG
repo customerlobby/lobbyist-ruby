@@ -1,5 +1,20 @@
-=== 0.5.38
+=== 0.5.43
+* Added V2::Admin::CommunicationPiece
 
+=== 0.5.42
+* Change campaign_iterations URL to hyphen from underscore.
+
+=== 0.5.41
+* Added new invitation_delay_interval attributes to V2::CompanySetting class.
+
+=== 0.5.40
+* Add sum functionality to Collection
+
+=== 0.5.39
+* Added V2::CampaignIteration
+
+=== 0.5.38
+* Updated fields for PrintBatchJob
 * Added Data Upload update method.
 * Added Direct Connect Contact and Transaction proxy models.
 
