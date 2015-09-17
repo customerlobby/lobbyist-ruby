@@ -149,6 +149,7 @@ require 'lobbyist/v2/workflow_system'
 
 #Library V2/admin/
 require 'lobbyist/v2/admin/campaign_iteration'
+require 'lobbyist/v2/admin/communication_piece'
 
 module Lobbyist
 
