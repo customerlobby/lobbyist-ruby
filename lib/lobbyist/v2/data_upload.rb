@@ -8,6 +8,14 @@ module Lobbyist
         create_from_response(post("/v2/data_uploads.json", params))
       end
 
+      def self.update(id, params = {})
+        create_from_response(put("/v2/data_uploads/#{id}.json", params))
+      end
+
+      def self.find(id, params = {})
+        create_from_response(get("/v2/data_uploads/#{id}.json", params))
+      end
+
       def self.list(params = {})
         create_collection_from_response(get('/v2/data_uploads.json', params))
       end
