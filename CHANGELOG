@@ -1,3 +1,6 @@
+=== 0.5.44
+* Added uuid and destroy/update methods for communication pieces
+
 === 0.5.43
 * Added V2::Admin::CommunicationPiece
 
