@@ -1,6 +1,8 @@
-=== 0.5.44
-
+=== 0.5.45
 * Added Workflow System Template proxy model.
+
+=== 0.5.44
+* Added V2::RecommendedBudget
 
 === 0.5.43
 * Added V2::Admin::CommunicationPiece
@@ -19,6 +21,8 @@
 
 === 0.5.38
 * Updated fields for PrintBatchJob
+* Added Data Upload update method.
+* Added Direct Connect Contact and Transaction proxy models.
 
 === 0.5.37
 * fixed bug with handling params of customer_transaction list method.
