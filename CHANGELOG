@@ -1,3 +1,6 @@
+=== 0.5.46
+* Added Workflow System Template proxy model.
+
 === 0.5.45
 * Added uuid and destroy/update methods for communication pieces
 
