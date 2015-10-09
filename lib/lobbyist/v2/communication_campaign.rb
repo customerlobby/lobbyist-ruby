@@ -32,7 +32,7 @@ module Lobbyist
         create_from_response(get("/v2/campaigns/search.json", params))
       end
 
-      def self.bill(params = {})
+      def self.bill(id, params = {})
         create_from_response(post("/v2/campaigns/#{id}/bill.json", params))
       end
     end
