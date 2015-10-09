@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.5.35)
+    lobbyist-ruby (0.5.47)
       activesupport
       faraday
       faraday_middleware
@@ -56,3 +56,6 @@ DEPENDENCIES
   rspec (>= 2.11)
   simplecov
   webmock
+
+BUNDLED WITH
+   1.10.6
