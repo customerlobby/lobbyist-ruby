@@ -1,3 +1,6 @@
+=== 0.5.48
+* Added requires for Lobbyist::DataUpload and Lobbyist::LiveTrial
+
 === 0.5.47
 * Added repeat_customer_transaction_threshold to AlgorithmTestRun.
 
