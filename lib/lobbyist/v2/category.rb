@@ -2,7 +2,7 @@ module Lobbyist
   module V2
     
     class Category < Lobbyist::V2::Base
-      attr_accessor :id, :name, :default_services, :repeat_marketing_campaign_enabled,
+      attr_accessor :id, :name, :default_services, :repeat_marketing_campaign_enabled, :salesforce_name,
                     :threshold, :min_days_between_mailings, :roi, :accelerator, :mail_delay_offset,
                     :transaction_grouping_interval, :generate_marketing_insights, :created_at, :updated_at
 
