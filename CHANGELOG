@@ -1,3 +1,6 @@
+=== 0.5.48
+* Added salesforce_name attributes to V2::Categories.
+
 === 0.5.47
 * Added repeat_customer_transaction_threshold to AlgorithmTestRun.
 
