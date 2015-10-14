@@ -1,3 +1,7 @@
+=== 0.5.48
+
+* Added Disclaimers and Regulatory Info fields to OfferTemplate and CommunicationCampaign.
+
 === 0.5.47
 * Added repeat_customer_transaction_threshold to AlgorithmTestRun.
 
