@@ -1,3 +1,6 @@
+=== 0.5.53
+* Added class methods list and destroy for V2::CustomerCallCredit
+
 === 0.5.52
 * Added destroy method for V2::CompanyUser
 
