@@ -15,7 +15,7 @@ module Lobbyist
       end
 
       def self.update(id, company_id, params = {})
-        create_from_response(put("/v2/companies/#{company_id}/reviews/#{id}.json", {'review' => params}))
+        create_from_response(put("/v2/companies/#{company_id}/reviews/#{id}.json", {'review' => params[:review], 'contact' => params[:contact]}))
         # create_from_response(put("/v2/companies/#{company_id}/reviews/#{1d}.json", {review: params}))
       end
 
