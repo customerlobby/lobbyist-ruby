@@ -1,3 +1,6 @@
+=== 0.5.52
+* Added destroy method for V2::CompanyUser
+
 === 0.5.51
 * Added contact params for update on V2::Review
 
