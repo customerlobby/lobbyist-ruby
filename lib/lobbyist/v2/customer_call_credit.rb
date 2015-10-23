@@ -2,7 +2,7 @@ module Lobbyist
   module V2
 
     class CustomerCallCredit < Lobbyist::V2::Base
-      attr_accessor :id, :event, :status
+      attr_accessor :id, :event, :status, :company
 
       def self.list(company_id, params = {})
         create_collection_from_response(get("/v2/companies/#{company_id}/customer_call_credits.json", params))
