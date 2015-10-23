@@ -1,5 +1,8 @@
-=== 0.5.51
+=== 0.5.52
 * Added destroy method for V2::CompanyUser
+
+=== 0.5.51
+* Added contact params for update on V2::Review
 
 === 0.5.50
 * Added review_date and customer_full_name to V2::Review
