@@ -6,6 +6,10 @@ module Lobbyist
       attr_accessor :last_requested_at, :current_login_at, :current_login_ip, :last_login_ip
       attr_accessor :status, :role, :created_at, :updated_at
 
+      def name
+        "#{first_name} #{last_name}"
+      end
+
       def self.list(params = {})
         create_collection_from_response(get("/v2/enterprise_users.json", params))
       end
