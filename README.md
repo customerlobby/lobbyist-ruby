@@ -65,7 +65,7 @@ Using the changes in the host project.
 
 Now lobbyist-ruby needs to be updated on the gem host we use with Semaphore, Gemfury.
 
-1. Make a gemfury directoy somewhere in your local drive.
+1. Make a gemfury directory somewhere in your local drive.
 2. Clone the lobbyist-ruby project into the gemfury directory.
 3. Build the gemspec, `gem build lobbyist.gemspec`.
 4. Upload the gem to Gemfury, `curl -F package=@lobbyist-ruby-0.#.##.gem https://push.fury.io/P7qkxZzYFkrcJPGnWV43/customerlobby`. Be sure to replace the version and patch numbers.
