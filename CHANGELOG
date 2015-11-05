@@ -1,3 +1,5 @@
+=== 0.5.55
+* Update accessors for MemberAggregateInsight and MemberInsightMetrics
 === 0.5.54
 * Added class methods list and destroy for V2::CustomerCallCredit
 
