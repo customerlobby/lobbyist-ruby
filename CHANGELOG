@@ -1,9 +1,13 @@
+=== 0.5.57
+* Added name method in V2::EnterpriseUser
+
 === 0.5.56
 
 * Reverting review parameter handling to fix member area bug.
 
 === 0.5.55
 * Update accessors for MemberAggregateInsight and MemberInsightMetrics
+
 === 0.5.54
 * Added class methods list and destroy for V2::CustomerCallCredit
 
