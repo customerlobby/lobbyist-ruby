@@ -21,10 +21,6 @@ module Lobbyist
         create_from_response(put("/v2/social-network-profiles/reset-syndicate", params))
       end
 
-      def self.reset_twitter(params = {})
-        create_from_response(put("/v2/social-network-profiles/reset-twitter", params))
-      end
-
     end
 
   end
