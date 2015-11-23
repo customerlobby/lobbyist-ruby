@@ -17,7 +17,7 @@ describe Lobbyist::V2::PrintBatchJob do
     Lobbyist.api_key  = "jQuchd091cns"
     Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
 
-    @headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
+    @headers = set_v2_headers
   end
 
   describe "#list" do

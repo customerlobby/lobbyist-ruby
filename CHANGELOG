@@ -1,3 +1,9 @@
+=== 0.5.58
+
+* Handle 500 series errors from the API. This will prevent the 'Unparsable Response' errors that
+  are caused by attempting to parse HTML as JSON.
+* Fixed the unit tests.
+
 === 0.5.57
 * Added name method in V2::EnterpriseUser
 

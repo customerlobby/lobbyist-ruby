@@ -11,9 +11,8 @@ describe Lobbyist::V2::Category do
 
   describe "#list" do
     it "should return list of contracts" do
-      headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
       body = { items: [{ category: category_data(1) }, { category: category_data(2) }] }
-      stub_get("/v2/categories.json").with(:headers => headers).to_return(body: body.to_json, status: 200)
+      stub_get("/v2/categories.json").with(:headers => set_v2_headers).to_return(body: body.to_json, status: 200)
 
       categories = Lobbyist::V2::Category.list
       categories.elements.should_not be_blank
@@ -23,16 +22,14 @@ describe Lobbyist::V2::Category do
 
   describe "#find" do
     it "should fail with status 404 given the id is not valid" do
-      headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
       body = {errors: ["Unable to find contact with that id."]}
-      stub_get("/v2/categories/#{999}.json").with(:headers => headers).to_return(body: body.to_json, status: 404)
+      stub_get("/v2/categories/#{999}.json").with(:headers => set_v2_headers).to_return(body: body.to_json, status: 404)
       expect{Lobbyist::V2::Category.find(999)}.to raise_error(Lobbyist::Error::NotFound)
     end
 
     it "should return the category" do
-      headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
       body =  { category: category_data(10) }
-      stub_get("/v2/categories/#{10}.json").with(:headers => headers).to_return(body: body.to_json, status: 200)
+      stub_get("/v2/categories/#{10}.json").with(:headers => set_v2_headers).to_return(body: body.to_json, status: 200)
       category = Lobbyist::V2::Category.find(10)
       category.should be_a(Lobbyist::V2::Category)
       category.name.should eq "xxx"
@@ -41,10 +38,9 @@ describe Lobbyist::V2::Category do
 
   describe "#create" do
     it "should create and return category" do
-      headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
       params = { category: category_data }
       body = { category: category_data(1) }
-      stub_post("/v2/categories").with(:headers => headers, body: params).to_return(body: body.to_json, status: 200)
+      stub_post("/v2/categories").with(:headers => set_v2_headers, body: params).to_return(body: body.to_json, status: 200)
       category = Lobbyist::V2::Category.create(params)
       category.should be_a(Lobbyist::V2::Category)
       category.name.should eq "xxx"
@@ -53,9 +49,8 @@ describe Lobbyist::V2::Category do
 
   describe "#update" do
     it "should update and return category" do
-      headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
       params = { category: category_data(1) }
-      stub_put("/v2/categories/1.json").with(:headers => headers, body: params).to_return(body: params.to_json, status: 200)
+      stub_put("/v2/categories/1.json").with(:headers => set_v2_headers, body: params).to_return(body: params.to_json, status: 200)
       category = Lobbyist::V2::Category.update(1,params)
       category.should be_a(Lobbyist::V2::Category)
       category.name.should eq "xxx"
