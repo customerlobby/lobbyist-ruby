@@ -1,3 +1,6 @@
+=== 0.5.58
+* Make reset method usable for twitter as well as facebook
+
 === 0.5.57
 * Added name method in V2::EnterpriseUser
 
