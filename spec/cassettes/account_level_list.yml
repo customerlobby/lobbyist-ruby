@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/account_levels.json?nonce=2015-12-01+01%3A05%3A39+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="777d34c56ec02e35830f67b1df19c3c6dedfb4564816aeabd8457afbf97d962a"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"b2d8c0129ae1edd559465d9472abd604"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - ac9f54c2b1be186427715865546001d8
+      x-runtime:
+      - '0.042515'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '[{"account_class_id":1,"account_class":"basic","description":"Basic
+        Account","call_credit_cost":"19.0","default_promo_id":25,"enabled":false,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":0,"account_level_id":1,"setup_fee":"199.0","monthly_fee":"49.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":3,"account_class":"business","description":"Business
+        Account","call_credit_cost":"19.0","default_promo_id":24,"enabled":false,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":3,"setup_fee":"199.0","monthly_fee":"99.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":19,"account_class":"complete","description":"Complete
+        Account","call_credit_cost":"19.0","default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":19,"setup_fee":"199.0","monthly_fee":"199.0","cost_per_postcard":"1.0","customer_count_lower_bound":0,"customer_count_upper_bound":30000},{"account_class_id":25,"account_class":"enterprise","description":"Enterprise
+        Account","call_credit_cost":null,"default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":25,"setup_fee":"0.0","monthly_fee":"1999.0","cost_per_postcard":"1.0","customer_count_lower_bound":100000,"customer_count_upper_bound":null},{"account_class_id":5,"account_class":"free","description":"Free
+        Account","call_credit_cost":"19.0","default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":5,"setup_fee":"0.0","monthly_fee":"0.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":7,"account_class":"freetrial","description":"Free
+        Trial","call_credit_cost":"19.0","default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":15,"conversion_ccall_credit_grant":2,"account_level_id":7,"setup_fee":"0.0","monthly_fee":"0.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":9,"account_class":"internal","description":"Internal
+        accounts for testing, training, etc.","call_credit_cost":"0.0","default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":0,"account_level_id":9,"setup_fee":"0.0","monthly_fee":"0.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":23,"account_class":"large","description":"Large
+        Account","call_credit_cost":null,"default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":23,"setup_fee":"0.0","monthly_fee":"999.0","cost_per_postcard":"1.0","customer_count_lower_bound":50000,"customer_count_upper_bound":100000},{"account_class_id":21,"account_class":"medium","description":"Medium
+        Account","call_credit_cost":null,"default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":21,"setup_fee":"199.0","monthly_fee":"299.0","cost_per_postcard":"1.0","customer_count_lower_bound":30000,"customer_count_upper_bound":50000},{"account_class_id":11,"account_class":"member","description":"Member
+        Account","call_credit_cost":"19.0","default_promo_id":85,"enabled":false,"monthly_call_credit_allowance":1,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":1,"account_level_id":11,"setup_fee":"199.0","monthly_fee":"69.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":13,"account_class":"phantom","description":"Hired
+        Review Company","call_credit_cost":"0.0","default_promo_id":null,"enabled":false,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":0,"account_level_id":13,"setup_fee":"0.0","monthly_fee":"0.0","cost_per_postcard":"1.0","customer_count_lower_bound":null,"customer_count_upper_bound":null},{"account_class_id":15,"account_class":"plus","description":"Plus
+        Account","call_credit_cost":"19.0","default_promo_id":120,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":40,"handwritten_credits_accumulate":true,"conversion_handwritten_credit_grant":40,"conversion_ccall_credit_grant":2,"account_level_id":15,"setup_fee":"199.0","monthly_fee":"149.0","cost_per_postcard":"1.0","customer_count_lower_bound":0,"customer_count_upper_bound":30000},{"account_class_id":17,"account_class":"starter","description":"Starter
+        Account","call_credit_cost":"19.0","default_promo_id":null,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"account_level_id":17,"setup_fee":"199.0","monthly_fee":"129.0","cost_per_postcard":"1.0","customer_count_lower_bound":0,"customer_count_upper_bound":30000},{"account_class_id":27,"account_class":"terminated","description":"Terminated
+        Account","call_credit_cost":null,"default_promo_id":null,"enabled":false,"monthly_call_credit_allowance":0,"ccall_credits_accumulate":false,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":0,"account_level_id":27,"setup_fee":"0.0","monthly_fee":"0.0","cost_per_postcard":"0.0","customer_count_lower_bound":null,"customer_count_upper_bound":null}]'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 01:05:39 GMT
+recorded_with: VCR 3.0.0

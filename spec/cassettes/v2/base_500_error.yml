@@ -1,0 +1,330 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/companies/127.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 500
+      message: 
+    headers:
+      content-type:
+      - text/html; charset=utf-8
+      content-length:
+      - '26100'
+      x-request-id:
+      - 2b1b4035a8e13b5cc1f77fa8d2c094a1
+      x-runtime:
+      - '0.364892'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        { background-color: #fff; color: #333; }\n\n    body, p, ol, ul, td {\n      font-family:
+        helvetica, verdana, arial, sans-serif;\n      font-size:   13px;\n      line-height:
+        18px;\n    }\n\n    pre {\n      background-color: #eee;\n      padding: 10px;\n
+        \     font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n    a { color:
+        #000; }\n    a:visited { color: #666; }\n    a:hover { color: #fff; background-color:#000;
+        }\n  </style>\n</head>\n<body>\n\n<h1>\n  NoMethodError in\n  V2/companies#show\n</h1>\n\n<p>\n
+        \ Showing <i>/Users/dave/Projects/api/app/views/v2/companies/show.rabl</i>
+        where line <b>#3</b> raised:\n  <pre><code>undefined method `latest_company_termination&#x27;
+        for #&lt;Company:0x00000109a5db10&gt;</code></pre>\n</p>\n\n<p>Extracted source
+        (around line <b>#3</b>):\n<pre><code>1: object nil\n2: \n3: child(@company)
+        do\n4:   extends &quot;v2/companies/base&quot;\n5:   \n6:   node(:categories)
+        do\n</code></pre></p>\n\n<p></p>\n\n\n<p><code>Rails.root: /Users/dave/Projects/api</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;block&#x27;;;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;block&#x27;;;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;block&#x27;;;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code>app/views/v2/companies/show.rabl:3:in `_app_views_v__companies_show_rabl___2621531824417359231_2218856440&#x27;\napp/controllers/v2/companies_controller.rb:90:in
+        `show&#x27;</code></pre>\n    </div>\n    <div id=\"Framework-Trace\" style=\"display:
+        none;\">\n      <pre><code>activemodel (3.2.18) lib/active_model/attribute_methods.rb:407:in
+        `method_missing&#x27;\nactiverecord (3.2.18) lib/active_record/attribute_methods.rb:149:in
+        `method_missing&#x27;\n(eval):10:in `block (2 levels) in eval_source&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:152:in `call&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:152:in
+        `node&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:114:in `block in compile_settings&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:113:in `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:113:in
+        `compile_settings&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:58:in `block in
+        to_hash&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:248:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:49:in `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:86:in
+        `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:48:in `block in render&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:382:in `cache_results&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:47:in
+        `render&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:124:in `block (2 levels)
+        in merge_engines_into_result&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:123:in
+        `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:123:in `block in merge_engines_into_result&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:119:in `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:119:in
+        `merge_engines_into_result&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:55:in
+        `block in to_hash&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:248:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:49:in `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:86:in
+        `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:101:in `to_dumpable&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:110:in `to_json&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:48:in
+        `block in render&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:382:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:47:in `render&#x27;\nactionpack (3.2.18) lib/action_view/template.rb:145:in
+        `block in render&#x27;\nactivesupport (3.2.18) lib/active_support/notifications.rb:125:in
+        `instrument&#x27;\nactionpack (3.2.18) lib/action_view/template.rb:143:in
+        `render&#x27;\nactionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:47:in
+        `block (2 levels) in render_template&#x27;\nactionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in
+        `block in instrument&#x27;\nactivesupport (3.2.18) lib/active_support/notifications.rb:123:in
+        `block in instrument&#x27;\nactivesupport (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in
+        `instrument&#x27;\nactivesupport (3.2.18) lib/active_support/notifications.rb:123:in
+        `instrument&#x27;\nactionpack (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in
+        `instrument&#x27;\nactionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in
+        `block in render_template&#x27;\nactionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in
+        `render_with_layout&#x27;\nactionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in
+        `render_template&#x27;\nactionpack (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in
+        `render&#x27;\nactionpack (3.2.18) lib/action_view/renderer/renderer.rb:36:in
+        `render_template&#x27;\nactionpack (3.2.18) lib/action_view/renderer/renderer.rb:17:in
+        `render&#x27;\nactionpack (3.2.18) lib/abstract_controller/rendering.rb:110:in
+        `_render_template&#x27;\nactionpack (3.2.18) lib/action_controller/metal/streaming.rb:225:in
+        `_render_template&#x27;\nactionpack (3.2.18) lib/abstract_controller/rendering.rb:103:in
+        `render_to_body&#x27;\nactionpack (3.2.18) lib/action_controller/metal/renderers.rb:28:in
+        `render_to_body&#x27;\nactionpack (3.2.18) lib/action_controller/metal/compatibility.rb:50:in
+        `render_to_body&#x27;\nactionpack (3.2.18) lib/abstract_controller/rendering.rb:88:in
+        `render&#x27;\nactionpack (3.2.18) lib/action_controller/metal/rendering.rb:16:in
+        `render&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in
+        `block (2 levels) in render&#x27;\nactivesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in
+        `block in ms&#x27;\n/Users/dave/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#x27;\nactivesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in
+        `ms&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in
+        `block in render&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in
+        `cleanup_view_runtime&#x27;\nactiverecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in
+        `cleanup_view_runtime&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in
+        `render&#x27;\nactionpack (3.2.18) lib/action_controller/metal/implicit_render.rb:4:in
+        `send_action&#x27;\nactionpack (3.2.18) lib/abstract_controller/base.rb:167:in
+        `process_action&#x27;\nactionpack (3.2.18) lib/action_controller/metal/rendering.rb:10:in
+        `process_action&#x27;\nactionpack (3.2.18) lib/abstract_controller/callbacks.rb:18:in
+        `block in process_action&#x27;\nactivesupport (3.2.18) lib/active_support/callbacks.rb:469:in
+        `_run__610825299418731729__process_action__3000202630342754148__callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `instrument&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action&#x27;\nactiverecord
+        (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/base.rb:121:in `process&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/rendering.rb:45:in `process&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal.rb:203:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal.rb:246:in `block in action&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call&#x27;\njourney
+        (1.0.4) lib/journey/router.rb:68:in `block in call&#x27;\njourney (1.0.4)
+        lib/journey/router.rb:56:in `each&#x27;\njourney (1.0.4) lib/journey/router.rb:56:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in
+        `call&#x27;\nmongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in
+        `block in call&#x27;\nmongoid (3.0.23) lib/mongoid/unit_of_work.rb:39:in `unit_of_work&#x27;\nmongoid
+        (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `call&#x27;\nrack-cors
+        (0.4.0) lib/rack/cors.rb:80:in `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in
+        `call&#x27;\nrack (1.4.7) lib/rack/etag.rb:23:in `call&#x27;\nrack (1.4.7)
+        lib/rack/conditionalget.rb:25:in `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in
+        `call&#x27;\nrack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context&#x27;\nrack
+        (1.4.7) lib/rack/session/abstract/id.rb:205:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/cookies.rb:341:in `call&#x27;\nactiverecord
+        (3.2.18) lib/active_record/query_cache.rb:64:in `call&#x27;\nactiverecord
+        (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in
+        `block in call&#x27;\nactivesupport (3.2.18) lib/active_support/callbacks.rb:405:in
+        `_run__367541977746517619__call__3209707872080367531__callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call&#x27;\nairbrake
+        (4.3.3) lib/airbrake/rails/middleware.rb:13:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call&#x27;\nrailties
+        (3.2.18) lib/rails/rack/logger.rb:32:in `call_app&#x27;\nrailties (3.2.18)
+        lib/rails/rack/logger.rb:16:in `block in call&#x27;\nactivesupport (3.2.18)
+        lib/active_support/tagged_logging.rb:22:in `tagged&#x27;\nrailties (3.2.18)
+        lib/rails/rack/logger.rb:16:in `call&#x27;\nrequest_store (1.2.0) lib/request_store/middleware.rb:8:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in
+        `call&#x27;\nrack (1.4.7) lib/rack/methodoverride.rb:21:in `call&#x27;\nrack
+        (1.4.7) lib/rack/runtime.rb:17:in `call&#x27;\nactivesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in
+        `call&#x27;\nrack (1.4.7) lib/rack/lock.rb:15:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/static.rb:63:in `call&#x27;\nairbrake (4.3.3)
+        lib/airbrake/user_informer.rb:16:in `_call&#x27;\nairbrake (4.3.3) lib/airbrake/user_informer.rb:12:in
+        `call&#x27;\nrailties (3.2.18) lib/rails/engine.rb:484:in `call&#x27;\nrailties
+        (3.2.18) lib/rails/application.rb:231:in `call&#x27;\nrack (1.4.7) lib/rack/content_length.rb:14:in
+        `call&#x27;\nrailties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call&#x27;\nthin
+        (1.5.1) lib/thin/connection.rb:81:in `block in pre_process&#x27;\nthin (1.5.1)
+        lib/thin/connection.rb:79:in `catch&#x27;\nthin (1.5.1) lib/thin/connection.rb:79:in
+        `pre_process&#x27;\nthin (1.5.1) lib/thin/connection.rb:54:in `process&#x27;\nthin
+        (1.5.1) lib/thin/connection.rb:39:in `receive_data&#x27;\neventmachine (1.0.8)
+        lib/eventmachine.rb:193:in `run_machine&#x27;\neventmachine (1.0.8) lib/eventmachine.rb:193:in
+        `run&#x27;\nthin (1.5.1) lib/thin/backends/base.rb:63:in `start&#x27;\nthin
+        (1.5.1) lib/thin/server.rb:159:in `start&#x27;\nrack (1.4.7) lib/rack/handler/thin.rb:13:in
+        `run&#x27;\nrack (1.4.7) lib/rack/server.rb:268:in `start&#x27;\nrailties
+        (3.2.18) lib/rails/commands/server.rb:70:in `start&#x27;\nrailties (3.2.18)
+        lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;&#x27;\nrailties
+        (3.2.18) lib/rails/commands.rb:50:in `tap&#x27;\nrailties (3.2.18) lib/rails/commands.rb:50:in
+        `&lt;top (required)&gt;&#x27;\nscript/rails:6:in `require&#x27;\nscript/rails:6:in
+        `&lt;main&gt;&#x27;</code></pre>\n    </div>\n    <div id=\"Full-Trace\" style=\"display:
+        none;\">\n      <pre><code>activemodel (3.2.18) lib/active_model/attribute_methods.rb:407:in
+        `method_missing&#x27;\nactiverecord (3.2.18) lib/active_record/attribute_methods.rb:149:in
+        `method_missing&#x27;\n(eval):10:in `block (2 levels) in eval_source&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:152:in `call&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:152:in
+        `node&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:114:in `block in compile_settings&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:113:in `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:113:in
+        `compile_settings&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:58:in `block in
+        to_hash&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:248:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:49:in `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:86:in
+        `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:48:in `block in render&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:382:in `cache_results&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:47:in
+        `render&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:124:in `block (2 levels)
+        in merge_engines_into_result&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:123:in
+        `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:123:in `block in merge_engines_into_result&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:119:in `each&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:119:in
+        `merge_engines_into_result&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:55:in
+        `block in to_hash&#x27;\nrabl (0.11.6) lib/rabl/builder.rb:248:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/builder.rb:49:in `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:86:in
+        `to_hash&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:101:in `to_dumpable&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:110:in `to_json&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:48:in
+        `block in render&#x27;\nrabl (0.11.6) lib/rabl/engine.rb:382:in `cache_results&#x27;\nrabl
+        (0.11.6) lib/rabl/engine.rb:47:in `render&#x27;\napp/views/v2/companies/show.rabl:3:in
+        `_app_views_v__companies_show_rabl___2621531824417359231_2218856440&#x27;\nactionpack
+        (3.2.18) lib/action_view/template.rb:145:in `block in render&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:125:in `instrument&#x27;\nactionpack
+        (3.2.18) lib/action_view/template.rb:143:in `render&#x27;\nactionpack (3.2.18)
+        lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `instrument&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/template_renderer.rb:45:in `render_template&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/template_renderer.rb:18:in `render&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/renderer.rb:36:in `render_template&#x27;\nactionpack
+        (3.2.18) lib/action_view/renderer/renderer.rb:17:in `render&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/rendering.rb:110:in `_render_template&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/streaming.rb:225:in `_render_template&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/rendering.rb:103:in `render_to_body&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/renderers.rb:28:in `render_to_body&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/compatibility.rb:50:in `render_to_body&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/rendering.rb:88:in `render&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rendering.rb:16:in `render&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels)
+        in render&#x27;\nactivesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in
+        `block in ms&#x27;\n/Users/dave/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in
+        `realtime&#x27;\nactivesupport (3.2.18) lib/active_support/core_ext/benchmark.rb:5:in
+        `ms&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:40:in
+        `block in render&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:83:in
+        `cleanup_view_runtime&#x27;\nactiverecord (3.2.18) lib/active_record/railties/controller_runtime.rb:24:in
+        `cleanup_view_runtime&#x27;\nactionpack (3.2.18) lib/action_controller/metal/instrumentation.rb:39:in
+        `render&#x27;\napp/controllers/v2/companies_controller.rb:90:in `show&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/base.rb:167:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rendering.rb:10:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/callbacks.rb:18:in `block in process_action&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:469:in `_run__610825299418731729__process_action__3000202630342754148__callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/callbacks.rb:17:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rescue.rb:29:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `block in instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#x27;\nactivesupport
+        (3.2.18) lib/active_support/notifications.rb:123:in `instrument&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/instrumentation.rb:29:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/params_wrapper.rb:207:in `process_action&#x27;\nactiverecord
+        (3.2.18) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/base.rb:121:in `process&#x27;\nactionpack
+        (3.2.18) lib/abstract_controller/rendering.rb:45:in `process&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal.rb:203:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_controller/metal.rb:246:in `block in action&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:73:in `dispatch&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/routing/route_set.rb:36:in `call&#x27;\njourney
+        (1.0.4) lib/journey/router.rb:68:in `block in call&#x27;\njourney (1.0.4)
+        lib/journey/router.rb:56:in `each&#x27;\njourney (1.0.4) lib/journey/router.rb:56:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in
+        `call&#x27;\nmongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in
+        `block in call&#x27;\nmongoid (3.0.23) lib/mongoid/unit_of_work.rb:39:in `unit_of_work&#x27;\nmongoid
+        (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `call&#x27;\nrack-cors
+        (0.4.0) lib/rack/cors.rb:80:in `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in
+        `call&#x27;\nrack (1.4.7) lib/rack/etag.rb:23:in `call&#x27;\nrack (1.4.7)
+        lib/rack/conditionalget.rb:25:in `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in
+        `call&#x27;\nrack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context&#x27;\nrack
+        (1.4.7) lib/rack/session/abstract/id.rb:205:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/cookies.rb:341:in `call&#x27;\nactiverecord
+        (3.2.18) lib/active_record/query_cache.rb:64:in `call&#x27;\nactiverecord
+        (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in
+        `block in call&#x27;\nactivesupport (3.2.18) lib/active_support/callbacks.rb:405:in
+        `_run__367541977746517619__call__3209707872080367531__callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks&#x27;\nactivesupport
+        (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call&#x27;\nairbrake
+        (4.3.3) lib/airbrake/rails/middleware.rb:13:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call&#x27;\nactionpack
+        (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call&#x27;\nrailties
+        (3.2.18) lib/rails/rack/logger.rb:32:in `call_app&#x27;\nrailties (3.2.18)
+        lib/rails/rack/logger.rb:16:in `block in call&#x27;\nactivesupport (3.2.18)
+        lib/active_support/tagged_logging.rb:22:in `tagged&#x27;\nrailties (3.2.18)
+        lib/rails/rack/logger.rb:16:in `call&#x27;\nrequest_store (1.2.0) lib/request_store/middleware.rb:8:in
+        `call&#x27;\nactionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in
+        `call&#x27;\nrack (1.4.7) lib/rack/methodoverride.rb:21:in `call&#x27;\nrack
+        (1.4.7) lib/rack/runtime.rb:17:in `call&#x27;\nactivesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in
+        `call&#x27;\nrack (1.4.7) lib/rack/lock.rb:15:in `call&#x27;\nactionpack (3.2.18)
+        lib/action_dispatch/middleware/static.rb:63:in `call&#x27;\nairbrake (4.3.3)
+        lib/airbrake/user_informer.rb:16:in `_call&#x27;\nairbrake (4.3.3) lib/airbrake/user_informer.rb:12:in
+        `call&#x27;\nrailties (3.2.18) lib/rails/engine.rb:484:in `call&#x27;\nrailties
+        (3.2.18) lib/rails/application.rb:231:in `call&#x27;\nrack (1.4.7) lib/rack/content_length.rb:14:in
+        `call&#x27;\nrailties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call&#x27;\nthin
+        (1.5.1) lib/thin/connection.rb:81:in `block in pre_process&#x27;\nthin (1.5.1)
+        lib/thin/connection.rb:79:in `catch&#x27;\nthin (1.5.1) lib/thin/connection.rb:79:in
+        `pre_process&#x27;\nthin (1.5.1) lib/thin/connection.rb:54:in `process&#x27;\nthin
+        (1.5.1) lib/thin/connection.rb:39:in `receive_data&#x27;\neventmachine (1.0.8)
+        lib/eventmachine.rb:193:in `run_machine&#x27;\neventmachine (1.0.8) lib/eventmachine.rb:193:in
+        `run&#x27;\nthin (1.5.1) lib/thin/backends/base.rb:63:in `start&#x27;\nthin
+        (1.5.1) lib/thin/server.rb:159:in `start&#x27;\nrack (1.4.7) lib/rack/handler/thin.rb:13:in
+        `run&#x27;\nrack (1.4.7) lib/rack/server.rb:268:in `start&#x27;\nrailties
+        (3.2.18) lib/rails/commands/server.rb:70:in `start&#x27;\nrailties (3.2.18)
+        lib/rails/commands.rb:55:in `block in &lt;top (required)&gt;&#x27;\nrailties
+        (3.2.18) lib/rails/commands.rb:50:in `tap&#x27;\nrailties (3.2.18) lib/rails/commands.rb:50:in
+        `&lt;top (required)&gt;&#x27;\nscript/rails:6:in `require&#x27;\nscript/rails:6:in
+        `&lt;main&gt;&#x27;</code></pre>\n    </div>\n</div>\n\n\n\n<h2 style=\"margin-top:
+        30px\">Request</h2>\n<p><b>Parameters</b>: <pre>{&quot;id&quot;=&gt;&quot;127&quot;,\n
+        &quot;format&quot;=&gt;&quot;json&quot;}</pre></p>\n\n<p><a href=\"#\" onclick=\"document.getElementById('session_dump').style.display='block';
+        return false;\">Show session dump</a></p>\n<div id=\"session_dump\" style=\"display:none\"><pre></pre></div>\n\n<p><a
+        href=\"#\" onclick=\"document.getElementById('env_dump').style.display='block';
+        return false;\">Show env dump</a></p>\n<div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.2&quot;\nHTTP_ACCEPT: &quot;application/json&quot;\nHTTP_ACCEPT_ENCODING:
+        &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR: &quot;127.0.0.1&quot;\nSERVER_NAME:
+        &quot;localhost&quot;\nSERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>\n\n\n<h2
+        style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>: <pre>None</pre></p>\n\n\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 19:31:53 GMT
+recorded_with: VCR 3.0.0

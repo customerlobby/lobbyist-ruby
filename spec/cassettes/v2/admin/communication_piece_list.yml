@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/admin/campaign-iterations/1/communication-pieces.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"7422c8f8d1cb80d1e01f1d3b06a66c17"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 38cc3672994a997e9cb91a08906c9011
+      x-runtime:
+      - '0.541622'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":40,"rpp":100,"page":1,"items":[{"communication_piece":{"id":1,"uuid":"3a44d7832dc0ee36154bf7a7801d488bc0aaa82971d1851661a64e1ec2b2c4b7","customer_first_name":"Violet","customer_last_name":"Woodward","customer_address1":"2790
+        Fountain Pl.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34235","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":3,"uuid":"29fc175cd49a92aa7f0de591a673b72fcd06c5a1462f07b9fbfe53c44062da74","customer_first_name":"Edward","customer_last_name":"Morton","customer_address1":"5385
+        Dominica Cir","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34233","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":5,"uuid":"c7ac6f83b7e5d2e2f47d92934b67f89513c6cb9aabcb5c0971bfeab91e62082f","customer_first_name":"Theodora","customer_last_name":"Haberman","customer_address1":"3544
+        Medford Lane","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34239","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":7,"uuid":"14a3c5a7a4084dd19c118e39c28d3d3f4e8606332afab731c1f47d3df880bf08","customer_first_name":"Muriel","customer_last_name":"Patram","customer_address1":"5523
+        Ashton Way","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231-6231","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":9,"uuid":"55fafcb64c76c1f3e8be89225542808441078a6ace95dabd639d638de5c1aabc","customer_first_name":"Mrs","customer_last_name":"Salem","customer_address1":"584
+        Wagstaff Dr","customer_address2":null,"customer_city":"east meadow","customer_state":"NY","customer_zip":"11554","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":11,"uuid":"f88d901870907be40ef90d847bc75c4d1bdc326b3fa43f20f368e37721e22a24","customer_first_name":"Brian","customer_last_name":"Tuthill","customer_address1":"6258
+        Blue Runner Ct","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34202","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":13,"uuid":"b6ae1130c7ccdabd698aa4041219360e983cbad1dfb9dc321fd97a8c589eebc5","customer_first_name":"Catherine","customer_last_name":"Hays","customer_address1":"7026
+        W Country Club Dr N","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34243","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":15,"uuid":"ced14fdfcfc87f1e5274d4f82fc5ec65c08356ca54f61b79a149455505e1c5ff","customer_first_name":"Jerrold","customer_last_name":"Cook","customer_address1":"4306
+        Lemonwood Cir","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34208","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":17,"uuid":"ba140008639fc89263c5bf098b638f30467d76aad9148099f85dd0a3fe206e7a","customer_first_name":"Mark","customer_last_name":"Leatt","customer_address1":"15315
+        Skip Jack Loop","customer_address2":null,"customer_city":"lakewood ranch","customer_state":"FL","customer_zip":"34202","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":19,"uuid":"565f867ee0ffe2e2a5cf98de8ee5217d914cd8bcf8e7b3d41ae8fef88bd784b7","customer_first_name":"Robyn","customer_last_name":"Wilson","customer_address1":"13815
+        Waterthrush Place","customer_address2":null,"customer_city":"lakewood ranch","customer_state":"FL","customer_zip":"34202","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":21,"uuid":"a29459795dbf02902953bac45d8ffc4fb77405ea9be335dff481cfd948cedf1e","customer_first_name":"Janet","customer_last_name":"Harrison","customer_address1":"7250
+        Beneva Rd.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34238","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":23,"uuid":"5dd8319795283eeb3fd1c09ce53cdb1830d442084cb22b6f76b5e736e0329f2a","customer_first_name":"Michael","customer_last_name":"DDS","customer_address1":"3900
+        Clark Rd. J-5","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34233","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":25,"uuid":"0e02ec94dea19c853be099ecfe62d69f7a41c6246a5376b73ffab708ecf60b3f","customer_first_name":"Elizabeth","customer_last_name":"Davis","customer_address1":"3104
+        Savage Dr","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231-7123","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":27,"uuid":"6f5e398b0f6522b2e8482c6358b69da18159a19a70f4876d21abb0796e4ba200","customer_first_name":"James","customer_last_name":"Schooley","customer_address1":"17504
+        Howling Wolf Run","customer_address2":null,"customer_city":"parrish","customer_state":"FL","customer_zip":"34219","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":29,"uuid":"61deb80c191a6f27957bd0202b407832d11a51494d943ef8f3d581fc9281b949","customer_first_name":"Heather","customer_last_name":"Schafer","customer_address1":"5637
+        Key Largo Ct","customer_address2":null,"customer_city":null,"customer_state":null,"customer_zip":null,"status":"in_transit","verification_errors":null}},{"communication_piece":{"id":31,"uuid":"02c8e42a7c88c750dc33b5162d654cc6fbd7ecadec6abbf7d4185ca4f718f637","customer_first_name":"John","customer_last_name":"James","customer_address1":"308
+        46th St W","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34209","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":33,"uuid":"fd719f78a8a57f79f0f1d2f01c1e055538bde3bb13ba4a333fe00a5cb0ea90c3","customer_first_name":"Linford","customer_last_name":"Sommers","customer_address1":"10345
+        Fruitville Rd","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34240","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":35,"uuid":"7b4a310cedc49ed215072cf5d0c760738f74b3034e1c44cdc901699f39a87f5a","customer_first_name":"Joy","customer_last_name":"Shanafelt","customer_address1":"1228
+        Estremadura Dr","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34209","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":37,"uuid":"ef1b6a1c166eb3d132a0f7f3c98c7a3c63abe4992aed4dbb835987a901616681","customer_first_name":"Dale","customer_last_name":"Feldman","customer_address1":"9544
+        Hawksmoor Ln","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34238","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":39,"uuid":"b6af6af845237cdf0deab27fc576670c1f21db7e5c85124edf705468ff0997b9","customer_first_name":"William","customer_last_name":"Bishop","customer_address1":"1908
+        75th St NW","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34209","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":41,"uuid":"1f6337ada81370caaaabd4e890f98b83dfcc9e83756de71ad68489ab40940559","customer_first_name":"Timm","customer_last_name":"Timm","customer_address1":"7131
+        Curtiss Ave, Suite 4","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":43,"uuid":"f4bc15c899f7597b1e485faa1f4a1a65eb95317735b010b89c0fdc2dbe5cab20","customer_first_name":"Leslie","customer_last_name":"McLean","customer_address1":"1694
+        Starling Dr","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":45,"uuid":"cffc74d67a8f36d2ff6b3dac15727c4f26509623f858bbc55d4108c0782c6652","customer_first_name":"Sheila","customer_last_name":"Maslow","customer_address1":"5511
+        Country Lakes Trail","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34243","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":47,"uuid":"eb1ad8c1b7ac8acdeb8eace545614dab08076cb29fc9d4076b388cf8459d5968","customer_first_name":"Mrs","customer_last_name":"Gorin","customer_address1":"3867
+        Wilshire Circle West","customer_address2":null,"customer_city":"Sarasota","customer_state":"FL","customer_zip":"34238","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":49,"uuid":"4b11e3d6293134d74dd395ca760b9d38fb4e5bef1ca8070b35b5d602b36218ee","customer_first_name":"Rebecca","customer_last_name":"Orum","customer_address1":"Attn:
+        Rebecca Orum  5201 Bahia Vista St.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34232","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":51,"uuid":"44f78ee30acb6ecdbf28d61dceff1a97e372d4b5e86331e9851f7eb372241ec9","customer_first_name":"Jennifer","customer_last_name":"Button","customer_address1":"722
+        Apex Rd Unit E","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34240","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":53,"uuid":"ef45290e78ffb3cb2c3e93335c7cf79cc5c1ad6820aee8493b40e3af2d95acee","customer_first_name":"Tammy","customer_last_name":"Thompson","customer_address1":"7429
+        Biltmore Dr.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":55,"uuid":"0fcc25fa87d40360eb3dc664508a387150ad3a0b9356403b40d2eeb00b10c731","customer_first_name":"Ivan","customer_last_name":"Perkins","customer_address1":"4208
+        Worchester Rd.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34231","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":57,"uuid":"0d8d7d675b803e00438e11a809b6006d357311c9ecb5cf6f95867e99d1cfcf5a","customer_first_name":"Melvin","customer_last_name":"Kennedy","customer_address1":"4505
+        Fort Hammer Rd","customer_address2":null,"customer_city":"parrish","customer_state":"FL","customer_zip":"34219","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":59,"uuid":"7c04eabb94365b27860f5b5d976d6bd429bee037b96f3fb8a11721ec88936f7d","customer_first_name":"Dorothy","customer_last_name":"Schoonejongen","customer_address1":"8301
+        Nancy Lane","customer_address2":null,"customer_city":"Ellenton","customer_state":"FL","customer_zip":"34222","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":61,"uuid":"cff2aacea83205764b6b6ba9de78af5fa2e6496b0b2f9076ed87bdd65965730b","customer_first_name":"Ernest","customer_last_name":"Fortin","customer_address1":"4574
+        Highland Oaks Cir","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34235","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":63,"uuid":"abd948ce4d97728fcc83632a5829e113472f3afa5be42c4022d88b9ad914d953","customer_first_name":"John","customer_last_name":"Bancos","customer_address1":"99
+        Captain Kid Cir","customer_address2":null,"customer_city":"nokomis","customer_state":"FL","customer_zip":"34275","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":65,"uuid":"46c3d26a741071f54052b54c43070fdcf22ecd4ffc79a556a9adebc2f7d54b4b","customer_first_name":"Lynn","customer_last_name":"Jensen","customer_address1":"7204
+        Fountain Palm Cir","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34203","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":67,"uuid":"58e9c65e9951fc9f2b47a8e876af7c0f1d46da6b542fee20fc4caf72abbd4559","customer_first_name":"Ryan","customer_last_name":"Fitts","customer_address1":"3986
+        Origami Ln","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34235","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":69,"uuid":"246cffb2a05d58fd05cff36ed049957ee9d2e5068b9f6675921d48ecbe3cc84a","customer_first_name":"John","customer_last_name":"Woodhead","customer_address1":"7315
+        Riviera Cove","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34202","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":71,"uuid":"018c79d77cc31bb224b780c44cccc48e55171eca4e83bfe5535c7dd970bde562","customer_first_name":"Gary","customer_last_name":"Bunch","customer_address1":"4528
+        4th Ave Dr E","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34208","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":73,"uuid":"afd3d19d8d8076f51cb84e92aa5213d1fecd87a768b509617c4c77fe7c1b60e0","customer_first_name":"Peggy","customer_last_name":"Anderson","customer_address1":"6018
+        Oak Circle Ln","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34210","status":"undeliverable","verification_errors":null}},{"communication_piece":{"id":75,"uuid":"0040badf62751e5b2584e2c04a8df8f65481e93be0397f35effd77df8e332d7d","customer_first_name":"Donna","customer_last_name":"Pelky","customer_address1":"3225
+        Lockwood Ridge Rd (Circle Dr #187)","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34234","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":77,"uuid":"14498baa13d94b8c4d3e5431e3ee1c43e17b1e221bb6fcb797115cd60b0ad922","customer_first_name":"Richard","customer_last_name":"Mangiere","customer_address1":"9435
+        Discovery Terrace Unit 101","customer_address2":null,"customer_city":"bradenton","customer_state":"FL","customer_zip":"34212","status":"in_transit","verification_errors":null}},{"communication_piece":{"id":79,"uuid":"58e46f9a93cdf879386863edecfc794f819627a2c702ff61edd852936c4d2e0f","customer_first_name":"Jeff","customer_last_name":"Cleary","customer_address1":"2667
+        Sydelle St","customer_address2":null,"customer_city":"Sarasota","customer_state":"Fl","customer_zip":"34237","status":"in_transit","verification_errors":null}}]}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 17:16:16 GMT
+recorded_with: VCR 3.0.0

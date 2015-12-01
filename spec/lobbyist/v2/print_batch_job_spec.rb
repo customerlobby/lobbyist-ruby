@@ -13,20 +13,16 @@ describe Lobbyist::V2::PrintBatchJob do
   it { should respond_to :created_at }
 
   before(:all) do
-    Lobbyist.api_base = "http://localhost:3000"
-    Lobbyist.api_key  = "jQuchd091cns"
-    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
-
     @headers = set_v2_headers
   end
 
   describe "#list" do
     it 'should return list of print_batch_jobs' do
-      body = { count: 1, items: [{ print_batch_jobs: { filename: 'abc', status: 'abc', sent_at: Time.now } }] }
-      stub_get("/v2/print-batch-jobs.json").with(:headers => @headers).to_return(body: body.to_json, status: 200)
-
-      print_batch_jobs = Lobbyist::V2::PrintBatchJob.list
-      print_batch_jobs.elements.should_not be_blank
+      VCR.use_cassette('v2/print_batch_job_list') do
+        print_batch_jobs = Lobbyist::V2::PrintBatchJob.list
+        expect(print_batch_jobs.elements).to_not be_blank
+        expect(print_batch_jobs.elements).to be_a(Array)
+      end
     end
   end
 end

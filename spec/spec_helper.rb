@@ -17,6 +17,7 @@ RSpec.configure do |config|
   
   VCR.configure do |c|
     c.cassette_library_dir = 'spec/cassettes'
+    c.default_cassette_options = { match_requests_on: [:host, :path] }
     c.hook_into :faraday
     c.ignore_localhost = false
   end

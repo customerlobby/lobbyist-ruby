@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/review_flags.json?nonce=2015-11-25+19%3A59%3A18+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="505614066021e398e473c088913f8bcbc613100df467d9bf9f4db657bc3fa27d"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"fb45d408cf10e7f6db5e8c0929ba4ce6"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 744f867b6b83e2844f9ff712ee31bf0b
+      x-runtime:
+      - '0.369880'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '[{"id":9,"review_id":10055,"flagged":true,"exempted":true,"flagger_ip":"127.0.0.1","note":"Updated
+        note with new and improved text.","category":"customer_created","created_at":"2010-03-17T01:01:02Z","updated_at":"2015-11-25T19:42:31Z","review":{"review_id":10055,"review_date":"2008-09-06T16:26:47Z","review_summary":"Lorem
+        ipsum dolor sit.","review_body":"Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Vivamus sollicitudin. Curabitur fermentum, sem quis tempor
+        ultrices, metus neque gravida lectus, quis mollis nibh augue nec velit. Aenean
+        pulvinar sodales dui. Nam fringilla purus et enim. Sed sodales mauris at felis.
+        Proin felis est, blandit nec, tempus id, pellentesque sit amet, orci. Phasellus
+        dignissim. In dapibus bibendum lectus. Donec dapibus vestibulum neque. Integer
+        ornare, nunc ac egestas tempor, justo augue elementum tellus, non commodo
+        risus ligula vel ipsum. Ut mi eros, dapibus in, aliquet ut, convallis ut,
+        mi. Fusce tincidunt. Integer vehicula rutrum lacus. Curabitur nec urna ut
+        massa consequat porta. Donec scelerisque mollis tellus. Nulla facilisi. In
+        nibh dolor, iaculis id, fringilla ac, mollis eget, eros. Suspendisse at nunc
+        id est tempor rutrum. Vestibulum est.","review_status":"not_publish","total_score":1.0,"source":"web","is_featured":false,"ip_address":"76.126.198.98","created_at":"2008-09-06T16:26:47Z","updated_at":"2008-09-06T16:26:47Z","contact":{"contact_id":16458,"first_name":"ted","last_name":null,"email":"ted@customerlobby.com","phone_daytime":null,"state":null,"city":null},"company":{"company_id":143,"company_name":"Your
+        Company Name","abbreviated_name":"your-company-name","company_description":"Your
+        company description goes here.  Use this to tell people what you do.","address1":"123
+        Main Street","state":"CA","city":"Anycity","zip":"94111","phone":"8001234567","website":"http://www.YourCompanySite.com"}}},{"id":94474,"review_id":10055,"flagged":true,"exempted":false,"flagger_ip":"127.0.0.1","note":"This
+        review is flagged because I say so!","category":"customer_created","created_at":"2015-11-25T19:42:31Z","updated_at":"2015-11-25T19:42:31Z","review":{"review_id":10055,"review_date":"2008-09-06T16:26:47Z","review_summary":"Lorem
+        ipsum dolor sit.","review_body":"Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Vivamus sollicitudin. Curabitur fermentum, sem quis tempor
+        ultrices, metus neque gravida lectus, quis mollis nibh augue nec velit. Aenean
+        pulvinar sodales dui. Nam fringilla purus et enim. Sed sodales mauris at felis.
+        Proin felis est, blandit nec, tempus id, pellentesque sit amet, orci. Phasellus
+        dignissim. In dapibus bibendum lectus. Donec dapibus vestibulum neque. Integer
+        ornare, nunc ac egestas tempor, justo augue elementum tellus, non commodo
+        risus ligula vel ipsum. Ut mi eros, dapibus in, aliquet ut, convallis ut,
+        mi. Fusce tincidunt. Integer vehicula rutrum lacus. Curabitur nec urna ut
+        massa consequat porta. Donec scelerisque mollis tellus. Nulla facilisi. In
+        nibh dolor, iaculis id, fringilla ac, mollis eget, eros. Suspendisse at nunc
+        id est tempor rutrum. Vestibulum est.","review_status":"not_publish","total_score":1.0,"source":"web","is_featured":false,"ip_address":"76.126.198.98","created_at":"2008-09-06T16:26:47Z","updated_at":"2008-09-06T16:26:47Z","contact":{"contact_id":16458,"first_name":"ted","last_name":null,"email":"ted@customerlobby.com","phone_daytime":null,"state":null,"city":null},"company":{"company_id":143,"company_name":"Your
+        Company Name","abbreviated_name":"your-company-name","company_description":"Your
+        company description goes here.  Use this to tell people what you do.","address1":"123
+        Main Street","state":"CA","city":"Anycity","zip":"94111","phone":"8001234567","website":"http://www.YourCompanySite.com"}}}]'
+    http_version: 
+  recorded_at: Wed, 25 Nov 2015 19:59:18 GMT
+recorded_with: VCR 3.0.0

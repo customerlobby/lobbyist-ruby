@@ -9,7 +9,7 @@ describe Lobbyist::Review do
 
   describe ':list' do
     it 'should get the list of reviews' do
-      VCR.use_cassette('review_list', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_list') do
         params = {'nonce' => @nonce, 'company_id' => '148', 'status' => 'publish'}
         reviews = Lobbyist::Review.list(params)
 
@@ -24,13 +24,13 @@ describe Lobbyist::Review do
   
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      VCR.use_cassette('review_find_error', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_find_error') do
         expect{Lobbyist::Review.find(2)}.to raise_error(Lobbyist::Error::NotFound)
       end
     end
 
     it 'should return the found review' do
-      VCR.use_cassette('review_find', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_find') do
         review = Lobbyist::Review.find(10040)
 
         expect(review).to_not be_nil
@@ -42,7 +42,7 @@ describe Lobbyist::Review do
 
   describe ':create' do
     it 'should create a new review' do
-      VCR.use_cassette('review_create', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_create') do
         review = Lobbyist::Review.create(create_params)
 
         expect(review.review_summary).to eq("This is the summary.")
@@ -53,7 +53,7 @@ describe Lobbyist::Review do
 
   describe ':update' do
     it 'should update the review' do
-      VCR.use_cassette('review_update', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_update') do
         updated_review = Lobbyist::Review.update(10117, params)
         expect(updated_review.review_summary).to eq('New Review Summary')
       end

@@ -9,13 +9,13 @@ describe Lobbyist::ReviewWithdrawalRequest do
 
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      VCR.use_cassette('review_withdrawal_request_find_exception', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_withdrawal_request_find_exception') do
         expect{Lobbyist::ReviewWithdrawalRequest.find(998)}.to raise_error(Lobbyist::Error::NotFound)
       end
     end
     
     it 'should return the found review_withdrawal_request' do
-      VCR.use_cassette('review_withdrawal_request_find', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_withdrawal_request_find') do
         withdrawal_request = Lobbyist::ReviewWithdrawalRequest.find(9021)
 
         expect(withdrawal_request).to_not be_nil
@@ -27,7 +27,7 @@ describe Lobbyist::ReviewWithdrawalRequest do
 
   describe ':create' do
     it 'should create a new review' do
-      VCR.use_cassette('review_withdrawal_request_create', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_withdrawal_request_create') do
         withdrawal_request = Lobbyist::ReviewWithdrawalRequest.create(params)
 
         expect(withdrawal_request.status).to eq("requested")
@@ -38,7 +38,7 @@ describe Lobbyist::ReviewWithdrawalRequest do
 
   describe ':update' do
     it 'should update the review_withdrawal_request' do
-      VCR.use_cassette('review_withdrawal_request_update', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_withdrawal_request_update') do
         updated_withdrawal_request = Lobbyist::ReviewWithdrawalRequest.update(9001, params('accepted'))
         expect(updated_withdrawal_request.note).to eq('Requesting a withdrawal')
       end
@@ -47,7 +47,7 @@ describe Lobbyist::ReviewWithdrawalRequest do
 
   describe ':find_by_email_key' do
     it 'should return the found review_withdrawal_request' do
-      VCR.use_cassette('review_withdrawal_request_find_by_email_key', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('review_withdrawal_request_find_by_email_key') do
         withdrawal_request = Lobbyist::ReviewWithdrawalRequest.find_by_email_key('8bl_gi9KyVZT7IHmagfL7g')
 
         expect(withdrawal_request).to_not be_nil

@@ -9,7 +9,7 @@ describe Lobbyist::TerminationNotice do
 
   describe ':list' do
     it 'should get a list of termination notices' do
-      VCR.use_cassette('termination_notices_list', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('termination_notices_list') do
         list = Lobbyist::TerminationNotice.list()
         expect(list).to be_a(Array)
         expect(list[0].dismissed).to eq(false)
@@ -17,7 +17,7 @@ describe Lobbyist::TerminationNotice do
     end
 
     it 'should get a list of dismissed notices' do
-      VCR.use_cassette('termination_notices_list', match_requests_on: [:host, :path]) do
+      VCR.use_cassette('termination_notices_list') do
         list = Lobbyist::TerminationNotice.list()
         expect(list).to be_a(Array)
         expect(list[1].dismissed).to eq(true)
@@ -28,7 +28,7 @@ describe Lobbyist::TerminationNotice do
   describe ':dismiss' do
     
     it 'should update a termination notice' do
-      VCR.use_cassette('termination_notices_dismiss', match_requests_on: [:host,:path]) do
+      VCR.use_cassette('termination_notices_dismiss') do
         notice = Lobbyist::TerminationNotice.dismiss(7639)
         expect(notice).to_not be_nil
         expect(notice).to be_a(Lobbyist::TerminationNotice)
