@@ -1,3 +1,6 @@
+=== 0.5.60
+* Added last_call attribute on Lobbyist::V2::AccountManagerMetrics
+
 === 0.5.59
 
 * Added requires for Lobbyist::V2::RecommendedBudget
