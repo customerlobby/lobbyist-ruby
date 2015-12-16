@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v2/companies/10/customer_call_credits/1.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"2e9ac00963e22d76102c6dc5b85f3cbd"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTE5MzU2ODA3N2ZjZGYyZWZlNjFhZDk3NDBiOTQ1NWQ2BjsAVA%3D%3D--56c421f262b6d61df0ee4f39388daff7e8b65489;
+        path=/; HttpOnly
+      x-request-id:
+      - 2e07fe36dd476c12cc99acc7ac282ede
+      x-runtime:
+      - '0.032605'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"customer_call_credit":{"id":1,"company_id":10,"event":"monthly","status":"revoked","created_at":"2010-04-28T19:18:19Z","updated_at":"2015-09-08T23:52:48Z"}}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 01:14:18 GMT
+recorded_with: VCR 3.0.0

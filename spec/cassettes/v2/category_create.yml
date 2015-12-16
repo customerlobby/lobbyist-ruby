@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/categories
+    body:
+      encoding: UTF-8
+      string: '{"category":{"name":"xxx","default_services":"","repeat_marketing_campaign_enabled":true,"threshold":0.682,"min_days_between_mailings":1,"roi":1,"accelerator":1,"mail_delay_offset":1,"transaction_grouping_interval":1,"generate_marketing_insights":true,"id":null}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"f254c25873b9f9295042cddea8f3401b"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTE0ODdmNjYzYTc0OWE1ZmZiZmFkZDBiYTc0N2M1NTNkBjsAVA%3D%3D--6a1012ef0e8d85a5e78a4437ee4ca57f9d65da25;
+        path=/; HttpOnly
+      x-request-id:
+      - a9ee6f137dcdcfba43c9805237628bd9
+      x-runtime:
+      - '0.023126'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"category":{"id":284,"name":"xxx","default_services":"","salesforce_name":null,"repeat_marketing_campaign_enabled":true,"threshold":"0.682","min_days_between_mailings":1,"roi":"1.0","accelerator":"1.0","mail_delay_offset":1,"transaction_grouping_interval":1,"generate_marketing_insights":true,"created_at":"2015-12-01T16:33:28Z"}}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 16:33:28 GMT
+recorded_with: VCR 3.0.0

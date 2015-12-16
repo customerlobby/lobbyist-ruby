@@ -2,10 +2,7 @@ require 'spec_helper'
 
 describe Lobbyist::V2::Admin::CommunicationPiece do
   before :all do
-    Lobbyist.api_base = "http://localhost:3000"
-    Lobbyist.api_key  = "jQuchd091cns"
-    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
-    @headers = {'Accept'=>'application/json', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Token token="jQuchd091cns"', 'User-Agent'=>'Faraday v0.8.7'}
+    @headers = set_v2_headers
   end
 
   describe "initiliaze" do
@@ -27,30 +24,22 @@ describe Lobbyist::V2::Admin::CommunicationPiece do
 
   describe "#list" do
     it 'should return list of Communication pieces' do
-      stub_get('/v2/admin/campaign-iterations/1/communication-pieces.json').to_return(body: { items: [] }.to_json, status: 200)
+      VCR.use_cassette('v2/admin/communication_piece_list') do
+        sut = Lobbyist::V2::Admin::CommunicationPiece.list(1)
 
-      sut = Lobbyist::V2::Admin::CommunicationPiece.list(1)
-      sut.should be_a Lobbyist::Collection
+        expect(sut).to be_a(Lobbyist::Collection)
+        expect(sut.elements[0].status).to eq('in_transit')
+      end
     end
   end
 
   describe "#destroy" do
     it 'should return a communication piece' do
-      stub_delete('/v2/admin/campaign-iterations/1/communication-pieces/1.json').to_return(body: { communication_piece: { id: 1 } }.to_json, status: 200)
+      VCR.use_cassette('v2/admin/communication_piece_destroy') do
+        sut = Lobbyist::V2::Admin::CommunicationPiece.destroy(1,1)
 
-      sut = Lobbyist::V2::Admin::CommunicationPiece.destroy(1,1)
-      sut.should be_a Lobbyist::V2::Admin::CommunicationPiece
-    end
-  end
-
-  describe "#update" do
-    it 'should return a communication piece' do
-      params = { communication_piece: { first_name: "sample" } }
-      return_params = { communication_piece: { customer_first_name: "sample" } }
-      stub_put('/v2/admin/campaign-iterations/1/communication-pieces/1.json').with(body: params).to_return(body: return_params.to_json, status: 200)
-
-      communication_piece = Lobbyist::V2::Admin::CommunicationPiece.update(1,1, params)
-      communication_piece.should be_a(Lobbyist::V2::Admin::CommunicationPiece)
+        expect(sut).to be_a(Lobbyist::V2::Admin::CommunicationPiece)
+      end
     end
   end
 

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/company_users.json?company_id=127&nonce=2015-11-30+23%3A37%3A29+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="3f0f9d1e2703374970c025a5d3aebf58af47ddaf455440268708a1491b7da622"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"6dea00969443ec5010a62309822f9b22"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - a8136d6acc35c52f7613bf0cbb7577bf
+      x-runtime:
+      - '0.035970'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '[{"company_user_id":134,"company_id":127,"email":"ted@customerlobby.com","first_name":"Ted","last_name":"Paff","is_active":true,"is_manager":true,"primary_contact":true,"accepts_terms":true,"sugar_contact_id":"9657de33-5488-21b8-400a-4fa8160f5d16"},{"company_user_id":33861,"company_id":127,"email":"sindap@customerlobby.com","first_name":"Shiv","last_name":"Indap","is_active":true,"is_manager":false,"primary_contact":false,"accepts_terms":true,"sugar_contact_id":"b4abf474-4275-e1f8-c4bb-5346e968bdc6"}]'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 23:37:29 GMT
+recorded_with: VCR 3.0.0

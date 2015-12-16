@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/member_calls/1.json?nonce=2015-11-30+21%3A19%3A49+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="c5ac666ffd6c0c27402092011d73ed59d9b0c832c6e716d053c1b5162d583bdf"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"7ed7641bc993117515716fdf9167d4fa"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - b19b053f17a75eb0d74e0c11439973f9
+      x-runtime:
+      - '0.025254'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"company_id":141,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"5/10/11:
+        (AB) Norma said we have to talk to Forrest about updating cc info. and she
+        suggested I email him b/c he was not in. Shut off tomorrow, 5/11, if no response.","created_at":"2013-04-19T00:32:36Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":141,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Csi
+        Mini Storage","company_description":"Mini Storage","address1":"855 Parr Boulevard","address2":"","city":"Richmond","state":"CA","zip":"94801-1320","country":"US","latitude":"37.96756550000001","longitude":"-122.3570626","timezone":"Pacific
+        Daylight Time","formatted_address":"855 Parr Boulevard, Richmond, CA 94801,
+        USA","phone":"5102311678","phone_ext":"","website":"http://www.csiministorage.com","is_active":true,"abbreviated_name":"csi-mini-storage","freetrial_start_date":"2008-08-08T17:10:00Z","signup_admin_id":null,"signup_ip_addr":"76.126.104.136","account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.95,"admin_notes":"Norma''s
+        direct line: (510) 685-2352 and email norma.rainbow@gmail.com\n\nHarvey pp
+        for ncc''s.\nMike is DM, uses Forrest''s login. Mike said no to DC. (7/6/15).\n\n7/8/15
+        ah: Inc call from Mike. Has to do some damage control with pending neg reviews.
+        Has a lot of pos reviews, so I talked with him about management options. He
+        liked the idea of commenting on neg reviews. Score! Sent email fu re managing
+        neg reviews.\n7/6/15: mt: inc call from Mike, DM. He logs in under Forrest''s
+        name. He un-installed DC, wanted to make sure he did it right. Boo, he did.
+        He asked more about DC settings, he said if the customer paid online, would
+        that send an invitation. Explained auto invite setting and how the trigger
+        for invitations being sent is if that payment is reflected in the invoicing
+        software, and how we could disable that so that we only pull contact info,
+        then he would manually send invites. He said that he would still prefer not
+        to have DC, but thanked me for the info. \n6/29/15: mt: called, got transferred
+        to Harvey, said today was still good to install DC, just call him back in
+        5 minutes, he''s finishing up w/ a customer. Will do. UPDATE: Called again,
+        got vm, lvm for Harvey, said he had told me to call back at this time, gave
+        my direct line. Will try calling again in a few minutes. UPDATE: Got the install.\n6/25/15:
+        mt: attempt 3. spoke with Harvey, said he''ll get ncc''s into the account
+        himself, no follow up e-mail necessary. He said he actually wanted to know
+        the status of DC for him, and looking at our notes, we''re actually ready
+        to move forward with the installation if he is. He said Monday, 10:30 am would
+        work best. Calendared. \n6/19/15: mt: called, spoke with Darleen. Harvey unavailable,
+        lhm.\n6/17/15: mt: added ncc''s yesterday, new review today. Sent e-mail re
+        si''s/social media syndication\n1/9/15 ks: Harvey''s unavailable and the gatekeeper
+        said she won''t see him so she can''t take a message. Sent an email to him
+        and other users re:DC/NCCs\n8/28/14 kf: lhm and emailed re: ncc/dc. we have
+        sitelink DC available now for them.\n7/31/14 rj: contacted harvey about dc
+        for sl, wants call next week to install.\n4.14.14 scd: lhm & sent email re
+        ncc''s.\n3/31/14 kf: talked to mike, he said he''d get the CC updated on his
+        own. \n2/20/14 tj: inc call, mike. He''s making Harvey responsible for adding
+        contacts. Made Harvey a user and did a wt on contacts. He picked it up pretty
+        quickly. Received email from Mike. Added 13 ncc''s.\n12.13.13 scd: lhm mike
+        is new pp for cl acct. got his email, added him as a user and sent him email
+        re ncc''s & pdf flier. \n8.12.13 scd: Forrest outside. Sent basic email &
+        ncc''s & si''s.\n4/10/13 kf: emailed syndication success links and ncc reminder.
+        \n12/10/12 scd: emailed 12 ncc''s, entered.\n11/6/12 scd: emailed 6 ncc''s,
+        entered.\n11/5/12 scd: emailed 19 ncc''s, entered. \n09/20/12 kb: entered
+        ncc. \n8/17/12 scd: Norma emailed 10 ncc''s \n07/10/12 mm: Norma emailed in
+        5 NCCs.\n06/21/12 mm: Talked with Norma about 10 customer call credits and
+        emailed re: NCCs.\n04/27/12 mm: Talked with Norma about NCCs.  Sent email
+        to her about NCCs for her to respond to.\n2/21/12 rj: norma emailed because
+        button not updating. called, will do it herself, sent button code.\n1/18/12
+        rj: norma busy, would like an email re: si, fb.\n1/9/12: (AB) Talked to Norma,
+        updated cc, and they want to upgrade to Biz Level now. She also gave me a
+        bunch of contacts to call.  I explained credit system to her going forward
+        and told her to give us more contacts so queue will always be full. \n12/30/11:
+        (AB) Talked to Norma who said they want to upgrade to Biz Level of service
+        for the phone reviews. They are currently On Hold so we need to update cc
+        in order to do so. Norma said to email Forrest about this b/c he is out of
+        town until Jan. 3. I emailed him and cced her. \n8/24/11: (AB) Forrest emailed
+        out of the blue with credit card information to update his account. I emailed
+        him back about getting button back up and giving him a free credit. Norma
+        emailed with new contact to call and she will put button back up (with my
+        nagging).\n5/25/11:(ted) turned this into a free account.  Sent email to Forrest.\n5/25/11:
+        (AB) Left final message with Harvey. Norma and Forrest are not responding.
+        Will probably need to terminate account. Sent final email to both of them
+        with stats which were very high until reviews page turned off. Now it''s \"Under
+        Construction\" on first page Google.\n5/17/11: (AB) Left hm for Forrest. Shut
+        off reviews page. Sent email to Forrest and Norma about this.\n5/10/11: (AB)
+        Norma said we have to talk to Forrest about updating cc info. and she suggested
+        I email him b/c he was not in. Shut off tomorrow, 5/11, if no response.\n4/14/11:
+        (AB) Left hm for Norma with Harvey re: updating billing.\n3/31/11: (AB) Norma
+        said card on file was stolen so she has to get new one from the boss; also,
+        she is working on getting their button back up on the About Us page.\n3/15/11:
+        (AB) Sent another email to Norma about updating cc info.\n3/8/11: (AB) Left
+        vm and sent follow-up email to Norma b/c cc info. she gave me on 2/25 did
+        not go through.\n2/25/11: (AB) Updated cc info. with Norma, who is changing
+        site and working on getting button on new one. she wants me to email her about
+        fb/twitter to schedule a time.\n9/16/10: Talked to Norma who updated cc info.
+        and gave me new email address for her. Also, told me to contact Jericho at
+        Alameda store to get contact for free credit. Talked to Jericho who said he
+        would give a call back with contact info.\n9/8/10: Emailed Norma and Forrest
+        re: cc info. \n08/30/10: left message on main answering machine. need to get
+        normas direct! also there is strange code on their website.\n08/25/10: left
+        message with human re: cc. \n08/24/10: left message for someone over there
+        to give us a new cc. \n7/01/10 talked to Jericho about getting customer call
+        names.\n3/24/10: Left message and emailed Norma re: reviews logo off website
+        and getting a new review. \n10/9/09: Talked to Jericho at Alameda CSI (510-748-1851)
+        re: getting another name/number for a Customer Call (Norma said to call him)\n9/24:
+        Left message for Norma re: Customer Call credit.","customer_call_notes":"Two
+        locations: Richmond & Alameda, ask which location they used.","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2012-01-09T16:16:33Z","last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2012-01-09","sugar_lead_id":"58442e77-37e8-73cf-c345-4fa4b30ea036","sugar_account_id":"ddbdb9d3-7771-c667-d320-4fa8166bd91a","sugar_opportunity_id":"64ba8e84-fd3e-2bd6-2d69-5165d6ef1b88","created_at":"2008-08-08T17:10:00Z","updated_at":"2015-07-09T16:51:05Z","status":"active","sales_user_id":2,"system_of_record":"Site
+        Link","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"file_received","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":"2015-06-29","direct_connect_install_status":"installed","direct_connect_installed_by":"rjohnson","direct_connect_notes":"6/29/15
+        rj: had to download and install ssms, stop server, add single user override,
+        start server, connect w/ windows user, add cldirectconnect user and security,
+        configure users for data read access, stop server, removed single user override,
+        start server... test connection successful, data confirmed, processing enabled.","current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}}'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 21:19:49 GMT
+recorded_with: VCR 3.0.0

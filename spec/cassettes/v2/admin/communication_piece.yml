@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/admin/campaign-iterations/1/communication-pieces/1.json
+    body:
+      encoding: UTF-8
+      string: '{"communication_piece":{"status":"delivered"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 412
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      cache-control:
+      - no-cache
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTNhMTk0ZTRkNjIzNDlmMGU2YTU1ZDJiNWNlODc3ODdmBjsAVA%3D%3D--043867d1f01cde7ae6cd222e2f896b61327f8cf9;
+        path=/; HttpOnly
+      x-request-id:
+      - 7c7ed4abb163fe91e6536da890762520
+      x-runtime:
+      - '0.019530'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"errors":["Invalid Attributes status passed"]}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 17:19:52 GMT
+recorded_with: VCR 3.0.0

@@ -3,101 +3,76 @@ require 'spec_helper'
 describe Lobbyist::Contact do
   
   before(:all) do
-    Lobbyist.api_base = "http://localhost:3000"
-    Lobbyist.api_key  = "jQuchd091cns"
-    Lobbyist.api_secret  = "acjbdkcsdbcksdbck92017jascalscbalscjbcalb"
     Lobbyist::Base.nonce = Time.now.utc.to_s
     @nonce = Lobbyist::Base.nonce
   end
   
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
-      headers = set_headers('get', path(999), {'nonce' => @nonce})
-      body = {errors: ["Unable to find contact with that id."]}
-      stub_get(path(999)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 404)
-      expect{Lobbyist::Contact.find(999)}.to raise_error(Lobbyist::Error::NotFound)
+      VCR.use_cassette('contact_find_error') do
+        expect{Lobbyist::Contact.find(2)}.to raise_error(Lobbyist::Error::NotFound)
+      end
     end
     
     it 'should return the found contact' do
-      headers = set_headers('get', path(10), {'nonce' => @nonce})
-      body = {contact_id: 10, company_id: 12, first_name: 'John', last_name: 'Doe', email: 'jdoe@gmail.com', wants_emails: '1'}
-      stub_get(path(10)).with(:query => {'nonce' => @nonce}, headers => headers).to_return(body: body.to_json, status: 200)
-      contact = Lobbyist::Contact.find(10)
-      contact.should_not be_nil
-      contact.should be_a(Lobbyist::Contact)
-      contact.first_name == 'John'
+      VCR.use_cassette('contact_find') do
+        contact = Lobbyist::Contact.find(6)
+
+        expect(contact).to_not be_nil
+        expect(contact).to be_a(Lobbyist::Contact)
+        expect(contact.first_name).to eq('Tony')
+      end
     end
   end
 
   describe ':create' do
     it 'should create a new contact' do
-      headers = set_headers('post', path, {'nonce' => @nonce, 'contact' => params})
-      body = {contact_id: 10, company_id: 12, first_name: 'John', last_name: 'Doe', email: 'jdoe@gmail.com', wants_emails: '1'}
-      stub_post(path).with(:query => {'nonce' => @nonce, 'contact' => params}, headers => headers).to_return(body: body.to_json, status: 200)
-      contact = Lobbyist::Contact.create(params)
-      contact.should_not be_nil
-      contact.should be_a(Lobbyist::Contact)
-      contact.first_name.should == 'John'
-      contact.wants_emails.should == '1'
+      VCR.use_cassette('contact_create') do
+        contact = Lobbyist::Contact.create(127, params)
+
+        expect(contact).to_not be_nil
+        expect(contact).to be_a(Lobbyist::Contact)
+        expect(contact.first_name).to eq('John')
+        expect(contact.wants_emails).to eq(true)
+      end
     end
   end
   
   describe ':update' do
     it 'should update the contact' do
-      headers = set_headers('put', path(10), {'nonce' => @nonce, 'contact' => params})
-      body = {contact_id: 10, company_id: 12, first_name: 'John', last_name: 'Doe', email: 'jdoe@gmail.com', wants_emails: '1'}
-      stub_put(path(10)).with(:query => {'nonce' => @nonce, 'contact' => params}, headers => headers).to_return(body: body.to_json, status: 200)
-      contact = Lobbyist::Contact.update(10, params)
-      contact.should_not be_nil
-      contact.should be_a(Lobbyist::Contact)
+      VCR.use_cassette('contact_update') do
+        contact = Lobbyist::Contact.update(127, 7207156, {first_name: 'Jane'})
+
+        expect(contact).to_not be_nil
+        expect(contact).to be_a(Lobbyist::Contact)
+        expect(contact.first_name).to eq('Jane')
+      end
     end
   end
 
   describe ':search' do
     it 'should get a list of contacts' do
-      params = {'nonce' => @nonce}
-      headers = set_headers('get', '/v1/contacts/search.json', params)
-      body = [{contact_id: 10, company_id: 12, first_name: 'John', last_name: 'Doe', email: 'jdoe@gmail.com', wants_emails: '1'},{contact_id: 11, company_id: 12, first_name: 'Jane', last_name: 'Doe', email: 'janedoe@gmail.com', wants_emails: '0'}]
-      stub_get('/v1/contacts/search.json').with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)
-      list = Lobbyist::Contact.search(params)
+      VCR.use_cassette('contact_search') do
+        list = Lobbyist::Contact.search({company_id: 127, email: 'jdoe@gmail.com'})
 
-      list.should be_a(Array)
-      list[0].wants_emails.should == '1'
+        expect(list).to be_a(Array)
+        expect(list[0].wants_emails).to eq(true)
+      end
     end
   end
-  
+
   describe 'PUT unsubscribe' do
     it "should return the contact when it was unsubscribed" do
-      path = '/v1/contacts/unsubscribe.json';params = {"email" => 'jon.doe@gmail.com', "reason" => 'I dont like your service', "company_id" => 1} 
-      Lobbyist::Base.add_nonce(params)
-      headers = set_headers("put",path,params)
-      body = {contact_id: 1, email: 'jon.doe@gmail.com', wants_emails: false}
-      stub_put(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 200)            
-      contact = Lobbyist::Contact.unsubscribe(params)
-      contact.wants_emails.should be_false
+      VCR.use_cassette('contact_unsubscribe') do
+        contact = Lobbyist::Contact.unsubscribe({company_id: 127, email: 'jdoe@gmail.com'})
+        
+        expect(contact.wants_emails).to eq(false)
+      end
     end
-    
-    it "should return an error when params are missing" do
-      path = '/v1/contacts/unsubscribe.json';params = {} 
-      Lobbyist::Base.add_nonce(params)
-      headers = set_headers("put",path,params)
-      body = { errors: ["Required Parameters: reason, email are missing."] }
-      stub_put(path).with(:query => params, headers => headers).to_return(body: body.to_json, status: 412)      
-      expect {Lobbyist::Contact.unsubscribe()}.to raise_error(Lobbyist::Error::PreconditionFailed)
-    end    
   end
   
-  def path(id = nil)
-    if id
-      "/v1/contacts/#{id}.json"
-    else
-      "/v1/contacts.json"
-    end
-  end
-
   def params
     {
-      'company_id'          => '12',
       'first_name'          => 'John',
       'last_name'           => 'Doe',
       'email'               => 'jdoe@gmail.com',
