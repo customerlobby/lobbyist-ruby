@@ -1,0 +1,288 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/reviews.json?company_id=148&nonce=2015-11-23+22%3A20%3A00+UTC&status=publish
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="e792cd66d2e773a6c7a66c10348b6cee15b5c0e0e42aaab983d7748d043b3e0b"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"03f4371ac51ee9c7b439262ef77f12ab"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 46ce43cf65cf2efd568d32ed34e97e2c
+      x-runtime:
+      - '0.279572'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":21,"page":1,"rpp":20,"elements":[{"review_id":573949,"review_date":"2015-03-22T16:24:20Z","review_summary":"Web
+        vision video does a great job for a very reasonable price. Total professionalism","review_body":"I
+        have worked with Julian White and web video vision for many many years. They
+        have designed websites, web  videos, and TV commercials all on time and highest
+        quality.  Choice for all your Internet web video needs","review_status":"publish","total_score":1.0,"source":"email","is_featured":true,"ip_address":"70.209.195.70","admin_user_id":null,"inviteable_id":1417625,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Irvine","created_at":"2015-03-22T16:24:20Z","updated_at":"2015-04-03T00:39:06Z","post_to_facebook":false,"topics":[{"id":1948089,"review_topic":"Professionalism","rating":1.0},{"id":1948091,"review_topic":"Quality","rating":1.0},{"id":1948093,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1773637,"first_name":"Don","last_name":"Currie","state":"CA","city":"Irvine"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":431587,"review_date":"2014-06-16T16:43:10Z","review_summary":"Excellent
+        Company","review_body":"HighTechLending, Inc. has worked with Julian White
+        and Web Video Vision for several years now.  Over the years Web Video Vision
+        has produced websites, web videos and commercials.  All the work is very professional,
+        state of the art and done on time.  Highly recommend and I do so regularly.  ","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"24.248.96.226","admin_user_id":null,"inviteable_id":927997,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Irvine","created_at":"2014-06-16T16:43:10Z","updated_at":"2014-06-27T12:00:06Z","post_to_facebook":false,"topics":[{"id":1521321,"review_topic":"Professionalism","rating":1.0},{"id":1521323,"review_topic":"Quality","rating":1.0},{"id":1521325,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1773637,"first_name":"Don","last_name":"Currie","state":"CA","city":"Irvine"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":395739,"review_date":"2014-04-02T22:00:35Z","review_summary":"Always
+        Great working with Julian & Web Video Vision","review_body":"I have been a
+        professional actor for 15 years and have had the rare opportunity to work
+        with Julian on several of his Web Video Vision''s client projects. They are
+        always fun, professionally run, and fulfilling work for me as an actor. I
+        would highly recommend Web Video Vision for any of your website design, video
+        production and promotion. 5 Stars!!!!","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"68.4.184.147","admin_user_id":null,"inviteable_id":855911,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Laguna
+        Beach","created_at":"2014-04-02T22:00:35Z","updated_at":"2014-04-13T12:00:09Z","post_to_facebook":false,"topics":[{"id":1413777,"review_topic":"Professionalism","rating":1.0},{"id":1413779,"review_topic":"Quality","rating":1.0},{"id":1413781,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":81988,"first_name":"Ed.","last_name":"Gillow","state":"CA","city":"Laguna
+        Beach"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":394631,"review_date":"2014-04-01T01:15:10Z","review_summary":"Amazing
+        video production and branding!","review_body":"Julian was a pleasure to work
+        with on the production of four videos, related to material which helps transitioning
+        veterans. I would highly recommend using Web Video Visions for your video
+        production and branding needs!\r\n\r\nTim Kirk\r\nCo-Founder & Vice Chairman,
+        Hire Our Heroes\r\nwww.HireOurHeroes.Org\r\n ","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"76.176.73.24","admin_user_id":null,"inviteable_id":851201,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"VA","reviewer_location_city":"Leesburg","created_at":"2014-04-01T01:15:10Z","updated_at":"2014-04-11T12:00:08Z","post_to_facebook":false,"topics":[{"id":1410453,"review_topic":"Professionalism","rating":1.0},{"id":1410455,"review_topic":"Quality","rating":1.0},{"id":1410457,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1868631,"first_name":"Tim","last_name":"Kirk","state":"VA","city":"Leesburg"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":387605,"review_date":"2014-03-18T20:22:37Z","review_summary":"Professional
+        team with inovative marketing ideas","review_body":"We met Julian approx 4
+        years ago when he attended one of our Autobahn Adventures in Europe. The Web
+        Video Vision team went on to help us expand our reach online with the development
+        of an inovative new website, Facebook and YouTube pages as well as an amazing
+        6 part video series showcasing our Luxury European Driving Tours. ","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"172.250.81.192","admin_user_id":null,"inviteable_id":840595,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Fountain
+        Valley","created_at":"2014-03-18T20:22:37Z","updated_at":"2014-03-29T12:00:11Z","post_to_facebook":false,"topics":[{"id":1389375,"review_topic":"Professionalism","rating":1.0},{"id":1389377,"review_topic":"Quality","rating":1.0},{"id":1389379,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1773461,"first_name":"Mark","last_name":"Trewartha","state":"CA","city":"Fountain
+        Valley"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":386741,"review_date":"2014-03-17T15:08:18Z","review_summary":"Great
+        to work with ","review_body":"I found out about web video vision about 7 years
+        ago  and I have been working with them since they are very professional to
+        work with and always deliver on time I would deffenitly recommend them to
+        anyone ","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"66.78.247.45","admin_user_id":null,"inviteable_id":840575,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Los
+        Angeles","created_at":"2014-03-17T15:08:18Z","updated_at":"2014-03-28T12:00:05Z","post_to_facebook":false,"topics":[{"id":1386783,"review_topic":"Professionalism","rating":1.0},{"id":1386785,"review_topic":"Quality","rating":1.0},{"id":1386787,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1773727,"first_name":"Mike","last_name":"Boulos","state":"CA","city":"Los
+        Angeles"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":384789,"review_date":"2014-03-12T15:56:42Z","review_summary":"Web
+        Video does a great job for us. ","review_body":"Web Video built us a new website,
+        helps with our overall marketing and does SEO for us. All aspects have been
+        great. Many of our key words have moved to first page status and we get lot
+        of compliments on our website. \r\nFrank Himpelmann Islander Pools","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"172.9.184.236","admin_user_id":null,"inviteable_id":840593,"inviteable_type":"EmailInvitation","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Riverside","created_at":"2014-03-12T15:56:42Z","updated_at":"2014-03-12T16:08:34Z","post_to_facebook":false,"topics":[{"id":1380927,"review_topic":"Professionalism","rating":1.0},{"id":1380929,"review_topic":"Quality","rating":1.0},{"id":1380931,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":1773665,"first_name":"Frank","last_name":"Himpelmann","state":"CA","city":"Riverside"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":136149,"review_date":"2012-04-25T18:00:56Z","review_summary":"Video","review_body":"Julian
+        and his crew did a video for Antonello Ristorante 7 years ago. We incorporated
+        all our Ristorante''s into one video and show it over at our Espresso Caffe
+        in made the VSouth Coast Plaza. Julian was great to work with had some very
+        creative ideas and put them on Video for us to see and we loved it. Today
+        7 years later we still show the Video and the quality makes it look like we
+        just made the Video last \nweek.","review_status":"publish","total_score":1.0,"source":"web","is_featured":false,"ip_address":"67.119.48.178","admin_user_id":null,"inviteable_id":null,"inviteable_type":null,"invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Santa
+        Ana","created_at":"2012-04-25T18:00:56Z","updated_at":"2012-04-25T18:00:56Z","post_to_facebook":false,"topics":[{"id":633991,"review_topic":"Professionalism","rating":1.0},{"id":633993,"review_topic":"Quality","rating":1.0},{"id":633995,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":541855,"first_name":"Thaddeus","last_name":"Foret","state":"CA","city":"Santa
+        Ana"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":78313,"review_date":"2012-01-11T23:10:32Z","review_summary":"Solid
+        Professional Team","review_body":"The team at Web Video Vision in the short
+        time I have worked with them has provided excellent service that has the key
+        qualities I look for and those are:  They Listen,  They Ask Questions, They
+        do not Presume to know our business, Provide what is requested in a timely
+        manner then once I have been satisfied professionally with my direction to
+        them they in a constructive manner provide additional suggestions which often
+        make sense for achieving our objectives.\n\nThey have one other important
+        strength and that is flexibility.","review_status":"publish","total_score":1.0,"source":"email","is_featured":true,"ip_address":"208.179.27.126","admin_user_id":null,"inviteable_id":228207,"inviteable_type":"EmailInvitation","invite_id":114425,"reviewer_location_state":"CA","reviewer_location_city":"Torrance","created_at":"2012-01-11T23:10:32Z","updated_at":"2012-01-11T23:10:32Z","post_to_facebook":false,"topics":[{"id":408235,"review_topic":"Professionalism","rating":1.0},{"id":408237,"review_topic":"Quality","rating":1.0},{"id":408239,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":200579,"first_name":"Larry","last_name":null,"state":"CA","city":"Torrance"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":58551,"review_date":"2011-08-04T03:46:44Z","review_summary":"Superior
+        Real Estate Website","review_body":"Julian and Phil did a fabulous job with
+        the enhancements and added features they designed for my existing website
+        which they originally launched for me a couple of years ago.  Their knowledge
+        and expertise with Social Media and SEO has situated me nicely on Google and
+        my business is growing as a result of it.","review_status":"publish","total_score":1.0,"source":"web","is_featured":true,"ip_address":"207.200.116.8","admin_user_id":null,"inviteable_id":null,"inviteable_type":null,"invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Irvine","created_at":"2011-08-04T03:46:44Z","updated_at":"2011-08-04T03:46:44Z","post_to_facebook":false,"topics":[{"id":290101,"review_topic":"Professionalism","rating":1.0},{"id":290103,"review_topic":"Quality","rating":1.0},{"id":290105,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":136626,"first_name":"Diane","last_name":"Merassa","state":"CA","city":"Irvine"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":25202,"review_date":"2010-08-11T18:04:28Z","review_summary":"Excellent
+        work","review_body":"Julian and Web Video Vision performed two valuable functions
+        for me: shooting and editing a video relating to my book, and also designing
+        and maintaining my website, which is also the website for the book. I have
+        always found him to be responsive, reliable and able to explain complex topics
+        in simple, straightforward language.","review_status":"publish","total_score":1.0,"source":"email","is_featured":true,"ip_address":"173.79.253.62","admin_user_id":null,"inviteable_id":56883,"inviteable_type":"EmailInvitation","invite_id":28608,"reviewer_location_state":"MD","reviewer_location_city":"Rockville","created_at":"2010-08-11T18:04:28Z","updated_at":"2010-08-11T18:04:28Z","post_to_facebook":false,"topics":[{"id":90247,"review_topic":"Professionalism","rating":1.0},{"id":90249,"review_topic":"Quality","rating":1.0},{"id":90251,"review_topic":"Service","rating":1.0}],"comments":[{"id":947,"comment":"We
+        at Web VIdeo Vision truly appreciate having such distinguished clients such
+        as Bruce.  His book - Living in More Than One World: How Peter Drucker''s
+        Wisdom Can Inspire and Transform Your Life - is a must read for any business
+        leader ","created_at":"2010-08-11T20:04:28Z"}],"contact":{"contact_id":16478,"first_name":"Bruce","last_name":"Rosenstein","state":"MD","city":"Rockville"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":18990,"review_date":"2010-03-22T20:10:22Z","review_summary":"Extremely
+        creative and extremely professional. ","review_body":"Web Video Vision has
+        been really great from start to finish. They are very hands-on and efficient.
+        They are quick to resolve whatever issues arise. They are really great to
+        work with and it is easy to get a hold of them. \n\nJoy Hamabe \nGeneral Manager\nPower
+        Turbine Inc","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"12.234.39.82","admin_user_id":25,"inviteable_id":4588,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Huntington
+        Beach","created_at":"2010-03-22T20:10:22Z","updated_at":"2015-04-03T00:38:57Z","post_to_facebook":false,"topics":[{"id":53113,"review_topic":"Professionalism","rating":1.0},{"id":53115,"review_topic":"Quality","rating":1.0},{"id":53117,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":102,"first_name":"Joy","last_name":"Hamabe","state":"CA","city":"Huntington
+        Beach"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10735,"review_date":"2009-05-20T23:37:34Z","review_summary":"WebVideo
+        Vision rescued my Website","review_body":"Being an actor, my website is really
+        important to me. It is one of my \"calling cards\" for the biz. I need it
+        to send to directors, etc. A director tried to access my website a week ago
+        & let me know it was down. After the initial panic had subsided, I tried to
+        contact my old website host (will call NONAME from this point on) to no avail.
+        I didn''t have any disks of the site (my bad) to be able to send to anyone
+        else so they could host me. So after a week of trying to reach NONAME, I called
+        WebVideo Vision to see if they could help me. In my mind, I thought there
+        was no way, anyone could get this site going again. Phil immediately took
+        this project at 10:00am & within 30 minutes had contact info for the NONAME.
+        Phil then contacted NONAME to ask for the files. I went to lunch at 11:30am,
+        still thinking no way. An hour later I have a phone message from Phil letting
+        me know he had the files & he was waiting for go daddy to recognize the new
+        web host site. Whew, what a relief! I went to hopeless to happy within 4 hours!
+        The people at WebVideo Vision are the best.... they didn''t have to go to
+        the lengths they did, but they did & I am really glad they did. Talk about
+        customer service!","review_status":"publish","total_score":1.0,"source":"custom","is_featured":true,"ip_address":"68.4.220.142","admin_user_id":null,"inviteable_id":null,"inviteable_type":null,"invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Los
+        Angeles","created_at":"2009-05-20T23:37:34Z","updated_at":"2009-05-20T23:37:34Z","post_to_facebook":false,"topics":[{"id":3907,"review_topic":"Professionalism","rating":1.0},{"id":3909,"review_topic":"Quality","rating":1.0},{"id":3911,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":81988,"first_name":"Ed.","last_name":"Gillow","state":"CA","city":"Laguna
+        Beach"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10725,"review_date":"2009-05-20T15:13:51Z","review_summary":"Enjoyed
+        Our Experience","review_body":"Our experience working with Web Video Vision
+        was very pleasant. They went above and beyond to make sure we were happy with
+        our video and that it was high quality, while still working within our budget.
+        We are looking forward to working with them again, and would recommend them
+        to anyone considering creating a video. ","review_status":"publish","total_score":1.0,"source":"email","is_featured":false,"ip_address":"208.252.247.2","admin_user_id":null,"inviteable_id":2065,"inviteable_type":"EmailInvitation","invite_id":1121,"reviewer_location_state":"CA","reviewer_location_city":"La
+        Mirada","created_at":"2009-05-20T15:13:51Z","updated_at":"2009-05-20T15:13:51Z","post_to_facebook":false,"topics":[{"id":3847,"review_topic":"Professionalism","rating":1.0},{"id":3849,"review_topic":"Quality","rating":1.0},{"id":3851,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":16473,"first_name":"Andrea
+        ","last_name":" Mayes","state":null,"city":null},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10132,"review_date":"2009-01-07T22:42:40Z","review_summary":"Very
+        pleased with professionalism and final product. ","review_body":"I was referred
+        to WebVideo Vision by a friend. I needed them on short notice to make our
+        law firm''s website look more presentable. We were getting ready for the media
+        to look at the site and needed some redesigning within the same design. \r\n\r\nWebVideo
+        Vision took our existing website and greatly improved it. They fixed things
+        and added movement to the site. For example, now our pictures waterfall in.
+        Everything they did was outstanding. \r\n\r\nThe service that WebVideo Vision
+        provided was better than I expected. I would definitely recommend them. Julian
+        White, the owner, is prompt and communicates well. He keeps you on task and
+        on deadline.  \r\n\r\nBill King\r\nPartner\r\nHorizon Law Group","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"12.234.39.82","admin_user_id":4,"inviteable_id":18,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2009-01-07T22:42:40Z","updated_at":"2009-01-07T22:42:40Z","post_to_facebook":false,"topics":[{"id":439,"review_topic":"Professionalism","rating":1.0},{"id":441,"review_topic":"Quality","rating":1.0},{"id":443,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":97,"first_name":"Bill","last_name":"King","state":null,"city":null},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10129,"review_date":"2009-01-06T00:02:49Z","review_summary":"Professional.
+        Innovative. Deliver on time. ","review_body":"I have several different businesses,
+        from finance to manufactured housing. Web Video Vision has designed at least
+        three websites for me. That is a testament to how happy I am with them. \r\n\r\nA
+        legitimate web company is hard to find these days. Web Video Vision''s professionalism
+        was what made me choose them over others when I was interviewing web companies.
+        In addition to their professionalism, they deliver on time. \r\n\r\nI gave
+        Julian, the president of WebVideo Vision, a wishlist of things I wanted accomplished.
+        He not only got it all done, but he raised the bar each time. He came up with
+        ideas and exceeded my expectations on every level. \r\n\r\nMatt Fleming","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"12.234.39.82","admin_user_id":4,"inviteable_id":19,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2009-01-06T00:02:49Z","updated_at":"2009-01-06T00:02:49Z","post_to_facebook":false,"topics":[{"id":421,"review_topic":"Professionalism","rating":1.0},{"id":423,"review_topic":"Quality","rating":1.0},{"id":425,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":98,"first_name":"Matt","last_name":"Fleming","state":null,"city":null},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10106,"review_date":"2008-11-25T23:56:05Z","review_summary":"Met
+        my expectations. Good value. ","review_body":"I learned about WebVideo Vision
+        from ENTREPRENEUR magazine in which they were rated one of top five web designers.
+        I interviewed others but decided to hire them to do the website for my law
+        practice. They met my expectations and did a good job. \r\n\n\r\n\nThe graphics
+        and the video on my website turned out great. I had to get more actively involved
+        in working on the text portion of the site. We did several revisions on the
+        text and it worked out. The site has only been up for a couple of months,
+        so it is still early to tell how it is affecting business. \r\n\n\r\n\nWebVideo
+        Vision''s pricing is good for what you get. I would recommend them. \r\n\n\r\n\nDanny
+        Soong\r\n\nOwner\r\n\nLaw Offices of Danny Soong","review_status":"publish","total_score":0.8,"source":"call","is_featured":false,"ip_address":"12.234.39.82","admin_user_id":4,"inviteable_id":20,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2008-11-25T23:56:05Z","updated_at":"2008-11-25T23:56:05Z","post_to_facebook":false,"topics":[{"id":331,"review_topic":"Professionalism","rating":1.0},{"id":333,"review_topic":"Quality","rating":0.8},{"id":335,"review_topic":"Service","rating":0.8}],"comments":[],"contact":{"contact_id":99,"first_name":"Danny","last_name":"Soong","state":"CA","city":"West
+        Covina"},"company":{"company_id":148,"company_name":"Web Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10096,"review_date":"2008-11-10T22:39:26Z","review_summary":"One
+        of the Best ","review_body":"This was my second time working with WebVideo
+        Vision and like the first, it was a fantastic experience.  \r\n\n\r\n\nCompared
+        to competitors in this industry, they garner massive creative talent and experience  and
+        overshadow most other professionals that I''ve come across.  \r\n\n\r\n\nThey
+        were timely as well as highly organized; exactly what I required for this
+        project.  The whole encounter went smoothly and easily.  \r\n\n\r\n\nI will
+        definitely use WebVideo Vision again for my next project.  I can''t emphasize
+        how creative and seasoned they are.\r\n\n\r\n\n\r\nMike Boulos\n\r\nPresident
+        MB Jewelers","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"12.234.39.82","admin_user_id":3,"inviteable_id":47,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2008-11-10T22:39:26Z","updated_at":"2008-11-10T22:39:26Z","post_to_facebook":false,"topics":[{"id":271,"review_topic":"Professionalism","rating":1.0},{"id":273,"review_topic":"Quality","rating":1.0},{"id":275,"review_topic":"Service","rating":1.0}],"comments":[],"contact":{"contact_id":101,"first_name":"Mike","last_name":"Boulos","state":null,"city":null},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10080,"review_date":"2008-10-21T01:14:56Z","review_summary":"Very
+        positive experience","review_body":"We have worked with WebVideo Vision for
+        3 or 4 years and have had good experiences with them.  They know their stuff.  From
+        capturing the video through editing and production, they did a great job.  I
+        worked directly with Matt on the editing and he was very patient and professional.\r\n\r\nI
+        also like their professionalism with our customers .  While they were videoing
+        our customers, they were very patient and understanding.\r\n\r\nI do wish
+        that the download speeds over the internet were faster.  This isn''t a criticism
+        of WebVideo Vision but a fact on the internet.  Maybe next time, we will also
+        do a DVD and mail it out.  \r\n\r\nThey do a good job and are good people
+        to choose for the product. Their work is very high quality.\r\n\r\nMike Townsend\r\nVP
+        Marketing\r\nSCPH","review_status":"publish","total_score":0.8,"source":"call","is_featured":false,"ip_address":"76.126.198.98","admin_user_id":2,"inviteable_id":24,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2008-10-21T01:14:56Z","updated_at":"2008-10-21T01:14:56Z","post_to_facebook":false,"topics":[{"id":175,"review_topic":"Professionalism","rating":1.0},{"id":177,"review_topic":"Quality","rating":0.8},{"id":179,"review_topic":"Service","rating":0.8}],"comments":[],"contact":{"contact_id":100,"first_name":"Mike","last_name":"Townsend","state":null,"city":null},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}},{"review_id":10060,"review_date":"2008-09-18T21:49:04Z","review_summary":"Great
+        experience and an educational, informative partnership ","review_body":"I
+        met Julian through a referral from our web hosting company.  I was interested
+        in his product and how we could use it to differentiate our company and engage
+        our users.  I reviewed and was impressed with the work WebVideo Vision had
+        done for another one of their clients.  We decided to hire them to create
+        a web video magazine for our web site.\r\n\r\nWebVideo Vision has been fantastic
+        and the response to the video magazine has been impressive so far.  In fact,
+        recently a large national bank proactively contacted us to solicit our business
+        after researching our industry and finding our video magazine online.  We
+        did have some issues with an early version of the video magazine but they
+        worked quickly to correct it and things have been great since.\r\n\r\nJulian
+        and the rest of the staff have been fantastic.  They are very professional,
+        provide fantastic service and great follow up.  They do exactly what they
+        tell you they are going to do even if it costs them extra money.  Julian has
+        great marketing ideas, is a forward thinker and is able to add value at many
+        different levels. \r\n\r\nWorking with them has been just a great experience.  I
+        have been recommending them to others and will continue to do so.\r\n\r\nMike
+        Alpert\r\nPresident & CEO\r\nThe Claremont Club","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"76.126.198.98","admin_user_id":2,"inviteable_id":17,"inviteable_type":"CustomerCall","invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2008-09-18T21:49:04Z","updated_at":"2008-09-18T21:49:04Z","post_to_facebook":false,"topics":[{"id":85,"review_topic":"Professionalism","rating":1.0},{"id":87,"review_topic":"Quality","rating":1.0},{"id":89,"review_topic":"Service","rating":1.0}],"comments":[{"id":7,"comment":"<a
+        href=\"http://webvideovision.com/Reviews-And-Awards/Testimonials/Claremont-Club\"
+        target=\"_blank\">Watch Video Review</a>","created_at":"2008-10-01T14:57:47Z"}],"contact":{"contact_id":96,"first_name":"Mike","last_name":"Alpert","state":"CA","city":"Claremont"},"company":{"company_id":148,"company_name":"Web
+        Video Vision","abbreviated_name":"web-video-vision","company_description":"Design
+        Websites, Video Production, Specialize in WebVideo sites","address1":"2030
+        Main Street","state":"CA","city":"Irvine","zip":"92614","phone":"7143355004","website":"http://www.WebVideoVision.com","categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}}]}'
+    http_version: 
+  recorded_at: Mon, 23 Nov 2015 22:20:00 GMT
+recorded_with: VCR 3.0.0

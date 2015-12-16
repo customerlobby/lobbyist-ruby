@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/contacts/unsubscribe.json
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"company_id":127,"email":"jdoe@gmail.com"},"nonce":"2015-11-30
+        23:28:24 UTC"}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="4c3fe0ae1b8ff91bf2cbbf45ba81bf65c859473030fb937f2d55cffbc7cb717d"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"5da2db35cff39802e40f474ecaa1cc31"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTcyZTgwNTcxYjU2YmE0OTkzMjI3ODU5ZTJlZWZiZmJhBjsAVA%3D%3D--68395335d3d859d9b589a4569a2260014ed01e32;
+        path=/; HttpOnly
+      x-request-id:
+      - d43f12757ac5b837b0073e8a8d167e71
+      x-runtime:
+      - '0.034782'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"contact_id":7207156,"company_id":127,"first_name":"Jane","last_name":"Doe","phone_daytime":null,"phone_daytime_ext":null,"phone_alt":null,"phone_alt_ext":null,"phone_mobile":null,"email":"jdoe@gmail.com","address1":null,"address2":null,"city":null,"state":null,"zip":null,"country":null,"last_service_date":null,"notes":null,"wants_emails":false,"wants_calls":true,"wants_sms":true,"wants_direct_mail":true,"unsubscribe_reason":"unsubscribed","unsubscribed_at":"2015-11-30T23:28:24Z","exclude_referral_marketing":0,"exclude_retention_marketing":0,"auto_review_id":null,"auto_review_draft_key":null,"created_at":"2015-11-30T22:39:53Z","updated_at":"2015-11-30T23:28:24Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 23:28:24 GMT
+recorded_with: VCR 3.0.0

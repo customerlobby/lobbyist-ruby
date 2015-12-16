@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/review_withdrawal_requests/find_by_email_key/8bl_gi9KyVZT7IHmagfL7g.json?nonce=2015-11-23+21%3A58%3A23+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="340d7bf005fb1fd6809ae0f2aa7acd0b1bbff01bcb935d6da0c1aaca896f0010"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"15dfd4232cda8d2ebfb8f999e4d26cf6"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 76b13692486c95d2cf02bd9b305fd1f6
+      x-runtime:
+      - '0.070215'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"id":9041,"review_id":630777,"status":"requested","request_date":"2015-07-08T16:39:18Z","note":"This
+        is a dublicate review. Customer left same review twice. ","author_action_date":null,"email_key":"8bl_gi9KyVZT7IHmagfL7g","created_at":"2015-07-08T16:39:18Z","updated_at":"2015-11-23T21:58:23Z","review":{"review_id":630777,"contact_id":7081061,"review_date":"2015-06-30T18:26:44Z","review_summary":"Terrible
+        customer service! Because of an accent, I was told to call someone else!!!","review_body":"Had
+        to wait for the technician for two hours, and he never showed up.\r\nCalled
+        two times to check if he is coming, the first time I was told he is on the
+        way and he will be there within 20 min. 40 min later nobody came and I called
+        again.\r\nThis time I spoke to another girl, who blamed me that they don''t
+        have the correct address, because of my accent and suggested I should call
+        someone else...!!!!\r\nShame on you!\r\n\r\n\r\n\r\n\r\n","review_status":"withdrawal_requested","total_score":0.4,"source":"web","is_featured":false,"ip_address":"166.172.187.208","admin_user_id":null,"invite_id":null,"reviewer_location_state":"FL","reviewer_location_city":"Fort
+        Lauderdale","created_at":"2015-06-30T18:26:44Z","updated_at":"2015-07-08T16:39:18Z","post_to_facebook":false,"topics":[{"id":2118569,"review_topic":"Service","rating":0.8},{"id":2118571,"review_topic":"Will
+        Recommend","rating":0.2},{"id":2118573,"review_topic":"Total Experience","rating":0.2}],"company":{"company_id":7362,"company_name":"A
+        STAR Air Conditioning","abbreviated_name":"a-star-air-conditioning","company_description":"","address1":"3921
+        SW 47th Avenue","address2":"Suite 1003","state":"FL","city":"Davie","zip":"33314","phone":"9547612600","website":"http://www.astarairconditioning.com","categories":[{"accelerator":"2.5","created_at":"2013-01-23T19:00:46Z","default_services":["Indoor
+        air quality & energy efficiency","Heating & air installation, repair  & tune-up","System
+        maintenance & replacement"],"generate_marketing_insights":false,"id":15,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"heating
+        & air conditioning","repeat_marketing_campaign_enabled":true,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2015-01-15T01:37:00Z"}]}}}'
+    http_version: 
+  recorded_at: Mon, 23 Nov 2015 21:58:23 GMT
+recorded_with: VCR 3.0.0
