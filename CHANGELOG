@@ -1,3 +1,6 @@
+=== 0.5.61
+* Added pricing_index and industry_pricing_index attributes on Lobbyist::V2::MemberInsightMetrics
+
 === 0.5.60
 * Added last_call attribute on Lobbyist::V2::AccountManagerMetrics
 
