@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/appointments.json?company_id=5909&nonce=2015-12-01+00%3A54%3A27+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="02a386a13a20a5a71fa2a8bf52f0b3accbb416f7e3fe01ea4f3adecac4bac79a"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"dbb219e791f23863104d942661b2ad1a"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 2e44e80f006425e1e171185fcea7ac9a
+      x-runtime:
+      - '0.085136'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":26,"page":1,"rpp":20,"elements":[{"id":32813,"company_id":5909,"first_name":"oainsdf","last_name":"oasiudgn","email":"asoidn@oisndg.com","phone":"5107254985","appointment_date1":"2014-11-18
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2014-11-17T17:43:04Z","updated_at":"2014-11-17T17:43:04Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":24261,"company_id":5909,"first_name":"testapp","last_name":"testapp","email":"sallada@customerlobby.com","phone":"4563456234","appointment_date1":"2014-06-27
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2014-06-27T01:25:59Z","updated_at":"2014-06-27T01:25:59Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":24253,"company_id":5909,"first_name":"sallada","last_name":"vidya","email":"sallada@customerlobby.com","phone":"4086676733","appointment_date1":"2014-06-27
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2014-06-27T00:25:42Z","updated_at":"2014-06-27T00:25:42Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":12053,"company_id":5909,"first_name":"oiasdng","last_name":"asodgin","email":"rjohnson@customerlobby.com","phone":"5103330730","appointment_date1":"2014-03-29
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"asdg","created_at":"2014-03-28T19:48:56Z","updated_at":"2014-03-28T19:48:56Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":9683,"company_id":5909,"first_name":"Test","last_name":"Test","email":"test@test.com","phone":"6546546542","appointment_date1":"2014-02-08
+        08:30 AM","appointment_date2":"2014-02-08 12:30 PM","appointment_date3":null,"comments":"test","created_at":"2014-02-07T18:46:04Z","updated_at":"2014-02-07T18:46:04Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":9125,"company_id":5909,"first_name":"test","last_name":"test","email":"test@test.com","phone":"6543211232","appointment_date1":"2014-01-24
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2014-01-24T00:38:10Z","updated_at":"2014-01-24T00:38:10Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":8509,"company_id":5909,"first_name":"Where","last_name":"Are","email":"u@dogisn.com","phone":"6543213213","appointment_date1":"2014-01-08
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"sdaga","created_at":"2014-01-08T02:34:55Z","updated_at":"2014-01-08T02:34:55Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":8507,"company_id":5909,"first_name":"Test","last_name":"Appt","email":"rjohnson@customerlobby.com","phone":"3333213211","appointment_date1":"2014-01-08
+        06:00 AM","appointment_date2":"2014-01-15 09:00 AM","appointment_date3":null,"comments":"4","created_at":"2014-01-08T02:22:08Z","updated_at":"2014-01-08T02:22:08Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":6573,"company_id":5909,"first_name":"test-appointment-r71","last_name":"test-appointment-r71","email":"sallada+r71-appointment@customerlobby.com","phone":"4086676733","appointment_date1":"2013-11-20
+        09:30 AM","appointment_date2":"2013-11-30 11:30 AM","appointment_date3":null,"comments":"comments
+        are ...","created_at":"2013-11-15T01:32:21Z","updated_at":"2013-11-15T01:32:21Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":4867,"company_id":5909,"first_name":"aefesaf","last_name":"asfsvdsv","email":"aweesf@mail.co","phone":"6745647464","appointment_date1":"2013-10-04
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2013-10-04T00:39:12Z","updated_at":"2013-10-04T00:39:12Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":4665,"company_id":5909,"first_name":"Ryan","last_name":"Johnson","email":"ryanrossjohnson@gmail.com","phone":"5103330730","appointment_date1":"2013-10-01
+        10:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"test","created_at":"2013-09-27T23:26:15Z","updated_at":"2013-09-27T23:26:15Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":4605,"company_id":5909,"first_name":"Test","last_name":"test","email":"osnogdi@osing.com","phone":"6546546544","appointment_date1":"2013-09-27
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2013-09-26T18:24:00Z","updated_at":"2013-09-26T18:24:00Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":3445,"company_id":5909,"first_name":"sdag","last_name":"asdgsag","email":"asdgsa@osings.com","phone":"9993330730","appointment_date1":"2013-08-28
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"dsfhdsh","created_at":"2013-08-26T17:27:38Z","updated_at":"2013-08-26T17:27:38Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":3443,"company_id":5909,"first_name":"oiasdng","last_name":"soidgn","email":"soignsio@osuign.com","phone":"5103330730","appointment_date1":"2013-08-28
+        09:30 AM","appointment_date2":" ","appointment_date3":null,"comments":"asdgsadg","created_at":"2013-08-26T17:25:58Z","updated_at":"2013-08-26T17:25:58Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":2973,"company_id":5909,"first_name":"fname_r65","last_name":"fname_r65","email":"fname_r65@mail.com","phone":"6786786788","appointment_date1":"2013-08-13
+        06:00 AM","appointment_date2":" ","appointment_date3":null,"comments":"","created_at":"2013-08-13T00:48:37Z","updated_at":"2013-08-13T00:48:37Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":969,"company_id":5909,"first_name":"Another","last_name":"Test","email":"osnfgsid@oisngsd.com","phone":"5555559090","appointment_date1":"2013-06-19
+        06:00:00","appointment_date2":"","appointment_date3":"","comments":"email
+        received?","created_at":"2013-06-14T18:13:59Z","updated_at":"2013-06-14T18:13:59Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":967,"company_id":5909,"first_name":"Ryan","last_name":"Johnson","email":"ryanrossjohnson@gmail.com","phone":"5103330730","appointment_date1":"2013-06-20
+        12:20:00","appointment_date2":"","appointment_date3":"","comments":"sup","created_at":"2013-06-14T17:41:48Z","updated_at":"2013-06-14T17:41:48Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":965,"company_id":5909,"first_name":"Test","last_name":"Appointment","email":"rjohnson@customerlobby.com","phone":"5103330730","appointment_date1":"12","appointment_date2":"","appointment_date3":"","comments":"","created_at":"2013-06-14T17:41:24Z","updated_at":"2013-06-14T17:41:24Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":19,"company_id":5909,"first_name":"oaigniosnad","last_name":"osiagfnaiogn","email":"asogdnaoi@toisngod.com","phone":"6216519197","appointment_date1":"2014-11-28
+        06:59:00","appointment_date2":"2013-03-23 17:13:00","appointment_date3":"2013-03-29
+        17:44:00","comments":"years in the future","created_at":"2013-03-22T18:56:52Z","updated_at":"2013-03-22T18:56:52Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}},{"id":17,"company_id":5909,"first_name":"sdgasda","last_name":"asdgasg","email":"asdgasg@sogisnd.com","phone":"9819198198","appointment_date1":"2013-03-27
+        06:01:00","appointment_date2":"2013-03-29 21:36:00","appointment_date3":"2013-03-25
+        12:12:00","comments":"time check","created_at":"2013-03-22T18:47:33Z","updated_at":"2013-03-22T18:47:33Z","company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","status":"active","is_active":true,"account_terminated":false,"account_class":"internal"}}]}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 00:54:28 GMT
+recorded_with: VCR 3.0.0

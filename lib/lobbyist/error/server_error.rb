@@ -11,7 +11,7 @@ module Lobbyist
 
       # Initializes a new ServerError object
       def initialize(message=nil, response_headers={})
-        super((message || self.class.const_get(:MESSAGE)), response_headers)
+        super((message || self.class.const_get(:MESSAGE)))
       end
 
     end

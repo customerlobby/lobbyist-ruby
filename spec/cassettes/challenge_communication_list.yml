@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/challenge_communications.json?nonce=2015-12-01+00%3A36%3A43+UTC&review_challenge_id=577
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="c01ec998a0c163bf50dab120cd5282225604cccc1b69a06c8ef5669d681220bd"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"c1b15df97d5245c5572b090900384eb0"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 4ecc4db1d4f81417f82ef7f25e6232b0
+      x-runtime:
+      - '0.017463'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '[{"id":11,"review_challenge_id":577,"contact_id":null,"admin_user_id":25,"user_id":null,"user_type":null,"communication_body":"Dear
+        David, \r\n\r\nWe received the review that you wrote about RetroTURF. Could
+        you please provide us with a receipt or canceled check as proof that you were
+        a paying customer of this company? You can fax the document to (510) 848-8154
+        or email it to customerservice@customerlobby.com Sincerely, Customer Lobby
+        Support Team ","email_key":"01148011a5324106","created_at":"2010-03-11T11:36:06Z","updated_at":"2010-03-11T11:36:06Z"},{"id":9,"review_challenge_id":577,"contact_id":null,"admin_user_id":25,"user_id":null,"user_type":null,"communication_body":"Dear
+        David, \r\n\r\nWe received the review that you wrote about RetroTURF. Could
+        you please provide us with a receipt or canceled check as proof that you were
+        a paying customer of this company? You can fax the document to (510) 848-8154
+        or email it to customerservice@customerlobby.com Sincerely, Customer Lobby
+        Support Team ","email_key":"45185011a5324d9","created_at":"2010-03-11T11:35:39Z","updated_at":"2010-03-11T11:35:39Z"},{"id":7,"review_challenge_id":577,"contact_id":null,"admin_user_id":null,"user_id":1795,"user_type":"CompanyUser","communication_body":"This
+        is a competitor. We always provide license information to our clients.","email_key":null,"created_at":"2010-03-10T18:38:11Z","updated_at":"2010-03-10T18:38:11Z"}]'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 00:36:44 GMT
+recorded_with: VCR 3.0.0

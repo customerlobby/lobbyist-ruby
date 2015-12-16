@@ -1,0 +1,925 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/member_calls.json?nonce=2015-11-30+21%3A12%3A41+UTC&scope=pending_calls
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="853caf7c7c487f1dce06702e0001daf6fe1e3dc03a82b53c5065608dee1581be"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"b44bacbd07a959da6cd17c33db12e29f"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - ab935d82d24cbfbd9f79ad81a9aaa098
+      x-runtime:
+      - '0.130350'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":26892,"page":1,"rpp":20,"elements":[{"id":1,"company_id":141,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"5/10/11:
+        (AB) Norma said we have to talk to Forrest about updating cc info. and she
+        suggested I email him b/c he was not in. Shut off tomorrow, 5/11, if no response.","created_at":"2013-04-19T00:32:36Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":141,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Csi
+        Mini Storage","company_description":"Mini Storage","address1":"855 Parr Boulevard","address2":"","city":"Richmond","state":"CA","zip":"94801-1320","country":"US","latitude":"37.96756550000001","longitude":"-122.3570626","timezone":"Pacific
+        Daylight Time","formatted_address":"855 Parr Boulevard, Richmond, CA 94801,
+        USA","phone":"5102311678","phone_ext":"","website":"http://www.csiministorage.com","is_active":true,"abbreviated_name":"csi-mini-storage","freetrial_start_date":"2008-08-08T17:10:00Z","signup_admin_id":null,"signup_ip_addr":"76.126.104.136","account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.95,"admin_notes":"Norma''s
+        direct line: (510) 685-2352 and email norma.rainbow@gmail.com\n\nHarvey pp
+        for ncc''s.\nMike is DM, uses Forrest''s login. Mike said no to DC. (7/6/15).\n\n7/8/15
+        ah: Inc call from Mike. Has to do some damage control with pending neg reviews.
+        Has a lot of pos reviews, so I talked with him about management options. He
+        liked the idea of commenting on neg reviews. Score! Sent email fu re managing
+        neg reviews.\n7/6/15: mt: inc call from Mike, DM. He logs in under Forrest''s
+        name. He un-installed DC, wanted to make sure he did it right. Boo, he did.
+        He asked more about DC settings, he said if the customer paid online, would
+        that send an invitation. Explained auto invite setting and how the trigger
+        for invitations being sent is if that payment is reflected in the invoicing
+        software, and how we could disable that so that we only pull contact info,
+        then he would manually send invites. He said that he would still prefer not
+        to have DC, but thanked me for the info. \n6/29/15: mt: called, got transferred
+        to Harvey, said today was still good to install DC, just call him back in
+        5 minutes, he''s finishing up w/ a customer. Will do. UPDATE: Called again,
+        got vm, lvm for Harvey, said he had told me to call back at this time, gave
+        my direct line. Will try calling again in a few minutes. UPDATE: Got the install.\n6/25/15:
+        mt: attempt 3. spoke with Harvey, said he''ll get ncc''s into the account
+        himself, no follow up e-mail necessary. He said he actually wanted to know
+        the status of DC for him, and looking at our notes, we''re actually ready
+        to move forward with the installation if he is. He said Monday, 10:30 am would
+        work best. Calendared. \n6/19/15: mt: called, spoke with Darleen. Harvey unavailable,
+        lhm.\n6/17/15: mt: added ncc''s yesterday, new review today. Sent e-mail re
+        si''s/social media syndication\n1/9/15 ks: Harvey''s unavailable and the gatekeeper
+        said she won''t see him so she can''t take a message. Sent an email to him
+        and other users re:DC/NCCs\n8/28/14 kf: lhm and emailed re: ncc/dc. we have
+        sitelink DC available now for them.\n7/31/14 rj: contacted harvey about dc
+        for sl, wants call next week to install.\n4.14.14 scd: lhm & sent email re
+        ncc''s.\n3/31/14 kf: talked to mike, he said he''d get the CC updated on his
+        own. \n2/20/14 tj: inc call, mike. He''s making Harvey responsible for adding
+        contacts. Made Harvey a user and did a wt on contacts. He picked it up pretty
+        quickly. Received email from Mike. Added 13 ncc''s.\n12.13.13 scd: lhm mike
+        is new pp for cl acct. got his email, added him as a user and sent him email
+        re ncc''s & pdf flier. \n8.12.13 scd: Forrest outside. Sent basic email &
+        ncc''s & si''s.\n4/10/13 kf: emailed syndication success links and ncc reminder.
+        \n12/10/12 scd: emailed 12 ncc''s, entered.\n11/6/12 scd: emailed 6 ncc''s,
+        entered.\n11/5/12 scd: emailed 19 ncc''s, entered. \n09/20/12 kb: entered
+        ncc. \n8/17/12 scd: Norma emailed 10 ncc''s \n07/10/12 mm: Norma emailed in
+        5 NCCs.\n06/21/12 mm: Talked with Norma about 10 customer call credits and
+        emailed re: NCCs.\n04/27/12 mm: Talked with Norma about NCCs.  Sent email
+        to her about NCCs for her to respond to.\n2/21/12 rj: norma emailed because
+        button not updating. called, will do it herself, sent button code.\n1/18/12
+        rj: norma busy, would like an email re: si, fb.\n1/9/12: (AB) Talked to Norma,
+        updated cc, and they want to upgrade to Biz Level now. She also gave me a
+        bunch of contacts to call.  I explained credit system to her going forward
+        and told her to give us more contacts so queue will always be full. \n12/30/11:
+        (AB) Talked to Norma who said they want to upgrade to Biz Level of service
+        for the phone reviews. They are currently On Hold so we need to update cc
+        in order to do so. Norma said to email Forrest about this b/c he is out of
+        town until Jan. 3. I emailed him and cced her. \n8/24/11: (AB) Forrest emailed
+        out of the blue with credit card information to update his account. I emailed
+        him back about getting button back up and giving him a free credit. Norma
+        emailed with new contact to call and she will put button back up (with my
+        nagging).\n5/25/11:(ted) turned this into a free account.  Sent email to Forrest.\n5/25/11:
+        (AB) Left final message with Harvey. Norma and Forrest are not responding.
+        Will probably need to terminate account. Sent final email to both of them
+        with stats which were very high until reviews page turned off. Now it''s \"Under
+        Construction\" on first page Google.\n5/17/11: (AB) Left hm for Forrest. Shut
+        off reviews page. Sent email to Forrest and Norma about this.\n5/10/11: (AB)
+        Norma said we have to talk to Forrest about updating cc info. and she suggested
+        I email him b/c he was not in. Shut off tomorrow, 5/11, if no response.\n4/14/11:
+        (AB) Left hm for Norma with Harvey re: updating billing.\n3/31/11: (AB) Norma
+        said card on file was stolen so she has to get new one from the boss; also,
+        she is working on getting their button back up on the About Us page.\n3/15/11:
+        (AB) Sent another email to Norma about updating cc info.\n3/8/11: (AB) Left
+        vm and sent follow-up email to Norma b/c cc info. she gave me on 2/25 did
+        not go through.\n2/25/11: (AB) Updated cc info. with Norma, who is changing
+        site and working on getting button on new one. she wants me to email her about
+        fb/twitter to schedule a time.\n9/16/10: Talked to Norma who updated cc info.
+        and gave me new email address for her. Also, told me to contact Jericho at
+        Alameda store to get contact for free credit. Talked to Jericho who said he
+        would give a call back with contact info.\n9/8/10: Emailed Norma and Forrest
+        re: cc info. \n08/30/10: left message on main answering machine. need to get
+        normas direct! also there is strange code on their website.\n08/25/10: left
+        message with human re: cc. \n08/24/10: left message for someone over there
+        to give us a new cc. \n7/01/10 talked to Jericho about getting customer call
+        names.\n3/24/10: Left message and emailed Norma re: reviews logo off website
+        and getting a new review. \n10/9/09: Talked to Jericho at Alameda CSI (510-748-1851)
+        re: getting another name/number for a Customer Call (Norma said to call him)\n9/24:
+        Left message for Norma re: Customer Call credit.","customer_call_notes":"Two
+        locations: Richmond & Alameda, ask which location they used.","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2012-01-09T16:16:33Z","last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2012-01-09","sugar_lead_id":"58442e77-37e8-73cf-c345-4fa4b30ea036","sugar_account_id":"ddbdb9d3-7771-c667-d320-4fa8166bd91a","sugar_opportunity_id":"64ba8e84-fd3e-2bd6-2d69-5165d6ef1b88","created_at":"2008-08-08T17:10:00Z","updated_at":"2015-07-09T16:51:05Z","status":"active","sales_user_id":2,"system_of_record":"Site
+        Link","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"file_received","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":"2015-06-29","direct_connect_install_status":"installed","direct_connect_installed_by":"rjohnson","direct_connect_notes":"6/29/15
+        rj: had to download and install ssms, stop server, add single user override,
+        start server, connect w/ windows user, add cldirectconnect user and security,
+        configure users for data read access, stop server, removed single user override,
+        start server... test connection successful, data confirmed, processing enabled.","current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":3,"company_id":147,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"5/10/11:
+        (AB) sent email to judy re: FB/Twitter and getting new reviews.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":147,"enterprise_id":null,"workflow_system_id":null,"account_level_id":5,"company_name":"Kono
+        Consulting, Inc.","company_description":"Provider of Managed Consulting Services
+        for Microsoft Dynamics based business solutions.","address1":"268 Bush Street
+        #429","address2":"","city":"San Francisco","state":"CA","zip":"94104","country":"US","latitude":"37.7911705","longitude":"-122.4018506","timezone":"Pacific
+        Daylight Time","formatted_address":"268 Bush Street #429, San Francisco, CA
+        94104, USA","phone":"4153183999","phone_ext":null,"website":"http://www.konoinc.com","is_active":true,"abbreviated_name":"kono-consulting-inc","freetrial_start_date":"2008-09-05T17:18:05Z","signup_admin_id":null,"signup_ip_addr":"66.93.139.50","account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"free","promo_id":null,"average_score":0.88,"admin_notes":"5/10/11:
+        (AB) sent email re: FB/Twitter and getting new reviews. \nNote: Judy Clark''s
+        extension is 984\n2/7/11: sent email for NCC (BL).\n10/05/10: she is still
+        waiting for new names.\n07/01/10: left vm for Judy for Need Customers to Call.\n04/30/10:
+        called and emailed Jud RE: customers to call. \n03/26/10- e-mailed Tom to
+        update credit card. (It worked -- tony responded with information)\n03/26/10:
+        Spoke to Judy: She requests that I not contact them again for a month because
+        she has to specific customers in m ind and the job will not be done for several
+        weeks. She wants us to call right after the job is complete. \n\n03/16/10:
+        Left VM with Judy about getting new customer information. \n12/2: Left message
+        for Judy. \n10/13: Sent email to get more Customer Call names; they are a
+        biz client.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2011-05-19T16:18:53Z","last_credit_grant":"2011-04-04","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"36456230-ffea-78c4-7674-4fa4b3695cd8","sugar_account_id":"3214a571-c3ac-10a7-4e2b-4fa8190838e2","sugar_opportunity_id":null,"created_at":"2008-09-05T17:18:05Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":null,"system_of_record":null,"activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":5,"company_id":148,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        We have done so many Member Calls with Julian and spoken with him recently
+        - even today (!) about reviews.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":148,"enterprise_id":null,"workflow_system_id":3,"account_level_id":1,"company_name":"Web
+        Video Vision","company_description":"Design Websites, Video Production, Specialize
+        in WebVideo sites","address1":"2030 Main Street","address2":"Suite 350","city":"Irvine","state":"CA","zip":"92614","country":"US","latitude":"33.6832055","longitude":"-117.8530372","timezone":"Pacific
+        Daylight Time","formatted_address":"2030 Main Street #350, Irvine, CA 92614,
+        USA","phone":"7143355004","phone_ext":"","website":"http://www.WebVideoVision.com","is_active":true,"abbreviated_name":"web-video-vision","freetrial_start_date":"2008-09-16T10:35:14Z","signup_admin_id":null,"signup_ip_addr":"75.51.94.217","account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":null,"average_score":0.98,"admin_notes":"6/11/15
+        ah: inc call from Julian. He wants 5 of our widgets in jpeg so that he can
+        put them on a video. He wasn''t able to save them as a jpeg, so RJ is emailing
+        them to him. He also wants to see what email invites look like, so I had him
+        send one to himself. He''s happy with his account at this time.\n2/26/15 ld
+        challenge accepted. ted a -  no resp to info req. \n2/20/15 jmr: called to
+        check on the challenge and went over the process with him. worried Ted will
+        send in a fake photoshopped invoice.\n2/19/15 ld challenge received.  ted
+        a not a cust? info req. \n2/21/14 rj: julian called in his usual charming
+        form, all pissed about how direct connect is supposed to work, and it''s clear
+        he doesn''t fully comprehend it.  the fact that he''s a jerk aside, we''ve
+        at least got him to keep it enabled and disable automation. if we can get
+        over that hurdle, we''ll have full automation for him.  if we can''t he''ll
+        disable it entirely, or manually queue after upload.  \n2/14/14 rj: vm, followup
+        email to julian re: dc.\n2/13/14 rj: this account is broken, but it''s julian,
+        so nobody cares... self installed scotty, but failed.  i''ll call to followup
+        with him.\n3.28.13 scd: sent basic email.\n7/24/12 scd: sent basic email.\n4/25/12:
+        (AB) Julian emailed wanting to know if we could edit his latest review for
+        grammar/spelling. I said no, not without reviewer approval. \n03/21/12 mm:
+        Sent Julian an email on Smart Invites.\n11/21/11 kb: walked phil through email
+        invite system. \n9/15/11: (AB) Sent Julian email re: Smart Invites. \n5/10/11:
+        (AB) We have done so many Member Calls with Julian and spoken with him recently
+        - even today (!) about reviews.\n08/11/10: removed Phil from the account.
+        \n07/12/10 talked to Julian about getting new review and Facebook syndication.\n03/16/10:
+        called and emailed Julian RE: email invitations and a customer call. I got
+        a customer to call. \n10/30: Sent email to Julian to get names/emails of potential
+        reviewers. \n10/7: Spotlighted them.","customer_call_notes":"","trial_source":"outbound","partner_id":21,"partner_account_id":169,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"343b6118-06fb-7737-cf26-4fa4b36e1068","sugar_account_id":"ae461f74-aaa8-d049-0476-4fa819adbf72","sugar_opportunity_id":"1693f287-3d0b-3f68-5587-51546c66c1fe","created_at":"2008-09-16T10:35:14Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":2,"system_of_record":"Quickbooks
+        online","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"running_ok","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":"2014-02-12","direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":"10/15/14
+        rj: self installed, but fixed by me later.","current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":7,"company_id":149,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        Kevin talks to them all the time when Cindy calls/emails, so they really don''t
+        need (another) Member Call.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":149,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"SCI
+        Solutions","company_description":"The Access Management innovator, SCI Solutions
+        is transforming the way healthcare providers deliver a superior patient experience
+        and accelerate their revenue cycle.","address1":"655 Campbell Technology Pkwy
+        #250","address2":"","city":"Campbell","state":"CA","zip":"95008","country":"US","latitude":"37.2814779","longitude":"-121.9411286","timezone":"Pacific
+        Standard Time","formatted_address":"655 Campbell Technology Parkway #250,
+        Campbell, CA 95008, USA","phone":"4083780262","phone_ext":null,"website":"http://www.scisolutions.com","is_active":false,"abbreviated_name":"sci-solutions","freetrial_start_date":"2008-09-22T07:19:07Z","signup_admin_id":null,"signup_ip_addr":"71.191.39.174","account_terminated":true,"termination_date":"2011-10-26T10:59:42Z","activation_code":null,"account_class":"business","promo_id":42,"average_score":0.95,"admin_notes":"110/25/11
+        kb: Cindy cancelled because of costs and no longer has anyone to manage the
+        account and use customer lobby to follow up with clients. \n10/21/11 kb: Athena
+        (an accountant not listed on the account) emailed me to cancel. I called Cindy
+        who was on vacation and spoke with Tricia, who advised I speak with Cindy
+        later when she gets back. I sent Cindy an email and cc''d Athena.  \n9/15/11:
+        (AB) Left vm and emailed re: NCCs and Smart Invites. \n6/23/11: (AB) Updated
+        address b/c they moved. Also, their reviews are indexing: \n5/10/11: (AB)
+        Kevin talks to them all the time when Cindy calls/emails, so they really don''t
+        need (another) Member Call.\n03/23/11 kb: Cindy has been emailing me a lot
+        re: product development suggestions related to emails being sent out in conjunction
+        with Customer Call requests. \n\n03/18/11 kb: emailed Cindy and Patricia re:
+        status of Customer Calls. Where are the notes for this account????","customer_call_notes":"Their
+        clients are all over, so try to call earlier in the day.","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2010-07-01T11:32:16Z","last_credit_grant":"2011-10-22","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"aa00a45b-27d2-e2c0-3735-4fa4b35f2a3b","sugar_account_id":"20805f21-5e37-a275-104f-4fa819decb4f","sugar_opportunity_id":"444d1618-2c74-a84f-ec19-50ef176aa4c7","created_at":"2008-09-22T07:19:07Z","updated_at":"2015-11-09T22:31:13Z","status":"terminated","sales_user_id":79,"system_of_record":"none","activity_feed_created":false,"data_dedupe_enabled":false,"direct_connect_status":"terminated","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":9,"company_id":154,"admin_user_id":null,"call_number":1,"completed_at":"2011-03-03T08:00:00Z","status":"completed","priority":1,"notes":"3/03/11
+        kb: left vm for Karen re: ncc and fb.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":154,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Sensiba
+        San Filippo LLP","company_description":"Certified public accountants and business
+        advisors.","address1":"4900 HOPYARD RD # 200","address2":"","city":"PLEASANTON","state":"CA","zip":"94588","country":"US","latitude":"37.69329889999999","longitude":"-121.9044578","timezone":"Pacific
+        Daylight Time","formatted_address":"4900 Hopyard Road #200, Pleasanton, CA
+        94588, USA","phone":"9252718700","phone_ext":"","website":"http://www.ssfllp.com","is_active":true,"abbreviated_name":"sensiba-san-filippo-llp","freetrial_start_date":"2008-11-14T14:07:32Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.95,"admin_notes":"Stella
+        Perez handles card, sperez@ssfllp.com, 925 271 8700. Two Jennifers here, be
+        sure to specify which one.\n\n6/15/15: mt: inc call from Jennifer, needed
+        to take Elizabeth off the account because she doesn''t work there, asked if
+        there was anyone to replace Elizabeth with, said not yet, they''re still looking.
+        Gave her AM''s info to reach for when they have a new user. Removed Elizabeth.\n3/4/15
+        jmr: inc email from Jennifer. \"We are aware of the current call credits and
+        are working internally to find a solution to mitigate lags in the review process.
+        Thank you for letting us know about the invoice system, we will add that to
+        our list of suggested options.\"\n3/3/15 jmr: lvm and sent email for nccs
+        and dc.\n2/23/15: al: LVM for Jennifer re: NCCs\n12/8/14 tj: inc call. Changed
+        invoice email from sperez@ssfllp.com > ssf.finance@ssfllp.com. They asked
+        for last month''s receipt. Sent.\n10/13/14 ks: Jennifer unavailable. LHM and
+        sent email re:NCCs/84 creds and SIs\n8/14/14 kab: Jennifer called, lvm. I
+        called back, spoke w/her. she wanted to know if we could provide their review
+        page visitors and total reviews data further back than the last 5 months.
+        i didn''t think so, but said i''d run it by tech anyway. did so, got a \"no\"
+        as expected, sent followup email to Jennifer. also let her know new member
+        panel will have more detailed analytics.\n7/23/14 kab: Stella called in. updated
+        cc info.\n6.10.14 scd: hm-vm. lvm re ncc''s & DC and sent info. \n2.6.14 scd:
+        lmsg & sent email re ncc''s.\n05/30/13 mm: lvm for Jennifer & sent email to
+        both users re: NCCs & matching NAP.\n4/3/13 kf: left vm and sent email to
+        both users re: ncc reminder/49 credits. \n2/6/13 kf: Jennifer (I think) called
+        in asking if there was a way to figure out who gave certain anonymous feedback.
+        No, Jen, it''s anonymous. She also wanted to know if call agents could ask
+        reviewers if it was ok to use their company logo in a reviews feature on their
+        page and who to contact for logo. I told her she''d have to contact customers
+        from her end for that, but I made a call note to ask reviewers for company
+        name. \n1/28/13 kf: changed spelling of company name on Danielle''s review
+        at Jennifer''s request. \n1.25.13 scd: sent email re ncc''s. \n01/07/13 mm:
+        sent Stella receipt at her request, said she never got it for December.\n09/24/12
+        mm: Not available, sent email re: updating NAP and NCCs. \n9/21/12 scd: added
+        1 ncc w/special call request per co.\n9/19/12 scd: corrected a few errors
+        in a cc per Jennifer''s email. \n8/8/12 scd: spoke to Jennifer Harrity re
+        cc''s.\n08/03/12 mm: enter 1 NCC with special note.\n08/01/12 kb: spoke with
+        Jennifer reL customer calls. They are going to start using them soon. In fact,
+        they are having a competition. \n5/4/12 rj: stella perez called in to update
+        cc. all future receipts go to her email: sperez@ssfllp.com\n05/04/12 kb: sent
+        on hold email 2 to Jennifer and Elizabeth\n05/01/12 kb: walked Jennifer through
+        the account. I showed her where to update the billing info. She insisted they
+        were going to do that today. \n4/30/12 rj: on hold.  vm, kevin will call 5/1
+        am.\n4/26/12: (AB) Left vm for Elizabeth on Thursday morning. \n04/18/12 kb:
+        Had a long talk with elizabeth. Alyson is going to follow up with her next
+        Thursday in the AM. \n04/18/12 kb: left vm for Elizabeth asked her to call
+        back to keep the account fro being deactivated, mentioned read rates and customer
+        call credits. \n04/12/12 kb: left vm for Elizabeth.\n01/18/12 kb: left hm
+        for Elizabeth to get account going mentioned all the credits for customer
+        calls. \n9/14/11: (AB) Karen no longer with SSF; Elizabeth O''Young is new
+        marketing person at ext. 6111. I left vm for her. We will need to update info.
+        on file, login etc. \n5/12/11: (AB) Too soon to bother Karen again for another
+        Member Call attempt.\n3/03/11 kb: left vm for Karen re: ncc and fb. \n1/28/11:
+        (AB) updated billing and emailed Karen about NCCs and Member Edition.\n1/4/11:
+        (AB) Emailed Karen re: billing.\n12/21/10: Karen said accounting dept. will
+        update billing info. when they''re back on Jan. 3.\n12/13/10: left vm and
+        sent email re: NCCs\n9/9/10: Emailed Karen re: more contacts for 13 credits
+        for Customer Call reviews.\n4/26/10: Sent email through Need Customers to
+        Call","customer_call_notes":"Ask if reviewer is with a certain company and
+        try to get that in the review if possible. ","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"3af35c9e-7234-1f6d-7376-4fa4b38fac22","sugar_account_id":"187c73f4-dd4a-ddc1-8959-4fa819519f4b","sugar_opportunity_id":"72e73e57-1830-f30b-8adc-50eb6b5d7a24","created_at":"2008-11-14T14:07:32Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":11,"company_id":154,"admin_user_id":null,"call_number":2,"completed_at":"2011-05-12T07:00:00Z","status":"completed","priority":2,"notes":"(AB)
+        Too soon to bother Karen again for another Member Call attempt.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":154,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Sensiba
+        San Filippo LLP","company_description":"Certified public accountants and business
+        advisors.","address1":"4900 HOPYARD RD # 200","address2":"","city":"PLEASANTON","state":"CA","zip":"94588","country":"US","latitude":"37.69329889999999","longitude":"-121.9044578","timezone":"Pacific
+        Daylight Time","formatted_address":"4900 Hopyard Road #200, Pleasanton, CA
+        94588, USA","phone":"9252718700","phone_ext":"","website":"http://www.ssfllp.com","is_active":true,"abbreviated_name":"sensiba-san-filippo-llp","freetrial_start_date":"2008-11-14T14:07:32Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.95,"admin_notes":"Stella
+        Perez handles card, sperez@ssfllp.com, 925 271 8700. Two Jennifers here, be
+        sure to specify which one.\n\n6/15/15: mt: inc call from Jennifer, needed
+        to take Elizabeth off the account because she doesn''t work there, asked if
+        there was anyone to replace Elizabeth with, said not yet, they''re still looking.
+        Gave her AM''s info to reach for when they have a new user. Removed Elizabeth.\n3/4/15
+        jmr: inc email from Jennifer. \"We are aware of the current call credits and
+        are working internally to find a solution to mitigate lags in the review process.
+        Thank you for letting us know about the invoice system, we will add that to
+        our list of suggested options.\"\n3/3/15 jmr: lvm and sent email for nccs
+        and dc.\n2/23/15: al: LVM for Jennifer re: NCCs\n12/8/14 tj: inc call. Changed
+        invoice email from sperez@ssfllp.com > ssf.finance@ssfllp.com. They asked
+        for last month''s receipt. Sent.\n10/13/14 ks: Jennifer unavailable. LHM and
+        sent email re:NCCs/84 creds and SIs\n8/14/14 kab: Jennifer called, lvm. I
+        called back, spoke w/her. she wanted to know if we could provide their review
+        page visitors and total reviews data further back than the last 5 months.
+        i didn''t think so, but said i''d run it by tech anyway. did so, got a \"no\"
+        as expected, sent followup email to Jennifer. also let her know new member
+        panel will have more detailed analytics.\n7/23/14 kab: Stella called in. updated
+        cc info.\n6.10.14 scd: hm-vm. lvm re ncc''s & DC and sent info. \n2.6.14 scd:
+        lmsg & sent email re ncc''s.\n05/30/13 mm: lvm for Jennifer & sent email to
+        both users re: NCCs & matching NAP.\n4/3/13 kf: left vm and sent email to
+        both users re: ncc reminder/49 credits. \n2/6/13 kf: Jennifer (I think) called
+        in asking if there was a way to figure out who gave certain anonymous feedback.
+        No, Jen, it''s anonymous. She also wanted to know if call agents could ask
+        reviewers if it was ok to use their company logo in a reviews feature on their
+        page and who to contact for logo. I told her she''d have to contact customers
+        from her end for that, but I made a call note to ask reviewers for company
+        name. \n1/28/13 kf: changed spelling of company name on Danielle''s review
+        at Jennifer''s request. \n1.25.13 scd: sent email re ncc''s. \n01/07/13 mm:
+        sent Stella receipt at her request, said she never got it for December.\n09/24/12
+        mm: Not available, sent email re: updating NAP and NCCs. \n9/21/12 scd: added
+        1 ncc w/special call request per co.\n9/19/12 scd: corrected a few errors
+        in a cc per Jennifer''s email. \n8/8/12 scd: spoke to Jennifer Harrity re
+        cc''s.\n08/03/12 mm: enter 1 NCC with special note.\n08/01/12 kb: spoke with
+        Jennifer reL customer calls. They are going to start using them soon. In fact,
+        they are having a competition. \n5/4/12 rj: stella perez called in to update
+        cc. all future receipts go to her email: sperez@ssfllp.com\n05/04/12 kb: sent
+        on hold email 2 to Jennifer and Elizabeth\n05/01/12 kb: walked Jennifer through
+        the account. I showed her where to update the billing info. She insisted they
+        were going to do that today. \n4/30/12 rj: on hold.  vm, kevin will call 5/1
+        am.\n4/26/12: (AB) Left vm for Elizabeth on Thursday morning. \n04/18/12 kb:
+        Had a long talk with elizabeth. Alyson is going to follow up with her next
+        Thursday in the AM. \n04/18/12 kb: left vm for Elizabeth asked her to call
+        back to keep the account fro being deactivated, mentioned read rates and customer
+        call credits. \n04/12/12 kb: left vm for Elizabeth.\n01/18/12 kb: left hm
+        for Elizabeth to get account going mentioned all the credits for customer
+        calls. \n9/14/11: (AB) Karen no longer with SSF; Elizabeth O''Young is new
+        marketing person at ext. 6111. I left vm for her. We will need to update info.
+        on file, login etc. \n5/12/11: (AB) Too soon to bother Karen again for another
+        Member Call attempt.\n3/03/11 kb: left vm for Karen re: ncc and fb. \n1/28/11:
+        (AB) updated billing and emailed Karen about NCCs and Member Edition.\n1/4/11:
+        (AB) Emailed Karen re: billing.\n12/21/10: Karen said accounting dept. will
+        update billing info. when they''re back on Jan. 3.\n12/13/10: left vm and
+        sent email re: NCCs\n9/9/10: Emailed Karen re: more contacts for 13 credits
+        for Customer Call reviews.\n4/26/10: Sent email through Need Customers to
+        Call","customer_call_notes":"Ask if reviewer is with a certain company and
+        try to get that in the review if possible. ","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"3af35c9e-7234-1f6d-7376-4fa4b38fac22","sugar_account_id":"187c73f4-dd4a-ddc1-8959-4fa819519f4b","sugar_opportunity_id":"72e73e57-1830-f30b-8adc-50eb6b5d7a24","created_at":"2008-11-14T14:07:32Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":13,"company_id":155,"admin_user_id":null,"call_number":1,"completed_at":"2011-03-09T08:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        Emailed Mark re: getting new reviews and FB/Twitter.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":155,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Seiler,
+        Epstein, Zeigler & Applegate","company_description":"A full service law firm
+        with offices in San Francisco, Marin and Contra Costa Counties, providing
+        exceptional legal representation throughout California.","address1":"101 Montgomery
+        St.","address2":"#2700","city":"San Francisco","state":"CA","zip":"94104-4140","country":"US","latitude":"37.79053","longitude":"-122.4025967","timezone":"Pacific
+        Daylight Time","formatted_address":"101 Montgomery Street #2700, San Francisco,
+        CA 94104, USA","phone":"4159790500","phone_ext":"","website":"http://www.sezalaw.com","is_active":false,"abbreviated_name":"seiler-epstein-zeigler--applegate","freetrial_start_date":"2008-11-17T08:40:52Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":true,"termination_date":"2015-03-17T23:24:23Z","activation_code":null,"account_class":"basic","promo_id":54,"average_score":0.98,"admin_notes":"mark
+        ext 210. ep-STINE\n\n3/17/15 kf: terminated acct. on hold, said he wanted
+        to quit also. use issue. \n3/11/15 kf: lvm for mark, emailed fllwup.\n3/3/15
+        kf: sent fllwup email to mark. \n2/24/15 kf: mark''s thinking of quitting.
+        asked how many credits he has. told him unlimited email reviews, maybe sign
+        up for DC? sent some stats too. added some courtesy call credits.\n2/23/15
+        kf: on hold, sent email 1 since jmr missed ''em earlier.\n2/23/15 jmr: spoke
+        with gk, transferred to vm.\n2/18/15 jmr: spoke with gk. Mark will be available
+        next week. sent email about account.\n2/3/15 jmr: lvm. account reminder.\n9/30/14
+        kf: emailed re: dc. \n5.28.14 scd: sent basic email w/dc info.\n1.27.14 scd:
+        sent basic email.\n9.24.3 scd: sent basic email w/si''s.\n5/2/13 kf: emailed
+        basic info and reminder of leftover credit.\n1.18.13 scd: sent basic email,
+        reminder of 1 cc and syndication.\n8/20/12 rj: on hold. vm, email 1 w/ citysearch.\n05/18/12
+        scd: button is working. Sent email re fb/twitter & si''s.\n03/27/12 kb: sent
+        email to notify them their button is not loading. email includes info on new
+        dynamic buttons. UPDATE: Their webperson contacted me and is working on it.
+        \n01/18/12 kb: sent email re: ncc. \n9/14/11: (AB) Sent email re: new display
+        options, buttons, and Smart Invites. \n06/29/11 kb: updated cc. \n5/12/11:
+        (AB) Recently attempted Member Call...too soon to call again. Maybe wait until
+        we have dynamic button.\n3/9/11: (AB) Emailed Mark re: NCCs and FB/Twitter.\n9/14/10:
+        Emailed Mark re: free credit for Customer Call review.\n04/02/10: emailed
+        mark re: new reviews\n10/28: Left another message for Mark and sent email,
+        which he responded to with one customer name. \n9/24: Left message to get
+        another client name for Customer Call review.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"dc600af8-bcc8-6713-5fee-4fa4b31ef1bf","sugar_account_id":"7146f0ba-8839-86f4-cc13-4fa81964f73b","sugar_opportunity_id":"382c741d-119c-4316-e460-50f9b56cb185","created_at":"2008-11-17T08:40:52Z","updated_at":"2015-11-09T22:31:13Z","status":"terminated","sales_user_id":2,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"terminated","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":15,"company_id":155,"admin_user_id":null,"call_number":2,"completed_at":"2011-05-12T07:00:00Z","status":"completed","priority":2,"notes":"(AB)
+        Recently attempted Member Call...too soon to call again. Maybe wait until
+        we have dynamic button.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":155,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Seiler,
+        Epstein, Zeigler & Applegate","company_description":"A full service law firm
+        with offices in San Francisco, Marin and Contra Costa Counties, providing
+        exceptional legal representation throughout California.","address1":"101 Montgomery
+        St.","address2":"#2700","city":"San Francisco","state":"CA","zip":"94104-4140","country":"US","latitude":"37.79053","longitude":"-122.4025967","timezone":"Pacific
+        Daylight Time","formatted_address":"101 Montgomery Street #2700, San Francisco,
+        CA 94104, USA","phone":"4159790500","phone_ext":"","website":"http://www.sezalaw.com","is_active":false,"abbreviated_name":"seiler-epstein-zeigler--applegate","freetrial_start_date":"2008-11-17T08:40:52Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":true,"termination_date":"2015-03-17T23:24:23Z","activation_code":null,"account_class":"basic","promo_id":54,"average_score":0.98,"admin_notes":"mark
+        ext 210. ep-STINE\n\n3/17/15 kf: terminated acct. on hold, said he wanted
+        to quit also. use issue. \n3/11/15 kf: lvm for mark, emailed fllwup.\n3/3/15
+        kf: sent fllwup email to mark. \n2/24/15 kf: mark''s thinking of quitting.
+        asked how many credits he has. told him unlimited email reviews, maybe sign
+        up for DC? sent some stats too. added some courtesy call credits.\n2/23/15
+        kf: on hold, sent email 1 since jmr missed ''em earlier.\n2/23/15 jmr: spoke
+        with gk, transferred to vm.\n2/18/15 jmr: spoke with gk. Mark will be available
+        next week. sent email about account.\n2/3/15 jmr: lvm. account reminder.\n9/30/14
+        kf: emailed re: dc. \n5.28.14 scd: sent basic email w/dc info.\n1.27.14 scd:
+        sent basic email.\n9.24.3 scd: sent basic email w/si''s.\n5/2/13 kf: emailed
+        basic info and reminder of leftover credit.\n1.18.13 scd: sent basic email,
+        reminder of 1 cc and syndication.\n8/20/12 rj: on hold. vm, email 1 w/ citysearch.\n05/18/12
+        scd: button is working. Sent email re fb/twitter & si''s.\n03/27/12 kb: sent
+        email to notify them their button is not loading. email includes info on new
+        dynamic buttons. UPDATE: Their webperson contacted me and is working on it.
+        \n01/18/12 kb: sent email re: ncc. \n9/14/11: (AB) Sent email re: new display
+        options, buttons, and Smart Invites. \n06/29/11 kb: updated cc. \n5/12/11:
+        (AB) Recently attempted Member Call...too soon to call again. Maybe wait until
+        we have dynamic button.\n3/9/11: (AB) Emailed Mark re: NCCs and FB/Twitter.\n9/14/10:
+        Emailed Mark re: free credit for Customer Call review.\n04/02/10: emailed
+        mark re: new reviews\n10/28: Left another message for Mark and sent email,
+        which he responded to with one customer name. \n9/24: Left message to get
+        another client name for Customer Call review.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"dc600af8-bcc8-6713-5fee-4fa4b31ef1bf","sugar_account_id":"7146f0ba-8839-86f4-cc13-4fa81964f73b","sugar_opportunity_id":"382c741d-119c-4316-e460-50f9b56cb185","created_at":"2008-11-17T08:40:52Z","updated_at":"2015-11-09T22:31:13Z","status":"terminated","sales_user_id":2,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"terminated","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":17,"company_id":159,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-11T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        We spoke to them recently and matched info. to Google Places. They have FB
+        and Twitter going.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":159,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"The
+        Clarke Team","company_description":"Kelly Clarke, Realtor. Providing unparalleled
+        real estate services that create lifetime relationships. Kelly:01482834.","address1":"580
+        El Camino Real","address2":"","city":"San Carlos","state":"CA","zip":"94070","country":"US","latitude":"37.5072971","longitude":"-122.2606914","timezone":"Pacific
+        Daylight Time","formatted_address":"580 El Camino Real, San Carlos, CA 94070,
+        USA","phone":"6504895399","phone_ext":"","website":"http://clarketeam.com/Home/?ID=15596","is_active":true,"abbreviated_name":"the-clarke-team","freetrial_start_date":"2009-01-06T16:11:08Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":26,"average_score":1.0,"admin_notes":"soanne.walker@cbnorcal.com\nassistant
+        650 489-8219\nKelly.Clarke@cbnorcal.com\n\n4/3/15 jmr: inc call from Kelly.
+        signed up with Zillow and they want to pull our reviews to her site to make
+        her profile look stronger. they will apparently contact us soon for that.\n1/6/15
+        jmr: inc call from Kelly. Reinstalled Facebook tab for business page (The
+        Clarke Team)\n12/18/14 ks: Sent DC email.\n12/5/14 ks: Kelly lvm for us, she''s
+        getting an error message when she tries to log in to publish a pending review.
+        Called, lvm for her explaining server problems/known issue and it''ll be fixed
+        soon and she''ll be able to publish the review.\n9/2/14 kab: Kelly called
+        re: 8/25 happenings. she was trying to see if anything had actually been done
+        with contact, Jill Ehring. I told her Jill was unresponsive, explained Call
+        process when Kelly thought we only tried Jill once. also explained 1 cred
+        = 1 completed review, so please do add a couple more names to use cred still
+        available. did wt of Get Reviews and Tracking sections. Kelly''s got it now.\n8/25/14
+        tj: inc call, Kelly. She was asking about contacts she added for invites,
+        then made a call request on one after having paid for a cred, but nothing
+        has happened. Informed her of the cooldown time between invites, told her
+        I''d get the contact added for a call request. She was pleased w/ the answer.\n6/23/14
+        tj: sent DC email.\n2/14/14 tj: sent basic email w/ synd success links.\n2/4/14
+        tj: inc call, Soanne. They''re happy that CL reviews is showing up when \"The
+        Clarke Team\" is googled, but want to know if there''s a way for it to happen
+        with \"Kelly Clarke.\" Best I can do is add Kelly Clarke to company description
+        atm. Suggest they get CG synd set up. sent fu email.\n1.27.14 scd: set dup
+        review from Rosella Radoycis to not publish. Kelly sent sup request re ht
+        get yelp reviews & how their account is doing. Ted said to encourage them
+        to sign up for Scotty testing.\n11/11/13 tj: called kelly. explained yelp
+        filter and no auto pubing to yelp. talked about & set up si''s for her.\n10.7.13
+        scd: sent basic email w/si''s.\n6.7.13 scd: sent basic email.\n02/06/13 mm:
+        sent basic email. \n10/08/12 kb: Kelly and Judy split. kelly called about
+        cancelling. I talked her into staying on to keep the grandfathered rate. \n09/28/12
+        mm: Sent email re: updating NAP and basic email.\n05/25/12 scd: sent email
+        re si''s, pdf flier and ncc link and reminder about 1 \"to Pay\" credit they
+        have.\n01/25/12 BL: emailed re: Smart Invites and invitation flier. \n08/26/11
+        kb: walked her thru fixing facebook app. Explained smart invites. \n5/11/11:
+        (AB) We spoke to them recently and matched info. to Google Places. They have
+        FB and Twitter going. \n2/10/11: (AB) They requested that Dawn Crew (Customer
+        Call) not be called until week of 2/14.\nnew credits to pay yet. \n02/07/11:
+        Judy called to complain that she did not get notified when one of her contacts
+        were marked unresponsive. I told her when we send updates and how track customer
+        call information through her cp. She seemed satisfied. I promised to raiser
+        her suggestions at the next prod development meeting: essential, she wants
+        the status of the customer calls listed with the email she gets asking for
+        new customer call contacts. \n\n4/8/10: Sent email with free customer call
+        credit.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"5615d883-56e7-7b2d-1ac7-4fa4b316b23a","sugar_account_id":"7537dd95-f469-e6c2-3400-4fa819608047","sugar_opportunity_id":"23a21e45-d8c6-fe47-b56f-5112e503bed4","created_at":"2009-01-06T16:11:08Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":2,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":19,"company_id":160,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-11T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        We talked to them recently. Their reviews are indexing into their San Jose
+        Place page, not to be confused with the Oakland one.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":160,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Summit
+        Defense Attorneys","company_description":"Criminal Defense Attorneys: Offices
+        in San Francisco, San Jose, Oakland, Burlingame, Pleasanton, Sacramento.  Domestic
+        Violence, DUI, Theft, Sex Crimes, Embezzlement","address1":"2570 N 1ST ST","address2":"2nd
+        Floor","city":"SAN JOSE","state":"CA","zip":"95131","country":"US","latitude":"37.3851283","longitude":"-121.9253683","timezone":"Pacific
+        Daylight Time","formatted_address":"2570 North 1st Street, San Jose, CA 95131,
+        USA","phone":"4083339622","phone_ext":"","website":"http://www.summitdefense.com","is_active":true,"abbreviated_name":"summit-defense-attorneys","freetrial_start_date":"2009-01-08T12:34:44Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":25,"average_score":0.95,"admin_notes":"Not
+        interested in either DC or si''s\n\n3/9/15 tj: Spoke w/ Scott. Not interested
+        in either DC or si''s. Told him we''ll keep it business as usual.\n10/29/14
+        ks: Sent DC email\n9/24/14 ks: email from Scott asking about status of WR.
+        Told him it''s still pending and that it will be removed automatically if
+        no response in 7 days.\n6/23/14 kab: sent basic email w/DC info.\n5/20/14
+        tj: Challenge, Damien T not a customer. His review says as much. Challenge
+        accepted.\n2.19.14 scd: sent basic email.\n1.28.14 scd: Scott called in re
+        strange review from parminder that just said \"hi\". lol. set it to not publish.\n10.18.13
+        scd: sent basic email w/si''s.\n6.17.13 scd: sent basic email w/reminder of
+        2 cc''s. Scott replied back that he had entered 2 ncc''s, yep, we''re calling.\n5.7.13
+        scd: Scott called in asking if CL stars would one day be counted towards seller
+        ratings as in Google. \n3/26/13 kf: scott called in asking about ask reviewer
+        questions. i explained the system to him. he also asked about hw forms, but
+        he wasn''t interested in upgrading to Plus. \n3/22/13 kf: scott left a vm
+        asking about challenging review. i called and told him he could challenge
+        Alexandria''s review on the grounds that she was never a client. he did so,
+        and i removed the review, since it was clear from the review that she never
+        paid them.\n2.14.13 scd: scott called in, asked about CG, spanish-speaking
+        call agents & fb/twitter. Sent him fb/twitter link and basic email so he could
+        send a custom invite email to add his message in Spanish.\n11/26/12 rj: scott
+        called in, wanted to let us know that he posted a credit to pay and customer
+        would be available to call for the next 20 minutes or tmwr from 9-1:30.  noted
+        on account, ping call agent to call asap or tmrw.\n10/19/12 mm: Sent email
+        re: SI and reviews syndicating.\n05/24/2012 scd: sent basic email reminder
+        about his 1 \"to pay\" credit and si''s, and pdf flier.\n05/02/12 kb: Explained
+        management options to Scott, who insists most recent review is not from an
+        actual customer. \n2/17/12: (AB) Left hm for Scott and sent On Hold Email
+        1. Scott called right back to update credit card. \n01/20/12 kb: had a long
+        talk with Scott about service. He is going to look into FB syndication but
+        he does not want smart invites. I explained Plus and told him to look out
+        for emails about it. \n10/11/11: (AB) Scott not in. They told me to email
+        him. I did, re: Smart invites. \n09/16/11 kb: review challenge accepted for
+        inappropriate content. \n1/31/11: (AB) Scott to change/update company info.
+        to match Places.\n12/6/10: Scott has created 3 different Places listings for
+        his 3 locations but is not interested in multiple Customer Lobby accounts
+        at this time...\n07/01/10: vm and email for Scott about getting new reviews.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"aa7162ca-219e-df86-6a2c-4fa4b35f65b3","sugar_account_id":"45c81e34-2351-6903-153a-4fa8192fb485","sugar_opportunity_id":"87b10493-7d32-36a4-21a1-511d3c093c04","created_at":"2009-01-08T12:34:44Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":3,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":335,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":21,"company_id":162,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-09T07:00:00Z","status":"completed","priority":1,"notes":"05/09/11
+        kb: sent email re: ncc and fb.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":162,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Jeffrey
+        Wolf CPA","company_description":"WE MAKE YOUR LIFE LESS TAXING!","address1":"1350
+        Broadway-705","address2":"","city":"New York","state":"NY","zip":"10018-7001","country":"US","latitude":"40.75095100000001","longitude":"-73.987346","timezone":"Eastern
+        Standard Time","formatted_address":"1350 Broadway, New York, NY 10018, USA","phone":"2122799040","phone_ext":"","website":"http://www.jeffreywolfcpa.com","is_active":true,"abbreviated_name":"jeffrey-wolf-cpa","freetrial_start_date":"2009-01-09T10:27:12Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":null,"average_score":0.96,"admin_notes":"2/17/15
+        kf: on hold. updated CC.\r\n1/30/15 ld challenge accepted of daniel''s review.  no
+        resp. not a cust.\r\n1/30/15 ld challenge accepted of seth''s review.  no
+        resp.\r\n1/22/15 jmr: challenged review from Seth F. claiming he''s not a
+        customer. req. info from reviewer. also challenged Daniel Blechman as the
+        same person. req. info from reviewer.\r\n11/25/14 ks: Sent basic email\r\n7/11/14
+        kf: sent basic email to jeff.\r\n5/13/14 kab: reviewer Nancy Cope called in.
+        she was sent an Email Invite on 5/9 and got another one. looks like she reviewed
+        through SIs-Google+. I let her know her review is showing on Google+ just
+        fine, thanked her for her feedback, and disabled email reminders for her.\r\n4/21/14
+        kf: returned jeffrey''s call and updated CC. pitched DC; he uses QB but doesn''t
+        really keep contact info in there. he knows DC is an option now though. also
+        asked if it would keep requesting reviews over and over from the same people,
+        CPAs do a lot of repeat stuff. our filters would stop this from happening,
+        but more settings for this kind of stuff could be good.\r\n4/16/14 kf: on
+        hold. lvm and email 1.\r\n2.19.14 scd: sent basic email.\r\n5/8/13 kf: emailed
+        basic info.\r\n2/7/13 kf: sent syndication email. \r\n08/6/12 scd: sent basic
+        email.\r\n04/3/12 scd: sent basic email with si''s and pdf flier. \r\n11/28/11
+        kb: sent email (he responds to it) re: smart invites. \r\n07/22/11 kb: walked
+        through custom email invites and got ncc. \r\n05/09/11 kb: sent email re:
+        ncc and fb. \r\n4/27/10: left vm and sent email re: customer call credit\r\n10/14:
+        Spotlighted them. 12: Talked to Jeffrey briefly but he was VERY busy meeting
+        a deadline. Said he would send out more email invites to get reviews after
+        deadline passed.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"c4fa01cb-1fbb-f43b-38d0-4fa4b3d7690a","sugar_account_id":"4f9c05be-f12d-b0ed-1e2c-4fa8198c9090","sugar_opportunity_id":"1a625f9d-21e9-9668-bc38-5113f523390e","created_at":"2009-01-09T10:27:12Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":3,"system_of_record":"Quickbooks
+        (no contact info)","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":23,"company_id":175,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-11T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        Tried to reach Nathan but he was not in so instead of leaving hm, I sent and
+        email re: getting new reviews and publishing to FB/Twitter. (Note: his reviews
+        are indexing.)","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":175,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Planet
+        Orange","company_description":"We are an environmentally friendly pest control,
+        termite, and construction company. Our products are convenient and family
+        and pet friendly.","address1":"434 Park Avenue","address2":"","city":"San
+        Jose","state":"CA","zip":"95110","country":"US","latitude":"37.3281249","longitude":"-121.897621","timezone":"Pacific
+        Daylight Time","formatted_address":"434 Park Avenue, San Jose, CA 95110, USA","phone":"4089636868","phone_ext":"","website":"http://www.planetorange.com","is_active":true,"abbreviated_name":"planet-orange","freetrial_start_date":"2009-01-22T08:46:35Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":25,"average_score":0.86,"admin_notes":"info@planetorange.com
+        \nslance@planetorange.com\n6/9/15 jmr: spoke with Shawn about dc. not ready
+        for email yet. doing all of that on the front end with his own office, wanting
+        to be more selective. brought up smart invites and he says he''ll look it
+        over. sent email with some info on smart invites and will follow up at later
+        date to get better clarification.\n6/2/15 jmr: lvm for Shawn. \n5/28/15 jmr:
+        lvm for Shawn and sent email re dc.\n12/4/14 kf: save. updated CC for shawn,
+        skipped month. he says he and the marketing director don''t want automation.
+        however, shawn understands the value of reviews as a marketing asset and is
+        willing to see how much biz this gets them since it''s so cheap. resent value
+        prop and confirmation of free month.\n12/1/14 kf: on hold. shawn didn''t realize
+        we''re still charging him. spoke to him two weeks ago, but whatever. not sure
+        about continuing, so here goes: value prop and save offer. he gets  a free
+        month upon paying up.\n11/19/14 ks: Sent DC email. UPDATE: Shawn emailed back
+        and asked for a call Friday for DC.\n7/16/14 tj: fu call w/ Sean. Did a quick
+        wt of the acct and where to add new contacts for invites. He seemed pretty
+        nonchalant about it. Good for now.\n7/14/14 tj: Save. ROI. Marketing guy/lame
+        gatekeeper is Sean Lance. He wouldn''t me or kab talk to his boss. He says
+        he''s taking over the acct & probably kill acct unless I can convince why
+        to keep it running. Challenge accepted. Brought out my bulldozer. Did a svc
+        overview. Explained to him that basic acct is a friggin sweet deal that he''s
+        not gonna get anywhere else. He agreed w/ me, says he wants to continue. Damn
+        right you do. sending email w/ overview of svc for basic.\n7.14.14 scd: mbox
+        full. sent email re dc & basic info.\n3.11.14 scd: sent basic email.\n2/2/14
+        tj: cb Lydia, did a p/w reset and updated address.\n6.26.13 scd: emailed basic
+        info to both emails & reminder of 1 credit. \n4/30/13 kf: emailed basic info
+        and reminder of 1 credit. \n2/25/13 kf: sent email re: syndication, fb app,
+        and basic email. email bounced back because they couldn''t find the domain
+        name, so i went out on a limb and tried ncoccozza@planetorange.com instead
+        of the one listed. \n10/17/12 scd: my email to nathan bounced back.\n10/17/12
+        scd: mbf. sent email syndication and basic email. reminder of 1 cc.\n06/13/12
+        mm: Sent email re: NCCs and sending unlimited email invites.\n02/13/12 kb:
+        sent email re: free customer call credits. \n10/12/11 kb: left vm and sent
+        email re: new reviews and smart invites. \n5/11/11: (AB) Tried to reach Nathan
+        but he was not in so instead of leaving hm, I sent and email re: getting new
+        reviews and publishing to FB/Twitter. (Note: his reviews are indexing.)\n10/28/10:
+        Tried to leave another message for Nathan but mailbox was full. Emailed him
+        with NCC credit and the fact that his reviews are indexing in Places. \n10/19/10:
+        left hm for Nathan re; google maps and getting new reviews. \n\n06/28/10:
+        left message for Nathan re: getting new reviews. \n10/29: Left message for
+        Nathan re: sending email invites to get more reviews.\n10/9: Spotlighted them.\n9/17:
+        Tried calling Nathan, not in.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"746538ad-34bf-5dc5-0a12-4fa4b53fffc9","sugar_account_id":"6c3cd775-1f0c-2d1e-f441-4fa819a80e76","sugar_opportunity_id":"6ddfbc08-ebba-b825-523d-512bf8542be0","created_at":"2009-01-22T08:46:35Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":3,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":25,"company_id":178,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-09T07:00:00Z","status":"completed","priority":1,"notes":"05/09/11
+        kb: Their reviews page is set to under construction. I sent Bentley an email
+        reminder about his reviews page status in case he is not aware. \n5/4/11:
+        (AB) I updated cc info. with Bentley and told him about FB/Twitter. Sent him
+        an email with details. (NOTE: Realized we had never done a Member Call with
+        him and that he''d never appeared in the queue - told Jeff & Ted).","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:07Z","disposition":"other","company":{"company_id":178,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"BeneFit
+        Personal Training","company_description":"Provides in-home personal fitness
+        training services nationwide.","address1":"P.O. Box 8894","address2":"","city":"Collingswood","state":"NJ","zip":"08108","country":"US","latitude":"39.9135471","longitude":"-75.06403499999999","timezone":"Eastern
+        Standard Time","formatted_address":"Collingswood, NJ 08108, USA","phone":"8883238677","phone_ext":null,"website":"http://www.benefitpersonaltraining.com","is_active":false,"abbreviated_name":"benefit-personal-training","freetrial_start_date":"2009-01-23T11:27:40Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":true,"termination_date":"2011-06-30T10:17:56Z","activation_code":null,"account_class":"basic","promo_id":33,"average_score":0.89,"admin_notes":"01/23/13
+        mm: Bentley called to say that he does not want his reviews syndicated to
+        CityGrid. I explained that it wont happen because he does not appear to have
+        a listing in CityGrid. He would not let me talk much and said he had to go.
+        As I told him, sending email re: syndication and all the benefits and asked
+        why he would not want this SEO and conversion benefit (included deal to waive
+        reactivation fee).\n06/30/11 kb: Bentley cancelled to save money. He is going
+        to post the reviews on his own site as testimonials. We had a long talk about
+        the pros and cons of testimonials vs third-party reviews. He just wants more
+        management. He hates bad reviews. \n05/09/11 kb: Their reviews page is set
+        to under construction despite the fact that their status is active. \n5/4/11:
+        (AB) I updated cc info. with Bentley and told him about FB/Twitter. Sent him
+        an email with details. (NOTE: Realized we had never done a Member Call with
+        him and that he''d never appeared in the queue - told Jeff & Ted).\n09/27/10:
+        customer came forward with receipt, so review is still pending. I spoke to
+        Bentley about writing a response, he will do that if the withdrawal request
+        fails. \n5/5/10: Talked to Bentley and emailed with 1 Free Customer Call Credit.\nBest
+        # to reach Bentley is his cell: (856) 718-4946.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"8b350d33-6325-7673-fb9f-4fa4b5d156dc","sugar_account_id":"b82f0997-d647-2502-0406-4fa819e3f932","sugar_opportunity_id":"a7b39577-7d99-1724-2e99-51003a7a29e8","created_at":"2009-01-23T11:27:40Z","updated_at":"2015-11-09T22:31:13Z","status":"terminated","sales_user_id":4,"system_of_record":"***
+        Created By CL Dev ****","activity_feed_created":false,"data_dedupe_enabled":false,"direct_connect_status":"terminated","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":27,"company_id":181,"admin_user_id":null,"call_number":1,"completed_at":"2011-04-25T07:00:00Z","status":"completed","priority":1,"notes":"(AB)
+        Sean was questioning 2 of his Not Published reviews. I explained why they
+        are set to Not Publish but he wanted us to look into Aug. 9,2010 review from
+        Haroon and Jan. 14,2010 review from Jonathan.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":181,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Transition
+        Staffing Group, Inc.","company_description":"Transition Staffing Group is
+        based in San Diego and offers staffing solutions from start-up to Fortune
+        500 clients. We place Accounting, HR and IT professionals.","address1":"10509
+        Vista Sorrento Parkway","address2":"Suite 300","city":"San Diego","state":"CA","zip":"92121","country":"US","latitude":"32.8977556","longitude":"-117.2163376","timezone":"Pacific
+        Daylight Time","formatted_address":"10509 Vista Sorrento Parkway #300, San
+        Diego, CA 92121, USA","phone":"8584049900","phone_ext":"","website":"http://www.callTSG.com","is_active":true,"abbreviated_name":"transition-staffing-group-inc","freetrial_start_date":"2009-01-27T14:45:40Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"basic","promo_id":32,"average_score":0.97,"admin_notes":"Shaun
+        Enders: x 102\n\n6/11/15 jmr: sent good performance email.\n5/28/15 jmr: lvm
+        and sent email re dc.\n5/8/15: mt: consistently adding e-mail invites, as
+        recent as today, fairly recent and consistent reviews as well. Sent e-mail
+        re dc.\n11/19/14 ks: Sent DC email.\n9/30/14 tj: inc call, Shaun. He needed
+        help w/ the new dashboard. Showed him the way.\n7.18.14 scd: lhm & sent email
+        re dc & basic info.\n7/15/14 kab: Shaun called. reviewer Josh Lee had marked
+        2/5 stars for professionalism, realized his mistake, and emailed Shaun asking
+        how to edit. I told Shaun he could just flip Josh''s email to me and I''d
+        fix it immediately. did just that.\n7.14.14 scd: reviewer josh getting error
+        msg 502 when trying to write a review. sent him link.\n6/6/14 kab: Shaun called
+        in, wanted to change G+ page we had on file. done!\n4.29.14 scd: Margarita
+        asked me to send her the April receipt, hasn''t been billed yet. I updated
+        the monthly receipt to go to her.\n3/17/14 tj: sent basic email DC & Synd
+        info.\n11/11/13 tj: Got a call asking for WordPress widget. They''re changing
+        sites or something. Showed them where to find it on account.\n7.9.13 scd:
+        sent basic email w/Yelp si''s.\n5/1/13 kf: returned Shaun''s call and helped
+        him uninstall and reinstall FB app. \n03/07/13 kb: Shaun is well cared for.
+        \n07/06/12 mm: Emailed Shaun re: SI and new buttons. At his request, enabled
+        SI.\n05/30/12 mm: Shaun having issue sending email invites, left him vm and
+        sent email to get info so I could troubleshoot.\n05/15/12 kb: Updated credit
+        card and squared things with Ashley. \n05/11/12 scd: Ashley called in and
+        their cc has been compromised and needed to update cc on file with temp card
+        for now. She asked about the $40 charge from acct. 375. They thought they
+        had cancelled that acct way back when. Wants to cancel it now. Emailing Kevin
+        with details. Their charge date was today, so they get a refund for that charge.
+        Her email is ashley@calltsg.com \n3/5/12 rj: shaun called about rating change,
+        emailing reviewer for confirmation. confirmed, review updated.\n2/24/12 rj:
+        shaun called about rating change, emailing reviewer for confirmation. confirmed,
+        review updated.\n2/7/12 rj: emailed shaun re: stats, display options, si.\n10/25/11:
+        (AB) Shaun called in about another star rating change. I emailed Michelle
+        Wang reviewer. \n10/6/11: (AB) Shaun called in about a star rating change.
+        I told him about Smart Invites and how to enable it. \n07/29/11 kb: emailed
+        reviewer Meiyin Chau-Flores re: star rating of review she wrote on the 27th.
+        \n4/25/11: (AB) Sean was questioning 2 of his Not Published reviews. I explained
+        why they are set to Not Publish but he wanted us to look into Aug. 9,2010
+        review from Haroon and Jan. 14,2010 review from Jonathan. \n03/10/11: Spoke
+        with Sean, he terminated the candidate reviews. I showed him his Google Maps
+        listing and he is really happy. I emailed him link to webinar and fb app info.
+        \n3/9/11: (AB) Sent email to Shaun re: publishing reviews to FB/Twitter.\n08/09/10:
+        Left what I consider the definitive vm for Shaun: re billing and receipts.
+        \nThe Breakdown: account 258 bills on the 11th for $10.00, account 375 bills
+        on the 11th for $40.00, and account 181 bills on the 28th for $49.00. Despite
+        having set up each account with a different email address, all receipts are
+        sent to shaun@aitransition.com.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"6e93fd0c-21b0-fac8-a12a-4fa4b5ffa5b5","sugar_account_id":"a8366b16-3356-6187-6c5c-4fa819f5e8ec","sugar_opportunity_id":"e97ebd99-d80c-3091-7888-50ec4ee12edc","created_at":"2009-01-27T14:45:40Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":3,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":29,"company_id":191,"admin_user_id":null,"call_number":1,"completed_at":"2011-02-09T08:00:00Z","status":"completed","priority":1,"notes":"2/09/11:
+        left VM for Howard to go over account. I told him we want to better customize
+        the service for his needs. 1) get cust calls. 2) discuss Member level. 3)
+        install twitter application. 4) reinstall facebook 5) and maybe discuss best
+        practice ideas for fb.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":191,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Fischer
+        Plumbing","company_description":"Fischer Plumbing adheres to a service philosophy
+        founded on the understanding that people deserve to be treated with utmost
+        respect by those who enter their homes.","address1":"1115 NW 51st Street","address2":"","city":"Seattle","state":"WA","zip":"98107","country":"US","latitude":"47.6655445","longitude":"-122.371441","timezone":"Pacific
+        Daylight Time","formatted_address":"1115 Northwest 51st Street, Seattle, WA
+        98107, USA","phone":"2063372141","phone_ext":"","website":"http://www.fischerplumbing.com/","is_active":true,"abbreviated_name":"fischer-plumbing","freetrial_start_date":"2009-02-20T11:02:09Z","signup_admin_id":null,"signup_ip_addr":"76.22.14.127","account_terminated":false,"termination_date":"2012-08-01T11:42:40Z","activation_code":"0736c70910a3b5957c141f2b6b63c06c","account_class":"business","promo_id":58,"average_score":0.94,"admin_notes":"*connected
+        to 7682*\n\n7/8/15 ah: lvm for Howard re managing neg review and getting more
+        ncc''s. Sent email re ncc''s and dc.\n7/6/15 ah: Called to speak to Howard
+        about neg rev management and ncc''s. Phone rang once and then cut out. Tried
+        again. same response.\n7/2/15 tj: Challenges. reviewers thors sunde and aaa
+        aaa (great name) unresponsive. Challenges accepted.\n7/1/15 ah: lhm for Howard
+        to discuss neg review management and to get more ncc''s.\n6/29/15 ah: Challenged
+        reviews by thor sunde and aaa aaa re not a cust. Req info. Also challenged
+        review by David White for calling them liars. Challenge denied. lvm re management
+        options. Sent email fu.\n6/26/15 tj: sup req: Howard emailed. \"Can we push
+        some of the bad reviews down somehow?\" Called. lvm. Two suggestions, feature
+        reviews (which they already have) and get more reviews. They challenge some
+        neg reviews alrdy that are likely to be accepted. Sent fu email.\n2/17/15
+        kf: consistent reviews, sent dc email. \n11/3/14 tj: Howard emailed. Asked
+        for appts to be turned off. Emailed howard explaining it as another means
+        of getting leads, sent link for where he can go to turn it on/off, it''s been
+        turned off.\n10/24/14 ks: lvm for Howard and sent email re:NCCs/94 creds\n8/13/14
+        tj: reviewer \"Another Joe\" unresponsive. Another challenge accepted.\n8/6/14
+        tj: Challenge. \"Another Joe\" not a customer. Asked for info.\n613/14 kf:
+        lvm for howard and emailed re: ncc/dc.\n5/22/14 kab: Howard emailed in. he
+        was trying to Challenge Paul J''s review and got an error message. I called
+        him back, asked him to try again while on the phone, and it went through.
+        let him know admin has been slow/wonky today, so sorry. he Challenged for
+        Not a Customer, I Accepted right away because Paul cussed. explained this
+        to Howard, who thought it was neat that our system turns it into symbols like
+        a comic book.\n2/3/14 kf: lvm for howard and emailed re: ncc.\n05/08/13 mm:
+        lhm with answering service & sent on hold email 1.\n4/5/13 kf: left vm and
+        sent email re: ncc strategy/reminder/61 credits.\n1/24/13 kf: Howard''s voicemail
+        message is pretty intense haha. i left a vm anyway about ncc''s and fb app.
+        I sent an email too. 55 credits!\n09/21/12 mm: lvm and sent email re: NCCs
+        and reviews now syndicating.\n08/02/12 kb: reactivated account ran for 297.00\n08/01/12
+        kb: I am terminating and reactivating account to resume subscription. Will
+        run card for \n07/26/12 kb: Left vm for Howard. Sent email outlining the past
+        due amount. \n07/19/12 kb: due to payment bug, we have not been charging them
+        since march. They owe $396 I will eat one of those, so it will be 297 to become
+        current. Also, they will be effectively getting a new payment date -- they
+        day they pay up, so they also get the benefit of the balance of the month.
+        (We are not charging for new first cycle). \n06/12/12 scd: NCC list...hm-vm.
+        lvm for Howard sent email.\n05/21/12 mm: Earlier today called and emailed
+        Howard about other account (7682). Emailed re: NCCs and new buttons.\n5/1/12
+        rj: howard called in about resending emails for reviews.  google wiped all
+        his place page reviews.  told him about bulk actions via contacts, all eligible
+        contacts will be invited.  wanted to see example of smart invites email, told
+        him to send one to himself to try it out.\n01/31/12 kb: talked to Howard about
+        Plus. Sent him copy of w review form. \n1/19/12: (AB) Left vm and sent email
+        to Howard re: NCCs. Also mentioned his other account, Fischer Restoration
+        which needs NCCs and does not have Smart Invites set up. \n10/10/11: (AB)
+        Talked to Howard recently (in Sept) about changing color of review box for
+        large dynamic reviews button. He is very on top of this account -- they have
+        recent customer call reviews AND Smart invites enabled.\n6/16/11: (AB) Entered
+        3 NCCs for Howard Hale. \n6/13/11: (AB) This Co. repopulated Member Call Queue
+        too soon after we did one with them. Jeff is aware of glitch.\n5/12/11: (AB)
+        We talked to Howard recently and helped him with FB but only did Wall part
+        not Reviews Tab, so I emailed him about tab portion. Looks like reviews still
+        not indexing.\n3/29/11: (AB) Howard called about reviews not indexing into
+        Google Places and I matched his info. to Places. Also told him about Webinar.
+        He was trying to do FB/Twitter and needed help but we didn''t finish b/c he
+        had to go.\n2/09/11: did member call. \n9/20/10: Left vm and sent email re:
+        contacts for call credits.\n06/16/10 left message for Howard about customer
+        names.\n03/31/10 spoke to Howard and I am in the process of installing his
+        Facebook app. -- there is a glitch being ironed out. \n03/16/10 left vm with
+        howard RE: customers to call.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2012-08-02T16:52:13Z","last_credit_grant":"2015-07-02","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2012-08-02","sugar_lead_id":"e01d8975-a6d1-58a3-f988-4fa4b58a568e","sugar_account_id":"1c15eecd-8dd2-81bf-ad51-4fa819ffa4de","sugar_opportunity_id":"8d711f80-6d10-51b1-1e60-501978609792","created_at":"2009-02-20T11:02:09Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":31,"company_id":191,"admin_user_id":null,"call_number":2,"completed_at":"2011-05-12T07:00:00Z","status":"completed","priority":2,"notes":"(AB)
+        We talked to Howard recently and helped him with FB but only did Wall part
+        not Reviews Tab, so I emailed him about tab portion. Looks like reviews still
+        not indexing.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":191,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Fischer
+        Plumbing","company_description":"Fischer Plumbing adheres to a service philosophy
+        founded on the understanding that people deserve to be treated with utmost
+        respect by those who enter their homes.","address1":"1115 NW 51st Street","address2":"","city":"Seattle","state":"WA","zip":"98107","country":"US","latitude":"47.6655445","longitude":"-122.371441","timezone":"Pacific
+        Daylight Time","formatted_address":"1115 Northwest 51st Street, Seattle, WA
+        98107, USA","phone":"2063372141","phone_ext":"","website":"http://www.fischerplumbing.com/","is_active":true,"abbreviated_name":"fischer-plumbing","freetrial_start_date":"2009-02-20T11:02:09Z","signup_admin_id":null,"signup_ip_addr":"76.22.14.127","account_terminated":false,"termination_date":"2012-08-01T11:42:40Z","activation_code":"0736c70910a3b5957c141f2b6b63c06c","account_class":"business","promo_id":58,"average_score":0.94,"admin_notes":"*connected
+        to 7682*\n\n7/8/15 ah: lvm for Howard re managing neg review and getting more
+        ncc''s. Sent email re ncc''s and dc.\n7/6/15 ah: Called to speak to Howard
+        about neg rev management and ncc''s. Phone rang once and then cut out. Tried
+        again. same response.\n7/2/15 tj: Challenges. reviewers thors sunde and aaa
+        aaa (great name) unresponsive. Challenges accepted.\n7/1/15 ah: lhm for Howard
+        to discuss neg review management and to get more ncc''s.\n6/29/15 ah: Challenged
+        reviews by thor sunde and aaa aaa re not a cust. Req info. Also challenged
+        review by David White for calling them liars. Challenge denied. lvm re management
+        options. Sent email fu.\n6/26/15 tj: sup req: Howard emailed. \"Can we push
+        some of the bad reviews down somehow?\" Called. lvm. Two suggestions, feature
+        reviews (which they already have) and get more reviews. They challenge some
+        neg reviews alrdy that are likely to be accepted. Sent fu email.\n2/17/15
+        kf: consistent reviews, sent dc email. \n11/3/14 tj: Howard emailed. Asked
+        for appts to be turned off. Emailed howard explaining it as another means
+        of getting leads, sent link for where he can go to turn it on/off, it''s been
+        turned off.\n10/24/14 ks: lvm for Howard and sent email re:NCCs/94 creds\n8/13/14
+        tj: reviewer \"Another Joe\" unresponsive. Another challenge accepted.\n8/6/14
+        tj: Challenge. \"Another Joe\" not a customer. Asked for info.\n613/14 kf:
+        lvm for howard and emailed re: ncc/dc.\n5/22/14 kab: Howard emailed in. he
+        was trying to Challenge Paul J''s review and got an error message. I called
+        him back, asked him to try again while on the phone, and it went through.
+        let him know admin has been slow/wonky today, so sorry. he Challenged for
+        Not a Customer, I Accepted right away because Paul cussed. explained this
+        to Howard, who thought it was neat that our system turns it into symbols like
+        a comic book.\n2/3/14 kf: lvm for howard and emailed re: ncc.\n05/08/13 mm:
+        lhm with answering service & sent on hold email 1.\n4/5/13 kf: left vm and
+        sent email re: ncc strategy/reminder/61 credits.\n1/24/13 kf: Howard''s voicemail
+        message is pretty intense haha. i left a vm anyway about ncc''s and fb app.
+        I sent an email too. 55 credits!\n09/21/12 mm: lvm and sent email re: NCCs
+        and reviews now syndicating.\n08/02/12 kb: reactivated account ran for 297.00\n08/01/12
+        kb: I am terminating and reactivating account to resume subscription. Will
+        run card for \n07/26/12 kb: Left vm for Howard. Sent email outlining the past
+        due amount. \n07/19/12 kb: due to payment bug, we have not been charging them
+        since march. They owe $396 I will eat one of those, so it will be 297 to become
+        current. Also, they will be effectively getting a new payment date -- they
+        day they pay up, so they also get the benefit of the balance of the month.
+        (We are not charging for new first cycle). \n06/12/12 scd: NCC list...hm-vm.
+        lvm for Howard sent email.\n05/21/12 mm: Earlier today called and emailed
+        Howard about other account (7682). Emailed re: NCCs and new buttons.\n5/1/12
+        rj: howard called in about resending emails for reviews.  google wiped all
+        his place page reviews.  told him about bulk actions via contacts, all eligible
+        contacts will be invited.  wanted to see example of smart invites email, told
+        him to send one to himself to try it out.\n01/31/12 kb: talked to Howard about
+        Plus. Sent him copy of w review form. \n1/19/12: (AB) Left vm and sent email
+        to Howard re: NCCs. Also mentioned his other account, Fischer Restoration
+        which needs NCCs and does not have Smart Invites set up. \n10/10/11: (AB)
+        Talked to Howard recently (in Sept) about changing color of review box for
+        large dynamic reviews button. He is very on top of this account -- they have
+        recent customer call reviews AND Smart invites enabled.\n6/16/11: (AB) Entered
+        3 NCCs for Howard Hale. \n6/13/11: (AB) This Co. repopulated Member Call Queue
+        too soon after we did one with them. Jeff is aware of glitch.\n5/12/11: (AB)
+        We talked to Howard recently and helped him with FB but only did Wall part
+        not Reviews Tab, so I emailed him about tab portion. Looks like reviews still
+        not indexing.\n3/29/11: (AB) Howard called about reviews not indexing into
+        Google Places and I matched his info. to Places. Also told him about Webinar.
+        He was trying to do FB/Twitter and needed help but we didn''t finish b/c he
+        had to go.\n2/09/11: did member call. \n9/20/10: Left vm and sent email re:
+        contacts for call credits.\n06/16/10 left message for Howard about customer
+        names.\n03/31/10 spoke to Howard and I am in the process of installing his
+        Facebook app. -- there is a glitch being ironed out. \n03/16/10 left vm with
+        howard RE: customers to call.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2012-08-02T16:52:13Z","last_credit_grant":"2015-07-02","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2012-08-02","sugar_lead_id":"e01d8975-a6d1-58a3-f988-4fa4b58a568e","sugar_account_id":"1c15eecd-8dd2-81bf-ad51-4fa819ffa4de","sugar_opportunity_id":"8d711f80-6d10-51b1-1e60-501978609792","created_at":"2009-02-20T11:02:09Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":33,"company_id":198,"admin_user_id":null,"call_number":1,"completed_at":"2011-05-10T07:00:00Z","status":"completed","priority":1,"notes":"05/10/11
+        kb: Emailed Steven re: ncc, and fb.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":198,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Express
+        Money Center","company_description":"Internet only Payday Loan Business","address1":"560
+        S. Winchester Boulevard","address2":"Suite 500","city":"San Jose","state":"CA","zip":"95128","country":"US","latitude":"37.3176279","longitude":"-121.9484381","timezone":"Pacific
+        Daylight Time","formatted_address":"560 South Winchester Boulevard #500, San
+        Jose, CA 95128, USA","phone":"8882054156","phone_ext":"","website":"http://www.expressmoneycenter.com","is_active":true,"abbreviated_name":"express-money-center","freetrial_start_date":"2009-02-25T16:51:02Z","signup_admin_id":null,"signup_ip_addr":"209.183.55.83","account_terminated":false,"termination_date":null,"activation_code":"8087db9bfe101cd4854067430ba46f68","account_class":"basic","promo_id":null,"average_score":0.9,"admin_notes":"Hours:
+        8am-9pm\n\n3/12/15 tj: lvm for Steven.\n3/11/15 ld attempt #4 lvm.  skipped
+        email. \n3/9/15 tj: lvm. sent email re: si''s & DC.\n3/5/15 jmr: Attempt #2
+        went to customer support lvm.\n3/4/15 jmr: Attempt #1 went to operator, no
+        one responded, lvm for Steven Love. sent DC email.\n11/3/14 ks: sent DC email\n6/30/14
+        kf: emailed re: dc.\n5/14/14 tj: Challenge, KARI has some name calling. Challenge
+        accepted.\n2.19.14 scd: sent basic email.\n6.17.13 scd: emailed basic stuff
+        and credit reminder. \n4/26/13 kf: emailed basic stuff and credit reminder.
+        \n2/14/13 kf: sent basic email with flier, NAP fix, and reminder of cc credit.
+        \n8/8/12 scd: brief chat w/Steve, reminded him of 1 cc credit & sent him basic
+        email. He said he''s planning on using us actively again soon.\n04/5/12 scd:
+        sent basic email with pdf flier, ncc reminder about 1 credit, and fb/twitter
+        and si''s.\n2/3/12: (AB) Steven called back to update credit card. His direct
+        line is (408) 219-0271. \n2/2/12: (AB) left vm and sent On Hold Email 1. \n12/06/11
+        kb: left hm re: ncc and smart invites. \n8/4/11: (AB) Updated cc info. with
+        Steven\n8/3/11: (AB) Unable to get through phone line. Sent On Hold Email
+        1 with NCCs and FB/Twitter.\n05/10/11 kb: Emailed Steven re: ncc, and fb.
+        \n11/8/10: Tried calling but unable to reach Steven so sent email re: updating
+        billing and free call credit. \n4/8/10: Sent email to Steven with Free Customer
+        Call Credit.\n10/26/09: Spotlighted them.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"6f929ade-f186-e98f-6a4f-4fa4b658b1cf","sugar_account_id":"85755da3-9103-504c-de37-4fa81968dc9b","sugar_opportunity_id":"ed8b70cf-9bee-a24b-e532-511d80986b11","created_at":"2009-02-25T16:51:02Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":4,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":35,"company_id":200,"admin_user_id":null,"call_number":1,"completed_at":"2011-03-04T08:00:00Z","status":"completed","priority":1,"notes":"03/04/11:
+        left another vm for Jessica re: cc, fb, etc. \n03/02/11 kb: I spoke to Jessica.
+        She has taken over the account for Gary. I will call her Friday to get the
+        account live -- she understands that they will have to charge for past due
+        months -- but I told her we will skip her next payment as a courtesy -- give
+        her circumstances.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":200,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"Dog
+        Trainers of New York","company_description":"We provide non aversive obedience
+        training and Individual Boarding and Training at Dog Trainers of New York.
+        Lovingly limited to one dog at a time.","address1":"235 West Fourth Street","address2":"","city":"New
+        York","state":"NY","zip":"10014","country":"US","latitude":"40.734426","longitude":"-74.002836","timezone":"Eastern
+        Daylight Time","formatted_address":"235 West 4th Street, New York, NY 10014,
+        USA","phone":"9175384296","phone_ext":null,"website":"http://www.DogTrainersOfNewYork.com","is_active":false,"abbreviated_name":"dog-trainers-of-new-york","freetrial_start_date":"2009-03-02T08:41:44Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":true,"termination_date":"2011-04-12T14:37:09Z","activation_code":null,"account_class":"basic","promo_id":null,"average_score":0.96,"admin_notes":"4/12/11:
+        (AB) Terminated account b/c Gary died and new woman in charge, Jessica, is
+        not responding. \n4/6/11: (AB) Shut off reviews page and left vm. Need to
+        update billing if she wants to continue.\n3/15/11: (AB) jessica picked up
+        but said she was busy and was planning to contact kevin about this, as she
+        got his email. \n03/04/11: left another vm for Jessica re: cc, fb, etc. \n03/02/11
+        kb: I spoke to Jessica. She has taken over the account for Gary. I will call
+        her Friday to get the account live -- she understands that they will have
+        to charge for past due months -- but I told her we will skip her next payment
+        as a courtesy -- give her circumstances. \n02/15/11 kb: left vm for jessica
+        re: getting setup with the account. \n1/25/11 kb: Jessica called and said
+        that Gary died. She is out of the country now but wants to take over after
+        she returns  in February. \n\n7/30/10: spoke to gary (he called) about sending
+        custom invitations and I told him about Member -- he didn''t seem to like
+        the \"pitch\" despite the informative tone.","customer_call_notes":null,"trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"ab40227f-eb17-3312-2805-4fa4b613ebc8","sugar_account_id":"e02ccb6a-c9a4-46e0-0af0-4fa819546081","sugar_opportunity_id":null,"created_at":"2009-03-02T08:41:44Z","updated_at":"2015-11-09T22:31:13Z","status":"terminated","sales_user_id":3,"system_of_record":null,"activity_feed_created":false,"data_dedupe_enabled":false,"direct_connect_status":"terminated","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":37,"company_id":205,"admin_user_id":null,"call_number":1,"completed_at":"2011-02-17T08:00:00Z","status":"completed","priority":1,"notes":"(BL)
+        talked to James about NCC, he knows how to add them in but has been too busy.
+        Also went over FB/Twitter/ and our free webinar. sent email (BL).","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":205,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Pacific
+        Coast Termite Inc.","company_description":"We offer peace of mind by not only
+        treating current termite infestation but by proactively treating your home,
+        apartment building or business.","address1":"1211 N Batavia St","address2":"","city":"Orange","state":"CA","zip":"92867","country":"US","latitude":"33.807631","longitude":"-117.861011","timezone":"Pacific
+        Standard Time","formatted_address":"1211 North Batavia Street, Orange, CA
+        92867, USA","phone":"7144501250","phone_ext":"","website":"http://www.pacificcoasttermite.com","is_active":true,"abbreviated_name":"pacific-coast-termite-inc","freetrial_start_date":"2009-03-11T12:14:29Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.98,"admin_notes":"James
+        Grande''s other email address: jamesg@pacificcoasttermite.com\r\n\r\n2/11/15
+        kf: on hold. updated CC with james and pitched DC. he wants some more info
+        about it, had me reset his pw so he can click around in the acct more. sent
+        DC email. \r\n1/2/15 ks: lhm and sent an email to James re:NCCs/72 creds/DC\r\n7/18/14
+        kab: called for James, not in, transferred to vm and lvm re:DC, NCCs, 62 creds
+        (62!!). sent email re:all of that.\r\n2/4/14 kf: called james, reset his pw,
+        and let him know that he has a TON of credits (55), so go wild with those
+        nccs. he said he would. \r\n10.28.13 scd: lhm & sent email re ncc''s & si''s.\r\n7/24/13
+        rj: vm, email 2.\r\n7/22/13 rj: james not in until wednesday, try calling
+        then. will do.\r\n7/15/13 rj: vm, email 1.\r\n6/26/13 kf: emailed re: syndication
+        success links and ncc reminder. \r\n2.25.13 scd: lmsg & sent email re ncc''s.\r\n10/25/12
+        emailed James to tell him his last list was a huge success -- 7 of 10 ncc
+        became reviews. I asked for another list. \r\n9/19/12 rj: james called in,
+        still having trouble adding customers to call.  asked him what browser, msn?  lol.  also
+        has explorer, told him to try that.  had to reset his password because he
+        didn''t remember what it was. got in  displays contacts unlike msn, sounds
+        like he''s fine now, adding about 30 ncc. \r\n06/25/12 mm: left hm for James
+        and emailed him and Danny re: NCCs and new buttons.\r\n04/17/12 scd: James
+        called in, difficulty with contacts, couldn''t input them, gave me 1 ncc.
+        I wasn''t having trouble in his acct.\r\n2/24/12 rj: talked to a different
+        james, said james and danny didn''t have any contacts yet but would get some
+        and call back.  sent followup email re: ncc.\r\n10/21/11 kb: talked to James.
+        he is happy with service. I explained smart invites and Changed his NAP. he
+        said he will upload new ncc contacts. \r\n8/8/11: (AB) James called in b/c
+        we had star ratings at 1 for a 5-star customer call review. Fixed. \r\n7/28/11:
+        (AB) Emailed for more NCCs. \r\n6/21/11: (AB) Talked to Dennis b/c James and
+        Danny weren''t available. Told him about NCCs and Twitter and he asked that
+        I send him an email with the details to dennis@pacificcoasttermite.com\r\n5/12/11:
+        (AB) Brinda talked to them recently and they have gotten new reviews since
+        then. Sent email about FB/Twitter b/c reviews tab is not set up correctly.
+        \r\n02/14/11: talked to James about NCC, he knows how to add them in but has
+        been too busy. Also went over FB/Twitter/ and our free webinar. sent email
+        (BL).\r\n3/26/10: James called re: April 27 by Joe Dellamano - Why Not Published?
+        Best # to reach James is (714) 292-8127 Answer: The review from 10/1 (from
+        John Click) was from the same IP address.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2011-05-13T14:44:01Z","last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"7b5fc1b4-2056-dc1f-424f-4fa4b6505627","sugar_account_id":"1c502ba3-8cf8-fb47-f43f-4fa819c32b73","sugar_opportunity_id":"a4ec9f36-b821-fc43-30e5-512b91cf1b83","created_at":"2009-03-11T12:14:29Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}},{"id":39,"company_id":205,"admin_user_id":null,"call_number":2,"completed_at":"2011-05-12T07:00:00Z","status":"completed","priority":2,"notes":"5/12/11:
+        (AB) Brinda talked to them recently and they have gotten new reviews since
+        then. Sent email about FB/Twitter b/c reviews tab is not set up correctly.","created_at":"2013-04-19T00:32:37Z","updated_at":"2015-03-31T00:33:08Z","disposition":"other","company":{"company_id":205,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Pacific
+        Coast Termite Inc.","company_description":"We offer peace of mind by not only
+        treating current termite infestation but by proactively treating your home,
+        apartment building or business.","address1":"1211 N Batavia St","address2":"","city":"Orange","state":"CA","zip":"92867","country":"US","latitude":"33.807631","longitude":"-117.861011","timezone":"Pacific
+        Standard Time","formatted_address":"1211 North Batavia Street, Orange, CA
+        92867, USA","phone":"7144501250","phone_ext":"","website":"http://www.pacificcoasttermite.com","is_active":true,"abbreviated_name":"pacific-coast-termite-inc","freetrial_start_date":"2009-03-11T12:14:29Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":null,"average_score":0.98,"admin_notes":"James
+        Grande''s other email address: jamesg@pacificcoasttermite.com\r\n\r\n2/11/15
+        kf: on hold. updated CC with james and pitched DC. he wants some more info
+        about it, had me reset his pw so he can click around in the acct more. sent
+        DC email. \r\n1/2/15 ks: lhm and sent an email to James re:NCCs/72 creds/DC\r\n7/18/14
+        kab: called for James, not in, transferred to vm and lvm re:DC, NCCs, 62 creds
+        (62!!). sent email re:all of that.\r\n2/4/14 kf: called james, reset his pw,
+        and let him know that he has a TON of credits (55), so go wild with those
+        nccs. he said he would. \r\n10.28.13 scd: lhm & sent email re ncc''s & si''s.\r\n7/24/13
+        rj: vm, email 2.\r\n7/22/13 rj: james not in until wednesday, try calling
+        then. will do.\r\n7/15/13 rj: vm, email 1.\r\n6/26/13 kf: emailed re: syndication
+        success links and ncc reminder. \r\n2.25.13 scd: lmsg & sent email re ncc''s.\r\n10/25/12
+        emailed James to tell him his last list was a huge success -- 7 of 10 ncc
+        became reviews. I asked for another list. \r\n9/19/12 rj: james called in,
+        still having trouble adding customers to call.  asked him what browser, msn?  lol.  also
+        has explorer, told him to try that.  had to reset his password because he
+        didn''t remember what it was. got in  displays contacts unlike msn, sounds
+        like he''s fine now, adding about 30 ncc. \r\n06/25/12 mm: left hm for James
+        and emailed him and Danny re: NCCs and new buttons.\r\n04/17/12 scd: James
+        called in, difficulty with contacts, couldn''t input them, gave me 1 ncc.
+        I wasn''t having trouble in his acct.\r\n2/24/12 rj: talked to a different
+        james, said james and danny didn''t have any contacts yet but would get some
+        and call back.  sent followup email re: ncc.\r\n10/21/11 kb: talked to James.
+        he is happy with service. I explained smart invites and Changed his NAP. he
+        said he will upload new ncc contacts. \r\n8/8/11: (AB) James called in b/c
+        we had star ratings at 1 for a 5-star customer call review. Fixed. \r\n7/28/11:
+        (AB) Emailed for more NCCs. \r\n6/21/11: (AB) Talked to Dennis b/c James and
+        Danny weren''t available. Told him about NCCs and Twitter and he asked that
+        I send him an email with the details to dennis@pacificcoasttermite.com\r\n5/12/11:
+        (AB) Brinda talked to them recently and they have gotten new reviews since
+        then. Sent email about FB/Twitter b/c reviews tab is not set up correctly.
+        \r\n02/14/11: talked to James about NCC, he knows how to add them in but has
+        been too busy. Also went over FB/Twitter/ and our free webinar. sent email
+        (BL).\r\n3/26/10: James called re: April 27 by Joe Dellamano - Why Not Published?
+        Best # to reach James is (714) 292-8127 Answer: The review from 10/1 (from
+        John Click) was from the same IP address.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2011-05-13T14:44:01Z","last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"7b5fc1b4-2056-dc1f-424f-4fa4b6505627","sugar_account_id":"1c502ba3-8cf8-fb47-f43f-4fa819c32b73","sugar_opportunity_id":"a4ec9f36-b821-fc43-30e5-512b91cf1b83","created_at":"2009-03-11T12:14:29Z","updated_at":"2015-11-09T22:31:13Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":135,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null}}]}'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 21:12:42 GMT
+recorded_with: VCR 3.0.0

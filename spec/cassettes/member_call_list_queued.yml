@@ -1,0 +1,761 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/member_calls.json?admin_user_id=415&nonce=2015-11-30+19%3A58%3A48+UTC&scope=current_calls
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="626ba7591291ffeba7c6d24e9f7632ba1f9fe3c2f465d8770546a2479df9f284"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"4fbd9ab710b4505b9eafaec540d46e0e"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - a1b79531761881632e1e822d8667e4c0
+      x-runtime:
+      - '0.157407'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":248,"page":1,"rpp":20,"elements":[{"id":48995,"company_id":3908,"admin_user_id":415,"call_number":5,"completed_at":"2015-06-26T17:27:59Z","status":"completed","priority":5,"notes":"6/26/15
+        ah: Called for Narod. No vm left this time since I already left 2 and emailed.\r\n6/24/15
+        ah: lvm for Narod re ncc''s.\r\n6/22/15 ah: lvm for Narod re ncc''s and 50
+        call credits. Sent email fu.\r\n1/28/15 kf: narod said he''d cb when he has
+        time to install DC. ","created_at":"2015-01-27T13:30:20Z","updated_at":"2015-06-26T17:27:59Z","disposition":"voicemail","company":{"company_id":3908,"enterprise_id":null,"workflow_system_id":null,"account_level_id":15,"company_name":"Installer
+        Headquarters","company_description":"LED/LCD/Plasma TV Installation\nHome
+        Theater Installation\nIn Wall/Ceiling Speakers\nOn Wall/Ceiling Speakers\nOutdoor
+        Speakers\nHome Intercom Systems\nAnd Tons More!","address1":"821 San Angelo
+        Ave","address2":"","city":"Montebello","state":"CA","zip":"90640","country":"US","latitude":"34.021637","longitude":"-118.086959","timezone":"Pacific
+        Daylight Time","formatted_address":"821 San Angelo Avenue, Montebello, CA
+        90640, USA","phone":"3238880000","phone_ext":"","website":"http://www.installerheadquarters.com/","is_active":true,"abbreviated_name":"installer-headquarters","freetrial_start_date":"2010-06-22T16:43:54Z","signup_admin_id":null,"signup_ip_addr":"12.234.39.82","account_terminated":false,"termination_date":null,"activation_code":"45411a11b4832174","account_class":"plus","promo_id":null,"average_score":0.99,"admin_notes":"6/24/15
+        ah: lvm for Narod re ncc''s.\n6/22/15 ah: lvm for Narod re ncc''s and 50 call
+        credits. Sent email fu.\n1/28/15 kf: narod said he''d cb when he has time
+        to install DC. \n1/28/15 rj: company had dual subscriptions.  it was a problem
+        caused during reactivation.  it''s all fixed now.  I credited back the duplicate
+        charges, and set account class to plus, charging $149 until DC is installed,
+        and we''ll switch them to starter and credit $20 if they get it set up.\n1/26/15
+        uses quickbooks, not a ton of online business currently. Told i''ll reactivate
+        it but we need to get QB installed to get the lower rate.\n\n1/18/13 rj: no
+        answer, terminated, value prop.\n01/09/13 mm: email 4.\n1/4/13 rj: vm, email
+        3.\n1/3/13 rj: turning reviews page off in the morning, calling then.\n12/27/12
+        mm: vm, email 2.5.\n12/18/12 rj: vm, email 2.\n12/12/12/rj: narod on hold.
+        great lol. vm, email 1.\n11/6/12 rj: narod emailed, wanted to resume service.  sent
+        email reply specifying past due   new month to get started, so 198 to get
+        the ball rolling.  re-activated, sent email letting narod know he''s good
+        to go.  he''ll add ncc via the web. included in email syn examples, and he
+        had questions about getting those reviews on google and yelp.  explained how
+        that works, that he has si enabled, and why syn is better anyway.\n6/5/12
+        rj: on hold.  terminated, sent post cancellation email.  Narod replied with
+        an email asking for a break on the monthly, offered him a free month if he
+        pays past due.\n05/30/12 kb: left vm and sent on hold 4. \n5/22/12 rj: on
+        hold. vm, email 3.\n5/16/12 rj: on hold. vm, email 2.\n5/7/12 rj: on hold.  vm,
+        email 1.\n04/30/12 mm: Left a vm for Narod. Sent him an email re: NCCs and
+        new buttons.\n3/30/12: (AB) Terminated b/c 2  months past due and not responding
+        to us. He called back and gave credit card to reactivate right away. We had
+        to charge him for past due Feb payment of $99 as well as past due March payment
+        of $99 plus half of this next month that he owes us b/c his new payment date
+        is not until March 30 now! (Otherwise he would have gotten free half a month.)\n3/21/12:
+        (AB) Left final vm and sent On Hold Email 4.\n3/14/12: (AB) Phone number not
+        working, disconnected. I shut off reviews page and sent On Hold Email 3. \n03/09/12
+        kb: left vm and sent on hold email 2 again. \n03/01/12 kb: left vm and sent
+        email re onold. 2\n02/24/12 kb: Narod said he would update credit card online
+        tonight. \n2/17/12: (AB) Narod was on road but said if I sent email he would
+        update cc when back in office. Also I reminded him about NCCs.\n12/30/11:
+        (AB) Talked briefly to Narod about entering more contacts to call...he has
+        lots of credits. He said he would enter some more when he got back to office.
+        He already has Smart Invites and FB/Twitter. I emailed him about FB reviews
+        tab.\n12/9/11: (AB) Narod emailed about whether there is a way to syndicate
+        reviews to Google. I responded to him about enabling Smart Invites. \n08/08/11
+        BL: vm/email re: NCC.\n4/6/11: (AB) Narod did not have time to talk but wanted
+        an email about NCCs and FB/Twitter -- they already have these accounts created.\n12/23/10:
+        (AB) left vm for and emailed narod re: NCCs and FB/Twitter.\n08/31/10: left
+        vm re: CC\n08/25/10: emailed Narod re: cc. \n08/23/10: left vm re: cc. \n08/19/10:
+        spoke to Narod he will call back to settle things with card and pro9vide contacts
+        for cust calls. \n08/17/10: left vm for cc. \n7/12 - LM\n6/30 - WK 2\n6/24
+        - WK 1 Call\n6/22 - Need CC info, and Narod will make sure button is up","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2015-01-27T17:31:55Z","last_credit_grant":"2015-06-27","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2015-06-27","sugar_lead_id":"b217a0c8-7085-7ead-81be-4fea50a97c32","sugar_account_id":"9b36ba01-683a-de03-9880-4fea50275926","sugar_opportunity_id":"5a030e76-15f9-2baf-113d-50c91ea186c6","created_at":"2010-06-22T16:43:54Z","updated_at":"2015-11-09T22:31:23Z","status":"active","sales_user_id":133,"system_of_record":"Quickbooks","activity_feed_created":false,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49199,"company_id":26475,"admin_user_id":415,"call_number":5,"completed_at":"2015-06-26T15:46:13Z","status":"completed","priority":5,"notes":"6/26/15
+        ah: lvm for Billy to set up dc\r\n6/24/15 ah: lvm for Billy re setting up
+        dc since he didn''t call yesterday.\r\n6/22/15 ah: lvm for Billy re ncc''s.
+        Sent email fu. UPDATE: Billy emailed back re dc. Called and explained dc to
+        him. He said he''d give me a call tomorrow to set it up.\r\n4/8/15 kf: lvm
+        for billy, emailed re: dc/ncc.\r\n2/2/15 kf: lvm for billy, emailed re: dc.
+        ","created_at":"2015-01-31T13:30:31Z","updated_at":"2015-06-26T15:46:13Z","disposition":"voicemail","company":{"company_id":26475,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Billy
+        Parker Exteriors","company_description":"","address1":"4403 Town Center Place","address2":"","city":"Kingwood","state":"TX","zip":"77339","country":"US","latitude":"30.0482483","longitude":"-95.18520149999999","timezone":"Central
+        Daylight Time","formatted_address":"4403 Town Center Place, Kingwood, TX 77339,
+        USA","phone":"8066769727","phone_ext":"","website":"http://www.parkerexteriors.com/","is_active":true,"abbreviated_name":"billy-parker-exteriors","freetrial_start_date":"2013-11-07T16:53:52Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"2ddaHp_eG-cXTc3_G6vbjg","account_class":"business","promo_id":24,"average_score":1.0,"admin_notes":"jonell@parkerexteriors.com\njonell''s
+        #: 806 676 9727\n\n6/26/15 ah: lvm for Billy to set up dc\n6/24/15 ah: lvm
+        for Billy re setting up dc since he didn''t call yesterday.\n6/22/15 ah: lvm
+        for Billy re ncc''s. Sent email fu. UPDATE: Billy emailed back re dc. Called
+        and explained dc to him. He said he''d give me a call tomorrow to set it up.\n4/8/15
+        kf: lvm for billy, emailed re: dc/ncc.\n2/2/15 kf: lvm for billy, emailed
+        re: dc. \n11/18/14 kf: lvm for billy, email 2...billy cb and updated CC.\n11/12/14
+        kf: on hold. lvm for billy, email 1. \n9/30/14 ks: lvm, emailed re:NCCs/16
+        creds\n5/29/14 kab: called Billy. he was on the road. I was calling to get
+        him to install DC and told him I''ll send a reminder email with my direct
+        line to get that goin if he needs help (see 4/17 note).\n5/6/14 kf: page off.
+        lvm for jonell, email 3...billy cb and updated the CC.\n4/29/14 kf: hmm, didn''t
+        work, tried again. will check back.\n4/17/14 kf: lvm, email 2....billy got
+        back to me, said to just run the CC again. he uses QB but is not near a computer
+        right now. he''ll try installing on his own, thinks he should be able to manage.\n3/11/14
+        kf: on hold. cf. email 1. \n3/10/14 kf: lvm for jo nell re: ncc, emailed too.\n2/28/14
+        kf: tried giving jo nell a call to update her on progress (6/8 customer calls,
+        traffic quadrupled from last month), but her vm is not set up. sent her a
+        congratulatory email instead. \n2/20/14 kf: jo nell lvm for me re: typo in
+        a call review. call agent had left out a few words in a sentence.\n2/19/14
+        kf: jo nell called about a review not on facebook yet. told her they usually
+        post at the top of the hour. \n2/18/14 kf: called jo nell, told her she had
+        entered nccs correctly and explained kiosk to her. she didn''t want to upgrade
+        again, but i told her she still has hw credits available to use.\n2/12/14
+        kf: save. jonell doesn''t feel like the money has been worth it so far, but
+        she will take a free month to evaluate the svc and try out the lower svc level.
+        i described performance and assuaged some of her concerns re: customer calls.
+        switched down to biz, skipped payment. scheduled to fllwup with her next week.
+        she said she''d get some nccs to me. sent email confirmation. \n2/12/14 tj:
+        Cancellation request via call. Jo Nell wants to \"put this on pause for awhile.\"
+        She''s sad that they haven''t gotten any new reviews in awhile and people
+        are unresponsive to their emails. Asked if they''ve been using HW forms or
+        the MK. Nope, they''ve been going with email invites. Mentioned biz lvl svc.
+        Suggested doing cc''s, but she says the call reviews don''t sound like their
+        customers... Told her we transcribe as closely to the caller''s original words
+        if not verbatim. She prefers they write and not talk. passed to kb.\n1/29/14
+        tj: inc call, Jo Nell. Helped her reinstall FB tab & app. All is good. sent
+        fu email to confirm.\n1/21/14 kab: spoke with Jo Nell re:NCCs. she said she
+        has decided that sending email/custom invites produces more fitting reviews
+        for them. they don''t think our transcriptions always do justice.. I reiterated
+        the values of CCs, but also noted they are doing well with invites and Kiosk.
+        she was appreciative and will just keep doing her thing sans CCs.\n12/9/13
+        tj: lvm. sent welcome email.\n12/4/13 tj: jonell called, asking about where
+        her CL reviews go. Told her about CG syndication. She didn''t like that her
+        reviews weren''t automatically being posted to Yelp. Told her how si''s work
+        and enabled Yelp and Angie''s si''s per her request. She seemed a little happier
+        after that. Sent fu email w/ CityGrid near match info and syndication info.\n11/11/13
+        kf: called jonell bc they left vm on sales line about dissatisfaction with
+        first customer call review. granted courtesy credit and lvm for jonell letting
+        them know and urging them to send ncc.\n\nxxxxxxxxx nada\n\nhttp://www.citysearch.com/profile/651214400/kingwood_tx/billy_parker_exteriors.html?impressionId=000b000000510c22b9011145fc848d5d785c6e3eaf","customer_call_notes":null,"trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-02-12T22:23:40Z","last_credit_grant":"2015-06-12","sales_status":false,"date_live":"2013-11-09T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-02-12","sugar_lead_id":null,"sugar_account_id":"3b4f278d-655c-9b92-0218-527bc50f2b8e","sugar_opportunity_id":"40408283-624e-564b-b03d-527bc56ec999","created_at":"2013-11-07T16:53:52Z","updated_at":"2015-11-09T22:32:03Z","status":"active","sales_user_id":109,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49371,"company_id":28727,"admin_user_id":415,"call_number":4,"completed_at":"2015-06-26T17:10:35Z","status":"completed","priority":4,"notes":"6/26/15
+        ah: lhm with gk re ncc''s.\r\n6/24/15 ah: lhm with gk re ncc''s\r\n6/22/15
+        ah: lhm with gk re ncc''s. Sent email fu\r\n4/7/15 kf: lvm, emailed re: dc/campaigns.\r\n2/4/15
+        kf: lvm for marty, emailed re: dc.\r\n","created_at":"2015-02-04T13:30:28Z","updated_at":"2015-06-26T17:10:35Z","disposition":"other","company":{"company_id":28727,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Dukes
+        Painting And Repair","company_description":"","address1":"2268 S Delaware
+        Ct","address2":"","city":"Tulsa","state":"OK","zip":"74114","country":"US","latitude":"36.129304","longitude":"-95.945364","timezone":"Central
+        Daylight Time","formatted_address":"2268 South Delaware Court, Tulsa, OK 74114,
+        USA","phone":"9183611506","phone_ext":"","website":"http://www.tulsapaintcontractor.com/","is_active":true,"abbreviated_name":"dukes-painting-and-repair","freetrial_start_date":"2014-01-23T23:15:52Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"p4wQXPRYRuBWBypwSkPvgQ","account_class":"business","promo_id":62,"average_score":0.99,"admin_notes":"6/26/15
+        ah: lhm with gk re ncc''s.\n6/24/15 ah: lhm with gk re ncc''s\n6/22/15 ah:
+        lhm with gk re ncc''s. Sent email fu\n4/7/15 kf: lvm, emailed re: dc/campaigns.\n2/4/15
+        kf: lvm for marty, emailed re: dc.\n1/13/15 ld updated CC with Marty. He has
+        been out of town.\n1/9/15 kf: lvm, email 4.\n1/7/15 kf: lvm, email 3 again.
+        \n1/5/15 kf: page off. lvm, email 3.\n1/2/15 kf: lvm, email 2.5.\n12/31/14
+        kf: lvm, email 2.\n12/29/14 kf: on hold. lvm for marty, email 1. \n10/3/14
+        ks: Spoke to Marty re:NCCs/9 creds. He said he''s been out of town and he
+        has some he''ll send in later. No email needed, but he said he really appreciates
+        the call to check in.\n4/24/14 kab: lvm for Marty re:NCCs and DC. sent email.\n3/11/14
+        kab: left welcome vm for Marty. sent welcome email w/DC info, Yelp and Yahoo
+        SIs info.\n6-24-13 not interested","customer_call_notes":null,"trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-02-21T20:50:07Z","last_credit_grant":"2015-06-21","sales_status":false,"date_live":null,"user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-02-21","sugar_lead_id":null,"sugar_account_id":"2f8b173d-7aa1-2c35-aabd-52e1a2e015e0","sugar_opportunity_id":"31b7dd71-ca58-6ca7-0f3c-52e1a2de12ad","created_at":"2014-01-23T23:15:52Z","updated_at":"2015-11-09T22:32:06Z","status":"active","sales_user_id":139,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49431,"company_id":7750,"admin_user_id":415,"call_number":11,"completed_at":"2015-06-30T19:01:37Z","status":"completed","priority":11,"notes":"6/30/15
+        ah: inc call from Jay. Talked to him re ncc''s and dc. Sent email fu.\r\n6/30/15
+        jmr: lvm.\r\n6/26/15 jmr: lvm and sent email for Jay for nccs and dc.","created_at":"2015-02-07T13:30:23Z","updated_at":"2015-06-30T19:01:37Z","disposition":"talk","company":{"company_id":7750,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Fireside
+        Designs","company_description":"","address1":"1769 Riverdale Street","address2":"","city":"West
+        Springfield","state":"MA","zip":"01089-1052","country":"US","latitude":"42.1515826","longitude":"-72.63014439999999","timezone":"Eastern
+        Daylight Time","formatted_address":"1769 Riverdale Street, West Springfield,
+        MA 01089, USA","phone":"4137330910","phone_ext":"","website":"http://www.fireside-designs.com/","is_active":true,"abbreviated_name":"fireside-designs","freetrial_start_date":"2011-05-31T10:47:45Z","signup_admin_id":null,"signup_ip_addr":"24.7.115.216","account_terminated":false,"termination_date":null,"activation_code":"921622811e444065","account_class":"business","promo_id":24,"average_score":0.93,"admin_notes":"jay''s
+        extension 201 * Closed Mondays\n\n6/30/15 ah: inc call from Jay. Talked to
+        him re ncc''s and dc. Sent email fu.\n6/30/15 jmr: lvm.\n6/26/15 jmr: lvm
+        and sent email for Jay for nccs and dc.\n3/19/15 jmr: challenge received for
+        M D''s review for \"inappropriate content\". challenge denied. I called Jean
+        and he asked if it could be reconsidered. I asked around for a second opinion
+        and decided to keep it denied. he said he was disappointed and is now reconsidering
+        staying with us. sent him a follow up email recommending to comment along
+        with the reason for the denial (as requested).\n2/11/15 kf: lvm for jay, emailed
+        re: dc. \n10/6/14 ks: lvm for Jay and sent email re:NCCs/22 creds\n6/5/14
+        kab: second attempt to reach Jay for DC install push. two messages left now.\n02/05/14
+        kb: Called to followup with Jay re: data integration. Left vm sent email.
+        \n2/4/14 kab: lvm for Jay. sent email re: NCCs and Yelp SI.\n5/31/13 kf: emailed
+        re: fb app and ncc reminder. \n5/16/13 kf: put on hold forever, emailed appt
+        request widget. \n5/1/13 kf: emailed ncc reminder/11 credits.  \n1/30/13 kf:
+        left hm and sent email re: syndication, fb app, and ncc''s. \n10/12/12 rj:
+        updated cc with jay, added 9 ncc.\n9/26/12 scd: Talked to Jay, going into
+        their busy season, got lazy. took 7 ncc''s. no email sent.\n05/18/12 mm: Talked
+        to Jay about NCCs, he can def get us some.  Emailed him re: NCCs.\n05/14/12
+        mm: Left vm and sent email about denying challenge for d labonte''s review.  Explained
+        other options. called Jay back and explained his options at his request.\n4/24/12:
+        (AB) Received email from reviewer Julie Jaron and set her review to Not Publish
+        at her request. \n1/12/12 BL: Talked with Jay, got 8 contacts, enabled Smart
+        Invites over the phone. \n08/08/11 BL: Welcome vm/email.\nInbound found us
+        through a search for another contractor\n6/30 - w/ cust. cb at 915./at lunch
+        try back at 1130//na near impossible to get on the phone\n6/22 - jay saw reviews
+        in google. was happy about that.new site with button was supposed to launch
+        2 weeks ago so I suggested he put the button on old site in meantime. seems
+        to like everything no questions.\n6/20 - na reviews in google maps//lm re:
+        reviews in google\n6/8 - told him we got first review. said he sent code to
+        webmaster. asked about google maps. I told him the trick to get it in there.
+        seemed disappointed on 6-12 month timeline.\n6/7 - told him to input more
+        CC#s. said he would.\n6/6 - realized he entered a CC#\n5/31 - heard about
+        us through blumenthals article. wanted to find a way to manage reviews before
+        theyre posted. Needs to talk to biz partner. doesnt collect emails. said he
+        will pick questions and type in some CC#s. has a wg he can forward code to.
+        showed everything I''m not sure on this one.//called to ask me what happens
+        if he quits the lobby","customer_call_notes":"","trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2011-12-15T13:47:48Z","last_credit_grant":"2015-06-10","sales_status":false,"date_live":"2011-07-06T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"d2f3f046-6ed4-9a6f-3672-4ffe7dd2c13e","sugar_account_id":"9ca3e999-7e47-512f-df35-4ffe7d98197c","sugar_opportunity_id":"1a0e6618-51fa-8d1e-7ed4-510966e7454f","created_at":"2011-05-31T10:47:45Z","updated_at":"2015-11-09T22:31:35Z","status":"active","sales_user_id":68,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49445,"company_id":21967,"admin_user_id":415,"call_number":5,"completed_at":"2015-06-22T18:33:46Z","status":"completed","priority":5,"notes":"6/22/15
+        ah: Recent touch and lots of ncc''s. No touch needed.\r\n4/8/15 kf: lvm for
+        eric, emailed re: dc. ","created_at":"2015-02-07T13:30:23Z","updated_at":"2015-06-22T18:33:46Z","disposition":"other","company":{"company_id":21967,"enterprise_id":null,"workflow_system_id":1,"account_level_id":3,"company_name":"Flooring.org","company_description":"","address1":"Online","address2":"","city":"Tampa/St.
+        Petersburg","state":"FL","zip":"33556","country":"US","latitude":"28.026247","longitude":"-82.503784","timezone":"Eastern
+        Daylight Time","formatted_address":"Online Trading Academy, 3659 West Waters
+        Avenue #200, Tampa, FL 33614, USA","phone":"8006899006","phone_ext":"","website":"http://www.flooring.org/","is_active":true,"abbreviated_name":"flooring-org","freetrial_start_date":"2013-05-30T15:00:29Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":62,"average_score":0.93,"admin_notes":"Andrew
+        in charge of account\n\n6/29/15 jmr: inc call from Andrew asking about the
+        pending customer calls. he expected to see them done by July but that hasn''t
+        happened. let him know it will take a while longer but I''ll go ahead and
+        put a priority on a few of them.\n6/24/15: mt: inc call from Andrew, said
+        he has a customer, Christina Schneidle,  that he sent an email invite for,
+        and because she didn''t write a review that way, he changed his mind and wanted
+        her to get a call invite instead, he has the credits for it. Told him I''d
+        put in a request to get that invitation sent (didn''t reveal to him our little
+        hack to do that) to make sure she gets called. Deleted her phone number from
+        where she was first entered, added her call invitation under \"Christina S\"\n6/22/15
+        ah: Recent touch and lots of ncc''s. No touch needed.\n6/4/15: mt: inc call
+        from Eric, said a customer gave a review but his city was marked down wrong,
+        had the business'' city, but the customer was from CT, Eric wanted to have
+        the customer''s real city. Told him I would ask call agent to verify customer
+        was alright with edit. (Call agent confirmed, customer had hung up before
+        asking for city, edit made). He also wanted to verify what Andrew was told
+        about calls, he said he heard we only call 1 customer a day and he wanted
+        to know if there were any upgrades. Looks like AH told him that we call 2,
+        which is correct, so I told him that I saw 2 calls were in progress, and 2
+        more are set to be called after them. Also let him know SQ was OFF, so anyone
+        else he adds won''t be delayed. He was good with that. \n6/2/15 ah: inc call
+        from Andrew asking how many cust are contacted via phone each day. I told
+        him 2. He asked if more can be contacted, and I nicely told him no (in order
+        to keep reviews consistently coming in). He''s happy.\n6/1/15 jmr: inc call
+        from eric wants to utilize account a bit more. had a question about why there
+        were customers still waiting to be called. explained the smart call queue
+        and went over the number of attempts we make on each customer requested. everything''s
+        good!\n4/8/15 kf: lvm for eric, emailed re: dc. \n2/9/15 ld spk w really nice
+        guy.  lvm saying that we are going through and \"upgrading accounts\" with
+        Direct Connect.  Left direct line.\n10/6/14 ks: Called, MBF, sent Eric an
+        email re:NCCs/23 creds\n3/18/14 tj: spoke w/ Eric. enabled Google si. asked
+        for ncc''s. He''s got none atm. Told him about DC. He asked for an email.
+        sent email re: ncc strat & DC info.\n11/6/13 tj: spoke w/ Eric. Everything
+        going well. added 1 ncc.\n7.26.13 scd: lhm & sent welcome email.\n7.11.13
+        scd: Andrew let me know that they got a review. He told me that Eric is very
+        familiar with us, has a friend who uses us, and just needed a friendly email
+        re ncc''s. I will call for a welcome call soon. (c). sent email re ncc''s
+        meantime. \n7.1.13 scd: no ncc''s, reviews or button. sent email to Andrew
+        and he''ll let me know when they add some and are ready for a welcome call.\nOne
+        call close from Linkedin","customer_call_notes":"CHECK AREA CODES Compare
+        and buy flooring online.","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2013-05-30T15:02:31Z","last_credit_grant":"2015-07-02","sales_status":false,"date_live":null,"user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2013-05-30","sugar_lead_id":null,"sugar_account_id":"8f3d57bb-2f21-efbf-a256-51a769ac0918","sugar_opportunity_id":"9a6502b3-f52c-dc8c-d18c-51a7698aa9c0","created_at":"2013-05-30T15:00:29Z","updated_at":"2015-11-09T22:31:57Z","status":"active","sales_user_id":139,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"not_running","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49519,"company_id":11139,"admin_user_id":415,"call_number":8,"completed_at":"2015-06-26T17:32:06Z","status":"completed","priority":8,"notes":"6/26/15
+        ah: lvm for Dave on his cell re ncc''s.\r\n6/23/15 ah: lvm for Dave re ncc''s\r\n6/19/15
+        ah: lvm for Dave re ncc''s. Sent email fu","created_at":"2015-02-08T13:30:22Z","updated_at":"2015-06-26T17:32:06Z","disposition":"voicemail","company":{"company_id":11139,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"J&L
+        Transmissions","company_description":"8228 Southeast Taylor Street, Portland,
+        OR","address1":"8228 Southeast Taylor Street","address2":"","city":"Portland","state":"OR","zip":"97216","country":"US","latitude":"45.515314","longitude":"-122.5784038","timezone":"Pacific
+        Daylight Time","formatted_address":"8228 Southeast Taylor Street, Portland,
+        OR 97216, USA","phone":"5038416991","phone_ext":"","website":"http://www.jltransmission.com/index.htm","is_active":true,"abbreviated_name":"jl-transmissions","freetrial_start_date":"2012-03-29T11:05:43Z","signup_admin_id":null,"signup_ip_addr":"71.202.183.119","account_terminated":false,"termination_date":null,"activation_code":"91026321211e2c222","account_class":"business","promo_id":58,"average_score":0.92,"admin_notes":"Dave
+        pp for ncc''s?: 503 734 8586\naccounts 11151, 11139, 11149\nJose''s direct
+        line (503) 841-6991\n\n6/26/15 ah: lvm for Dave on his cell re ncc''s.\n6/23/15
+        ah: lvm for Dave re ncc''s\n6/19/15 ah: lvm for Dave re ncc''s. Sent email
+        fu\n5/18/15: mt: no response from Dave Johnson, challenge approved.\n5/8/15
+        tj: Challenge. reviewer dave johnson not a customer. Asked for info.\n1/6/15
+        ld challenge approved for linda''s review.  written about another company.  duh,
+        linda. \n10/8/14 kf: email 2....updated CC.\n10/7/14 kab: on hold, unfortunately.
+        still lvm for Dave w/NCCs reminder to cover and sent email to Dave.\n10/3/14
+        kf: on hold. lhm, email 1. \n6/4/14 tj: called, spoke w/ Jose who said I should
+        call Dave for ncc''s. Called Dave. lvm. sent email re: ncc''s strat, si''s,
+        & DC.\n2.20.14 scd: challenged time-sent Dawn proof of customer email. update:
+        challenge approved.\n1/9/14 kab: lhm for Jose. sent email re:NCCs (38 creds)
+        and Yelp SI to all.\n8/29/13 kf: lhm and emailed all re: syndication success,
+        ncc, and si''s.\n4/24/13 kf: emailed ncc reminder/22 credits. \n03/27/13 mm:
+        sent Dave email explaining outcome of last two NCCs. Asked for many more to
+        use 20 credits.\n03/21/13 mm: Dave emailed me homemade handwritten review
+        forms to be published. I called him and let him know that he should not send
+        these to us, just send names and numbers, and entered 2 nccs. He said okay.\n02/05/13
+        mm: Dave called cause he can''t log in. Added him as new user and sent him
+        email with log in info and where to generate button code for website. Asked
+        for NCCs as well, he said they are working on list right now.\n12/20/12 scd:
+        spoke briefly to jose re ncc''s, sent email to both users.\n6/28/12 Dave called
+        in and asked if the review he''d sent in, Sydney''s, been transcribed and
+        verified. I had him re-email it to me and that we''d call to verify and use
+        it as a cc. when I got it, it''s totally a rip-off of our HW''s, I will tell
+        him moving forward, we can''t accept these.\n06/08/12 scd: lhm and sent welcome
+        email. \n5/14/12 rj: dave had questions about reviews syndication, explained
+        fb/twitter apps, other sites check box.\n5/9/12 rj: dave left vm about using
+        CL reviews on sites like google, yahoo, and yelp. called him back, explained
+        publishing policies.\n5/8/12 rj: dave called in about clarifications concerning
+        managing reviews: how to get a review down if they worked it out (withdrawal
+        or email verification), notifications regarding the status of a challenge
+        (auto email, call if denied) pending state and challenges/reviews (extends
+        pending state).\n5/2/12 rj: Dave called in about reviews he sent to reviews@customerlobby.com,
+        told him to send them to me and i''ll take a look.  wrote back w/ q''s about
+        challenges, responded with details/tips. also wanted calls to go out to two
+        handwritten reviewers if no response, calendared.\n\n4.25 LM\n3.29- Bob contact
+        number is (503)853-1322.Web guy Dave (503)734-8586.\n Jose is manager here.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2012-04-30T07:49:00Z","last_credit_grant":"2015-07-02","sales_status":false,"date_live":"2012-03-30T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2012-04-30","sugar_lead_id":"b162fce4-6012-bd66-13c8-4ffe87743cb5","sugar_account_id":"9f1f84a4-4add-1976-e007-4fecbc4c2be5","sugar_opportunity_id":"dc1d0059-7952-5362-54de-50d36a8450b5","created_at":"2012-03-29T11:05:43Z","updated_at":"2015-11-09T22:31:42Z","status":"active","sales_user_id":79,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49591,"company_id":19175,"admin_user_id":415,"call_number":6,"completed_at":"2015-06-24T17:04:29Z","status":"completed","priority":6,"notes":"6/24/15
+        ah: Spoke with Leanne re ncc''s. She said I should email Casey. fu email sent
+        re ncc''s.\r\n6/22/15 ah: lhm with gk for Leanne re ncc''s. Sent email fu.
+        UPDATE: email bounced back. Removed email from notes. If I don''t hear back
+        from Leigh Ann, I''ll ask gk for email.\r\n4/14/15 kf: lhm with gk, she gave
+        me leeann''s email. emailed both re: ncc.\r\n2/10/15 kf: lvm & emailed re:
+        dc. ","created_at":"2015-02-09T13:30:28Z","updated_at":"2015-06-24T17:04:29Z","disposition":"talk","company":{"company_id":19175,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Action
+        Chiropractic","company_description":"","address1":"6410 Charlotte Pike, Suite101","address2":"","city":"Nashville","state":"TN","zip":"37205","country":"US","latitude":"36.133379","longitude":"-86.89097009999999","timezone":"Central
+        Daylight Time","formatted_address":"6410 Old Charlotte Pike #101, Nashville,
+        TN 37205, USA","phone":"6153564656","phone_ext":"","website":"http://www.nashvillespinedoctor.com","is_active":true,"abbreviated_name":"action-chiropractic","freetrial_start_date":"2013-02-25T19:54:12Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":24,"average_score":0.98,"admin_notes":"Connected
+        to 18873\n\n6/24/15 ah: Spoke with Leanne re ncc''s. She said I should email
+        Casey. fu email sent re ncc''s.\n6/22/15 ah: lhm with gk for Leanne re ncc''s.
+        Sent email fu. UPDATE: email bounced back. Removed email from notes. If I
+        don''t hear back from Leigh Ann, I''ll ask gk for email.\n4/14/15 kf: lhm
+        with gk, she gave me leeann''s email. emailed both re: ncc.\n2/10/15 kf: lvm
+        & emailed re: dc. \n12/2/14 ld: LeeAnn called earlier with NCC''s. Advised
+        how to use the website to upload NCC''s, showed her around a bit.  May be
+        future point of contact.\n10/8/14 ks: Called for Casey but gatekeeper blocked
+        me \"why can''t you just talk to me about this?\" Asked her for NCCs. \"Oh
+        let me go get the dr. for that.\" Put on hold for a while only for GK to come
+        back and say he''s with a patient and he''ll cb. Email it is.\n5/20/14 tj:
+        inc call, Casey. He''s thinking about cancelling, asked about what we do for
+        him, thought our reviews went to search engines. They do. Did a wt w/ him
+        about CG synd. Went over the difference between Plus and Biz. Downgraded both
+        accts to Biz per his request. Told him about DC. He doesn''t use invoices
+        for his chiro biz, but he does for the auto shop. sent fu acct performance
+        email.\n4/14/14 tj: sent email re: ncc''s & DC.\n11/21/13 tj: coordinated
+        an attack on reviewers w/ Casey. He let them know to expect a confirmation
+        email for their reviews. Gave me the go ahead to reenter kiosk reviews. Reentered.\n11/19/13
+        tj: Casey called in wants another email of unresponsive contacts. email sent.\n11/12/13
+        tj: The Dr. wanted to know how he could get the most out of his accts. did
+        a wt on handwritten, syndication, mobile kiosk, and call reviews. Re entered
+        his hw reviews into kiosk for reconfirmation. sent email w/ info.\n8.9.13
+        scd: lhm for the dr. sent email re ncc''s and si''s.\n4/25/13 kf: Dr. Bearden
+        called in and asked about various account functionality. gave him a long wt,
+        showed him how to track reviews and send invites. he seems more interested
+        in the open invitations. sent him email with ways of getting reviews included.
+        \n4.8.13 scd: lhm & sent welcome email.\n\n3-5-13 Not in. Said try between
+        1-3 tomorrow\n2-27-12 Called twice, doctor out. Either try back in a bit or
+        tomorrow\n2/25 Dr. Casey Bearden is DM. Referral from Thomas Kwik Kar lube
+        and tune . likes review forms","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-20T15:32:47Z","last_credit_grant":"2015-06-21","sales_status":true,"date_live":"2013-02-27T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-20","sugar_lead_id":null,"sugar_account_id":"e98004a4-0fd4-e134-4624-512bc18fdb87","sugar_opportunity_id":"82040f6f-3ed7-9d26-6aef-512bc1127803","created_at":"2013-02-25T19:54:12Z","updated_at":"2015-11-09T22:31:53Z","status":"active","sales_user_id":109,"system_of_record":"none","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":335,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49595,"company_id":24547,"admin_user_id":415,"call_number":5,"completed_at":"2015-06-26T15:36:16Z","status":"completed","priority":5,"notes":"6/26/15
+        ah: Called for Eli, but he''d left the office. GK gave me his cell. Called
+        cell and lvm re ncc''s.\r\n6/24/15 ah: lhm for Eli re ncc''s.\r\n6/22/15 ah:
+        lhm for Eli to call me back re ncc''s. David doesn''t work there any more.
+        Sent email fu.\r\n4/8/15 kf: lvm, emailed re: dc/campaigns.\r\n2/11/15 kf:
+        lvm for david, emailed re: dc. ","created_at":"2015-02-09T13:30:28Z","updated_at":"2015-06-26T15:36:16Z","disposition":"voicemail","company":{"company_id":24547,"enterprise_id":null,"workflow_system_id":1,"account_level_id":3,"company_name":"All
+        Around","company_description":"All Around is your LOCAL Home Service Provider.
+        Use us for all commercial/residential repair, remodeling, and routine maintenance
+        needs! Give us a call!","address1":"701 Decatur Ave N, #201","address2":"","city":"Minneapolis","state":"MN","zip":"55427","country":"US","latitude":"44.9861926","longitude":"-93.394056","timezone":"Central
+        Daylight Time","formatted_address":"701 Decatur Avenue North #201, Minneapolis,
+        MN 55427, USA","phone":"7634473944","phone_ext":"","website":"http://www.AllAround.com","is_active":true,"abbreviated_name":"all-around","freetrial_start_date":"2013-08-28T13:51:08Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"ONuzSkPt7Sgt6WMDriP-bw","account_class":"business","promo_id":57,"average_score":0.99,"admin_notes":"Eli''s
+        Cell: 651-354-2780\n\n6/26/15 ah: Called for Eli, but he''d left the office.
+        GK gave me his cell. Called cell and lvm re ncc''s.\n6/24/15 ah: lhm for Eli
+        re ncc''s.\n6/22/15 ah: lhm for Eli to call me back re ncc''s. David doesn''t
+        work there any more. Sent email fu.\n4/8/15 kf: lvm, emailed re: dc/campaigns.\n2/11/15
+        kf: lvm for david, emailed re: dc. \n10/27/14 ks: David called, wanted to
+        know what it meant by \"Other\" for how people find his reviews page. Tried
+        to explain it but didn''t do a good job. Checked for more specific information
+        and sent email with what constitutes Other.\n10/13/14 kab: lhm for David re:installing
+        DC. sent email w/improved stats and reminder he can toggle automation to cherry-pick
+        (notes from Feb indicate that was his reservation).\n10/10/14 ks: inc call
+        from David, went through tracking reviews. He was concerned about the date
+        calls were requested and the date they were marked unresponsive being the
+        same. I explained that it says they were the same day but that''s an error
+        and we did call 3 times and leave 2 vms. That made him feel better. Showed
+        him how to send email invites as another method for getting reviews. He was
+        happy with everything.\n10/9/14 ks: Support email from David, asking why he
+        can''t see how many calls have been made to each of his customers anymore.
+        Replied and explained that on new panel we''re still working on that ability
+        but told him how to track calls/see who has given a review.\n10/8/14 ks: lhm
+        for David and sent email re:NCCs/8 creds\n8/28/14 tj: David lvm. Called him.
+        His Business info isn''t consistent. He''s asking us how we synd the reviews.
+        Gave him an overview. It looks good on CityGrid so I sent him an email w/
+        a link to update the listing on InfoUsa.\n5/22/14 kab: one of Kathy Z''s reviews
+        Challenged -- duplicate. this town''s not big enough for the both of them.
+        Challenge Approved, removed.\n4.29.14 scd: man called in and asked that I
+        delete a cust for a call he just entered. done. wade is deleted.\n4/23/14
+        kf: lvm for david and emailed re: ncc.\n4/8/14 tj: reviewer john doe unresponsive.
+        Challenge accepted.\n3/31/14 tj: Challenge, john doe not a customer. Asked
+        for proof of svc.\n2/4/14 rj: contacted david about qb integration.  he only
+        clicked to see what ti was about, is not currently interested because he doesn''t
+        want to contact commercial clients, but would love it if he could filter residential
+        only.","customer_call_notes":null,"trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2013-09-23T22:26:26Z","last_credit_grant":"2015-06-23","sales_status":false,"date_live":null,"user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2013-09-23","sugar_lead_id":null,"sugar_account_id":"cb8f9ce3-9469-c706-c39f-521e0074068e","sugar_opportunity_id":"734451d7-a414-62c1-eda0-521e000586ab","created_at":"2013-08-28T13:51:08Z","updated_at":"2015-11-09T22:32:00Z","status":"active","sales_user_id":139,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"not_running","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":49645,"company_id":17231,"admin_user_id":415,"call_number":6,"completed_at":"2015-06-22T23:33:10Z","status":"completed","priority":6,"notes":"6/22/15
+        ah: Spoke with David re ncc''s. He''s going to fax over a bunch shortly. Sent
+        email fu\r\n4/14/15 kf: asked for cb in an hour...lvm, emailed re: dc/campaigns.
+        \r\n3/27/15 kf: on hold. david said CC should be fine to run, but it failed.
+        i suspect it''s part of the cybersource exp date error. \r\n2/11/15 kf: lvm
+        for david, emailed re: dc. ","created_at":"2015-02-10T13:30:20Z","updated_at":"2015-06-22T23:33:10Z","disposition":"talk","company":{"company_id":17231,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Discount
+        Electric","company_description":"","address1":"1657 Welford Cir","address2":"","city":"Hayward","state":"CA","zip":"94544","country":"US","latitude":"37.6189549","longitude":"-122.0684244","timezone":"Pacific
+        Daylight Time","formatted_address":"1657 Welford Circle, Hayward, CA 94544,
+        USA","phone":"5106733809","phone_ext":"","website":"http://www.discountelectricofca.com/","is_active":true,"abbreviated_name":"discount-electric","freetrial_start_date":"2012-12-13T17:18:03Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":24,"average_score":0.95,"admin_notes":"6/22/15
+        ah: Spoke with David re ncc''s. He''s going to fax over a bunch shortly. Sent
+        email fu\n4/14/15 kf: asked for cb in an hour...lvm, emailed re: dc/campaigns.
+        \n3/27/15 kf: on hold. david said CC should be fine to run, but it failed.
+        i suspect it''s part of the cybersource exp date error. \n2/11/15 kf: lvm
+        for david, emailed re: dc. \n12/24/14 jmr: called, added 6 nccs. reset his
+        password at his request.\n10/9/14 kab: called, lvm re: NCCs/23 creds. sent
+        email w/DC info included.\n9/2/14 kf: on hold. updated CC with david, he''s
+        a little strange to talk to, sounds really nervous and jumpy. he likes the
+        reviews he has from a year ago, but i convinced him that he needs some more
+        too. he gave me CC, said he might cb with some #s. then he asked what the
+        name of my company is...guessing he''s not the most engaged biz owner around.\n3/24/14
+        kab: lvm for David re:NCCs/11 creds. sent email re:that and DC.\n4.4.13 scd:
+        David called in, wanted to remove latest review b/c it puts them in a bad
+        light (pun totally intended) but I explained it will remain published. walked
+        him through Featuring Reviews. Also told him about WR and Writing a Response,
+        but he was good.\n2.28.13 scd: spoke to David. bad connection, welcome call.
+        Got 7 ncc''s. Sent welcome email.\n12/31/12 scd: sent email invite to cc Tony.\n2/7
+        825 SP blew me off and hung up","customer_call_notes":"Please say \"This is
+        to help David out\" \"David really would appreciate your review\" etc...just
+        throw David''s name around!","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2013-01-24T16:38:24Z","last_credit_grant":"2015-06-24","sales_status":false,"date_live":"2013-01-04T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2013-01-24","sugar_lead_id":null,"sugar_account_id":"1049e78e-e78a-98a8-6a92-50ca0da3c192","sugar_opportunity_id":"1416c551-aee0-ce56-4877-50ca0d92ec17","created_at":"2012-12-13T17:18:03Z","updated_at":"2015-11-09T22:31:51Z","status":"active","sales_user_id":139,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":50875,"company_id":17819,"admin_user_id":415,"call_number":6,"completed_at":"2015-06-26T15:48:33Z","status":"completed","priority":6,"notes":"6/26/15
+        ah: Called for Tammy, but no answer. No vm left this time since I''ve already
+        left 2 and an email\r\n6/24/15 ah: lvm for Tammy re advice on how we could
+        make account even better (thinking SI''s and synd).\r\n6/22/15 ah: lvm for
+        Tammy re SI''s. Sent email fu.\r\n4/14/15 kf: lvm for tammy, emailed re: dc/campaigns.\r\n3/11/15
+        kf: lvm for tammy, emailed re: dc/campaigns.","created_at":"2015-03-11T12:30:20Z","updated_at":"2015-06-26T15:48:33Z","disposition":"voicemail","company":{"company_id":17819,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Criterium-Cincinnati
+        Engineers","company_description":"","address1":"P.O. Box 181503","address2":"","city":"Cincinnati","state":"OH","zip":"45018-1503","country":"US","latitude":"39.2562047","longitude":"-84.77529","timezone":"Eastern
+        Daylight Time","formatted_address":"Cincinnati West Airport-I67, 10004 West
+        Road, Harrison, OH 45030, USA","phone":"5134749600","phone_ext":"","website":"http://criterium-cincinnati.com","is_active":true,"abbreviated_name":"criterium-cincinnati-engineers","freetrial_start_date":"2013-01-11T21:23:28Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"business","promo_id":62,"average_score":0.99,"admin_notes":"6/26/15
+        ah: Called for Tammy, but no answer. No vm left this time since I''ve already
+        left 2 and an email\n6/24/15 ah: lvm for Tammy re advice on how we could make
+        account even better (thinking SI''s and synd).\n6/22/15 ah: lvm for Tammy
+        re SI''s. Sent email fu.\n4/14/15 kf: lvm for tammy, emailed re: dc/campaigns.\n3/11/15
+        kf: lvm for tammy, emailed re: dc/campaigns.\n11/10/14 ks: lvm for Tammy re:NCCs/40
+        creds/DC. Sending good performance email.\n3/25/14 kab: spoke w/Tammy re:NCCs/26
+        creds. she''s convinced a lot of people don''t like to be called and prefers
+        emails, but she will get SOME NCCs in there, does not want a reminder email.
+        they use QB and she wanted to know more about DC, so I offered to send an
+        info email. sent.\n3.14.13 scd: lvm & sent welcome email.\n3/5/13 kf: emailed
+        Tammy receipt per her request, as communicated through Andrew. \n2.13.13 scd:
+        emailed Tammy W9 form per emailed request.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2013-02-13T18:29:02Z","last_credit_grant":"2015-06-13","sales_status":false,"date_live":"2013-01-15T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2013-02-13","sugar_lead_id":null,"sugar_account_id":"4f8fcfae-8533-7345-41e0-50f082d3339e","sugar_opportunity_id":"52c67666-ef33-ae36-0496-50f082ba5203","created_at":"2013-01-11T21:23:28Z","updated_at":"2015-11-09T22:31:51Z","status":"active","sales_user_id":139,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51151,"company_id":31783,"admin_user_id":415,"call_number":4,"completed_at":"2015-06-24T16:53:56Z","status":"completed","priority":4,"notes":"6/24/15
+        ah: lhm for Paul although the answering service said he''s never at this number.
+        Asked if they could give me his number. Nope. \r\n6/22/15 ah: lvm for Paul
+        re ncc''s and widget. Sent email fu re ncc''s.\r\n4/20/15 kf: lhm for paul,
+        emailed re: dc/campaigns.","created_at":"2015-03-18T12:30:20Z","updated_at":"2015-06-24T16:53:56Z","disposition":"email","company":{"company_id":31783,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"A
+        Plus Inspections of Texas","company_description":"Home Inspections & Commercial
+        Inspections","address1":"481 Stephen F Austin Dr","address2":"","city":"Conroe","state":"TX","zip":"77302","country":"US","latitude":"30.2593385","longitude":"-95.43646410000001","timezone":"Central
+        Daylight Time","formatted_address":"481 Stephen F Austin Drive, Conroe, TX
+        77302, USA","phone":"7132492618","phone_ext":"","website":"http://www.inspec4.net","is_active":true,"abbreviated_name":"a-plus-inspections-of-texas","freetrial_start_date":"2014-04-12T00:00:00Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"omNsAZ18FV8KHLtgyHcEnw","account_class":"business","promo_id":58,"average_score":1.0,"admin_notes":"6/24/15
+        ah: lhm for Paul although the answering service said he''s never at this number.
+        Asked if they could give me his number. Nope. \n6/22/15 ah: lvm for Paul re
+        ncc''s and widget. Sent email fu re ncc''s.\n4/20/15 kf: lhm for paul, emailed
+        re: dc/campaigns.\n11/17/14 ks: lhm for Paul and sent email re:NCCs/6 creds.\n7/15/14
+        tj: lhm. sent email re: ncc''s, si''s, synd, & DC.\n6/2/14 tj: lhm. sent welcome
+        email.\n5/12/14 Got review credits and info in the system. Call scheduled
+        later in week.\n5/8/14 Dude called me after termination email. Restarted trial
+        and apparently he just dropped some other adverts so im pushing for week 2
+        close.\n\n4/8/14 heard about us from a meeting with local business owners.
+        Sent email and spoke over the phone","customer_call_notes":"Standard Residential
+        Inspection with Termite","trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-16T20:00:35Z","last_credit_grant":"2015-06-16","sales_status":true,"date_live":null,"user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-16","sugar_lead_id":null,"sugar_account_id":"d9420bf0-a080-e6ac-a1fa-534466773e40","sugar_opportunity_id":"65331e3d-5cf5-25f1-99df-53446662e9b2","created_at":"2014-04-08T21:13:56Z","updated_at":"2015-11-09T22:32:09Z","status":"active","sales_user_id":133,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51229,"company_id":32543,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-22T19:39:45Z","status":"completed","priority":4,"notes":"5/22/15
+        ah: lhm for ncc''s. Also mentioned their many unused call credits. Sent email
+        re ncc''s and call credits","created_at":"2015-03-19T12:30:21Z","updated_at":"2015-05-22T19:39:45Z","disposition":"email","company":{"company_id":32543,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Realty
+        Connect","company_description":"Buy, Sell, Lease & Manage - Full Service Real
+        Estate Team","address1":"3169 Fernbrook Ln N","address2":"","city":"Plymouth","state":"MN","zip":"55447","country":"US","latitude":"45.0157359","longitude":"-93.46210699999999","timezone":"Central
+        Daylight Time","formatted_address":"3169 Fernbrook Lane North, Plymouth, MN
+        55447, USA","phone":"7634473151","phone_ext":"","website":"http://www.realtyconnectmn.com","is_active":true,"abbreviated_name":"realty-connect","freetrial_start_date":"2014-05-02T11:05:34Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"hImt4DNjvdFWQWvuN_Ob4A","account_class":"business","promo_id":58,"average_score":1.0,"admin_notes":"6/22/15
+        ah: Erik emailed about Danielle''s review that published 2 months ago. Called
+        back and lvm re management options. Sent email fu. UPDATE: Erik emailed back
+        to say that he had done a withdrawal request 2 months ago. Had rj check. Yes
+        he did and reviewer was unresponsive. Not sure why review published, but I
+        changed the review status to Unpublish and lvm for Erik letting him know.
+        Sent email fu.\n5/22/15 ah: lhm for ncc''s. Also mentioned their many unused
+        call credits. Sent email re ncc''s and call credits\n4/24/15 jmr: challenge
+        denied for danielle loven. does not violate policy. called for erik but got
+        vm. lvm to get back to me at my direct line and sent email with recommendation
+        to send withdrawal request since they are offering to go out of pocket for
+        the customer in question. UPDATE: got a call from Jesse(m), the office manager
+        returning my message. Erik''s not available at the office but he''ll follow
+        up with Erik and I can go ahead and send him an email.\n4/17/15 jmr: lvm and
+        sent email re nccs and dc.\n11/18/14 ks: lvm for erik re:NCCs/14 creds. \n7/17/14
+        tj: lvm. sent re: ncc''s & DC.\n6/4/14 tj: welcome call w/ Erik. sent fu email.
+        He was impressed that the support team was calling. \"It''s usually the other
+        way around,\" he said. Yeah. We''re kind of awesome.\n\n5/19/14 Closed, button
+        in email and on listings for Erik specifically.\n5/15/14 Sent email regarding
+        discount on activation.\n5/6/14 Completed walk-through, Erik wasn''t fazed
+        by price and is interested in the $99. He will have his webguy do the button
+        and already has one installed on his email signature. Cool. Showed him custom
+        invite and asked for customer call info.\n\n5/2/14 Sent email","customer_call_notes":null,"trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-19T16:10:29Z","last_credit_grant":"2015-06-19","sales_status":false,"date_live":null,"user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-19","sugar_lead_id":null,"sugar_account_id":"7967c754-09c7-7957-eb86-53637c9f7e8f","sugar_opportunity_id":"df3a8fd4-9f15-3f86-cf8c-53637ce2e6a9","created_at":"2014-05-02T11:05:34Z","updated_at":"2015-11-09T22:32:10Z","status":"active","sales_user_id":133,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51361,"company_id":31805,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-28T15:46:25Z","status":"completed","priority":4,"notes":"5/27/15
+        ah: Spoke with Jamie about ncc''s, CL displaying as a customer, and setting
+        up dc. Her boss is out of town until June 9th, but she''s very interested
+        in dc. Will call back on June 15 to set up dc. In the mean time, she said
+        she''d send more ncc''s.","created_at":"2015-03-21T12:30:23Z","updated_at":"2015-05-28T15:46:25Z","disposition":"talk","company":{"company_id":31805,"enterprise_id":null,"workflow_system_id":67,"account_level_id":3,"company_name":"Spectrum
+        Carpet Cleaning and Restoration","company_description":"","address1":"5744
+        Industry Lane","address2":"","city":"Frederick","state":"MD","zip":"21704","country":"US","latitude":"39.39361359999999","longitude":"-77.4165773","timezone":"Eastern
+        Daylight Time","formatted_address":"5744 Industry Lane, Frederick, MD 21704,
+        USA","phone":"3016628200","phone_ext":"","website":"http://trustspectrumcarpet.com/","is_active":true,"abbreviated_name":"spectrum-carpet-cleaning-and-restoration","freetrial_start_date":"2014-04-09T16:10:08Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"fRR21Er0Sp39L9qv8vk-qQ","account_class":"business","promo_id":56,"average_score":0.97,"admin_notes":"6/17/15
+        ah: Called Jamie, but she''s in a meeting. She said she''ll call me back after
+        the meeting. Hope so!\n6/15/15 ah: Spoke with Jamie re dc. She still needs
+        to talk to owners and has a meeting tomorrow. Rescheduled to call her on 6/17.\n5/27/15
+        ah: Spoke with Jamie about ncc''s, CL displaying as a customer, and setting
+        up dc. Her boss is out of town until June 9th, but she''s very interested
+        in dc. Will call back on June 15 to set up dc. In the mean time, she said
+        she''d send more ncc''s.\n5/26/15 ah: Called and Jamie''s out until tomorrow.
+        Notice cl is listed as Customer on contact list. Will call tomorrow to ask
+        about that and adding ncc''s.\n5/1/15: mt: spoke with Jamie, said they have
+        been SUPER busy with water damages, restoration, business has been picking
+        up, etc. But owner says they she is satisfied with the reviews, and they are
+        also in the process of getting 4 websites made, and so they will be wanting
+        to get our badges posted on those as well. told her I completely  understand,
+        will send her an e-mail she can refer back to when she does get time, and
+        also included a refresher on how to get badges, and of course, dc pitch with
+        emphasis on saving that time she never seems to have.  \n1/7/15 kf: diane
+        says run same CC again.\n1/5/15 kf: lhm, email 1. 2.5 next.\n1/2/15 kf: still
+        on vacation.\n12/31/14 kf: diane is still on vacation. no CC yet.\n12/29/14
+        kf: on hold. jamie will update when owner diane gets new CC to her.\n11/20/14
+        ks: lhm for Jamie reNCCs/general touch. Sent email.\n7/17/14 tj: called Jaime.
+        she''s in the middle of a conference call. Take my call! I can save you! She
+        bravely declined and offered to cb, she''s got my #. Sent email re: ncc''s,
+        si''s, & DC.\n6/4/14 tj: welcome call w/ Jaime. She had questions about DC.
+        They use quickbooks, but it''s not the primary database. They actually have
+        ServiceMonster. She asked about FB app, directed her where to go and how it
+        works. She says they''re pretty bz and had to go. sent fu welcome email.\n149
+        to join 99\n5/13/14-got a verbal yes from jamie, problem is diane has business
+        credit card and is gone until monday to see family in florida, told her i
+        would hold it open for her until Monday if my manager allows it...\n5/12/14-boss
+        and his wife diane need to go over tonite...\n5/12-not in til 2, cb not in
+        yet cb in 30....\n5/8/14-offered 50 off enrollment, 149 to join 99 after that.
+        gotta send email with all this data., fu tomorrow to see if owners will continue\n5/5-answering
+        service, can only leave messages, sent email to jamie\n4/29-keeps ringing>?\n4/28/-x\n4/17/14-sent
+        email to see if she got webinfo yet\n4/10-long call, she is a talker, next
+        time remind her to change business listing on google, then do citygrid.. she
+        will send ccs tonight, and send webinfo when it arrives. \"owner/owners wife
+        says she likes how any customer can leave a review.\"\n9-got web guy, he will
+        send login info to jamie\n4/9/14- owner is a dinosaur tech wise, jamie is
+        in charge of angie''s list relationship and everything.","customer_call_notes":null,"trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-19T18:13:50Z","last_credit_grant":"2015-06-19","sales_status":false,"date_live":"2014-05-02T00:00:00Z","user_notes":null,"enable_referral_marketing":true,"enable_retention_marketing":true,"last_handwritten_review_credit_grant":"2014-05-19","sugar_lead_id":null,"sugar_account_id":"d5bc7bb9-d1d4-ece7-61c9-534570147a3b","sugar_opportunity_id":"d835cbf7-6b3e-796e-81ad-5345706fb2b1","created_at":"2014-04-09T16:10:08Z","updated_at":"2015-11-09T22:32:09Z","status":"active","sales_user_id":269,"system_of_record":"service
+        monster","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"not_running","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51371,"company_id":33179,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-22T17:32:05Z","status":"completed","priority":4,"notes":"5/22/15
+        ah: lhm for more ncc''s. Sent email re ncc''s. Account looks good","created_at":"2015-03-21T12:30:23Z","updated_at":"2015-05-22T17:32:05Z","disposition":"email","company":{"company_id":33179,"enterprise_id":null,"workflow_system_id":1,"account_level_id":3,"company_name":"Tekmax
+        Technologies","company_description":"We are your cutting-edge home theater
+        system, design, integration and installation company. We are an Authorized
+        Control 4 Gold Dealer for your Automation needs.","address1":"1201 E 15th
+        St.","address2":"Suite 108","city":"Plano","state":"TX","zip":"75074","country":"US","latitude":"33.019957","longitude":"-96.69716","timezone":"Central
+        Daylight Time","formatted_address":"1201 East 15th Street #108, Plano, TX
+        75074, USA","phone":"9725840272","phone_ext":"","website":"http://www.tekmaxtechnologies.com","is_active":true,"abbreviated_name":"tekmax-technologies","freetrial_start_date":"2014-05-16T08:38:55Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"0y55167JaHyKEuCHpMvaxw","account_class":"business","promo_id":null,"average_score":0.99,"admin_notes":"7/6/15
+        mw: got a call from Ray asking to remove Edgar from the account (he is no
+        longer with business). Admin not letting me delete user. Asked about billing
+        info, it was already updated.\n7/2/15 ah: On hold. lhm to update billing info.\n7/1/15:
+        mt: on hold. called, rang for a few minutes, repeated message from robot saying
+        a staff member would be w/ me shortly. Sent e-mail re updating billing/ncc''s
+        (18 credits).  \n6/29/15 tj: on hold. lhm. sent email 2.5 re: ncc''s & DC.\n6/26/15:
+        mt: on hold. lhm w/ answering service, said he should be able to give me a
+        call back shortly. Email 2, also asked for ncc''s. (18 credits)\n6/25/15 ah:
+        On hold. lhm with call center for Ray to update billing. Sent email 1.\n5/22/15
+        ah: lhm for more ncc''s. Sent email re ncc''s\n4/30/15: mt: Ray on the other
+        line with a client, lhm re ncc''s. Sent follow up e-mail as well.\n11/20/14
+        ks: recent touch re:DC. No call today\n11/14/14 tj: inc call, Ray. He added
+        Trevor Engels for email invite when he wanted it as a call. Readded customer
+        for call review. Talked about si''s & DC. He got si''s set up and uses quickbooks.
+        He seemed slightly interested in DC, but wants to cherry-pick.\n10/20/14 kab:
+        lhm with call center. sent email info re:DC.\n8/26/14 tj: Ray called. He sold
+        the Co. name and now has to change the name from \"Tekmax Technologies, Inc.\"
+        to just \"Tekmax Technologies\". Done. Then he asked how to add ncc''s. did
+        a quick wt. He thanked me and went on to do business.\n7/18/14 tj: call center.
+        meh. lhm. sent email re: ncc''s, si''s, & DC.\n6.18.14 scd: Ray called in
+        to ask me to switch his requested calls to email invites. most of them had
+        not been called yet, so it was easy to do. Told him a few had been called
+        already. no prob. I asked why he didn''t want to use the calls and he said
+        b/c $20 was too expensive on top of what he was paying already. wtf?! I tried
+        explaining that''s only if he wants extra call reviews. He said he understood,
+        but still wanted those switched. hmmmm I don''t think he understands it. I
+        did what he asked.\n6/18/14 kab: Ray called in for a couple reasons. 1) changed
+        biz name by removing \", Inc.\" 2) his first/only/not so hot review by Sylvia
+        Smith, while Not Published, still had his star ratings showing as 2/5 overall.
+        oops. he knows getting more reviews with his creds would be one solution,
+        but for a more immediate solution I passed the issue to rj. he fixed it, of
+        course :) I emailed Ray update (including explanation of why he might still
+        see 2/5 stars on Google..Google has to catch up) and NCCs reminder.\n6.5.14
+        scd: Spoke with Ray for a long time over his first review being a neg review...ugh.
+        Sent him email w/options and response examples. Sent second welcome email
+        asking for ncc''s.\n6.5.14 scd: Ray''s 1st review was  a neg review-d''oh.
+        he''s set on getting Sylvia Smith''s review taken down. I talked him off the
+        cliff this time, he''s going to send a WR b/c it doesn''t violate the pub
+        policy. I urged him to use the cust calls and credited him an extra one to
+        sweeten the deal. Ray really is a nice guy, but he is deadset on only getting
+        positive reviews. He didn''t want to hear the positive on negative reviews!!
+        Well, we shall see what happens in 7 days...I did send him an email w/response
+        examples just in case. He was happy when we got off the phone.\n5/19/14 Ray
+        is a really nice dude, very interested in redirection and most importantly
+        having a spot people without review accounts can still review his business.
+        Got review immediately from first set of email invites. Still waiting for
+        CC''s.","customer_call_notes":null,"trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-21T17:17:54Z","last_credit_grant":"2015-06-21","sales_status":false,"date_live":"2014-05-27T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-21","sugar_lead_id":null,"sugar_account_id":"775d6c01-e7f7-ae99-e825-5375ce694d24","sugar_opportunity_id":"94379bd8-8ffb-e8b1-76e2-5375ce7f6be3","created_at":"2014-05-16T08:38:55Z","updated_at":"2015-11-09T22:32:11Z","status":"active","sales_user_id":133,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"not_running","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51461,"company_id":31971,"admin_user_id":415,"call_number":4,"completed_at":"2015-06-01T18:41:29Z","status":"completed","priority":4,"notes":"6/1/15
+        ah: lvm re SI''s. ncc''s recently added. Account looks good. Sent email fu","created_at":"2015-03-22T12:30:20Z","updated_at":"2015-06-01T18:41:29Z","disposition":"email","company":{"company_id":31971,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"The
+        Tenant Factory","company_description":"We are a full service tenant placement
+        company that takes the time consuming and confusing process of finding qualified
+        tenants off the property owners hands.","address1":"35XX Halliday ave","address2":"","city":"Saint
+        Louis","state":"MO","zip":"63118","country":"US","latitude":"38.6047948","longitude":"-90.2371478","timezone":"Central
+        Daylight Time","formatted_address":"Halliday Avenue, Saint Louis, MO 63118,
+        USA","phone":"3142551887","phone_ext":"","website":"http://www.TheTenantFactory.com","is_active":true,"abbreviated_name":"the-tenant-factory","freetrial_start_date":"2014-04-15T15:48:37Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"btRNgmKtGbk68u9BjVhmzw","account_class":"business","promo_id":null,"average_score":0.98,"admin_notes":"ext.
+        4 for Daniel\n\n6/1/15 ah: lvm re SI''s. ncc''s recently added. Account looks
+        good. Sent email fu\n5/18/15: mt: lvm for Daniel re ncc''s/dc. Sent follow
+        up e-mail re same.\n3/31/15 kf: lvm, email 2 again...daniel says new CC should
+        arrive later this week.\n3/27/15 kf: email 2.\n3/23/15 kf: on hold. lvm, email
+        1...CC compromised, daniel will enter new one.\n12/4/14 kf: lvm, email 2.5.\n12/2/14
+        kf: lvm, email 2..,.daniel claims he''ll update \"this week\".\n11/25/14 kf:
+        on hold. lvm, email 1.\n11/21/14 lvm for Daniel on personal cell.  8123194909\n10/8/14
+        kf: lvm, email 2.5.\n9/30/14 kf: lvm, email 2.\n9/25/14 kf: on hold. lvm for
+        daniel, email 1.\n7/17/14 kf: lvm, emailed re: ncc/dc & si''s.\n6/4/14 tj:
+        lvm. sent welcome email.\n\n4/15/14 LVM and sent email","customer_call_notes":"Louis
+        B","trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-19T20:45:09Z","last_credit_grant":"2015-06-19","sales_status":false,"date_live":"2014-05-07T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-19","sugar_lead_id":null,"sugar_account_id":"3cef9e12-cba8-2a96-9c2c-534d5525d8cf","sugar_opportunity_id":"334b323e-c1c9-bc54-a556-534d55801292","created_at":"2014-04-15T15:48:37Z","updated_at":"2015-11-09T22:32:10Z","status":"active","sales_user_id":133,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51529,"company_id":32469,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-26T15:39:18Z","status":"completed","priority":4,"notes":"5/26/15
+        ah: Tried to lhm. Was put on hold for 10 minutes (didn''t even say I was calling
+        from cl). Sent email for Richard re NCCs and DC emphasizing that it''s free
+        and hands-off.\r\n5/21/15 ah: lhm for richard re NCCs. Sent email.","created_at":"2015-03-25T12:30:19Z","updated_at":"2015-05-26T15:39:18Z","disposition":"email","company":{"company_id":32469,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Groton
+        Auto Boday and Sales LLC","company_description":"","address1":"822 POQUONNOCK
+        RD","address2":"","city":"GROTON","state":"CT","zip":"06340","country":"US","latitude":"41.3459379","longitude":"-72.05460099999999","timezone":"Eastern
+        Daylight Time","formatted_address":"822 Poquonnock Road, Groton, CT 06340,
+        USA","phone":"8604499120","phone_ext":"","website":"http://www.grotonautobody.com","is_active":true,"abbreviated_name":"groton-auto-boday-and-sales-llc","freetrial_start_date":"2014-04-30T15:57:03Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"zvV5prcY9g_zfBYmfpIo7Q","account_class":"business","promo_id":58,"average_score":0.98,"admin_notes":"5/26/15
+        ah: Tried to lhm. Was put on hold for 10 minutes (didn''t even say I was calling
+        from cl). Sent email for Richard re NCCs and DC emphasizing that it''s free
+        and hands-off.\n5/21/15 ah: lhm for richard re NCCs. Sent email.\n3/30/15
+        ld lvm for richard re:NCCs.  Dc/NCC email sent.\n3/26/15 ld lhm for richard
+        re:NCCs.  sending email as well.\n11/24/14 ks: lhm and emailed Richard re:NCCs.\n7/22/14
+        kf: added ncc today. emailed re: si''s and fb app.\n6/9/14 tj: lhm. sent welcome
+        email.","customer_call_notes":"grah-ten","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-22T15:13:20Z","last_credit_grant":"2015-06-22","sales_status":false,"date_live":"2014-05-12T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-22","sugar_lead_id":null,"sugar_account_id":"e4dfc974-ab80-0c50-8057-53611d1fe4b8","sugar_opportunity_id":"eb279790-b8dc-9c84-e29c-53611defa935","created_at":"2014-04-30T15:57:03Z","updated_at":"2015-11-09T22:32:10Z","status":"active","sales_user_id":259,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51609,"company_id":31801,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-26T19:02:00Z","status":"completed","priority":4,"notes":"5/26/15
+        ah: lvm for Ivan re ncc''s, call credits, and dc. Sent email fu too. Account
+        looks good.","created_at":"2015-03-27T12:30:20Z","updated_at":"2015-05-26T19:02:00Z","disposition":"voicemail","company":{"company_id":31801,"enterprise_id":null,"workflow_system_id":1,"account_level_id":3,"company_name":"AquaTec
+        The Steam Cleaning Professional","company_description":"Carpet Cleaning Service
+        in Houston Tx. with pure steam. No harmful chemicals, friendly for kids and
+        pets. World''s Best carpet cleaning results or it''s free!!","address1":"7106
+        Dearborn","address2":"","city":"Houston","state":"TX","zip":"77055","country":"US","latitude":"29.800628","longitude":"-95.473541","timezone":"Central
+        Daylight Time","formatted_address":"7106 Dearborn Street, Houston, TX 77055,
+        USA","phone":"2814929200","phone_ext":"","website":"http://www.aquateccarpet.com","is_active":true,"abbreviated_name":"aquatec-the-steam-cleaning-professional","freetrial_start_date":"2014-04-09T15:08:18Z","signup_admin_id":null,"signup_ip_addr":null,"account_terminated":false,"termination_date":null,"activation_code":"HDFCCBMZUNM23-YHYKQSfw","account_class":"business","promo_id":58,"average_score":0.99,"admin_notes":"5/26/15
+        ah: lvm for Ivan re ncc''s, call credits, and dc. Sent email fu too.\n5/1/15:
+        mt: lvm for Ivan re member touch, sent follow up e-mail re ncc''s and dc.
+        they''ve been killing it with custom invites, so tried to emphasize added
+        advantage of using calls as well. sent successful syndication links too.\n11/26/14
+        tj: lvm for Ivan. sent DC email.\n7/25/14 kf: lvm for ivan, emailed re: dc/ncc.\n6/11/14
+        kab: left welcome vm for Ivan. sent welcome email.\n5/14/14 Sent termination
+        email\n5/8/14 really should have blocked number on that one.\n5/5/14 Pry need
+        to block number\n4/30/14 Sent email\n4/14/14 He''s down to close early on
+        plus with waive\n4/9/14 Called, vm, email sent","customer_call_notes":null,"trial_source":"house","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-05-27T21:01:17Z","last_credit_grant":"2015-06-27","sales_status":false,"date_live":"2014-04-22T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-05-27","sugar_lead_id":null,"sugar_account_id":"49b9af7b-722c-f7d3-3e3c-534562cbd41f","sugar_opportunity_id":"9809c936-f84f-96cf-e268-53456264f872","created_at":"2014-04-09T15:08:19Z","updated_at":"2015-11-09T22:32:09Z","status":"active","sales_user_id":133,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"not_running","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51651,"company_id":442,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-22T19:11:45Z","status":"completed","priority":4,"notes":"5/22/15
+        ah: Spoke with Jeff re ncc''s and si''s. He said he''d send more ncc''s and
+        is interested in si''s, but no time to talk about it now. Sent email re ncc''s
+        and si''s. ","created_at":"2015-03-31T12:30:32Z","updated_at":"2015-05-22T19:11:45Z","disposition":"talk","company":{"company_id":442,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Cardinal
+        Kitchens and Flooring","company_description":"Cardinal Flooring is a Christian
+        owned Family operated business.  We know that there are a lot of places to
+        shop for flooring, but we hope that you will give us a ch","address1":"7578
+        Watson Rd","address2":"","city":"St. Louis","state":"MO","zip":"63119","country":"US","latitude":"38.5785771","longitude":"-90.3277625","timezone":"Central
+        Daylight Time","formatted_address":"7578 Watson Road, Saint Louis, MO 63119,
+        USA","phone":"3149623333","phone_ext":"","website":"http://cardinalflooring.net","is_active":true,"abbreviated_name":"cardinal-kitchens-and-flooring","freetrial_start_date":"2009-07-15T08:45:15Z","signup_admin_id":null,"signup_ip_addr":"12.234.39.82","account_terminated":false,"termination_date":null,"activation_code":"2b99c48f7859678365c2f0fc16ce07e4","account_class":"business","promo_id":62,"average_score":0.91,"admin_notes":"6/11/15
+        ah: On hold. Called Jeff and updated cc#.\n5/22/15 ah: Spoke with Jeff re
+        ncc''s and si''s. He said he''d send more ncc''s and is interested in si''s,
+        but no time to talk about it now. Sent email re ncc''s and si''s. \n4/23/15:
+        mt: Jeff is not in, will be in tomorrow, sent e-mail re dc/ncc''s and si''s
+        \n12/12/14 ks: Jeff''s out on a job. lhm with a very perky gatekeeper. Sent
+        email re:NCCs/7 creds/DC\n8/5/14 tj: lvm. sent email re: si''s & DC.\n6/19/14
+        kab: lvm, sent email re:DC, NCCs (plus reminder of next credit roll-in date),
+        and SIs.\n6/9/14 tj: Challenge, Jerry I not a customer since 2009. Asked for
+        proof for past 12 months. UPDATE: Jerry admits that the install was not done
+        within the last 12 months. Challenge accepted.\n6/6/14 kf: jeff called in,
+        he wanted a review challenged. it was a leftover ncc from back in 2009, before
+        he cancelled. showed him how to challenge it, removed other old ncc, and granted
+        him a credit for a new review. also showed him how to install fb and how to
+        generate the button code.\n6/4/14 kab UPDATE: got Jeff''s cc info and reactivated
+        acct with full fee waive. sent him welcome email w/details of features (it''s
+        been a looong time for him), inc button and FB/Twitter app installation instructions
+        per his req.\n6/4/14 kab: Jeff called in, wants to reactivate. I explained
+        service lvls in full. he wants to start at Business, but also wants a waived
+        or lowered activation fee for being a previous client. told him i''d ask my
+        supervisor and cb. kb gave go-ahead to waive activation. i''m trying to reach
+        Jeff again now.\n4/6/10: Told that Jeff will not be in until Weds. Best way
+        to reach him is Email...sent email. \n4/5/10: Terminated Account; Jeff was
+        not in when I called...I was told to call back after 10:30 a.m. CST\n8/13
+        voice 4th week bad data, 8:13","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-06-04T19:06:57Z","last_credit_grant":"2015-07-04","sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-06-04","sugar_lead_id":"3672fcf4-f3c1-efa7-c33e-4fa86160e9ed","sugar_account_id":"15982aab-532e-a502-fa52-4fa8619a046c","sugar_opportunity_id":"271bbf61-c2bc-a25a-68ec-538f6ebc67fc","created_at":"2009-07-15T08:45:15Z","updated_at":"2015-11-09T22:31:14Z","status":"active","sales_user_id":14,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51717,"company_id":1915,"admin_user_id":415,"call_number":4,"completed_at":"2015-05-28T19:09:31Z","status":"completed","priority":4,"notes":"5/28/15
+        ah: tried to speak with Stephen re ncc''s. He had me on hold for a looong
+        time and I could hear him on the other line, cursing someone out. I decided
+        to hang up and send an email re ncc''s and apologizing for catching him at
+        a bad time. Wow.","created_at":"2015-03-31T12:30:32Z","updated_at":"2015-05-28T19:09:31Z","disposition":"email","company":{"company_id":1915,"enterprise_id":null,"workflow_system_id":null,"account_level_id":3,"company_name":"Biotech
+        Termite & Pest Control","company_description":"Guaranteed Results Fast Immediate
+        Remediation Licensed and Trained Technicians 24 Hour Emergency Call Center
+        Expert Advice","address1":"380 Meacham Ave","address2":"","city":"Elmont","state":"NY","zip":"11003","country":"US","latitude":"40.697641","longitude":"-73.691159","timezone":"Eastern
+        Daylight Time","formatted_address":"380 Meacham Avenue, Elmont, NY 11003,
+        USA","phone":"5163270950","phone_ext":"","website":"http://www.biotechtermiteandpest.com","is_active":true,"abbreviated_name":"biotech-termite--pest-control","freetrial_start_date":"2014-05-15T00:00:00Z","signup_admin_id":null,"signup_ip_addr":"12.234.39.82","account_terminated":false,"termination_date":null,"activation_code":"54058a1195f622e7","account_class":"business","promo_id":58,"average_score":1.0,"admin_notes":"Stephen
+        is DM  (Find review in Google)\n\n5/28/15 ah: tried to speak with Stephen
+        re ncc''s. He had me on hold for a looong time and I could hear him on the
+        other line, cursing someone out. I decided to hang up and send an email re
+        ncc''s and apologizing for catching him at a bad time. Wow.\n5/20/15 AL: Steve
+        phoned while driving his convertible, wanting to call back with a customer
+        on the line so she could give a review. Steve, I have to make sure she''s
+        queued up for a call 1st. He doesn''t like it, but give me the info, I add
+        her to the queue. Steve, you need to call back at a different # (call agents)
+        with the customer so she can give a review. He doesn''t like it, he never
+        had to deal with all this runaround before. Sorry, thanks for doing it this
+        way, we appreciate it. Call agent Kate is taking the call right now. Mission
+        accomplished!\n3/19/15 kf: entered a couple ncc for steve. \n12/16/14 kf:
+        stephen''s so busy, swears he looks at every email we send. so, emailed re:
+        dc/ncc.\n8/15/14 kab: called, rr... sent email to Stephen re:DC and NCCs/3
+        creds. included first page indexing link for \"biotech termite\", coz it seems
+        he hasn''t been 100 percent happy with results.\n8/7/14 tj: Steve called.
+        again the connection sucks. AND he''s grumpy for sure. He was asking me why
+        we haven''t contacted the last person he added. Told him we tried, but it
+        didn''t happen. He then proceeds to have me call her since apparently he''s
+        gotten a hold of her. Did the review. Damn it''s been awhile. He said he shouldn''t
+        have to do this. I agreed. Told him this isn''t the usual. He seemed mildly
+        satisfied.\n7/30/14 tj: Steve called. bad connection, but he seemed a bit
+        unhappy/grumpy. Added 1 ncc. He asked where the reviews are going, he''s not
+        seeing them google or anything. Told him CG synd is up and explained si''s
+        to him. sending fu email re: si''s, synd success links, & DC. Haven''t sent
+        yet, compiling list still.\n7/3/14 tj: lvm for Steve. sent welcome email.\n6.9.14
+        scd: Brian preferred we send the 2 hw''s as email verification, so I sent
+        them personal emails asking to verify their reviews per Brian''s request.\n6.3.14
+        scd: entered 2 hw''s as customer calls per Chico''s request. No more hw credits.\n5-28
+        sent email about password for city grid and asked to connect, cb tomorrow
+        if no response...\n5-27 sp w Steve, button is up, needs to change City Grid
+        network info for reviews to publish there too, said cb tomorrow to do that
+        shit\n5-22 Jason is web guy, (516) 456-9407\n5-21 left vm...\n5-19 Stephen
+        sp w web guy, said he will cb Stephen by tomorrow, fu on it Wednesday\n5-19
+        sp w Stephen, gave me one cc and sent hw forms\n5-15 Stephen cb, doing free
+        trial, straight shooter\n5-15 CB, left vm\n\n\ncall in two weeks to illiterate
+        for this right now, going on vaca. Sent MU\n\nDude is PIA one or two more
+        calls then dump!\n\n12-30-2009 Says he''ll call me back, wants to do it.","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2014-06-18T18:52:39Z","last_credit_grant":"2015-06-18","sales_status":false,"date_live":"2014-05-27T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":"2014-06-18","sugar_lead_id":"4b81ea68-eeec-42e7-eb70-4fa96630e27c","sugar_account_id":"1961974c-3441-0f3b-cd87-4fa966259629","sugar_opportunity_id":"3eefe644-3f86-f4bf-e34e-537539b11218","created_at":"2014-05-15T00:00:00Z","updated_at":"2015-11-09T22:31:18Z","status":"active","sales_user_id":281,"system_of_record":"***
+        Created by CL Dev ***","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}},{"id":51739,"company_id":3064,"admin_user_id":415,"call_number":12,"completed_at":"2015-06-04T18:21:19Z","status":"completed","priority":12,"notes":"6/4/15
+        ah: Spoke with Seiss. Updated cc# and asked about ncc''s. He said he could
+        send more. Sent email fu re ncc''s and dc.","created_at":"2015-03-31T12:30:32Z","updated_at":"2015-06-04T18:21:19Z","disposition":"talk","company":{"company_id":3064,"enterprise_id":null,"workflow_system_id":null,"account_level_id":1,"company_name":"First
+        Choice Painting Inc.","company_description":"Looking For a Reliable House
+        Painting Contractor to Restore Beauty To Your Home? Providing Interior and
+        Exterior House Painting and Repair, for the Atlanta Area.","address1":"1195
+        Alemeda Drive","address2":"","city":"Marietta","state":"GA","zip":"30066","country":"US","latitude":"34.0254199","longitude":"-84.517256","timezone":"Eastern
+        Daylight Time","formatted_address":"1195 Alemeda Drive, Marietta, GA 30066,
+        USA","phone":"7703210061","phone_ext":"","website":"http://first-choice-painting.com","is_active":true,"abbreviated_name":"first-choice-painting-inc","freetrial_start_date":"2010-03-03T10:32:06Z","signup_admin_id":null,"signup_ip_addr":"12.234.39.82","account_terminated":false,"termination_date":null,"activation_code":"4594c5011a4c29c6","account_class":"basic","promo_id":80,"average_score":0.96,"admin_notes":"pronounced
+        re: seese\n\n6/4/15 ah: Spoke with Seiss. Updated cc and asked about ncc''s.
+        He said he could send more. Sent email fu re ncc''s and dc.\n6/2/15 tj: on
+        hold. lvm. sent email 1.\n5/29/15 jmr: on hold. middle of next week. just
+        got slammed with bad weather and will finish up two jobs. will get the money
+        next week. \n12/26/14 ks: Sent DC email.\n7/31/14 kf: seiss isn''t sure about
+        DC but uses QB. asked for an email, not in the office, sent him dc details.\n3/20/14
+        kf: emailed re: DC.\n11.19.13 scd: sent basic email. \n7/15/13 kf: emailed
+        re: updating NAP and basic tools.\n3/14/13 kf: sent email re: fixing NAP and
+        basic options. \n11/14/12 scd: sent basic email and display options to feature
+        newest review. \n07/13/12: sent email re great stats and \"to pay\" cc''s.
+        \n03/13/2012 scd: sent Basic Email with SI''s and flier.\n11/09/11 kb: left
+        hm and sent email smart invites. \n7/8/11: (AB) Seiss is a big fan of kudzu,
+        has lots of kudzu reviews. He likes CL and has button on \"some of his pages\"
+        but not homepage. I told him about new buttons and also FB/Twitter. He is
+        still hesitant about FB but may set up a page to see how it works. I mentioned
+        the referral program that is in the pipeline and he was very excited about
+        that. \n4/14/11: (AB) Talked to Seiss who was not at office but he wanted
+        me to email him so he could update cc. Also, he is interested in doing FB
+        but he hasn''t set up page yet and is a little scared of the social commitment.\n03/30/11
+        kb: left a vm for Seiss re: cc. I emailed him. \n03/24/11 kb: spoke to Seiss.
+        Call back next tuesday for card. His reviews are now indexing into maps, which
+        is the main reason he is staying with us. I got names and numbers for ncc.
+        \n\n03/04/11 kb: call for Seiss re: cc, but he is out. So, I emailed him because
+        it seemed to work last time. I offered him a free cc, and told him about FB.
+        Note: We had the wrong city (atlanta) on their account. \n09/28/10: Spoke
+        to Seiss re: cc.  He asked that I email him the info. \n\nr Seiss or Nicky
+        will put it on other sites. \npartner program...week 1/week 2","customer_call_notes":"","trial_source":"outbound","partner_id":null,"partner_account_id":null,"last_synd_stat_date":null,"last_credit_grant":null,"sales_status":false,"date_live":"2010-11-17T00:00:00Z","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"54cda41a-1c70-1ee4-d88c-4fa86b902edf","sugar_account_id":"3f14dbf5-499c-7fdd-5c81-4fa86b283810","sugar_opportunity_id":"2c1a8c9f-f8d5-4c8f-4dd5-5141f39538df","created_at":"2010-03-03T10:32:06Z","updated_at":"2015-11-09T22:31:21Z","status":"active","sales_user_id":68,"system_of_record":"Quickbooks","activity_feed_created":true,"data_dedupe_enabled":false,"direct_connect_status":"unknown","direct_connect_status_date":null,"use_new_mapper":false,"direct_connect_install_date":null,"direct_connect_install_status":"downloaded","direct_connect_installed_by":"self","direct_connect_notes":null,"current_balance":"0.0","account_manager_id":null,"salesforce_account_id":null,"salesforce_opportunity_id":null,"default_enterprise_company":null},"admin_user":{"admin_user_id":415,"salesforce_id":null,"first_name":"Allison","last_name":"Tabacco-Hines","email":"ahines@customerlobby.com","password":null,"is_total_admin":1,"is_active":1,"is_account_manager":false,"screen_name":"ahines","sales_team_id":null,"created_at":"2015-05-11T15:56:00Z","updated_at":"2015-07-09T17:51:08Z","auth_key":null,"persistence_token":"907b82e0b59d3a31809017b633daf9ed496897db875d0247f0b5cc4a4f931eae1aee0c15edc77e8054095cef31f329482a4a2b49d3632c4e5d225f5422bb91aa","role":"member-services","employment_type":"full-time","crypted_password":"5f4dcc3b5aa765d61d8327deb882cf99","last_request_at":"2015-07-09T17:51:08Z"}}]}'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 19:58:48 GMT
+recorded_with: VCR 3.0.0
