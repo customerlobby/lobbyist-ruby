@@ -1,5 +1,5 @@
 === 0.6.1
-
+* added end-point '/v2/categories/#{id}.json' in V2::Category
 * Added Lobbyist::V2::CategoryInsightMetrics
 
 === 0.6.0
