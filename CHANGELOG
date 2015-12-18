@@ -1,3 +1,7 @@
+=== 0.6.1
+
+* Added Lobbyist::V2::CategoryInsightMetrics
+
 === 0.6.0
 
 * Handle 500 series errors from the API. This will prevent the 'Unparsable Response' errors that
