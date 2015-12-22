@@ -1,3 +1,6 @@
+=== 0.6.1
+* remove last_call attributes on Lobbyist::V2::AccountManagerMetrics
+
 === 0.6.0
 
 * Handle 500 series errors from the API. This will prevent the 'Unparsable Response' errors that
