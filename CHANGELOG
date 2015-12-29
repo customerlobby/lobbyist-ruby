@@ -1,3 +1,7 @@
+=== 0.6.4
+
+* Added require statement for monthly_recurring_revenue proxy model.
+
 === 0.6.3
 * Added destroy method from Lobbyist::V2::CustomerCall
 
