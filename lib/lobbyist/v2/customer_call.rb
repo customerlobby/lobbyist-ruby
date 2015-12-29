@@ -15,6 +15,9 @@ module Lobbyist
         create_from_response(post("/v2/companies/#{company_id}/customer_calls.json", {'customer_call' => params}))
       end
 
+      def self.destroy(company_id, id)
+        create_from_response(delete("/v2/companies/#{company_id}/customer_calls/#{id}.json"))
+      end
     end
 
   end

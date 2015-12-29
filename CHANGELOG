@@ -1,6 +1,16 @@
-=== 0.6.1
+=== 0.6.4
 
 * Added require statement for monthly_recurring_revenue proxy model.
+
+=== 0.6.3
+* Added destroy method from Lobbyist::V2::CustomerCall
+
+=== 0.6.2
+* remove last_call attributes on Lobbyist::V2::AccountManagerMetrics
+
+=== 0.6.1
+* added end-point '/v2/categories/#{id}.json' in V2::Category
+* Added Lobbyist::V2::CategoryInsightMetrics
 
 === 0.6.0
 
