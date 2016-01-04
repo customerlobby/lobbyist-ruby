@@ -3,7 +3,7 @@ module Lobbyist
 
     class MemberInsightMetrics < Lobbyist::V2::Base
 
-      attr_accessor :revenue_from_repeat_customers, :revenue_from_new_customers, :customer_count, :commercial_customer_count
+      attr_accessor :percent_revenue_from_repeat_customers, :customer_count, :commercial_customer_count
       attr_accessor :ltv, :customer_contact_info_distribution, :customer_interactions
       attr_accessor :customers_by_revenue, :customers_by_revenue_last_six
       attr_accessor :recommended_budget, :recommended_budget_status, :top_five_customers, :status, :generated_at
