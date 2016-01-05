@@ -1,3 +1,7 @@
+=== 0.6.5
+
+* Brought the attributes for WorkflowSystem up to date for both V1 and V2.
+
 === 0.6.4
 
 * Added require statement for monthly_recurring_revenue proxy model.
