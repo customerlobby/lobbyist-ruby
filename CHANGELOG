@@ -1,3 +1,7 @@
+=== 0.6.6
+
+* Added attribute accessor for account_name
+
 === 0.6.5
 
 * Brought the attributes for WorkflowSystem up to date for both V1 and V2.
