@@ -1,3 +1,8 @@
+=== 0.6.8
+
+* Added Support for CategoryAggregateInsights
+* Changed metrics response for MemberInsightMetrics
+
 === 0.6.7
 
 * Call Agent Metrics support added.
