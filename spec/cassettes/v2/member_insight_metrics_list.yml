@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/member_insight_metrics.json?company_id=5565
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"d574da67792513b5229db3b2e5405f44"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - ef26a129d39bf1b53d43c505a217e238
+      x-runtime:
+      - '0.512063'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"member_insight_metrics":{"id":21,"company_id":5565,"percent_revenue_from_repeat_customers":"80.22","customer_count":17011,"customer_count_commercial":776,"ltv":"2140.88","customer_contact_info_distribution":[{"info":"email_mail","count":34},{"info":"email","count":4},{"info":"address","count":16449},{"info":"no_info","count":524}],"customer_interactions":[{"month":"2015-12-01","new_customer_count":145,"repeat_customer_count":165,"new_customer_revenue":"42.346970406032270064694339","repeat_customer_revenue":"57.653029593967729935305661"},{"month":"2015-11-01","new_customer_count":124,"repeat_customer_count":163,"new_customer_revenue":"41.5284264462744210606828331","repeat_customer_revenue":"58.4715735537255789393171669"},{"month":"2015-10-01","new_customer_count":222,"repeat_customer_count":185,"new_customer_revenue":"43.4620221381503271101323851","repeat_customer_revenue":"56.5379778618496728898676149"},{"month":"2015-09-01","new_customer_count":264,"repeat_customer_count":200,"new_customer_revenue":"57.712617985147656309897894","repeat_customer_revenue":"42.287382014852343690102106"},{"month":"2015-08-01","new_customer_count":281,"repeat_customer_count":190,"new_customer_revenue":"55.2749645259403576268510216","repeat_customer_revenue":"44.7250354740596423731489784"},{"month":"2015-07-01","new_customer_count":376,"repeat_customer_count":230,"new_customer_revenue":"72.3133099425174752827209102","repeat_customer_revenue":"27.6866900574825247172790898"},{"month":"2015-06-01","new_customer_count":332,"repeat_customer_count":180,"new_customer_revenue":"54.9312029606337458741457984","repeat_customer_revenue":"45.0687970393662541258542016"},{"month":"2015-05-01","new_customer_count":274,"repeat_customer_count":169,"new_customer_revenue":"59.5583751221086731350158679","repeat_customer_revenue":"40.4416248778913268649841321"},{"month":"2015-04-01","new_customer_count":325,"repeat_customer_count":180,"new_customer_revenue":"50.7110080602991208898489903","repeat_customer_revenue":"49.2889919397008791101510097"},{"month":"2015-03-01","new_customer_count":294,"repeat_customer_count":147,"new_customer_revenue":"64.9570700025364768522406757","repeat_customer_revenue":"35.0429299974635231477593243"},{"month":"2015-02-01","new_customer_count":275,"repeat_customer_count":123,"new_customer_revenue":"59.7674991000817819837460367","repeat_customer_revenue":"40.2325008999182180162539633"},{"month":"2015-01-01","new_customer_count":357,"repeat_customer_count":185,"new_customer_revenue":"64.5332260383267022394002444","repeat_customer_revenue":"35.4667739616732977605997556"}],"recommended_budget":2050,"recommended_budget_status":"completed_2015-12-19","status":"calculated","generated_at":"2016-01-14T09:01:28Z","oldest_and_newest_transaction_dates":["2002-01-01","2016-01-14"],"paid_and_unpaid_transaction_counts":[81216,218],"monthly_transaction_count":[[2014,1,150,0],[2014,2,435,0],[2014,3,479,5],[2014,4,499,2],[2014,5,550,3],[2014,6,574,0],[2014,7,736,1],[2014,8,645,2],[2014,9,583,1],[2014,10,591,1],[2014,11,568,0],[2014,12,696,6],[2015,1,726,5],[2015,2,533,2],[2015,3,595,5],[2015,4,640,7],[2015,5,568,8],[2015,6,684,4],[2015,7,765,6],[2015,8,603,16],[2015,9,598,18],[2015,10,514,24],[2015,11,355,20],[2015,12,323,73],[2016,1,7,0]],"avg_num_of_visits":"1.64","avg_num_of_visits_excluding_first":"3.66","new_customer_count":12799,"residential_customer_count":16158,"commercial_customer_count":770,"residential_customer_revenue":"13622194.23","commercial_customer_revenue":"6210306.61","transactions_index":[{"month":"2015-08-01","avg_txn_value":"448.624934","avg_txn_value_index":"109.686102"},{"month":"2015-09-01","avg_txn_value":"451.063352","avg_txn_value_index":"113.071092"},{"month":"2015-10-01","avg_txn_value":"457.624906","avg_txn_value_index":"114.187472"},{"month":"2015-11-01","avg_txn_value":"457.65259","avg_txn_value_index":"109.925841"},{"month":"2015-12-01","avg_txn_value":"455.365758","avg_txn_value_index":"111.59447"}]}}'
+    http_version: 
+  recorded_at: Fri, 22 Jan 2016 22:48:03 GMT
+recorded_with: VCR 3.0.0
