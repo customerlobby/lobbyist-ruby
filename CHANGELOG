@@ -1,15 +1,67 @@
-=== 0.5.60
+=== 0.6.9
 
 * Added DirectConnectMileage and DirectConnectVehicle for vehicle data processing.
+
+=== 0.6.8
+
+* Added Support for CategoryAggregateInsights
+* Changed metrics response for MemberInsightMetrics
+
+=== 0.6.7
+
+* Call Agent Metrics support added.
+
+=== 0.6.6
+
+* Added attribute accessor for account_name
+
+=== 0.6.5
+
+* Brought the attributes for WorkflowSystem up to date for both V1 and V2.
+
+=== 0.6.4
+
+* Added require statement for monthly_recurring_revenue proxy model.
+
+=== 0.6.3
+* Added destroy method from Lobbyist::V2::CustomerCall
+
+=== 0.6.2
+* remove last_call attributes on Lobbyist::V2::AccountManagerMetrics
+
+=== 0.6.1
+* added end-point '/v2/categories/#{id}.json' in V2::Category
+* Added Lobbyist::V2::CategoryInsightMetrics
+
+=== 0.6.0
+
+* Handle 500 series errors from the API. This will prevent the 'Unparsable Response' errors that
+  are caused by attempting to parse HTML as JSON.
+* Fixed the unit tests.
+
+=== 0.5.62
+
+* Added Lobbyist::V2::AdminUser
+* Update and Create methods
+
+=== 0.5.61
+
+* Added pricing_index and industry_pricing_index attributes on Lobbyist::V2::MemberInsightMetrics
+
+=== 0.5.60
+
+* Added last_call attribute on Lobbyist::V2::AccountManagerMetrics
 
 === 0.5.59
 
 * Added requires for Lobbyist::V2::RecommendedBudget
 
 === 0.5.58
+
 * Make reset method usable for twitter as well as facebook
 
 === 0.5.57
+
 * Added name method in V2::EnterpriseUser
 
 === 0.5.56
@@ -17,21 +69,27 @@
 * Reverting review parameter handling to fix member area bug.
 
 === 0.5.55
+
 * Update accessors for MemberAggregateInsight and MemberInsightMetrics
 
 === 0.5.54
+
 * Added class methods list and destroy for V2::CustomerCallCredit
 
 === 0.5.53
+
 * Change update method used parameters for V2::Review
 
 === 0.5.52
+
 * Added destroy method for V2::CompanyUser
 
 === 0.5.51
+
 * Added contact params for update on V2::Review
 
 === 0.5.50
+
 * Added review_date and customer_full_name to V2::Review
 
 === 0.5.49
@@ -44,47 +102,61 @@
 * Added salesforce_name attributes to V2::Categories.
 
 === 0.5.47
+
 * Added repeat_customer_transaction_threshold to AlgorithmTestRun.
 
 === 0.5.46
+
 * Added Workflow System Template proxy model.
 
 === 0.5.45
+
 * Added uuid and destroy/update methods for communication pieces
 
 === 0.5.44
+
 * Added V2::RecommendedBudget
 
 === 0.5.43
+
 * Added V2::Admin::CommunicationPiece
 
 === 0.5.42
+
 * Change campaign_iterations URL to hyphen from underscore.
 
 === 0.5.41
+
 * Added new invitation_delay_interval attributes to V2::CompanySetting class.
 
 === 0.5.40
+
 * Add sum functionality to Collection
 
 === 0.5.39
+
 * Added V2::CampaignIteration
 
 === 0.5.38
+
 * Updated fields for PrintBatchJob
 * Added Data Upload update method.
 * Added Direct Connect Contact and Transaction proxy models.
 
 === 0.5.37
+
 * fixed bug with handling params of customer_transaction list method.
 
 === 0.5.36
+
 * added CRUD operations to CategoryDefaultOfferTemplate
 
 === 0.5.35
+
 * added email, phone_alt, phone_mobile, phone_daytime, name, admin_name to V2::CustomerCall
 
 === 0.5.34
+
 * added rank to AccountLevel
 * Renamed on hold count to declined count for Account Manager metrics.
 
@@ -113,6 +185,7 @@
 * Added count attributes to enterprise.
 
 === 0.5.28
+
 * added description, abbreviated_name, latitude, longitude fields to enterprise
 * Fixed mispelling of calendared attributes.
 * Added update and delete methods to V2::AccountManagerTodo.

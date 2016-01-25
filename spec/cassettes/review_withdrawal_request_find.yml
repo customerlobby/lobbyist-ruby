@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/review_withdrawal_requests/9021.json?nonce=2015-11-23+21%3A47%3A00+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="765ab0e66c71b2269994bc6e936f21a12a6e63fe9a66819bb701a971be6e77ee"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"c9b490ccbc48e6a97613010567bd3558"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 56491572e9e91bae1c304139b01e65c3
+      x-runtime:
+      - '0.036174'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"id":9021,"review_id":626325,"status":"requested","request_date":"2015-07-07T12:12:39Z","note":"We
+        understand that miscommunication can be very frustrating and again extend
+        our apologies for the confusion.  Upon researching the error that occurred,
+        we have reimbursed you for the duplicate charges and would like to ask that
+        you accept this request to withdrawal your negative review as the issues have
+        been settled.  Thanks in advance for your consideration in this matter.","author_action_date":null,"email_key":"F9Ts1AMzTbv8vokrnidWEg","created_at":"2015-07-07T12:12:41Z","updated_at":"2015-07-07T12:30:33Z","review":{"review_id":626325,"contact_id":4985641,"review_date":"2015-06-23T10:58:49Z","review_summary":"Disappointed","review_body":"I
+        called the office and asked to be reimbursed for double charges on paperwork
+        and they said they would research.  I also let them know how disappointed
+        I am with how they have treated our home for the last three rounds of issues
+        that had no intercommunication between the three different men that came out
+        each time.  Have not heard back which does not surprise me.  Have used distill
+        since 2012 but this is the end.","review_status":"withdrawal_requested","total_score":0.2,"source":"email","is_featured":false,"ip_address":"166.173.250.202","admin_user_id":null,"invite_id":null,"reviewer_location_state":"WV","reviewer_location_city":"cross
+        lanes","created_at":"2015-06-23T10:58:49Z","updated_at":"2015-07-07T12:12:41Z","post_to_facebook":false,"topics":[{"id":2105213,"review_topic":"Service","rating":0.2},{"id":2105217,"review_topic":"Total
+        Experience","rating":0.2},{"id":2105215,"review_topic":"Will Recommend","rating":0.2}],"company":{"company_id":40269,"company_name":"Dodrill
+        Comfort & Energy Solutions","abbreviated_name":"dodrill-comfort--energy-solutions","company_description":"At
+        Dodrill Comfort & Energy Solutions, we are proud to serve the local residents
+        and businesses as the trusted expert in all things HVAC!","address1":"420A
+        Old Goff Mountain Rd","address2":"","state":"WV","city":"Cross Lanes","zip":"25313","phone":"3047768094","website":"http://www.dodrillheating.com","categories":[{"accelerator":"2.5","created_at":"2013-01-23T19:00:46Z","default_services":["Indoor
+        air quality & energy efficiency","Heating & air installation, repair  & tune-up","System
+        maintenance & replacement"],"generate_marketing_insights":false,"id":15,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"heating
+        & air conditioning","repeat_marketing_campaign_enabled":true,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2015-01-15T01:37:00Z"}]}}}'
+    http_version: 
+  recorded_at: Mon, 23 Nov 2015 21:47:00 GMT
+recorded_with: VCR 3.0.0

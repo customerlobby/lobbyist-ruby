@@ -21,7 +21,7 @@ describe Lobbyist::Collection do
 
       sut = collection.sum('company_name')
 
-      sut.should eq 0
+      expect(sut).to eq 0
     end
 
     it "should return sum of the element column" do
@@ -29,7 +29,7 @@ describe Lobbyist::Collection do
 
       sut = collection.sum('id')
 
-      sut.should eq 6.0
+      expect(sut).to eq 6.0
     end
 
     context "with conditions parameters" do
@@ -38,11 +38,11 @@ describe Lobbyist::Collection do
 
         sut = collection.sum('id', company_name: 'a')
 
-        sut.should eq 3
+        expect(sut).to eq 3
 
         sut = collection.sum('id', company_name: 'b')
 
-        sut.should eq 3
+        expect(sut).to eq 3
       end
 
       it 'should return sum given multiple parameters' do
@@ -55,15 +55,15 @@ describe Lobbyist::Collection do
 
         sut = collection.sum('id', company_name: 'a', city: 'x')
 
-        sut.should eq 12
+        expect(sut).to eq 12
 
         sut = collection.sum('id', company_name: 'b', city: 'y')
 
-        sut.should eq 5
+        expect(sut).to eq 5
 
         sut = collection.sum('id', company_name: 'b', city: 'z')
 
-        sut.should eq 9
+        expect(sut).to eq 9
       end
 
       it 'should raise No method error given condition key does not exist' do
@@ -92,7 +92,7 @@ describe Lobbyist::Collection do
 
         sut = collection.sum('status')
 
-        sut.should eq 0
+        expect(sut).to eq 0
       end
 
       it "should return sum of the element column" do
@@ -100,7 +100,7 @@ describe Lobbyist::Collection do
 
         sut = collection.sum('roi')
 
-        sut.should eq 6.0
+        expect(sut).to eq 6.0
       end
 
       context "with condition parameters" do
@@ -109,11 +109,11 @@ describe Lobbyist::Collection do
 
           sut = collection.sum('roi', status: 'completed')
 
-          sut.should eq 4
+          expect(sut).to eq 4
 
           sut = collection.sum('roi', status: 'in_progress')
 
-          sut.should eq 2
+          expect(sut).to eq 2
         end
 
         it 'should return sum given multiple parameters' do
@@ -126,15 +126,15 @@ describe Lobbyist::Collection do
 
           sut = collection.sum('roi', status: 'completed', communication_campaign_id: 1)
 
-          sut.should eq 6
+          expect(sut).to eq 6
 
           sut = collection.sum('roi', status: 'in_progress', communication_campaign_id: 2)
 
-          sut.should eq 9
+          expect(sut).to eq 9
 
           sut = collection.sum('roi', status: 'completed', communication_campaign_id: 3)
 
-          sut.should eq 6
+          expect(sut).to eq 6
         end
 
         it 'should raise No method error given condition key does not exist' do

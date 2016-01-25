@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/companies/1.json?nonce=2015-12-01T18%3A36%3A37Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="0d377f6521144d6dd1a0e514961425faa41fd0b740c4a8059b2e49d5b5b1e10c"
+  response:
+    status:
+      code: 412
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      cache-control:
+      - no-cache
+      x-request-id:
+      - a160983eff874c1084600d3f3c1a7db8
+      x-runtime:
+      - '0.197678'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 18:36:37 GMT
+recorded_with: VCR 3.0.0

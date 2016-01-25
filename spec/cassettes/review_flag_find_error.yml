@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/review_flags/888.json?nonce=2015-11-24+19%3A30%3A42+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="12835c4f06214bed19e04ecf1605cc80da4da856e0853b5d279468788dfafcd2"
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      cache-control:
+      - no-cache
+      x-request-id:
+      - ea06111a02568d734515238e3633830a
+      x-runtime:
+      - '0.029210'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"errors":"Couldn''t find ReviewFlag with id=888"}'
+    http_version: 
+  recorded_at: Tue, 24 Nov 2015 19:30:43 GMT
+recorded_with: VCR 3.0.0

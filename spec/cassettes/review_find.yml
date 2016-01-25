@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/reviews/10040.json?nonce=2015-11-23+22%3A26%3A28+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="e48f256f02ba2a0923de58c983b7b7a1bd742531440309b6101fe1f0e73dd837"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      cache-control:
+      - max-age=3600, private
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"2ffa96b8e9fbcb99cc4a9462e1805576"'
+      x-request-id:
+      - 551dc87e83303c1ed2596a5aa99487d0
+      x-runtime:
+      - '0.039453'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"review_id":10040,"review_date":"2008-08-21T19:57:28Z","review_summary":"Great
+        firm, Great Communication, Highly Recommend ","review_body":"These guys made
+        the process easy.  They provided soup to nuts help.\r\nI came in with the
+        project idea.  Reilly envisioned the project better than I did. They told
+        me what they would need and how long it would take.  They were clear on what
+        I should expect and what they expected from me. They have online progress
+        reports and notes which made the process easy to track and manage.\r\n\n\n\r\nThere
+        were some services they didn''t do in house but they made good suggestions
+        as to who could do it for us. They had our best interests in mind.\r\n\n\n\r\nGreat
+        experience. I have recommended them to others and I will continue to do it.","review_status":"publish","total_score":1.0,"source":"call","is_featured":false,"ip_address":"76.126.198.98","admin_user_id":2,"invite_id":null,"reviewer_location_state":null,"reviewer_location_city":null,"created_at":"2008-08-21T19:57:28Z","updated_at":"2008-08-21T19:57:28Z","topics":[{"id":1,"review_topic":"Quality","rating":1.0},{"id":3,"review_topic":"Professionalism","rating":1.0},{"id":5,"review_topic":"Will
+        Recommend","rating":1.0}],"comments":[],"contact":{"contact_id":49,"first_name":"Will","last_name":"Klopp","email":"wklopp@interorealestate.com","state":null,"city":null},"company":{"company_id":144,"company_name":"Internet
+        Simplicity","abbreviated_name":"internet-simplicity","company_description":"Internet
+        Simplicity is a San Jose based web development firm specializing in content
+        management, e-commerce and custom built web applications.","address1":"1101
+        S Winchester Blvd Ste E157","address2":"","state":"CA","city":"San Jose","zip":"95128-3903","phone":"4082469500","phone_ext":"","website":"http://www.internetsimplicity.net","average_score":0.98,"categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}]}}'
+    http_version: 
+  recorded_at: Mon, 23 Nov 2015 22:26:28 GMT
+recorded_with: VCR 3.0.0

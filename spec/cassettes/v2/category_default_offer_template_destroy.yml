@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v2/categories/12/category_default_offer_templates/96.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"9988a4f227a81bda6b3e28f7b76c4eac"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJThlY2E5N2Q2YjY4ZTYyNjRkYmY1NDZiMTc3YjQxZjZmBjsAVA%3D%3D--128671a2426d383f54f9a457af553e8eb12498d0;
+        path=/; HttpOnly
+      x-request-id:
+      - 8e1d793b460446c70cc9833750200da6
+      x-runtime:
+      - '0.021948'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"category_default_offer_template":{"id":96,"category_id":12,"campaign_type":"repeat_customer","upper_bound":10,"lower_bound":1,"content":"updated","status":"active","created_at":"2015-12-01T16:58:54Z","updated_at":"2015-12-01T17:05:24Z"}}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 17:07:00 GMT
+recorded_with: VCR 3.0.0

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/companies/127.json?nonce=2015-12-01+00%3A11%3A02+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="c2b2a44166d6823449bdf75b4f2bfe19a0ccbe3b3888890506ddd63d6f24b1fd"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"65f857acad28e5c4c7f7b5ddd8b4c4da"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 0bb1502cec9cd0f54d43b8cec76b98bc
+      x-runtime:
+      - '0.019639'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"company_id":127,"enterprise_id":null,"account_level_id":5,"company_name":"Customer
+        Lobby","company_description":"Collect, manage and publish customer reviews
+        of your business.","address1":"2020 Milvia St. #400","address2":"","city":"Berkeley","state":"CA","zip":"94704","latitude":"37.871087","longitude":"-122.270913","timezone":"Pacific
+        Standard Time","formatted_address":"2020 Milvia Street #400, Berkeley, CA
+        94704, USA","phone":"5102300588","phone_ext":"","website":"https://www.CustomerLobby.com","system_of_record":"***
+        Created by CL Dev ***","is_active":true,"abbreviated_name":"customer-lobby","freetrial_start_date":"2008-08-06T16:24:04Z","signup_admin_id":null,"signup_ip_addr":"","account_terminated":false,"termination_date":null,"activation_code":null,"account_class":"free","promo_id":null,"average_score":0.95,"admin_notes":"12.9.14
+        kab: took down Dan Jones''s review to avoid violating our own policy. Emailed
+        him to thank him for his time, his feedback on 3 Gorillas, his patience while
+        we got a valid email address from him (bad addresses and WRs kept his first
+        reviews for 3 Gorillas from publishing), etc. he stalked 3 Gorillas so we
+        want to mitigate.\n11/13/14 kab: updated our featured reviews to include Lee
+        Keller''s stellar and recent praise!\n10/8/14 kab: conducted Call review with
+        Lee Keller of Keller Roofing & siding. it was a pleasure to publish.\n04/12/13
+        kb: Reviewer John T formally withdrew his review (per his request) once he
+        saw his review had, in fact, been published.","customer_call_notes":null,"trial_source":null,"partner_id":null,"partner_account_id":null,"last_synd_stat_date":"2010-11-11T11:52:59Z","last_credit_grant":null,"sales_status":false,"date_live":"2014-06-27T00:00:00Z","country":"US","user_notes":null,"enable_referral_marketing":false,"enable_retention_marketing":false,"last_handwritten_review_credit_grant":null,"sugar_lead_id":"b20c8f0f-dcc9-2e5a-4e43-4fa4b314dfe1","sugar_account_id":"457b7558-a575-d43a-f2e3-4fa816ec4d2e","sugar_opportunity_id":"3baa1981-b9ff-446e-53f8-50eb74cc7936","created_at":"2008-08-06T16:24:04Z","updated_at":"2015-11-30T17:52:44Z","status":"active","setting":{"id":3,"no_review_reminder_status":false,"no_review_reminder_period":null,"no_review_reminder_last_sent_at":null,"no_contact_reminder_status":true,"no_contact_reminder_frequency":30,"no_contact_reminder_last_sent_at":null,"reviews_per_page":20,"reviews_page_enabled":true,"request_appointments_enabled":true,"send_appointment_emails_to":"ted@customerlobby.com","accept_contact_suggestions":true,"auto_publish_high_score_reviews":false,"auto_publish_pending_low_score_notification":true,"auto_email_invitation":true,"auto_queue_customer_calls":true,"syndicate_low_score_reviews":false,"syndicate_reviews":true,"wants_invoice_emails":false,"send_invoice_emails_to":null,"created_at":"2012-10-10T23:41:49Z","updated_at":"2015-11-23T22:44:28Z"},"categories":[{"accelerator":"3.0","created_at":"2013-01-23T19:00:47Z","default_services":null,"generate_marketing_insights":false,"id":174,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"internet
+        marketing service","repeat_marketing_campaign_enabled":false,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2013-01-23T19:00:47Z"}],"review_topics":[{"average_score":"0.95","company_id":127,"current_order":1,"review_topic":"Quality","review_topic_id":320},{"average_score":"0.95","company_id":127,"current_order":2,"review_topic":"Professionalism","review_topic_id":321},{"average_score":"0.94","company_id":127,"current_order":3,"review_topic":"Value","review_topic_id":322}],"suggestion_topics":[{"company_id":127,"current_order":1,"suggestion_topic":"How
+        can they improve?","suggestion_topic_id":319},{"company_id":127,"current_order":2,"suggestion_topic":"What
+        else would you like for them to offer?","suggestion_topic_id":386},{"company_id":127,"current_order":3,"suggestion_topic":"How
+        did the quality compare to your expectations?","suggestion_topic_id":387}],"smart_invite_setting":{"id":3,"enabled":true,"google_long_url":"https://plus.google.com/106423304582428215416/about?","google_short_url":"http://bit.ly/1CozqEy","yelp_long_url":"","yelp_short_url":null,"angies_list_long_url":"","angies_list_short_url":null,"facebook_long_url":null,"facebook_short_url":null},"reviews_count":{"published_reviews":84,"pending_reviews":2,"withdrawal_requested_reviews":0,"not_published_reviews":104,"challenged_reviews":1}}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 00:11:02 GMT
+recorded_with: VCR 3.0.0

@@ -40,6 +40,55 @@ If you would like to run the tests simply run `rspec` in the root of the project
 
 Open `coverage/index.html` to see a code coverage report generated from the test run.
 
+### VCR Tests
+
+The tests have been converted over to VCR. This makes the tests much easier to write and
+maintain. Check the official [VCR gem](https://relishapp.com/vcr/vcr/docs) for full documentation.
+
+This will be a brief introduction to writing VCR tests for this project. Here is a sample from the
+company_spec.rb tests.
+
+```ruby
+  describe ':find' do
+    it 'should fail with status 404 if the id is not valid' do
+      VCR.use_cassette('company_find_error') do
+        expect{Lobbyist::Company.find(1)}.to raise_error(Lobbyist::Error::NotFound)
+      end
+    end
+    
+    it 'should return the found company' do
+      VCR.use_cassette('company_find') do
+        company = Lobbyist::Company.find(127)
+
+        expect(company).to_not be_nil
+        expect(company).to be_a(Lobbyist::Company)
+        expect(company.company_name).to eq('Customer Lobby')
+      end
+    end
+  end
+```
+
+The first line in each test is `VCR.use_cassette('...')`. The string provided is the name of
+a file that VCR will use to simulate the remote call. If the file doesn't exit yet VCR will
+actually call the remote API, get the results and use them to generate the fixture file. So the test
+writing process goes something like:
+
+1. Write the particular test you need and specify a file name for VCR to save the results in.
+2. Run the test. At this point the cassette file doesn't exist, so VCR will actually hit the API.
+3. If the API call was successful and the test assertions passed the test complete. Future test runs will use the cassette file that was just generated.
+4. If the API call failed for some reason you will need to delete the cassette file that was created and fix whatever problem caused the API call to fail.
+
+There is no need to write complex mock statements. You write your test the way you normally would for
+non-remote code, and just wrap that in a `VCR.use_cassette('...') do end` block.
+
+Keep in mind that because VCR hits the API for each cassette file you will need to have your development
+API server running and the data you pass must be valid data. In the example above, for example, the company_id
+that is passed to the find method actually exists in the database. For create and update tests you
+will also need to actually create a record and update an existing record.
+
+If you would like to see the cassette files generated from your calls they are stored at `spec/cassettes`.
+There is a subdirectory for V2 based tests.
+
 ### Building Lobbyist
 
 For projects that include Lobbyist as a gem, currently only the Members project, follow

@@ -7,7 +7,7 @@ gem 'multi_json'
 gem 'activesupport'
 
 group :test do
-  gem 'rspec', '>= 2.11'
+  gem 'rspec'
   gem 'simplecov', :require => false
 end
 

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v1/review_confirmations/3.json
+    body:
+      encoding: UTF-8
+      string: '{"disposition":"confirmed","review_confirmation":{"id":3,"review_id":292811,"confirmation_type":"email","confirmation_key":"3Pha2M_0zFlQ9juJNDJU4A","status":"confirmed"},"nonce":"2015-11-25
+        20:15:13 UTC"}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="96f67020cc51b5111550cbedec9eda892ad8cee2c9cc2f2760de956c2d7ddd28"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"4a0e0e14d82f5b09616d27e3f4b90cc2"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJTgzMzVlNmI0NDQ3MDkyMmQ3YWEwNzRhNzI2MDJhZTc5BjsAVA%3D%3D--0e185d923c06a8303d590519524d97ab660748c9;
+        path=/; HttpOnly
+      x-request-id:
+      - 502e3618896dbe09cef64d221964de87
+      x-runtime:
+      - '0.026936'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"id":3,"review_id":292811,"confirmation_type":"email","confirmation_key":"3Pha2M_0zFlQ9juJNDJU4A","status":"confirmed","from_phone_number":null,"delivered_at":"2013-09-06T01:19:29Z","created_at":"2013-09-06T01:19:29Z","updated_at":"2015-11-25T20:14:18Z","review":{"review_id":292811,"contact_id":10618,"review_date":"2013-09-06T01:15:19Z","review_summary":"osidnaio","review_body":"oinsoidgb","review_status":"publish","total_score":1.0,"source":"kiosk_email","is_featured":false,"ip_address":null,"admin_user_id":null,"invite_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Oakland","created_at":"2013-09-06T01:15:19Z","updated_at":"2015-11-25T20:14:18Z","post_to_facebook":false,"topics":[{"id":1104993,"review_topic":"sup","review_topic_id":null,"rating":1.0},{"id":1104995,"review_topic":"yo","review_topic_id":null,"rating":1.0},{"id":1104997,"review_topic":"hai","review_topic_id":null,"rating":1.0}],"company":{"company_id":5909,"company_name":"Ryan''s
+        Sample Company","abbreviated_name":"ryans-sample-company","company_description":"kevin
+        writes strange things .","address1":"2014 S Main St #610","address2":"","state":"NC","city":"Wake
+        Forest","zip":"27587","phone":"5103330735","website":"http://www.coolstorybrew.comz","categories":[{"accelerator":"2.0","created_at":"2013-01-23T19:00:47Z","default_services":["Home
+        maintenance, remodeling & repair","Flooring, electrical, decks, painting &
+        carpentry","Plumbing, tile, doors, drywall, odd jobs & more!"],"generate_marketing_insights":false,"id":106,"mail_delay_offset":15,"min_days_between_mailings":60,"name":"handyman
+        services","repeat_marketing_campaign_enabled":true,"roi":"3.0","salesforce_name":null,"threshold":"0.682","transaction_grouping_interval":30,"updated_at":"2015-01-15T01:37:00Z"}]}}}'
+    http_version: 
+  recorded_at: Wed, 25 Nov 2015 20:15:13 GMT
+recorded_with: VCR 3.0.0

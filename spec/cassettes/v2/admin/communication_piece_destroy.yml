@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/v2/admin/campaign-iterations/1/communication-pieces/1.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"8b0dc598d47584aa298c2ee8404a02e0"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - _api_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJWU1Y2ZlNDY0MDM1ZTA5ZmU3NzNjMTY0YjNjYzFmYmYyBjsAVA%3D%3D--c821244cdec58486cf19f97e186f58b13e4e2adc;
+        path=/; HttpOnly
+      x-request-id:
+      - d457289bce7eb2870ec0822780b9c309
+      x-runtime:
+      - '0.035147'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"communication_piece":{"id":1,"uuid":"3a44d7832dc0ee36154bf7a7801d488bc0aaa82971d1851661a64e1ec2b2c4b7","customer_first_name":"Violet","customer_last_name":"Woodward","customer_address1":"2790
+        Fountain Pl.","customer_address2":null,"customer_city":"sarasota","customer_state":"FL","customer_zip":"34235","status":"in_transit","verification_errors":null}}'
+    http_version: 
+  recorded_at: Tue, 01 Dec 2015 17:16:16 GMT
+recorded_with: VCR 3.0.0

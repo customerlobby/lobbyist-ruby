@@ -1,0 +1,219 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v1/review_challenges.json?nonce=2015-11-25+20%3A29%3A35+UTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO", signature="6769d76303b0bc0d66eafc2f8a03f5bf0b3be0ade98ee60d997e9d9c859ed0c5"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - '"3f81befe925ba1020847e3da0c2cddc8"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - e72b143cb593813a7076ad6106cfc16c
+      x-runtime:
+      - '0.072430'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"count":16,"elements":[{"id":12381,"review_id":635585,"reason":"not_a_customer","status":"requested","read":false,"created_at":"2015-07-09T17:51:31Z","updated_at":"2015-07-09T17:51:31Z","challenge_communication":{"accessed_at":null,"admin_user_id":null,"communication_body":"Never
+        spoke with this gentleman. ","contact_id":null,"created_at":"2015-07-09T17:51:31Z","email_key":null,"id":18055,"review_challenge_id":12381,"updated_at":"2015-07-09T17:51:31Z","user_id":44725,"user_type":"CompanyUser"},"review":{"review_id":635585,"company_id":41229,"contact_id":7144791,"review_date":"2015-07-09T16:27:52Z","review_summary":"Never
+        picked up my call!","review_body":"This law firm is a TOTAL waste of time.
+        They have pulled me along for over 2 weeks. They are zero help, can NEVER
+        get in touch with any one but a recording. This firm just plain sucks.","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"67.164.92.164","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"NM","reviewer_location_city":"Rio
+        Rancho","post_to_facebook":false,"created_at":"2015-07-09T16:27:52Z","updated_at":"2015-07-09T17:51:31Z","company":{"company_id":41229,"company_name":"On
+        It Law"}}},{"id":12379,"review_id":197333,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-09T14:28:06Z","updated_at":"2015-07-09T16:08:00Z","challenge_communication":{"accessed_at":"2015-07-09T16:48:00Z","admin_user_id":257,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Ultratorq to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-09T16:08:00Z","email_key":"Ziel9Auvbzv5TjlmMNhjrA","id":18053,"review_challenge_id":12379,"updated_at":"2015-07-09T16:48:00Z","user_id":null,"user_type":null},"review":{"review_id":197333,"company_id":15801,"contact_id":898647,"review_date":"2012-11-12T19:24:54Z","review_summary":"Good
+        service. Quality could be better.","review_body":"Ultratorq provides us with
+        some tooling that we use to make our product. They''ve given us good service.
+        They''re always willing to be here and help out as needed. However, we have
+        had some issues where their tooling failed, or hasn''t worked as expected.","review_status":"challenged","total_score":0.8,"source":"call","is_featured":false,"ip_address":"71.202.183.119","admin_user_id":135,"invite_id":null,"inviteable_id":73527,"reviewer_location_state":"ON","reviewer_location_city":"Cambridge","post_to_facebook":false,"created_at":"2012-11-12T19:24:54Z","updated_at":"2015-07-09T14:28:06Z","company":{"company_id":15801,"company_name":"Ultratorq"}}},{"id":12373,"review_id":630527,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-07T21:33:01Z","updated_at":"2015-07-07T21:42:59Z","challenge_communication":{"accessed_at":null,"admin_user_id":377,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of RockAuto.com to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-07T21:42:59Z","email_key":"iU0s7lPrtMSItrA_LdbvHQ","id":18043,"review_challenge_id":12373,"updated_at":"2015-07-07T21:42:59Z","user_id":null,"user_type":null},"review":{"review_id":630527,"company_id":5604,"contact_id":7064515,"review_date":"2015-06-30T12:48:37Z","review_summary":"Customer
+        service is excellent","review_body":"I will not recommend this website to
+        no one order a converter a week ago and we paid by co check . They get your
+        check and have to hold for a couple of days before processing it and  meanwhile
+        I have a customer who has a vehicle tied up . Called twice and i get the same
+        answer waiting for accounting to get in to see if it cleared. I am expecting
+        my part by Friday almost two weeks since it was ordered. They really need
+        to find a better check processing method.\r\nI will not buy from these people
+        again","review_status":"challenged","total_score":0.93,"source":"web","is_featured":false,"ip_address":"70.192.193.241","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"MD","reviewer_location_city":"Brentwood","post_to_facebook":false,"created_at":"2015-06-30T12:48:37Z","updated_at":"2015-07-07T21:33:01Z","company":{"company_id":5604,"company_name":"RockAuto.com"}}},{"id":12371,"review_id":623527,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-07T21:27:13Z","updated_at":"2015-07-07T21:32:19Z","challenge_communication":{"accessed_at":null,"admin_user_id":377,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Garage Doors Squad to publish a review. Can you please provide a canceled
+        check or receipt as proof that you were a customer of theirs within the past
+        12 months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-07T21:32:19Z","email_key":"kZEcK1aisIvrUukWbyEhNg","id":18037,"review_challenge_id":12371,"updated_at":"2015-07-07T21:32:19Z","user_id":null,"user_type":null},"review":{"review_id":623527,"company_id":40495,"contact_id":6887019,"review_date":"2015-06-17T17:18:26Z","review_summary":"Still
+        Waiting....","review_body":"I made an online request for an appointment last
+        week!!....still waiting for someone to call me.  Hope this isn''t indicative
+        of what I can expect.","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"76.98.172.117","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"PA","reviewer_location_city":"PHILADELPHIA","post_to_facebook":false,"created_at":"2015-06-17T17:18:26Z","updated_at":"2015-07-07T21:27:13Z","company":{"company_id":40495,"company_name":"Garage
+        Doors Squad"}}},{"id":12369,"review_id":634065,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-07T21:10:00Z","updated_at":"2015-07-07T21:12:30Z","challenge_communication":{"accessed_at":null,"admin_user_id":377,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of RockAuto.com to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-07T21:12:31Z","email_key":"EyFACxjK20VNSLv2M0p2bw","id":18033,"review_challenge_id":12369,"updated_at":"2015-07-07T21:12:31Z","user_id":null,"user_type":null},"review":{"review_id":634065,"company_id":5604,"contact_id":7120261,"review_date":"2015-07-07T12:23:27Z","review_summary":"long  checkout","review_body":"-
+        overly  long   \" checkout\"   process...\r\n\r\nNO  mention  of  needing
+        a  \" visa\"   verified  password  until  the  very  end  etc.....\r\n\r\nsome  frustration
+        ....\r\n\r\nshipping  charges  outside  of  USA   too high as  well....","review_status":"challenged","total_score":0.67,"source":"web","is_featured":false,"ip_address":"99.224.86.12","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"ON","reviewer_location_city":"Ottawa
+        , Ontario","post_to_facebook":false,"created_at":"2015-07-07T12:23:27Z","updated_at":"2015-07-07T21:10:00Z","company":{"company_id":5604,"company_name":"RockAuto.com"}}},{"id":12363,"review_id":633795,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-06T20:23:45Z","updated_at":"2015-07-06T20:36:36Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Marr-Tech Kitchens Ltd. to publish a review. Can you please provide a canceled
+        check or receipt as proof that you were a customer of theirs within the past
+        12 months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T20:36:36Z","email_key":"slqfquPehT8jM-Sk8jAaTw","id":18025,"review_challenge_id":12363,"updated_at":"2015-07-06T20:36:36Z","user_id":null,"user_type":null},"review":{"review_id":633795,"company_id":16371,"contact_id":7112501,"review_date":"2015-07-06T20:19:42Z","review_summary":"Marr-Tech
+        Kitchen Reno ","review_body":"Marr-Tech is a very professional company that
+        treats their customers well.  I had my kitchen done and love to cook more
+        than I ever did.  My cabinets look prestigious and my friends always ask me
+        who made them.  The countertop is magnificent and looks great.  If you want
+        quality work always go with Marr-Tech.","review_status":"challenged","total_score":1.0,"source":"web","is_featured":false,"ip_address":"184.151.179.246","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"BC","reviewer_location_city":"Vancouver
+        ","post_to_facebook":false,"created_at":"2015-07-06T20:19:42Z","updated_at":"2015-07-06T20:23:45Z","company":{"company_id":16371,"company_name":"Marr-Tech
+        Kitchens Ltd."}}},{"id":12361,"review_id":630043,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-06T20:01:24Z","updated_at":"2015-07-06T20:07:58Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Cody Pools to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T20:07:58Z","email_key":"YGVci4Ajk6DaRAdZw3ahnQ","id":18021,"review_challenge_id":12361,"updated_at":"2015-07-06T20:07:58Z","user_id":null,"user_type":null},"review":{"review_id":630043,"company_id":6637,"contact_id":7033845,"review_date":"2015-06-29T17:45:55Z","review_summary":"BUYER
+        BEWARE","review_body":"Looks like they took down all poor reviews we had poor
+        review and now its gone, BUYER BEWARE CHECK ALL POOL COMPANYS.....","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"70.113.102.112","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"TX","reviewer_location_city":"aUSTIN","post_to_facebook":false,"created_at":"2015-06-29T17:45:55Z","updated_at":"2015-07-06T20:01:24Z","company":{"company_id":6637,"company_name":"Cody
+        Pools"}}},{"id":12359,"review_id":633311,"reason":"other","status":"info_reviewer","read":false,"created_at":"2015-07-06T17:31:14Z","updated_at":"2015-07-06T18:27:26Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Doug Turner Plumbing Co to publish a review. Can you please provide a canceled
+        check or receipt as proof that you were a customer of theirs within the past
+        12 months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T18:27:26Z","email_key":"EGgawg791_LNFSJBgsnD_w","id":18011,"review_challenge_id":12359,"updated_at":"2015-07-06T18:27:26Z","user_id":null,"user_type":null},"review":{"review_id":633311,"company_id":5030,"contact_id":7108735,"review_date":"2015-07-06T02:56:43Z","review_summary":"leak
+        issue ","review_body":"Had leak at the bathtub water line. Work was adequate.
+        Price to fix it was a ripoff. Never use them again. The technician also quoted
+        me the price to install a sink and i almost threw up on him. ","review_status":"challenged","total_score":0.33,"source":"web","is_featured":false,"ip_address":"66.87.121.30","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"TX","reviewer_location_city":"sugar
+        land","post_to_facebook":false,"created_at":"2015-07-06T02:56:43Z","updated_at":"2015-07-06T17:31:14Z","company":{"company_id":5030,"company_name":"Doug
+        Turner Plumbing Co"}}},{"id":12357,"review_id":633047,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-06T16:57:31Z","updated_at":"2015-07-06T17:01:14Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of RockAuto.com to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T17:01:15Z","email_key":"oBeofiQW3cefIafxAc42lA","id":18003,"review_challenge_id":12357,"updated_at":"2015-07-06T17:01:15Z","user_id":null,"user_type":null},"review":{"review_id":633047,"company_id":5604,"contact_id":7108549,"review_date":"2015-07-05T03:11:39Z","review_summary":"to
+        much","review_body":"shipping prices are crazy high","review_status":"challenged","total_score":0.47,"source":"web","is_featured":false,"ip_address":"69.166.165.1","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"TN","reviewer_location_city":"clarksville,","post_to_facebook":false,"created_at":"2015-07-05T03:11:39Z","updated_at":"2015-07-06T16:57:31Z","company":{"company_id":5604,"company_name":"RockAuto.com"}}},{"id":12351,"review_id":626997,"reason":"other","status":"info_reviewer","read":false,"created_at":"2015-07-05T20:15:28Z","updated_at":"2015-07-06T15:30:28Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Anthony & Sylvan Pools to publish a review. Can you please provide a canceled
+        check or receipt as proof that you were a customer of theirs within the past
+        12 months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T15:30:28Z","email_key":"QuzxosJ4NBrd2vSeBeQ13Q","id":17987,"review_challenge_id":12351,"updated_at":"2015-07-06T15:30:28Z","user_id":null,"user_type":null},"review":{"review_id":626997,"company_id":29943,"contact_id":6990553,"review_date":"2015-06-23T20:21:23Z","review_summary":"Technically
+        Inadequate Service","review_body":"Anthony Sylvan was hired to renovat my
+        pool. When after year one, it had cracks and significant leaks, they sent
+        someone to fix the repairs, but  it was just a band-aid and did not address
+        the underlying cause. After I showed the Anthony Sylvan engineer a photo of
+        the pool shell, he stated that he would never plastered the pool as their
+        subcontractors did. They did not take into account the seams/spaces between
+        the large walls. In the winter, these walls move, ever so slightly and cause
+        cracks along every wall seam. It has cracked and leaked every year, and every
+        year, they promise it will be fixed. It never gets fixed and now that the
+        warranty is not in effect, they do not come out anymore. My costs to empty
+        and refill my 30'' by 50'' pool was about $2,000.00 every time they came to
+        fill the cracks with putty. Gets expensive after a few years. The root cause
+        was never addressed. They pushed off the real fix until the warranty ran out.
+        The other problem was that they poured cement down one of my skimmers. Never
+        worked since. Do not use this company. The Anthony Sylvan people do not take
+        responsibility for their subcontractors and most are subcontractors.","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"38.104.12.170","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"PA","reviewer_location_city":"Doylestown","post_to_facebook":false,"created_at":"2015-06-23T20:21:23Z","updated_at":"2015-07-05T20:15:28Z","company":{"company_id":29943,"company_name":"Anthony
+        & Sylvan Pools"}}},{"id":12347,"review_id":610283,"reason":"inappropriate_content","status":"info_reviewer","read":false,"created_at":"2015-07-04T18:45:30Z","updated_at":"2015-07-06T18:31:15Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Big Sandy Superstore of South Point to publish a review. Can you please
+        provide a canceled check or receipt as proof that you were a customer of theirs
+        within the past 12 months? You can fax it to us at 510-848-8154 or you can
+        email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T18:31:15Z","email_key":"wlFPr_HrMrHV3SBddm4Vxw","id":18013,"review_challenge_id":12347,"updated_at":"2015-07-06T18:31:15Z","user_id":null,"user_type":null},"review":{"review_id":610283,"company_id":38517,"contact_id":4295797,"review_date":"2015-05-26T11:52:42Z","review_summary":"Terrible
+        follow up post sale","review_body":"If you want a review I''ll give one. \r\n\r\nI
+        have been a customer there for some time. I''ve spent around $10,000 there
+        in the last 3 years. My most recent purchase was a bedroom suite and mattress
+        set. \r\n\r\nI was originally told 1 piece of the suite was on order & would
+        arrive in no more than 2 weeks. 2 weeks later I called only to find out it
+        would be another month. A month later I called again to learn it would be
+        even longer. I was never contacted by your team. I had to sit and wait and
+        make my own calls to see what the hold up was.\r\n\r\nFinally after I came
+        by to visit one of your managers, I was assured someone would pick up the
+        missing piece from Akron and deliver it that week-which did happen. I was
+        also told I would receive credit towards my account for the hassle. That has
+        NOT happened. \r\n\r\nNeedless to say, because of your weak sales team, you
+        have likely lost a loyal customer. \r\n\r\nThere. Now you have my review.
+        ","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"70.199.5.16","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"OH","reviewer_location_city":"Ironton","post_to_facebook":false,"created_at":"2015-05-26T11:52:42Z","updated_at":"2015-07-04T18:45:30Z","company":{"company_id":38517,"company_name":"Big
+        Sandy Superstore of South Point"}}},{"id":12343,"review_id":629265,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-04T01:48:00Z","updated_at":"2015-07-06T15:52:47Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of TLC Electrical to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T15:52:47Z","email_key":"futhqvputYaJum306AwVsg","id":17991,"review_challenge_id":12343,"updated_at":"2015-07-06T15:52:47Z","user_id":null,"user_type":null},"review":{"review_id":629265,"company_id":19501,"contact_id":7031901,"review_date":"2015-06-27T14:18:54Z","review_summary":"Never
+        again.....","review_body":"i will never call them again... they force you
+        into buying a VIP plan for a  year or the will charge you a much higher rate
+        for the work \"Standard Rate\". so you are paying either way. the tech did
+        worked, ran one 15 to 20 foot cable and installed one electrical outlets  for
+        $500+ and the tech left one outlet exposed.","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"32.97.110.59","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"TX","reviewer_location_city":"NRH","post_to_facebook":false,"created_at":"2015-06-27T14:18:54Z","updated_at":"2015-07-04T01:48:00Z","company":{"company_id":19501,"company_name":"TLC
+        Electrical"}}},{"id":12339,"review_id":580823,"reason":"other","status":"info_reviewer","read":false,"created_at":"2015-07-03T18:34:16Z","updated_at":"2015-07-06T16:49:07Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Arizona Solar Solutions to publish a review. Can you please provide a canceled
+        check or receipt as proof that you were a customer of theirs within the past
+        12 months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T16:49:07Z","email_key":"UhoZlkIKNBPSRBxc4qYh7Q","id":17997,"review_challenge_id":12339,"updated_at":"2015-07-06T16:49:07Z","user_id":null,"user_type":null},"review":{"review_id":580823,"company_id":19257,"contact_id":5402857,"review_date":"2015-04-04T12:20:26Z","review_summary":"Do
+        not use this company","review_body":"Did you know that the people putting
+        the solar on your roof are paid 35 dollars a panel split between the members
+        of the team. That can amount to less than minimum wage in most and just about
+        all cases. These men and women sometimes work 70 hours a week for a 20 panel
+        job. The homeless make more standing on the corner begging. ","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"68.228.231.192","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"AZ","reviewer_location_city":"Goodyear","post_to_facebook":false,"created_at":"2015-04-04T12:20:26Z","updated_at":"2015-07-03T18:34:16Z","company":{"company_id":19257,"company_name":"Arizona
+        Solar Solutions"}}},{"id":12335,"review_id":631613,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-07-03T02:51:18Z","updated_at":"2015-07-06T16:54:00Z","challenge_communication":{"accessed_at":null,"admin_user_id":415,"communication_body":"To
+        ensure the highest quality reviews, Customer Lobby only allows actual customers
+        of Pride Plumbing to publish a review. Can you please provide a canceled check
+        or receipt as proof that you were a customer of theirs within the past 12
+        months? You can fax it to us at 510-848-8154 or you can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-07-06T16:54:00Z","email_key":"JM-QCDi5ozVrpQ7fMVqooQ","id":17999,"review_challenge_id":12335,"updated_at":"2015-07-06T16:54:00Z","user_id":null,"user_type":null},"review":{"review_id":631613,"company_id":5527,"contact_id":7094235,"review_date":"2015-07-01T21:38:20Z","review_summary":"Will
+        never use again","review_body":"Absolutely the worst service I have ever received.
+        I will never work with Ross or anyone else from Pride Plumbing ever again.
+        ","review_status":"challenged","total_score":0.2,"source":"web","is_featured":false,"ip_address":"209.126.110.113","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"NY","reviewer_location_city":"Henrietta","post_to_facebook":false,"created_at":"2015-07-01T21:38:20Z","updated_at":"2015-07-03T02:51:18Z","company":{"company_id":5527,"company_name":"Pride
+        Plumbing"}}},{"id":12297,"review_id":629135,"reason":"other","status":"requested","read":false,"created_at":"2015-06-29T17:36:50Z","updated_at":"2015-06-29T17:36:50Z","challenge_communication":{"accessed_at":null,"admin_user_id":null,"communication_body":"Message
+        from Stanley: Those 2 reviews are similar yet our company does not inspect
+        septic tanks. The clients know this, and I do not know why they are blaming
+        us? Home Inspectors typically don''t do Sewage/Septic tank Inspections as
+        a standard practice and this information is listed on my website as a service
+        we do NOT provide. Such a service is costly and requires special equipment.","contact_id":null,"created_at":"2015-06-29T17:36:50Z","email_key":null,"id":17905,"review_challenge_id":12297,"updated_at":"2015-06-29T17:36:50Z","user_id":44751,"user_type":"CompanyUser"},"review":{"review_id":629135,"company_id":41249,"contact_id":7031193,"review_date":"2015-06-26T22:49:12Z","review_summary":"inexperienced
+        inspections","review_body":"I had Him Front due an I section and now I am
+        having g to deal with things that were passed by v the inspector the home''s
+        plumbing is a mess.  I ended up buying  a home with septic due to the seller
+        not telling g me   ..\r\n","review_status":"not_publish","total_score":0.27,"source":"web","is_featured":false,"ip_address":"70.209.204.193","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"CA","reviewer_location_city":"Riverside
+        ","post_to_facebook":false,"created_at":"2015-06-26T22:49:12Z","updated_at":"2015-07-04T10:30:02Z","company":{"company_id":41249,"company_name":"Home
+        Front Inspect"}}},{"id":12261,"review_id":627579,"reason":"not_a_customer","status":"info_reviewer","read":false,"created_at":"2015-06-24T18:46:03Z","updated_at":"2015-06-26T15:55:12Z","challenge_communication":{"accessed_at":null,"admin_user_id":237,"communication_body":"Thank
+        you so much for your cooperation with us. Unfortunately, the company could
+        not find your order number in the system. Is it possible you could email us
+        the invoice number? You can email us at customerservice@customerlobby.com.","contact_id":null,"created_at":"2015-06-26T15:55:12Z","email_key":"7nALdrgYLwrq70MOEa4FjQ","id":17865,"review_challenge_id":12261,"updated_at":"2015-06-26T15:55:12Z","user_id":null,"user_type":null},"review":{"review_id":627579,"company_id":10182,"contact_id":7002223,"review_date":"2015-06-24T17:19:45Z","review_summary":"Very
+        disappointed","review_body":"I ordered the wallpaper for windows product online.
+        Rather than attempt to cut it myself, I opted for the pre-cut product (at
+        an added fee). In order to ensure the measurements were correct, I did them
+        myself and had them checked by a handyman. When the product arrived, the cuts
+        were off, by a lot. I contacted the company with my concerns and even included
+        photos. They insisted it was correct. I made it clear that I wasn''t looking
+        for a refund, but felt it was only appropriate that they removed the cutting
+        fee, since we had to completely re-cut one entire panel. Understand - this
+        is a charge of less than $10. After numerous back-and-forth emails (and one
+        that talked about going to the management team), I just gave up. The simplest
+        solution I have to this problem is not to give them my business or encourage
+        others to do so. In the end, a product like this is simple and can be ordered
+        at multiple places.  So, in the end, what matters is to provide good customer
+        service.  This is probably the worst I''ve encountered.  Strange to me that
+        they would do battle (and not back off until trouncing the customer) all over
+        $10.  Management - I would strongly recommend you reach \"Nice Companies Finish
+        First\" and advise your customer service team (Shannon) of the concepts learned.","review_status":"challenged","total_score":0.27,"source":"web","is_featured":false,"ip_address":"184.90.179.66","admin_user_id":null,"invite_id":null,"inviteable_id":null,"reviewer_location_state":"FL","reviewer_location_city":"Orlando","post_to_facebook":false,"created_at":"2015-06-24T17:19:45Z","updated_at":"2015-06-24T18:46:03Z","company":{"company_id":10182,"company_name":"EtchArt,
+        LLC"}}}]}'
+    http_version: 
+  recorded_at: Wed, 25 Nov 2015 20:29:36 GMT
+recorded_with: VCR 3.0.0
