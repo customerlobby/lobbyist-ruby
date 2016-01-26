@@ -1,3 +1,7 @@
+=== 0.6.9
+
+* Added ":repeat_customer_revenue" and  ":new_customer_revenue" to metrics response for MemberInsightMetrics
+
 === 0.6.8
 
 * Added Support for CategoryAggregateInsights
