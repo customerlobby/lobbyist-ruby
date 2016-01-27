@@ -1,6 +1,14 @@
-=== 0.6.9
+=== 0.6.11
 
 * Removed invalid company status updating logic from the Company.update method.
+
+=== 0.6.10
+
+* remove ":repeat_customer_revenue" and  ":new_customer_revenue" response for MemberInsightMetrics
+
+=== 0.6.9
+
+* Added ":repeat_customer_revenue" and  ":new_customer_revenue" to metrics response for MemberInsightMetrics
 
 === 0.6.8
 
