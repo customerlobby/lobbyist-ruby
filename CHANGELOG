@@ -1,3 +1,7 @@
+=== 0.6.12
+
+* Added DirectConnectMileage and DirectConnectVehicle for vehicle data processing.
+
 === 0.6.11
 
 * Removed invalid company status updating logic from the Company.update method.
