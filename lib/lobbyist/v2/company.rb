@@ -78,8 +78,11 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
       end
 
-      def self.create(company_params = {})
-        create_from_response(post("/v2/companies.json", {'company' => company_params}))
+      def self.create(company_params = {}, user_params = nil)
+        params = {company: company_params}
+        params.merge!({company_user: user_params}) unless user_params.nil?
+
+        create_from_response(post("/v2/companies.json", params))
       end
 
       def self.update(id, params = {})
