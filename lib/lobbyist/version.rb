@@ -2,7 +2,7 @@ module Lobbyist
   class Version
     MAJOR = 0 unless defined? Lobbyist::Version::MAJOR
     MINOR = 6 unless defined? Lobbyist::Version::MINOR
-    PATCH = 15 unless defined? Lobbyist::Version::PATCH
+    PATCH = 16 unless defined? Lobbyist::Version::PATCH
 
     class << self
 
