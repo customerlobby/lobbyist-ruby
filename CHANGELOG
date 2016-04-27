@@ -1,3 +1,7 @@
+=== 0.6.17
+
+* Added connection_* attributes for ScottySetting
+
 === 0.6.16
 
 * Added new smart invite setting attributes for custom smart invites.
