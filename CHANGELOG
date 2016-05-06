@@ -1,3 +1,6 @@
+=== 0.6.18
+* Added destroy method from Lobbyist::V2::CommunicationCampaign
+
 === 0.6.17
 
 * Added connection_* attributes for ScottySetting
