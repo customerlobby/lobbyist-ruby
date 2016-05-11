@@ -6,7 +6,7 @@ module Lobbyist
         :accelerator, :transaction_grouping_interval, :min_days_between_mailings, :ignore_thirty_day_bucket, :status, :campaign_type,
         :last_run_date, :run_count, :call_to_action_tracking, :include_commercial_customers, :services_offered, :logo_filename,
         :tag_line, :regulatory_info, :email_first_name, :email_last_name, :email, :created_at, :updated_at,
-        :mail_delay_offset, :send_followup_email, :send_sample_postcard, :completed, :in_process
+        :mail_delay_offset, :send_followup_email, :send_sample_postcard, :completed, :in_process, :iterations_count
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/campaigns.json", params))
