@@ -1,6 +1,18 @@
-=== 0.6.17
+=== 0.6.20
 
 * Added retry count attribute to data uploads.
+
+=== 0.6.19
+
+* Added iterations_count attributes for Lobbyist::V2::CommunicationCampaign
+
+=== 0.6.18
+
+* Added destroy method from Lobbyist::V2::CommunicationCampaign
+
+=== 0.6.17
+
+* Added connection_* attributes for ScottySetting
 
 === 0.6.16
 
