@@ -1,3 +1,7 @@
+=== 0.6.20
+
+* Added retry count attribute to data uploads.
+
 === 0.6.19
 
 * Added iterations_count attributes for Lobbyist::V2::CommunicationCampaign
