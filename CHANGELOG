@@ -1,3 +1,7 @@
+=== 0.6.21
+
+* Added token_acquired_at, fetch_frequency, data_processing_enabled attributes for ScottySetting
+
 === 0.6.20
 
 * Added retry count attribute to data uploads.
