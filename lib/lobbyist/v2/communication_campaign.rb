@@ -19,7 +19,7 @@ module Lobbyist
       def self.destroy(id, company_id)
         create_from_response(delete("/v2/company_users/#{id}.json", { company_id: company_id }))
       end
-      
+
       def self.create(company_id, params)
         create_from_response(post("/v2/campaigns.json", {company_id: company_id, communication_campaign: params}))
       end
@@ -31,13 +31,17 @@ module Lobbyist
       def self.destroy(id, company_id)
         create_from_response(delete("/v2/campaigns/#{id}.json", { company_id: company_id }))
       end
-      
+
       def self.results(id, params = {})
         create_from_response(get("/v2/campaigns/#{id}/results.json", params))
       end
 
       def self.search(params = {})
         create_from_response(get("/v2/campaigns/search.json", params))
+      end
+
+      def self.charge(id, amount)
+        create_from_response(post("/v2/campaigns/#{id}/charge.json", {amount: amount}))
       end
     end
 
