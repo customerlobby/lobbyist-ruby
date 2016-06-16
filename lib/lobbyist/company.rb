@@ -9,7 +9,7 @@ module Lobbyist
       :last_synd_stat_date, :last_credit_grant, :sales_status, :date_live, :country, :user_notes,
       :smart_invite, :enable_referral_marketing, :enable_retention_marketing, :last_handwritten_review_credit_grant,
       :sugar_lead_id, :sugar_account_id, :sugar_opportunity_id, :created_at, :updated_at, :status,
-      :system_of_record, :category_name
+      :system_of_record, :category_name, :split_field_name, :split_field_file, :split_mapping_type
 
     def setting
       @setting
@@ -82,7 +82,7 @@ module Lobbyist
     def self.list(params = {})
       create_collection_from_response(get('/v1/companies.json', params))
     end
-    
+
     def self.find(id)
       create_from_response(get("/v1/companies/#{id}.json"))
     end
@@ -102,7 +102,7 @@ module Lobbyist
     def self.terminate(id)
       create_from_response(put("/v1/companies/#{id}/terminate.json", {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s}}))
     end
-    
+
     def self.reactivate(id, params = {})
       create_from_response(put("/v1/companies/#{id}/reactivate.json", params.slice(:billing,:card,:company,:company_id,:account_level_transition)))
     end

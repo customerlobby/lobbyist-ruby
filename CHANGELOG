@@ -1,3 +1,7 @@
+=== 0.6.22
+
+* Added split_* fields to V1 and V2 company models.
+
 === 0.6.21
 
 * Added token_acquired_at, fetch_frequency, data_processing_enabled attributes for ScottySetting
