@@ -6,7 +6,7 @@ module Lobbyist
       attr_accessor :id, :company_id, :mapped_company_id, :mapping_data, :created_at, :updated_at
 
       def self.list(params = {})
-        create_collection_from_response("/v2/split_mappings.json", params)
+        create_collection_from_response(get("/v2/split_mappings.json", params))
       end
 
       def self.find(id)
