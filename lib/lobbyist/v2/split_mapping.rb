@@ -18,7 +18,7 @@ module Lobbyist
         create_from_response(post("/v2/split_mappings.json", params))
       end
 
-      def self.update(id, company_id, params = {})
+      def self.update(id, params = {})
         create_from_response(put("/v2/split_mappings/#{id}.json", {'split_mapping' => params}))
       end
 
