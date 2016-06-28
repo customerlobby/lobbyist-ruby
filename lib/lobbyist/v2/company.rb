@@ -16,6 +16,7 @@ module Lobbyist
       attr_accessor :sugar_opportunity_id, :company_info_changed, :created_at, :updated_at
       attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
       attr_accessor :direct_connect_status, :current_balance, :account_manager_id
+      attr_accessor :split_field_name, :split_field_file, :split_mapping_type
 
       def categories
         @categories

@@ -1,7 +1,10 @@
-=== 0.6.22
+=== 0.6.23
 
 * remove fields :exclude_referral_marketing, :exclude_retention_marketing, :auto_review_draft_key from
-Lobbyist::V2::Contact and Lobbyist::Contact
+
+=== 0.6.22
+
+* Added split_* fields to V1 and V2 company models.
 
 === 0.6.21
 
