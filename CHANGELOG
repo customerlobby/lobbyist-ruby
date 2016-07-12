@@ -4,7 +4,7 @@ and :sugar_opportunity_id from Lobbyist::Company and Lobbyist::V2::Company
 
 === 0.6.23
 
-* remove fields :exclude_referral_marketing, :exclude_retention_marketing, :auto_review_draft_key from
+* remove fields :exclude_referral_marketing, :exclude_retention_marketing, :auto_review_draft_key from Lobbyist::V2::Contact and Lobbyist::Contact
 
 === 0.6.22
 
