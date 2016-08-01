@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/companies/5565/member-aggregate-insight.json
+    body:
+      encoding: UTF-8
+      string: '{"member_aggregate_insight":{"credit_calculation_status":"completed_2015-11-04"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"a5af221e808d64ca7a23cadee6fa2d8a"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - b0cba172-518a-4513-aaaa-a7724ab3b4d5
+      x-runtime:
+      - '0.621432'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"member_aggregate_insight":{"id":21,"company_id":5565,"revenue_from_repeat_customers":"2355536.24","revenue_from_new_customers":"1040110.13","ltv":"2082.67","recommended_budget":1690,"recommended_credits":1690,"credit_calculation_status":"completed_2015-11-04","customer_contact_info_distribution":{"email_mail":36,"email":4,"address":17444,"no_info":604},"top_five_customers":"---\n-
+        1533861\n- 1528921\n- 1529133\n- 2785033\n- 2114423\n","status":"calculated","generated_at":"2016-05-31
+        08:02:03 UTC","created_at":"2014-10-31 00:42:53 UTC","updated_at":"2016-07-29
+        18:00:23 UTC","avg_num_of_visits":"4.64","avg_num_of_visits_excluding_first":"12.16","new_customer_count":12182,"residential_customer_count":17458,"commercial_customer_count":630,"residential_customer_revenue":"30905946.19","commercial_customer_revenue":"6765419.41"}}'
+    http_version: 
+  recorded_at: Fri, 29 Jul 2016 18:00:23 GMT
+recorded_with: VCR 3.0.0
