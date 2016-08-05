@@ -1,5 +1,11 @@
-=== 0.6.25
+=== 0.6.27
 * Added field :tax_exempt to Promo
+
+=== 0.6.26
+* changing all the *_budget columns to *_credits
+
+=== 0.6.25
+* remove field :top_five_customers
 
 === 0.6.24
 * remove fields :enable_referral_marketing, :enable_retention_marketing, :sugar_lead_id,
