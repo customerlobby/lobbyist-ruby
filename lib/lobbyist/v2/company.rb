@@ -78,6 +78,10 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
       end
 
+      def self.monthly_recurring_revenue(id)
+        create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json"))
+      end
+
       def self.create(company_params = {}, user_params = nil)
         params = {company: company_params}
         params.merge!({company_user: user_params}) unless user_params.nil?
