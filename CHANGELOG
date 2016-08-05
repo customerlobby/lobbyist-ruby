@@ -1,3 +1,6 @@
+=== 0.6.26
+* changing all the *_budget columns to *_credits
+
 === 0.6.25
 * remove field :top_five_customers
 
