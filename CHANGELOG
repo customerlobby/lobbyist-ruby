@@ -1,3 +1,6 @@
+=== 0.6.27
+* Added field :tax_exempt to Promo
+
 === 0.6.26
 * changing all the *_budget columns to *_credits
 
