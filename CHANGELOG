@@ -1,3 +1,6 @@
+=== 0.6.28
+* Removed references to recommended_budget and monthly_budget columns
+
 === 0.6.27
 * Added field :tax_exempt to Promo
 
