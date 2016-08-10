@@ -6,7 +6,7 @@ module Lobbyist
       attr_accessor :percent_revenue_from_repeat_customers, :customer_count, :commercial_customer_count
       attr_accessor :ltv, :customer_contact_info_distribution, :customer_interactions
       attr_accessor :customers_by_revenue, :customers_by_revenue_last_six
-      attr_accessor :recommended_budget, :recommended_credits, :credit_calculation_status, :status, :generated_at
+      attr_accessor :recommended_credits, :credit_calculation_status, :status, :generated_at, :recommended_budget
       attr_accessor :avg_num_of_visits, :avg_num_of_visits_excluding_first, :new_customer_count, :residential_customer_count
       attr_accessor :commercial_customer_count, :residential_customer_revenue, :commercial_customer_revenue
       attr_accessor :transactions_index
