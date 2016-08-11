@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://localhost:3000/v2/companies/127/customer_calls/2.json
+    uri: http://localhost:3000/v2/customer_calls/2.json
     body:
       encoding: US-ASCII
       string: ''
