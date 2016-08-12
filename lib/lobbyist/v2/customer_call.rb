@@ -15,7 +15,7 @@ module Lobbyist
       end
 
       def self.create(company_id, params = {})
-        create_from_response(post("/v2/customer_calls.json", {'company_id' => comapny_id, 'customer_call' => params}))
+        create_from_response(post("/v2/customer_calls.json", {'company_id' => company_id, 'customer_call' => params}))
       end
 
       def self.update(id, params = {})
