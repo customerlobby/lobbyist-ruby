@@ -1,3 +1,9 @@
+=== 0.6.30
+* added insights method to Lobbyist::V2::Company
+
+=== 0.6.29
+* Added current_balance to CommunicationCampaign
+
 === 0.6.28
 * Removed references to recommended_budget and monthly_budget columns
 
