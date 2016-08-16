@@ -39,6 +39,28 @@ module Lobbyist
         end
       end
 
+      def company_users
+        @company_users
+      end
+
+      def company_users=(attributes)
+        @company_users = []
+        attributes.each do |attribute|
+          @company_users << CompanyUser.new(attribute)
+        end
+      end
+
+      def suggestion_topics
+        @suggestion_topics
+      end
+
+      def suggestion_topics=(attributes)
+        @suggestion_topics = []
+        attributes.each do |attribute|
+          @suggestion_topics << SuggestionTopic.new(attribute)
+        end
+      end
+
       def private_feedback_topics
         @private_feedback_topics
       end
@@ -55,6 +77,14 @@ module Lobbyist
       end
 
       def company_setting=(attributes)
+        @company_setting = CompanySetting.new(attributes)
+      end
+
+      def setting
+        @company_setting
+      end
+
+      def setting=(attributes)
         @company_setting = CompanySetting.new(attributes)
       end
 
