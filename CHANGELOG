@@ -1,3 +1,6 @@
+=== 0.6.31
+* added insights attr_accessor to Lobbyist::V2::Company
+
 === 0.6.30
 * added insights method to Lobbyist::V2::Company
 
