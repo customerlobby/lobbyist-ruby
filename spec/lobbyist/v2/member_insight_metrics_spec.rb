@@ -14,7 +14,7 @@ describe Lobbyist::V2::MemberInsightMetrics do
       VCR.use_cassette('v2/member_insight_metrics_list') do
         metric = Lobbyist::V2::MemberInsightMetrics.list(5565)
         expect(metric.ltv).to eq("2140.88")
-        expect(metric.recommended_budget).to eq(2050)
+        expect(metric.recommended_credits).to eq(2050)
       end
     end
   end

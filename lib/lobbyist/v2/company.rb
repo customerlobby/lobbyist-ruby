@@ -14,8 +14,8 @@ module Lobbyist
       attr_accessor :last_handwritten_review_credit_grant
       attr_accessor :company_info_changed, :created_at, :updated_at
       attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
-      attr_accessor :direct_connect_status, :current_balance, :account_manager_id
-      attr_accessor :split_field_name, :split_field_file, :split_mapping_type
+      attr_accessor :direct_connect_status, :account_manager_id
+      attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
 
       def categories
         @categories
@@ -106,6 +106,14 @@ module Lobbyist
 
       def self.direct_connect_summary(id)
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
+      end
+
+      def self.monthly_recurring_revenue(id)
+        create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json"))
+      end
+
+      def self.insights(id)
+        create_from_response(get("/v2/companies/#{id}/insights.json"))
       end
 
       def self.create(company_params = {}, user_params = nil)
