@@ -1,3 +1,6 @@
+=== 0.6.32
+* moved Lobbyist::V1:CustomerCalls controller to Lobbyist::V2:CustomerCalls
+
 === 0.6.31
 * added insights attr_accessor to Lobbyist::V2::Company
 
