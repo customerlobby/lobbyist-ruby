@@ -15,7 +15,7 @@ module Lobbyist
       attr_accessor :company_info_changed, :created_at, :updated_at
       attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
       attr_accessor :direct_connect_status, :account_manager_id
-      attr_accessor :split_field_name, :split_field_file, :split_mapping_type
+      attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
 
       def categories
         @categories
@@ -39,6 +39,28 @@ module Lobbyist
         end
       end
 
+      def company_users
+        @company_users
+      end
+
+      def company_users=(attributes)
+        @company_users = []
+        attributes.each do |attribute|
+          @company_users << CompanyUser.new(attribute)
+        end
+      end
+
+      def suggestion_topics
+        @suggestion_topics
+      end
+
+      def suggestion_topics=(attributes)
+        @suggestion_topics = []
+        attributes.each do |attribute|
+          @suggestion_topics << SuggestionTopic.new(attribute)
+        end
+      end
+
       def private_feedback_topics
         @private_feedback_topics
       end
@@ -55,6 +77,14 @@ module Lobbyist
       end
 
       def company_setting=(attributes)
+        @company_setting = CompanySetting.new(attributes)
+      end
+
+      def setting
+        @company_setting
+      end
+
+      def setting=(attributes)
         @company_setting = CompanySetting.new(attributes)
       end
 
@@ -80,6 +110,10 @@ module Lobbyist
 
       def self.monthly_recurring_revenue(id)
         create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json"))
+      end
+
+      def self.insights(id)
+        create_from_response(get("/v2/companies/#{id}/insights.json"))
       end
 
       def self.create(company_params = {}, user_params = nil)
