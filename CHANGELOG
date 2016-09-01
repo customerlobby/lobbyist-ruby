@@ -1,3 +1,6 @@
+=== 0.7.0
+* Added the search endpoint to CustomerCalls.
+
 === 0.6.32
 * moved Lobbyist::V1:CustomerCalls controller to Lobbyist::V2:CustomerCalls
 
