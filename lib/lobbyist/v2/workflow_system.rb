@@ -1,9 +1,9 @@
 module Lobbyist
   module V2
     class WorkflowSystem < Lobbyist::V2::Base
-      attr_accessor :id, :name, :version, :status, :visible, :database_name, :access_type
-      attr_accessor :data_padding_enabled, :use_processor, :respect_commercial_flag
-      attr_accessor :enable_auto_invitations, :created_at, :updated_at
+      attr_accessor :id, :name, :version, :visible, :status, :database_name, :access_type 
+      attr_accessor :query_keys, :data_padding_enabled, :use_processor, :customers_query, :transactions_query
+      attr_accessor :respect_commercial_flag, :created_at, :updated_at, :enable_auto_invitations
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/workflow_systems.json", params))

@@ -11,11 +11,11 @@ module Lobbyist
       attr_accessor :account_class, :promo_id, :average_score, :admin_notes, :customer_call_notes
       attr_accessor :trial_source, :partner_id, :partner_account_id, :last_synd_stat_date
       attr_accessor :last_credit_grant, :sales_status, :date_live, :country, :user_notes
-      attr_accessor :enable_referral_marketing, :enable_retention_marketing
-      attr_accessor :last_handwritten_review_credit_grant, :sugar_lead_id, :sugar_account_id
-      attr_accessor :sugar_opportunity_id, :company_info_changed, :created_at, :updated_at
+      attr_accessor :last_handwritten_review_credit_grant
+      attr_accessor :company_info_changed, :created_at, :updated_at
       attr_accessor :status, :sales_user_id, :qualifies_for_free_month, :system_of_record
-      attr_accessor :direct_connect_status, :current_balance, :account_manager_id
+      attr_accessor :direct_connect_status, :account_manager_id
+      attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
 
       def categories
         @categories
@@ -39,6 +39,28 @@ module Lobbyist
         end
       end
 
+      def company_users
+        @company_users
+      end
+
+      def company_users=(attributes)
+        @company_users = []
+        attributes.each do |attribute|
+          @company_users << CompanyUser.new(attribute)
+        end
+      end
+
+      def suggestion_topics
+        @suggestion_topics
+      end
+
+      def suggestion_topics=(attributes)
+        @suggestion_topics = []
+        attributes.each do |attribute|
+          @suggestion_topics << SuggestionTopic.new(attribute)
+        end
+      end
+
       def private_feedback_topics
         @private_feedback_topics
       end
@@ -55,6 +77,14 @@ module Lobbyist
       end
 
       def company_setting=(attributes)
+        @company_setting = CompanySetting.new(attributes)
+      end
+
+      def setting
+        @company_setting
+      end
+
+      def setting=(attributes)
         @company_setting = CompanySetting.new(attributes)
       end
 
@@ -76,6 +106,14 @@ module Lobbyist
 
       def self.direct_connect_summary(id)
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
+      end
+
+      def self.monthly_recurring_revenue(id)
+        create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json"))
+      end
+
+      def self.insights(id)
+        create_from_response(get("/v2/companies/#{id}/insights.json"))
       end
 
       def self.create(company_params = {}, user_params = nil)
