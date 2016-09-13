@@ -10,6 +10,10 @@ module Lobbyist
         create_collection_from_response(get("/v2/customer_calls.json", params))
       end
 
+      def self.search(params = {})
+        create_collection_from_response(get('/v2/customer_calls/search.json', params))
+      end
+
       def self.find(id)
         create_from_response(get("/v2/customer_calls/#{id}.json"))
       end
