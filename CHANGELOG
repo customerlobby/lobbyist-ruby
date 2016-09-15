@@ -1,3 +1,7 @@
+=== 0.7.1
+* Added charge method to Lobbyist::V2::CommunicationCampaign
+* Added campaign_enabled attr_accessor to Lobbyist::V2::AccountLevel
+
 === 0.7.0
 * Added the search endpoint to CustomerCalls.
 

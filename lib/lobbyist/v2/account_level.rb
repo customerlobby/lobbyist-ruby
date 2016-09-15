@@ -9,7 +9,7 @@ module Lobbyist
       attr_accessor :paid, :rank, :created_at, :updated_at, :monthly_fee, :setup_fee, :cost_per_postcard
       attr_accessor :customer_count_lower_bound, :customer_count_upper_bound, :has_review_reminders
       attr_accessor :has_contact_reminders, :has_member_calls, :has_kiosk, :has_customer_calls
-      attr_accessor :has_handwritten_reviews, :supported, :visible, :internal, :requires_button
+      attr_accessor :has_handwritten_reviews, :supported, :visible, :internal, :requires_button, :campaign_enabled
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/account_levels.json", params))
@@ -23,4 +23,3 @@ module Lobbyist
 
   end
 end
-

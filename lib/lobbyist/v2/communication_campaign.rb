@@ -39,6 +39,10 @@ module Lobbyist
       def self.search(params = {})
         create_from_response(get("/v2/campaigns/search.json", params))
       end
+
+      def self.charge(id, amount)
+        create_from_response(post("/v2/campaigns/#{id}/charge.json", {amount: amount}))
+      end
     end
 
   end
