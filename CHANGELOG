@@ -1,3 +1,6 @@
+=== 0.7.2
+* Added Lobbyist::V2::MasterCustomerCall
+
 === 0.7.1
 * Added charge method to Lobbyist::V2::CommunicationCampaign
 * Added campaign_enabled attr_accessor to Lobbyist::V2::AccountLevel
