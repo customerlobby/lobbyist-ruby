@@ -34,10 +34,6 @@ module Lobbyist
       def self.dequeue(id)
         create_from_response(put("/v2/master_customer_calls/#{id}/dequeue.json"))
       end
-
-      def self.destroy(id)
-        create_from_response(delete("/v2/master_customer_calls/#{id}.json"))
-      end
     end
   end
 end

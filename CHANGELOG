@@ -1,5 +1,6 @@
 === 0.7.2
 * Added Lobbyist::V2::MasterCustomerCall
+* Added Lobbyist::V2::CompanyCustomerCall
 
 === 0.7.1
 * Added charge method to Lobbyist::V2::CommunicationCampaign
