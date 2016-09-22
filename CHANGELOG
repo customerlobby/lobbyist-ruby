@@ -1,6 +1,9 @@
-=== 0.7.2
+=== 0.7.3
 * Added Lobbyist::V2::MasterCustomerCall
 * Added Lobbyist::V2::CompanyCustomerCall
+
+=== 0.7.2
+* Added all current attributes for V1 and V2 DataUpload.
 
 === 0.7.1
 * Added charge method to Lobbyist::V2::CommunicationCampaign
