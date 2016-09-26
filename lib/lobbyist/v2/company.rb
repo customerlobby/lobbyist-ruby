@@ -1,8 +1,6 @@
 module Lobbyist
   module V2
-
     class Company < Lobbyist::V2::Base
-
       attr_accessor :id, :company_id, :enterprise_id, :workflow_system_id, :account_level_id
       attr_accessor :company_name, :company_description, :address1, :address2, :city, :state
       attr_accessor :zip, :latitude, :longitude, :timezone, :formatted_address, :phone, :phone_ext
@@ -152,7 +150,10 @@ module Lobbyist
       def self.filtered_list(params = {})
         create_collection_from_response(get('/v2/companies/filtered-list.json', params))
       end
-    end
 
+      def self.update_splitter_direct_connect(company_id, params = {})
+        create_from_response(put("/v2/companies/#{company_id}/update-splitter-direct-connect.json", params))
+      end
+    end
   end
 end
