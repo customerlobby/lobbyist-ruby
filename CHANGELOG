@@ -1,3 +1,13 @@
+=== 0.7.5
+* Added workflow_system_used to V1 and V2 DataUpload.
+
+=== 0.7.4
+* Added V2::Company.update_splitter_direct_connect method.
+
+=== 0.7.3
+* Added Lobbyist::V2::MasterCustomerCall
+* Added Lobbyist::V2::CompanyCustomerCall
+
 === 0.7.2
 * Added all current attributes for V1 and V2 DataUpload.
 
