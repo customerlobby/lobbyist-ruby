@@ -1,5 +1,6 @@
 === 0.7.5
 * Added workflow_system_used to V1 and V2 DataUpload.
+* Added Lobbyist::V2::AccountLevel.update
 
 === 0.7.4
 * Added V2::Company.update_splitter_direct_connect method.
