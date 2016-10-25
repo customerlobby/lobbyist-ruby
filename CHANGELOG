@@ -1,3 +1,6 @@
+=== 0.7.7
+* Added Lobbyist::V2::CampaignAnalysis
+
 === 0.7.6
 * Added workflow_system_used to V1 and V2 DataUpload.
 
