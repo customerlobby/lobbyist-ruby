@@ -1,6 +1,10 @@
-=== 0.7.9
+=== 0.7.10
 
 * Added AmAssignableCompany and AmUnassignableCompany.
+
+=== 0.7.9
+
+* Added CompanyMailCreditAudit for auditing credit changes
 
 === 0.7.8
 
