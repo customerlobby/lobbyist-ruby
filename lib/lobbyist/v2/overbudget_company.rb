@@ -4,8 +4,8 @@ module Lobbyist
       attr_accessor :company_id, :company_name, :account_class, :status
       attr_accessor :approved_credits, :recommended_credits
 
-      def self.list
-        create_collection_from_response(get("/v2/overbudget-companies.json"))
+      def self.list(params = {})
+        create_collection_from_response(get("/v2/overbudget-companies.json", params))
       end
     end
   end
