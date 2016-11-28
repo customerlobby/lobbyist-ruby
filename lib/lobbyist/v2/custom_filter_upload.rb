@@ -5,7 +5,7 @@ module Lobbyist
       attr_accessor :id, :company_id, :filename, :status, :created_at, :updated_at
 
       def self.create(company_id, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/custom-filter-uploads.json", { csv_upload: params }))
+        create_from_response(post("/v2/companies/#{company_id}/custom-filter-uploads.json", { custom_filter_upload: params }))
       end
 
       def self.list(company_id, params = {})
