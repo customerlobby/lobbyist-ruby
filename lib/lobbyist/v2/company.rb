@@ -154,6 +154,10 @@ module Lobbyist
       def self.update_splitter_direct_connect(company_id, params = {})
         create_from_response(put("/v2/companies/#{company_id}/update-splitter-direct-connect.json", params))
       end
+
+      def self.disable_direct_connect_splitting(company_id)
+        create_from_response(put("/v2/companies/#{company_id}/disable-direct-connect-splitting.json"))
+      end
     end
   end
 end

@@ -22,6 +22,9 @@ module Lobbyist
         create_from_response(put("/v2/split_mappings/#{id}.json", {'split_mapping' => params}))
       end
 
+      def self.destroy(id)
+        create_from_response(delete("/v2/split_mappings/#{id}.json"))
+      end
     end
   end
 end
