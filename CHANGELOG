@@ -1,6 +1,11 @@
-=== 0.7.11
+=== 0.7.12
 
 * Added CustomerFilterUpload
+
+=== 0.7.11
+
+* Added SplitMapping destroy method.
+# Added Company disable-direct-connect-splitting method.
 
 === 0.7.10
 
