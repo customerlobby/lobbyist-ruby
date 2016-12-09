@@ -2,6 +2,10 @@
 
 * Added display_name to Lobbyist::V2::WorkflowSystem
 
+=== 0.7.12
+
+* Added CustomerFilterUpload
+
 === 0.7.11
 
 * Added SplitMapping destroy method.
