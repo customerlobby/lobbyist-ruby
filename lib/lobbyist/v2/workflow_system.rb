@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class WorkflowSystem < Lobbyist::V2::Base
-      attr_accessor :id, :name, :version, :visible, :status, :database_name, :access_type 
+      attr_accessor :id, :name, :display_name, :version, :visible, :status, :database_name, :access_type
       attr_accessor :query_keys, :data_padding_enabled, :use_processor, :customers_query, :transactions_query
       attr_accessor :respect_commercial_flag, :created_at, :updated_at, :enable_auto_invitations
 
