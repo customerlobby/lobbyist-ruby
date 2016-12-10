@@ -4,6 +4,8 @@ module Lobbyist
       attr_accessor :id, :name, :display_name, :version, :visible, :status, :database_name, :access_type
       attr_accessor :query_keys, :data_padding_enabled, :use_processor, :customers_query, :transactions_query
       attr_accessor :respect_commercial_flag, :created_at, :updated_at, :enable_auto_invitations
+      attr_accessor :workflow_system_id, :queries, :days, :time, :upload_type, :importer_class_name
+      attr_accessor :fetcher_class_name, :mapper_class_name, :fetch_frequency, :data_processing_enabled
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/workflow_systems.json", params))
