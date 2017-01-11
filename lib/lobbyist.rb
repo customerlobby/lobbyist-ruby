@@ -21,6 +21,9 @@ require 'lobbyist/error/service_unavailable'
 require 'lobbyist/error/unauthorized'
 require 'lobbyist/error/unprocessable_entity'
 
+# Communication Preferences Helper
+require 'lobbyist/communication_preferences_helper'
+
 # Library V1
 require 'lobbyist/base'
 require 'lobbyist/account_level'
