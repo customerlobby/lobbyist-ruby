@@ -1,19 +1,19 @@
 require 'spec_helper'
 
 describe Lobbyist::Contact do
-  
+
   before(:all) do
     Lobbyist::Base.nonce = Time.now.utc.to_s
     @nonce = Lobbyist::Base.nonce
   end
-  
+
   describe ':find' do
     it 'should fail with status 404 if the id is not valid' do
       VCR.use_cassette('contact_find_error') do
         expect{Lobbyist::Contact.find(2)}.to raise_error(Lobbyist::Error::NotFound)
       end
     end
-    
+
     it 'should return the found contact' do
       VCR.use_cassette('contact_find') do
         contact = Lobbyist::Contact.find(6)
@@ -37,7 +37,7 @@ describe Lobbyist::Contact do
       end
     end
   end
-  
+
   describe ':update' do
     it 'should update the contact' do
       VCR.use_cassette('contact_update') do
@@ -65,12 +65,12 @@ describe Lobbyist::Contact do
     it "should return the contact when it was unsubscribed" do
       VCR.use_cassette('contact_unsubscribe') do
         contact = Lobbyist::Contact.unsubscribe({company_id: 127, email: 'jdoe@gmail.com'})
-        
+
         expect(contact.wants_emails).to eq(false)
       end
     end
   end
-  
+
   def params
     {
       'first_name'          => 'John',
