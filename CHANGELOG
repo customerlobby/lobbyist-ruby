@@ -1,7 +1,6 @@
 === 0.7.15
 
-* Added CommunicationPreferencesHelper module to help with parsing the new
-  contact.communication_preferences bit field.
+* Added new communication preferences fields to Customer / Contact models.
 
 === 0.7.14
 
