@@ -1,3 +1,7 @@
+=== 0.7.15
+
+* Rename Draft to ReviewDraft to match the name with sql table
+
 === 0.7.14
 
 * Added Lobbyist::V2::Filter endpoints.
