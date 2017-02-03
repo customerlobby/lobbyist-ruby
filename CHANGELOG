@@ -1,3 +1,7 @@
+=== 0.7.15
+
+* Added Toggle endpoint to CustomFilterUploads.
+
 === 0.7.14
 
 * Added Lobbyist::V2::Filter endpoints.

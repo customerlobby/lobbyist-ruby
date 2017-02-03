@@ -15,6 +15,10 @@ module Lobbyist
       def self.process_file(id, params = {})
         create_from_response(put("/v2/custom-filter-uploads/#{id}/process-file.json", params))
       end
+
+      def self.toggle(company_id, params = {})
+        create_from_response(post("/v2/custom-filter-uploads/toggle.json", { company_id: company_id, custom_filter_upload: params }))
+      end
     end
   end
 end
