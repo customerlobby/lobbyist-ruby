@@ -1,6 +1,10 @@
-=== 0.7.15
+=== 0.7.16
 
 * Rename Draft to ReviewDraft to match the name with sql table
+
+=== 0.7.15
+
+* Added Toggle endpoint to CustomFilterUploads.
 
 === 0.7.14
 
