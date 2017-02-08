@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.7.15)
+    lobbyist-ruby (0.7.17)
       activesupport
       faraday
       faraday_middleware
