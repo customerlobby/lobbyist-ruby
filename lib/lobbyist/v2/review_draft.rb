@@ -29,7 +29,7 @@ module Lobbyist
       end
 
       def self.update(id, params = {})
-        create_from_response(put("/v1/drafts/#{id}.json", {'draft' => params}))
+        create_from_response(put("/v1/drafts/#{id}.json", {'review_draft' => params}))
       end
     end
   end
