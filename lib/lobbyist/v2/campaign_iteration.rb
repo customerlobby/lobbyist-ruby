@@ -8,6 +8,10 @@ module Lobbyist
       def self.list(campaign_id, params = {})
         create_collection_from_response(get("/v2/campaigns/#{campaign_id}/campaign-iterations.json", params))
       end
+
+      def self.generate_results_file(id, params={})
+        post("v2/campaign-iterations/#{id}/generate-file.json", params)
+      end
     end
 
     def self.communication_pieces(id, params={})
