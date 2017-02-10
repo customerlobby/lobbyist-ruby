@@ -1,5 +1,5 @@
 module Lobbyist
-  class Draft < Lobbyist::Base
+  class ReviewDraft < Lobbyist::Base
 
     attr_accessor :id,  :inviteable_id, :inviteable_type, :review_summary, :review_body, :review_status,
       :reviewer_location_state, :reviewer_location_city, :admin_user_id, :created_at, :updated_at
@@ -28,7 +28,7 @@ module Lobbyist
     end
 
     def self.update(id, params = {})
-      create_from_response(put("/v1/drafts/#{id}.json", {'draft' => params}))
+      create_from_response(put("/v1/drafts/#{id}.json", {'review_draft' => params}))
     end
   end
 end
