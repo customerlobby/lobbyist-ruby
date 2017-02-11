@@ -1,3 +1,7 @@
+=== 0.7.17
+
+* Added method to generate results file.
+
 === 0.7.16
 
 * Rename Draft to ReviewDraft to match the name with sql table
@@ -6,15 +10,15 @@
 
 * Added Toggle endpoint to CustomFilterUploads.
 
-=== 0.7.14
+=== 0.7.15
 
 * Added Lobbyist::V2::Filter endpoints.
 
-=== 0.7.13
+=== 0.7.14
 
 * Renamed CustomerMetrics to CustomerFilterMetrics.
 
-=== 0.7.12
+=== 0.7.13
 
 * Added display_name to Lobbyist::V2::WorkflowSystem
 
