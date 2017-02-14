@@ -1,3 +1,7 @@
+=== 0.7.18
+
+* Restoring CustomerMetrics class temporarily.
+
 === 0.7.17
 
 * Added method to generate results file.
