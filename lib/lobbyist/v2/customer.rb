@@ -27,8 +27,8 @@ module Lobbyist
         create_collection_from_response(get("/v2/companies/#{company_id}/customers.json", params))
       end
 
-      def self.generate_file(company_id, params = {})
-        create_collection_from_response(post("/v2/companies/#{company_id}/customers/generate-file.json", params))
+      def self.download_file(company_id, params = {})
+        create_collection_from_response(post("/v2/companies/#{company_id}/customers/download-file.json", params))
       end
     end
 
