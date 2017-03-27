@@ -1,3 +1,7 @@
+=== 0.7.20
+
+* Added Account Manager exception metric filter call.
+
 === 0.7.19
 * Add destroy path for custom filter.
 
