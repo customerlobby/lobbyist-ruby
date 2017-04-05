@@ -10,6 +10,10 @@ module Lobbyist
         create_from_response(get("/v2/account-manager-metrics/#{id}/company-filter-counts.json", params))
       end
 
+      def self.exception_filter_counts(id, params = {})
+        create_from_response(get("/v2/account-manager-metrics/#{id}/exception-filter-counts.json", params))
+      end
+
       def self.company_status_counts(params = {})
         create_collection_from_response(get("/v2/account-manager-metrics/company-status-counts", params))
       end
