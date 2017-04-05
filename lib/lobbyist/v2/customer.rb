@@ -26,6 +26,7 @@ module Lobbyist
       def self.list(company_id, params = {})
         create_collection_from_response(get("/v2/companies/#{company_id}/customers.json", params))
       end
+
     end
 
   end
