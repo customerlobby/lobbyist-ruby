@@ -1,3 +1,6 @@
+=== 0.7.22
+* Added webhook information to scotty settings.
+
 === 0.7.21
 * Added Account Manager exception metric filter call.
 
