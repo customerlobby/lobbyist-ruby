@@ -158,6 +158,11 @@ module Lobbyist
       def self.disable_direct_connect_splitting(company_id)
         create_from_response(put("/v2/companies/#{company_id}/disable-direct-connect-splitting.json"))
       end
+
+      def self.download_file(company_id, params = {})
+        response = post("/v2/companies/#{company_id}/download-customers-file.json", params)
+        create_from_response(response)
+      end
     end
   end
 end

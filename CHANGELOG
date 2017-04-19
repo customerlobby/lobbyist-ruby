@@ -1,10 +1,56 @@
+=== 0.7.25
+* Added Lobbyist::V2::CustomEmailTemplate
+
+=== 0.7.24
+* add column otp to V2::CompanyUser.
+
+=== 0.7.23
+* Move ReviewDraft to V2.
+
+=== 0.7.22
+* Added webhook information to scotty settings.
+
+=== 0.7.21
+* Added Account Manager exception metric filter call.
+
+=== 0.7.20
+* Add generate file path for customers.
+
+=== 0.7.19
+* Add destroy path for custom filter.
+
+=== 0.7.18
+
+* Restoring CustomerMetrics class temporarily.
+
+=== 0.7.17
+
+* Added method to generate results file.
+
+=== 0.7.16
+
+* Rename Draft to ReviewDraft to match the name with sql table
+
+=== 0.7.15
+
+* Added Toggle endpoint to CustomFilterUploads.
+
+=== 0.7.15
+
+* Added Lobbyist::V2::Filter endpoints.
+
 === 0.7.14
 
-* Added Lobbyist::V2::CustomEmailTemplate
+* Renamed CustomerMetrics to CustomerFilterMetrics.
+>>>>>>> origin/master
 
 === 0.7.13
 
 * Added display_name to Lobbyist::V2::WorkflowSystem
+
+=== 0.7.12
+
+* Added CustomerFilterUpload
 
 === 0.7.11
 
