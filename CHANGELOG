@@ -1,3 +1,6 @@
+=== 0.7.25
+* Added check of long urls for SmartInviteSetting
+
 === 0.7.24
 * add column otp to V2::CompanyUser.
 
