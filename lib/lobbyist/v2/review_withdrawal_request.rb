@@ -20,6 +20,9 @@ module Lobbyist
         create_from_response(get("/v2/reviews/#{review_id}/withdrawal_requests/#{id}.json", {review_withdrawal_request: params}))
       end
 
+      def self.find_by_email_key(email_key, params = {})
+        create_from_response(get("/v2/withdrawal_requests/find_by_email_key/#{email_key}.json", params))
+      end
     end
 
   end
