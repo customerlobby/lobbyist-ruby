@@ -98,8 +98,8 @@ module Lobbyist
         create_collection_from_response(get('/v2/companies.json', params))
       end
 
-      def self.find(id)
-        create_from_response(get("/v2/companies/#{id}.json"))
+      def self.find(id, params = {})
+        create_from_response(get("/v2/companies/#{id}.json", params))
       end
 
       def self.direct_connect_summary(id)
