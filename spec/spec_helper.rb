@@ -6,10 +6,11 @@ require 'lobbyist'
 require 'rspec'
 require 'vcr'
 
+RSPEC_ROOT = File.dirname(__FILE__)
+
 RSpec.configure do |config|
   config.color = true
-  # config.file_fixture_path = 'spec/files'
-  
+
   config.before(:suite) do
     Lobbyist.api_base = "http://localhost:3000"
     Lobbyist.api_key  = "Jz43pwlU1rb4ewhgltWO"
@@ -59,4 +60,4 @@ def set_v2_headers
   }
 end
 
-RSPEC_ROOT = File.dirname __FILE__
+
