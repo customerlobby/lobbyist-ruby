@@ -11,7 +11,7 @@ describe Lobbyist::V2::DataUpload, customer_call: true do
             "data_collection_successful"=>"false",
             "workflow_system_used"=>"169",
             "mapper_used"=>"ServiceTitanMapper",
-            "data_file"=> Faraday::UploadIO.new('/Users/shivindap/Dropbox/customerlobby-projects/gems/lobbyist-ruby/spec/files/CLP_47103_20170519005025AM.zip','application/zip')
+            "data_file"=> Faraday::UploadIO.new(File.join(RSPEC_ROOT,'files','CLP_47103_20170519005025AM.zip'),'application/zip')
         }
         data_upload = Lobbyist::V2::DataUpload.create(params)
         expect(data_upload).to be_a(Lobbyist::V2::DataUpload)
