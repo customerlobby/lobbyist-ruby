@@ -54,13 +54,15 @@ module Lobbyist
         end
       end
 
-      def self.post(path, params = {})
+      def self.post(path, params = {}, multipart = false)
         handle_response do
           http.post do |request|
             request.url path
             request.body = params
-            request.headers['Accept'] = 'application/json'
-            request.headers['Content-Type'] = 'application/json'
+            if !multipart
+              request.headers['Accept'] = 'application/json'
+              request.headers['Content-Type'] = 'application/json'
+            end
             request.headers['Authorization'] = auth_header
           end
         end
