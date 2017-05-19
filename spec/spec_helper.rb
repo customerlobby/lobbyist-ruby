@@ -6,14 +6,17 @@ require 'lobbyist'
 require 'rspec'
 require 'vcr'
 
+RSPEC_ROOT = File.dirname(__FILE__)
+
 RSpec.configure do |config|
   config.color = true
-  
+
   config.before(:suite) do
     Lobbyist.api_base = "http://localhost:3000"
     Lobbyist.api_key  = "Jz43pwlU1rb4ewhgltWO"
     Lobbyist.api_secret  = "5d0216d4f00155d64c2e3cc5985f868bfe069b3171d0cbd6a03ef8647dbc44f5"
   end
+
   
   VCR.configure do |c|
     c.cassette_library_dir = 'spec/cassettes'
@@ -56,3 +59,5 @@ def set_v2_headers
     'User-Agent'=>'Faraday v0.9.2'
   }
 end
+
+
