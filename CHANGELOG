@@ -1,3 +1,6 @@
+=== 0.7.25
+* add multipart code to http post request..
+
 === 0.7.24
 * add column otp to V2::CompanyUser.
 
