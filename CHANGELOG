@@ -1,5 +1,8 @@
-=== 0.7.25
+=== 0.7.26
 * Added Lobbyist::V2::CustomEmailTemplate
+
+=== 0.7.25
+* add multipart code to http post request..
 
 === 0.7.24
 * add column otp to V2::CompanyUser.
@@ -42,7 +45,6 @@
 === 0.7.14
 
 * Renamed CustomerMetrics to CustomerFilterMetrics.
->>>>>>> origin/master
 
 === 0.7.13
 

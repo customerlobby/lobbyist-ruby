@@ -210,6 +210,7 @@ module Lobbyist
 
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
+      faraday.request  :multipart
       faraday.request  :url_encoded             # for GET params
       faraday.request  :json                    # for PUT/POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
