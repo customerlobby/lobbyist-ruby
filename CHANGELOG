@@ -1,3 +1,7 @@
+=== 0.7.26
+
+* added add_days api endpoint to V2::AccountManagerTodo
+
 === 0.7.25
 * add multipart code to http post request..
 
