@@ -2,7 +2,7 @@ module Lobbyist
   module V2
 
     class Appointment < Lobbyist::V2::Base
-      attr_accessor :id, :company_id, :name, :first_name, :last_name, :email, :phone, :appointment_date1, 
+      attr_accessor :id, :company_id, :name, :first_name, :last_name, :email, :phone, :appointment_date1,
       :appointment_date2, :appointment_date3, :comments, :created_at, :updated_at
 
       def company
@@ -19,6 +19,10 @@ module Lobbyist
 
       def self.find(id, company_id)
         create_from_response(get("/v2/companies/#{company_id}/appointments#{id}.json"))
+      end
+
+      def self.create(company_id, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/appointments.json", {appointment: params}))
       end
 
       def self.update(id, company_id)
