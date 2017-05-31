@@ -9,6 +9,10 @@ module Lobbyist
         create_collection_from_response(get("/v2/companies/#{company_id}/review_confirmations.json", params))
       end
 
+      def self.update(id, company_id, params = {})
+        create_from_response(put("/v2/companies/#{company_id}/review_confirmations/#{id}.json", {review_confirmation: params}))
+      end
+
       def self.reset(id, company_id, params = {})
         create_from_response(put("/v2/companies/#{company_id}/review_confirmations/#{id}/reset.json", {contact: params}))
       end
