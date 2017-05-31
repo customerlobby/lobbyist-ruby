@@ -20,6 +20,10 @@ module Lobbyist
       def self.update(company_id, id, params = {})
         create_from_response(put("/v2/contacts/#{id}.json", {'company_id' => company_id, 'contact' => params}))
       end
+
+      def self.unsubscribe(params = {})
+        create_from_response(put("/v2/contacts/unsubscribe.json", {'contact' => params}))
+      end
     end
 
   end
