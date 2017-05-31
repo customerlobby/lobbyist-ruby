@@ -48,6 +48,9 @@ module Lobbyist
                                  company_id: company_id, company_user: params))
       end
 
+      def self.find_by_confirmation_key(key)
+        create_from_response(get("/v2/company_users/find_by_confirmation_key/#{key}.json"))
+      end
     end
 
   end
