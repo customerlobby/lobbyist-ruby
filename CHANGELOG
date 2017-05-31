@@ -1,3 +1,6 @@
+=== 0.7.27
+* Added widget_color to V2::CompanySetting
+
 === 0.7.26
 * Added Lobbyist::V2::CustomEmailTemplate
 
