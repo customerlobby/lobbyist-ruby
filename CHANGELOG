@@ -1,3 +1,6 @@
+=== 0.7.27
+* Added Lobbyist::V2::Filter#destroy_tags
+
 === 0.7.26
 * Added Lobbyist::V2::CustomEmailTemplate
 

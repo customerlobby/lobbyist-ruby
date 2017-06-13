@@ -10,6 +10,10 @@ module Lobbyist
       def self.destroy(company_id, id)
         create_from_response(delete("/v2/companies/#{company_id}/filters/#{id}.json"))
       end
+
+      def self.destroy_tags(company_id, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/filters/destroy-tags.json", params))
+      end
     end
   end
 end
