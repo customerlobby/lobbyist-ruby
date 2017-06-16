@@ -12,6 +12,11 @@ module Lobbyist
       def self.reset(id, company_id, params = {})
         create_from_response(put("/v2/companies/#{company_id}/review_confirmations/#{id}/reset.json", {contact: params}))
       end
+
+      def self.find_by_confirmation_key(key, params = {})
+        create_from_response(get("/v2/review_confirmations/find_by_confirmation_key/#{key}.json", params))
+      end
+
     end
 
   end

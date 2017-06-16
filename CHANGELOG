@@ -1,6 +1,11 @@
-=== 0.7.26
+=== 0.7.29
+* Added Lobbyist::V2::CustomEmailTemplate
 
-* added add_days api endpoint to V2::AccountManagerTodo
+=== 0.7.28
+* Added widget_color to V2::CompanySetting
+
+=== 0.7.27
+* Added Lobbyist::V2::Filter#destroy_tags
 
 === 0.7.25
 * add multipart code to http post request..
