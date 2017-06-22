@@ -14,9 +14,14 @@ module Lobbyist
       def self.create(params = {})
         create_from_response(post("/v2/account-manager-todos.json", {'account_manager_todo' => params}))
       end
-      
+
       def self.update(id, params = {})
         create_from_response(put("/v2/account-manager-todos/#{id}.json", {'account_manager_todo' => params}))
+      end
+
+      def self.add_days(ids, days)
+        params = { ids: ids, days: days}
+        create_from_response(put("/v2/account-manager-todos/add-days.json", {'account_manager_todo' => params}))
       end
 
       def self.destroy(id, params = {})
