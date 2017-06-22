@@ -8,7 +8,7 @@ module Lobbyist
       :average_score, :admin_notes, :customer_call_notes, :trial_source, :partner_id, :partner_account_id,
       :last_synd_stat_date, :last_credit_grant, :sales_status, :date_live, :country, :user_notes,
       :smart_invite, :last_handwritten_review_credit_grant, :created_at, :updated_at, :status,
-      :system_of_record, :category_name, :split_field_name, :split_field_file, :split_mapping_type
+      :system_of_record, :category_name, :split_field_name, :split_field_file, :split_mapping_type, :logo_filename
 
     def setting
       @setting
