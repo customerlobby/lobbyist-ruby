@@ -105,6 +105,7 @@ require 'lobbyist/v2/company'
 require 'lobbyist/v2/configuration'
 require 'lobbyist/v2/contact'
 require 'lobbyist/v2/csv_upload'
+require 'lobbyist/v2/custom_email_template'
 require 'lobbyist/v2/custom_filter_upload'
 require 'lobbyist/v2/custom_invitation'
 require 'lobbyist/v2/customer_activity'
@@ -210,6 +211,7 @@ module Lobbyist
 
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
+      faraday.request  :multipart
       faraday.request  :url_encoded             # for GET params
       faraday.request  :json                    # for PUT/POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
