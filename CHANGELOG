@@ -1,3 +1,6 @@
+=== 0.7.30
+* Modified the CommunicationCampaign#results method to in_progress
+
 === 0.7.29
 * Added Lobbyist::V2::CustomEmailTemplate
 
