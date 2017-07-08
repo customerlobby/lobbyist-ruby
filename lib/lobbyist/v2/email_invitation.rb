@@ -8,7 +8,7 @@ module Lobbyist
       def self.list(company_id, params = {})
         create_collection_from_response(get("/v2/companies/#{company_id}/email_invitations.json", params))
       end
-      
+
       def self.create(company_id, params = {})
         create_from_response(post("/v2/companies/#{company_id}/email_invitations.json", {'email_invitation' => params}))
       end
@@ -17,6 +17,13 @@ module Lobbyist
         create_from_response(put("/v2/companies/#{company_id}/email_invitations/#{id}/reset", {contact: params}))
       end
 
+      def self.find_by_email_key(email_key, params = {})
+        create_from_response(get("/v2/email_invitations/find_by_email_key/#{email_key}", params))
+      end
+
+      def self.update(id, params = {})
+        create_from_response(put("/v2/email_invitations/update/#{id}", {'email_invitation' => params}))
+      end
     end
 
   end
