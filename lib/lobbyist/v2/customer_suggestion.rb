@@ -9,6 +9,9 @@ module Lobbyist
         create_collection_from_response(get("/v2/companies/#{company_id}/customer_suggestions.json", params))
       end
 
+      def self.create(company_id, email_key, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/customer_suggestions.json", {'customer_suggestion' => params, 'email_key' => email_key}))
+      end
     end
   end
 end
