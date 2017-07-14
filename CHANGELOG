@@ -1,3 +1,6 @@
+=== 0.7.34
+* add create method for V2/CustomerSuggestion
+
 === 0.7.33
 * add new field unhappy_customer_feedback to CompanySettings V2 and V2
 
