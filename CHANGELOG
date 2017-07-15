@@ -1,3 +1,6 @@
+=== 0.7.33
+* add file_presigned_url to V2::DataUpload
+
 === 0.7.32
 * copy some V1 functions to V2
 

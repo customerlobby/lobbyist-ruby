@@ -5,6 +5,7 @@ module Lobbyist
       attr_accessor :error_message, :data_collection_successful, :customers_count
       attr_accessor :transactions_count, :created_at, :updated_at, :vehicles_count
       attr_accessor :mileages_count, :to_be_processed, :mapper_used, :workflow_system_used
+      attr_accessor :file_presigned_url
 
       # this requires us to do a multipart upload
       # hence we pass true as a parameter
