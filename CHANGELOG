@@ -3,6 +3,7 @@
 
 === 0.7.33
 * add new field unhappy_customer_feedback to CompanySettings V2 and V2
+* add file_presigned_url to V2::DataUpload
 
 === 0.7.32
 * copy some V1 functions to V2
