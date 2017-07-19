@@ -9,9 +9,13 @@ module Lobbyist
         create_collection_from_response(get("/v2/companies/#{company_id}/customer_suggestions.json", params))
       end
 
-      def self.create(company_id, email_key, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/customer_suggestions.json", {'customer_suggestion' => params, 'email_key' => email_key}))
+      def self.create(company_id, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/customer_suggestions.json", {'customer_suggestion' => params}))
       end
+      def self.create_unhappy_feedback(company_id, email_key, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/customer_suggestions/unhappy-feedback.json", {'customer_suggestion' => params, 'email_key' => email_key}))
+      end
+      
     end
   end
 end
