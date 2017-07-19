@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/companies/10102/customer_suggestions/unhappy-feedback.json
+    body:
+      encoding: UTF-8
+      string: '{"customer_suggestion":{"contact_id":58405755,"suggestion_answer":"yes"},"email_key":"8O4huVI19KZ_MvPOQTegMw"}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"828126446c1313424e7e2bbfa27ed6f2"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - b527cc0e-b4eb-4a56-ae3f-ab5d54fb9fb4
+      x-runtime:
+      - '0.071677'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"customer_suggestion":{"id":2169736,"company_id":10102,"contact_id":58405755,"suggestion_topic_id":148653,"suggestion_answer":"yes","created_at":"2017-07-19
+        23:10:31 UTC","updated_at":"2017-07-19 23:10:31 UTC"}}'
+    http_version: 
+  recorded_at: Wed, 19 Jul 2017 23:10:31 GMT
+recorded_with: VCR 3.0.0
