@@ -3,7 +3,7 @@ module Lobbyist
 
     class CustomEmailTemplate < Lobbyist::V2::Base
       attr_accessor :id, :company_id, :subject, :text_body, :keyword
-      attr_accessor :from_email, :reply_email, :html_body, :status
+      attr_accessor :from_email, :reply_email, :reply_name, :html_body, :status
       attr_accessor :greeting, :main_body, :signature, :auto_resend
 
       def self.list(company_id, params = {})

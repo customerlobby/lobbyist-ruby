@@ -1,5 +1,8 @@
-=== 0.7.35
+=== 0.7.36
 * some fixes for review topics and confirmation
+
+=== 0.7.35
+* add new field reply_name to V2::CustomEmailTemplate
 
 === 0.7.34
 * add create method for V2/CustomerSuggestion
