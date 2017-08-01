@@ -19,8 +19,7 @@ module Lobbyist
       end
 
       def self.revenue_by_account_manager
-        response = get("/v2/account-manager-metrics/revenue-by-account-manager.json")
-        create_from_response(response)
+        create_collection_from_response(get("/v2/account-manager-metrics/revenue-by-account-manager.json"))
       end
 
       def self.activity_by_account_manager(params = {})
