@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/challenges/1/challenge_communications.json
+    body:
+      encoding: UTF-8
+      string: '{"challenge_communication":{"review_challenge_id":1,"communication_body":"You
+        can''t touch this."}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"c26b68b05efc924256760e12d4d0c19c"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 0c7c6159-5586-4d38-a8e8-e5a32019edd5
+      x-runtime:
+      - '0.341183'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"challenge_communication":{"id":1,"review_challenge_id":1,"contact_id":null,"admin_user_id":null,"user_id":null,"user_type":null,"communication_body":"You
+        can''t touch this.","email_key":null,"created_at":"2017-08-01 13:56:05 UTC","updated_at":"2017-08-01
+        13:56:05 UTC","review_challenge":{"id":1,"review_id":10050,"reason":null,"status":"requested","read":false,"created_at":"2017-08-01
+        13:55:02 UTC","updated_at":"2017-08-01 13:55:02 UTC","review":{"review_id":10050,"company_id":127,"review_summary":"Great
+        tool for making great choices.","review_body":"Without customers, there is
+        no business. Now, more than ever, customers can make (or break) your business.
+        Great tool for making great choices.  ","review_status":"challenged","total_score":0.7,"source":"web","is_featured":false,"admin_user_id":null,"invite_id":null,"reviewer_location_state":"AR","reviewer_location_city":"California","review_date":"2008-08-28
+        16:11:11 UTC","created_at":"2008-08-28 16:11:11 UTC","updated_at":"2017-08-01
+        13:55:02 UTC","company":{"id":127,"company_id":127,"enterprise_id":1,"account_class":"plus","partner_id":null,"partner_account_id":null,"company_name":"Customer
+        Lobby","company_description":"Collect, manage and publish customer reviews
+        of your business.","formatted_address":"2020 Milvia Street #400, Berkeley,
+        CA 94704, USA","address1":"2020 Milvia St. #400","address2":"","city":"Berkeley","state":"CA","zip":"94704","timezone":"Pacific
+        Standard Time","phone":"5102300588","phone_ext":"","website":"https://www.CustomerLobby.com","logo_filename":null,"abbreviated_name":"customer-lobby","country":"US","latitude":"37.871087","longitude":"-122.270913","average_score":0.95,"account_manager_id":8,"status":"active","review_page_url":"http://dev.customerlobby.com/reviews/127/customer-lobby/","termination_date":null,"created_at":"2008-08-06
+        16:24:04 UTC","updated_at":"2017-07-25 17:35:52 UTC","promo_id":null,"account_terminated":false,"customer_call_notes":"sdfsadf","admin_notes":"12.9.14
+        kab: took down Dan Jones''s review to avoid violating our own policy. Emailed
+        him to thank him for his time, his feedback on 3 Gorillas, his patience while
+        we got a valid email address from him (bad addresses and WRs kept his first
+        reviews for 3 Gorillas from publishing), etc. he stalked 3 Gorillas so we
+        want to mitigate.\n11/13/14 kab: updated our featured reviews to include Lee
+        Keller''s stellar and recent praise!\n10/8/14 kab: conducted Call review with
+        Lee Keller of Keller Roofing & siding. it was a pleasure to publish.\n04/12/13
+        kb: Reviewer John T formally withdrew his review (per his request) once he
+        saw his review had, in fact, been published.","trial_source":null,"activation_code":null,"account_level_id":3,"freetrial_start_date":"2008-08-06
+        16:24:04 UTC","is_active":true,"system_of_record":"","direct_connect_status":"file_received","direct_connect_status_date":"2017-07-25","split_field_name":null,"split_field_file":null,"split_mapping_type":null},"topics":[{"id":1,"review_topic":"Quality","rating":0.8},{"id":2,"review_topic":"Professionalism","rating":0.6}]}}}}'
+    http_version: 
+  recorded_at: Tue, 01 Aug 2017 13:56:05 GMT
+recorded_with: VCR 3.0.0
