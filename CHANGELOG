@@ -1,5 +1,12 @@
-=== 0.7.36
+=== 0.7.38
 * some fixes for review topics and confirmation
+
+=== 0.7.37
+* add new field review_page_display_element to CompanySettings V1 and V2
+
+=== 0.7.36
+* Changed the revenue_by_account_manager call to be a collection.
+* Changed the mrr_summary call to be a collection.
 
 === 0.7.35
 * add new field reply_name to V2::CustomEmailTemplate
