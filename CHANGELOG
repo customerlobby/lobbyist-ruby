@@ -1,5 +1,8 @@
-=== 0.7.38
+=== 0.7.39
 * some fixes for review topics and confirmation
+
+=== 0.7.38
+* add error_message to SocialNetworkPage
 
 === 0.7.37
 * add new field review_page_display_element to CompanySettings V1 and V2
