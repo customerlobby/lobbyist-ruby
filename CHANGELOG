@@ -1,3 +1,6 @@
+=== 0.7.39
+* some fixes for review topics and confirmation
+
 === 0.7.38
 * add error_message to SocialNetworkPage
 
@@ -7,7 +10,6 @@
 === 0.7.36
 * Changed the revenue_by_account_manager call to be a collection.
 * Changed the mrr_summary call to be a collection.
-
 
 === 0.7.35
 * add new field reply_name to V2::CustomEmailTemplate

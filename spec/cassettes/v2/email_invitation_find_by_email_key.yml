@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/email_invitations/find_by_email_key/123456key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"2587fbeb9cc3dc9292460c522f269d5d"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 64feb48d-df52-4e83-b108-fb07a6580bcf
+      x-runtime:
+      - '0.146649'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"email_invitation":{"id":1,"contact_id":2080051,"status":"opened_link","attempts":0,"max_attempts":0,"created_at":"2017-05-13
+        18:46:55 UTC","updated_at":"2017-08-01 14:14:07 UTC","email_key":"123456key","accessed_at":"2017-08-01
+        14:14:07 UTC","contact":{"name":"Leaett","first_name":"Leaett","last_name":null,"company_id":127,"email":"info@thecarpetcleaners.biz","address2":null,"address1":null,"city":null,"state":null,"zip":null,"country":null,"phone_daytime":"1002313","phone_daytime_ext":null,"phone_alt":null,"phone_alt_ext":null,"phone_mobile":null,"last_service_date":null,"notes":null,"created_at":"2014-04-21
+        17:10:17 UTC","updated_at":"2017-06-02 18:44:09 UTC","communication_preferences":4095,"wants_sms":true,"dc_wants_email":true,"dc_wants_call":true,"dc_wants_sms":true,"dc_wants_mail":true,"member_wants_email":true,"member_wants_call":true,"member_wants_sms":true,"member_wants_mail":true,"customer_wants_email":true,"customer_wants_call":true,"customer_wants_sms":true,"customer_wants_mail":true,"url":"http://localhost:3000/v1/contacts/2080051"}}}'
+    http_version: 
+  recorded_at: Tue, 01 Aug 2017 14:14:07 GMT
+recorded_with: VCR 3.0.0
