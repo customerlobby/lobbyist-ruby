@@ -56,10 +56,10 @@ module Lobbyist
       def topics=(attributes)
         @topics = []
         attributes.each do |attribute|
-          @topics << ReviewTopic.new(attribute)
+          @topics << Topic.new(attribute)
         end
       end
-
+      
       def withdrawal_request
         @withdrawal_request
       end
