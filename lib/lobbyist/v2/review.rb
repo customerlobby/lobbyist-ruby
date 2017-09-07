@@ -56,7 +56,7 @@ module Lobbyist
       def topics=(attributes)
         @topics = []
         attributes.each do |attribute|
-          @topics << ReviewTopic.new(attribute)
+          @topics << Topic.new(attribute)
         end
       end
 
@@ -66,10 +66,6 @@ module Lobbyist
 
       def withdrawal_request=(attributes)
         @withdrawal_request = ReviewWithdrawalRequest.new(attributes)
-      end
-
-      def self.create(company_id, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/reviews.json", params))
       end
 
       def self.list(company_id, params = {})
