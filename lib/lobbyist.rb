@@ -174,6 +174,9 @@ require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
 require 'lobbyist/v2/workflow_system_template'
+require 'lobbyist/v2/data_warehouse_job'
+require 'lobbyist/v2/data_warehouse_job_log'
+require 'lobbyist/v2/data_warehouse_job_result'
 
 #Library V2/admin/
 require 'lobbyist/v2/admin/campaign_iteration'
