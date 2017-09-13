@@ -62,6 +62,14 @@ module Lobbyist
       end
     end
 
+    def workflow_system_template
+      @workflow_system_template
+    end
+
+    def workflow_system_template=(attributes)
+      @company_setting = WorkflowSystemTemplate.new(attributes)
+    end
+    
     def smart_invite_setting
       @smart_invite_setting
     end
