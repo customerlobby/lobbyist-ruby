@@ -53,7 +53,7 @@ module Lobbyist
       end
 
       def workflow_system_template=(attributes)
-        @company_setting = WorkflowSystemTemplate.new(attributes)
+        @workflow_system_template = WorkflowSystemTemplate.new(attributes)
       end
       
       def suggestion_topics
