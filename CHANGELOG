@@ -1,3 +1,10 @@
+=== 0.7.44
+* added workflow_system_template to V2::Company
+
+=== 0.7.43
+* added field upload_type on V2::DataUpload
+* added field split_mappings_updated on V2::ScottySetting
+
 === 0.7.42
 * revert bad commits
 

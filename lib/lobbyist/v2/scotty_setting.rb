@@ -7,7 +7,8 @@ module Lobbyist
       attr_accessor :access_data, :link_established, :last_run_date, :authentication_date, :importer_class_name
       attr_accessor :created_at, :updated_at, :account_name
       attr_accessor :connection_params, :connection_status, :connection_error_internal, :connection_error_external, :connection_notes
-      attr_accessor :token_acquired_at, :fetch_frequency, :data_processing_enabled, :webhook_status, :last_webhook_received_at
+      attr_accessor :token_acquired_at, :fetch_frequency, :data_processing_enabled
+      attr_accessor :webhook_status, :last_webhook_received_at, :split_mappings_updated
 
       def self.create(params)
         create_from_response(post("/v2/scotty_settings.json", {scotty_setting: params}))
