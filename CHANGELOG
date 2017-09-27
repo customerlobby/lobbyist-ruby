@@ -1,3 +1,6 @@
+=== 0.7.45
+* added an endpoint to disconnect direct connect on V2::Company
+
 === 0.7.44
 * added workflow_system_template to V2::Company
 
