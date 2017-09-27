@@ -135,7 +135,7 @@ module Lobbyist
 
       # disconnect direct connect for a company
       def self.disconnect_direct_connect(id)
-        create_from_response(put("/v2/companies/#{id}/disconnect-direct-connect.json", {company: {company_id: id}}))
+        create_from_response(put("/v2/companies/#{id}/disconnect-direct-connect.json"))
       end
 
       def self.activate(id)
