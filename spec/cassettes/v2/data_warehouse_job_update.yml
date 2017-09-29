@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/data_warehouse_job/1.json
+    body:
+      encoding: UTF-8
+      string: '{"status":"algorithm_completed","result_filename":"CL-Test"}'
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"6b3c9d9a0845ca89bcfd2e1a9849fe83"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 9dc0cac0-c229-45d1-a66a-dd61266a6766
+      x-runtime:
+      - '0.335023'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"data_warehouse_job":{"id":1,"company_id":101,"status":"algorithm_completed"}}'
+    http_version: 
+  recorded_at: Fri, 29 Sep 2017 07:52:09 GMT
+recorded_with: VCR 3.0.3
