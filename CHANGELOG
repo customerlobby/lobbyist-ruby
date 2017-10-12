@@ -2,7 +2,7 @@
 * added filter_categories call to V2::CustomerFilterMetric
 
 === 0.7.46
-* added an column called include_customers_in_contract to disconnect direct connect on V2::CommunicationCampaign
+* added an column called include_customers_in_contract to V2::CommunicationCampaign and V2::RecommendedBudget
 
 === 0.7.45
 * added an endpoint to disconnect direct connect on V2::Company
