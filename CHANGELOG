@@ -1,3 +1,6 @@
+=== 0.7.48
+* added an endpoint to get direct connect settings for a company
+
 === 0.7.47
 * added filter_categories call to V2::CustomerFilterMetric
 * added an column called include_customers_in_contract to V2::RecommendedBudget
