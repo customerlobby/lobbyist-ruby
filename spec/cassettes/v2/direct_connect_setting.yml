@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/v2/companies/5565/direct-connect-settings.json
+    uri: http://localhost:3000/v2/companies/5565/direct-connect-setting.json
     body:
       encoding: US-ASCII
       string: ''

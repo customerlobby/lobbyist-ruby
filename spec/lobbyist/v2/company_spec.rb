@@ -14,7 +14,7 @@ describe Lobbyist::V2::Company, customer_call: true do
   describe "#direct_connect_settings" do
     it 'direct_connect_settings for company' do
       VCR.use_cassette('v2/direct_connect_setting') do
-        results = Lobbyist::V2::Company.direct_connect_settings(5565)
+        results = Lobbyist::V2::Company.direct_connect_setting(5565)
         expect(results).to be_a(Lobbyist::V2::DirectConnectSetting)
         expect(results.company_id).to be(5565)
       end
