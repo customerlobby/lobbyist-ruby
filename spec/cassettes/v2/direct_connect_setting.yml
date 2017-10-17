@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/companies/5565/direct-connect-settings.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"06ebf709aeb2a3ffe7dcab2d8027afb3"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 292c9d7d-e520-464b-8874-274416a338a3
+      x-runtime:
+      - '4.747385'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"direct_connect_setting":{"name":"s2000","display_name":"s2000","version":"unknown","status":"active","visible":true,"database_name":"S2000","access_type":"desktop","data_padding_enabled":false,"use_processor":true,"respect_commercial_flag":false,"enable_auto_invitations":false,"requires_token_refresh":false,"supports_webhooks":false,"supports_service_contracts":false,"company_id":5565,"days":"0,1,2,3,4,5,6","time":"
+        4:37:00 pm","upload_type":"diff","fetch_frequency":"daily","data_processing_enabled":true,"link_established":true,"access_token":null,"access_secret":null,"access_data":null,"access_data_1":null,"ftp_password":null,"last_run_date":"2017-09-08","authentication_date":null,"token_acquired_at":null,"system_enabled":true,"use_closed_invoices":false,"importer_class_name":"","fetcher_class_name":"","mapper_class_name":"S2000Mapper","account_name":null,"install_date":"2013-12-14","connection_params":{},"connection_status":"disconnected","connection_error_internal":null,"connection_error_external":null,"connection_notes":null,"webhook_status":"not_supported","last_webhook_received_at":null,"split_mappings_updated":false}}'
+    http_version: 
+  recorded_at: Tue, 17 Oct 2017 18:38:34 GMT
+recorded_with: VCR 3.0.3
