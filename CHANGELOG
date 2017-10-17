@@ -1,3 +1,6 @@
+=== 0.7.47
+* added an endpoint to get direct connect import counts on V2::Company
+
 === 0.7.46
 * added an column called include_customers_in_contract to disconnect direct connect on V2::CommunicationCampaign
 
