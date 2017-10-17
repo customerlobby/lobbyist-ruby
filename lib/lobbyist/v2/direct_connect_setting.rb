@@ -10,7 +10,7 @@ module Lobbyist
                     :split_mappings_updated, :name, :display_name, :version, :status, :visible, :database_name,
                     :access_type, :data_padding_enabled, :use_processor, :respect_commercial_flag,
                     :enable_auto_invitations, :requires_token_refresh, :supports_webhooks,
-                    :supports_service_contracts
+                    :supports_service_contracts, :id
     end
   end
 end
