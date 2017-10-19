@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/companies/40365/direct-connect-import-counts.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"8cafd28fc4e11ea45f22e9d32c16992b"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - acd8653f-cd36-41be-88dd-269340170d5e
+      x-runtime:
+      - '0.138741'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"direct_connect_import_count":{"company_id":40365,"customers":111,"transactions":222,"vehicles":333,"mileages":444,"service_contracts":555}}'
+    http_version: 
+  recorded_at: Thu, 19 Oct 2017 17:33:03 GMT
+recorded_with: VCR 3.0.3

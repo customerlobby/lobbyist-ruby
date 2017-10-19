@@ -177,6 +177,10 @@ module Lobbyist
         create_from_response(response)
       end
 
+      def self.direct_connect_import_counts(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/direct-connect-import-counts.json"))
+      end
+
       def self.direct_connect_setting(company_id)
         create_from_response(get("/v2/companies/#{company_id}/direct-connect-setting.json"))
       end
