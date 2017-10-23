@@ -49,6 +49,14 @@ module Lobbyist
         end
       end
 
+      def workflow_system_template
+        @workflow_system_template
+      end
+
+      def workflow_system_template=(attributes)
+        @workflow_system_template = WorkflowSystemTemplate.new(attributes)
+      end
+      
       def suggestion_topics
         @suggestion_topics
       end
@@ -126,6 +134,11 @@ module Lobbyist
         create_from_response(put("/v2/companies/#{id}.json", {'company' => params}))
       end
 
+      # disconnect direct connect for a company
+      def self.disconnect_direct_connect(id)
+        create_from_response(put("/v2/companies/#{id}/disconnect-direct-connect.json"))
+      end
+
       def self.activate(id)
         create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true','status' => 'active'}}))
       end
@@ -163,6 +176,14 @@ module Lobbyist
       def self.download_file(company_id, params = {})
         response = post("/v2/companies/#{company_id}/download-customers-file.json", params)
         create_from_response(response)
+      end
+
+      def self.direct_connect_import_counts(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/direct-connect-import-counts.json"))
+      end
+
+      def self.direct_connect_setting(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/direct-connect-setting.json"))
       end
     end
   end
