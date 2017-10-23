@@ -1,0 +1,159 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/companies/5565/disconnect-direct-connect.json
+    body:
+      encoding: UTF-8
+      string: '{"company":{"company_id":5565}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"aa19f4dfe3bf8fa4b366ccc5cf951c57"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - e70cc6ba-555b-4827-8a0b-cc1568f0b81b
+      x-runtime:
+      - '0.083103'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"company":{"id":5565,"company_id":5565,"enterprise_id":null,"account_class":"complete","partner_id":null,"partner_account_id":null,"company_name":"Ace
+        Plumbing, Heating & Air","company_description":"We provide service for garbage
+        disposals, faucets, septic tanks and just about all of your plumbing, heating,
+        and air conditioning needs!","formatted_address":"3011 Academy Way, Sacramento,
+        CA 95815, USA","address1":"3011 Academy Way","address2":"","city":"Sacramento","state":"CA","zip":"95815","timezone":"Pacific
+        Daylight Time","phone":"9164554548","phone_ext":"","website":"http://www.aceplumbing.com","logo_filename":null,"abbreviated_name":"ace-plumbing-heating-air","country":"US","latitude":"38.62171","longitude":"-121.4260237","average_score":5,"account_manager_id":135,"status":"active","review_page_url":"http://dev.customerlobby.com/reviews/5565/ace-plumbing-heating-air/","termination_date":null,"created_at":"2010-12-23
+        11:47:17 UTC","updated_at":"2017-08-30 00:38:16 UTC","reviews_count":230,"qualifies_for_free_month":true,"custom_invitation_pdf_url":"https://s3.amazonaws.com/customerlobby-docs-development/custom-invitation-forms/5565/Custom_Invitation.pdf","kiosk_page_url":"http://dev.customerlobby.com/reviews/5565/ace-plumbing-heating-air/mobile-kiosk","custom_invitation_url":"http://dev.customerlobby.com/reviews/5565/ace-plumbing-heating-air/custom-invitation","handwritten_form_url":"https://s3.amazonaws.com/customerlobby-docs-development/handwritten-review-forms/5565/Handwritten_Review.pdf","customer_downloads_url":"https://s3.amazonaws.com/customerlobby-docs-development/customer-downloads/5dcc84d1d02eb481bdf9e0349bcf5e6b.csv","promo_id":251,"account_terminated":false,"customer_call_notes":"","admin_notes":"Scott
+        is a cool dude.\r\n\r\n5/26/15 bc: inc call on ms line from Scott, asked if
+        someone named Wayne works here. He says he knows KF is his AM, but he was
+        asking for WB because apparently someone from DFW (?) Advertising had called
+        and said that Wayne had referred them to him. He asked after KF, but asked
+        to be put thru to WB''s vm after I told him KF had gone home for the day.
+        Emailed KF notes on my conversation w/ Scott. \r\n3/13/15 kab: Campaigns case
+        study call with Scott. he''s still a cool dude.\r\n12/11/14 rj: dc settings
+        missing, called for poppy/scott, poppy will call me back.\r\n12/3/14 rj: upgraded
+        dc, awaiting files... gottem.\r\n12/1/14 rj: called for poppy re: dc, not
+        in, try again tmrw.\r\n11/25/14 tj: inc call, Scott. He''s pretty damn cool.
+        He''s having trouble logging in. I have an idea why. Checked new admin users,
+        he''s listed as inactive, switched him back to active. good to go now. We
+        joked, we laughed, I cried, he went on his way, I cried some more. All is
+        good.\r\n11/21/14 no contact due to recent touch.\r\n11/17/14 rj: contacted
+        scott, poppy not in, call to upgrade direct connect tmrw instead.\r\n10/28/14
+        rj: hm for scott re: qb upgrade.\r\n9/8/14 rj: called poppy in response to
+        request from scott re: updating direct connect.  sent her a followup email
+        with the download link.\r\n7/16/14 kab: called for Scott, put on hold for
+        a while, hu and sent email to check in. DC is pulling contacts just fine (and
+        plenty of them), but most are just names with no email addresses or phone
+        numbers. reminded Scott we would need one of those bits of information included
+        in his customers'' QB entries to gather reviews from them.\r\n5/16/14 kab:
+        Scott called in w/new cc info. the existing one on file was compromised.\r\n4/21/14
+        rj: called scott to manually update to latest dc version.  the updates might
+        not work because of norton antivirus.  will investigate, but good for now.\r\n3/18/14
+        tj: reviewer Jonathan R unresponsive. Challenge accepted.\r\n3/13/14 tj: Challenge,
+        Jonathan R, not a customer. Asked for proof of service.\r\n3/12/14 kab: fixed
+        Google+ and Yahoo! SI links. recent touches from rj to get DC going. no call
+        today.\r\n2/27/14 rj: ran into some problems with version, had poppy delete
+        setting file to fix dc crash problem, and running test upload to make sure
+        everything is okay.  if not, will probably have to de-authorize the app and
+        re-authorize it.\r\n1/22/14 rj: enabled auto-queueing and will contact later
+        today to confirm. contacted scott, only concern was that he wanted to change
+        his cl password, was worried if that would affect the app.  don''t think so,
+        it''s used the one time to authenticate, then the link is established... as
+        far as i know.  we''ll find out in a day or two i guess.  he''ll contact me
+        if he has any questions or concerns.\r\n1/13/14 rj: upgraded to auto-update
+        version of scotty, let scott know we''re days away from release.\r\n1/6/14
+        rj: installed new version of scotty w/ scott, waiting on data.\r\n12/12/13
+        rj: confirmed install for 2:30 today.  install successful, received old log
+        files for debugging.\r\n12/11/13 rj: sent email to set up time for scotty
+        update tmrw.\r\n12/4/13 rj: installed scotty with scott.  lol.\r\n10/28/13
+        kb: got one new NCC.\r\n6/27/13 kb: Ted just met these guys. I consider that
+        a pretty substantial member touch. \r\n2/14/13 kf: very strong acct. sent
+        email to both users re: syndication and fb app. they add ncc''s pretty consistently
+        and seem to generally have it together. \r\n07/23/12 mm: Sent Scott email
+        re: NCCs and new buttons (Copied Poppy).\r\n03/22/12 mm: Scott called and
+        asked a quick question about FB.  I explained that he has to login under his
+        personal account but it will give him the option to publish to the business
+        page.  All set.\r\n03/20/12 mm: Bridget was having trouble entering a contact.  I
+        called her back and had her do it through the Quick Invites button under Contacts
+        and with her permission removed 4 credits to pay leaving them with one.   Emailed
+        Scott about FB/Twitter.\r\n12/18/12 rj: talked to Scott about ncc, bridget
+        is responsible for that, enabled si, sent followup email with more info on
+        si and fb.\r\n11/1/11: (AB) Talked to Bridget about negative pending review
+        from Glenn who wants to give a new review over phone (he doesn''t do email
+        apparently). I OKed a second customer call with him. Reviewer ended up declining
+        even tho he is happy now.\r\n8/17/11:  (AB) Scott called back in about Business
+        Level of service and I upgraded him. He still wanted to keep the credits to
+        pay. \r\n8/17/11: (AB) Bridget called wanting to know how to add contacts
+        to call. I tried to tell her about business level but she said that''s not
+        her department, Scott would be one to make a decision about that. \r\n08/16/11
+        kb: Had a talk with a girl over there who claims to have had problems entering
+        customer calls. I walked her through the process and she said she would try
+        later. Note: thee guys do a tone of credits to pay. \r\n05/11/11 kb: talked
+        to Scott -- they are going to do a credit to pay. \r\n05/10/11 kb: left hm
+        for either Scott or Poppy re: ncc. I emailed both of them re: ncc, fb, and
+        twitter. \r\n1/28 - na call back at around 345\r\n(J) 1/27 -left my number
+        with recep--Told him I would get an extension for one more day. owner is still
+        thinking about it. hasnt raised any questions but should have an answer by
+        tomorrow.\r\n(J) 1/21 - Said he likes it. Thinks the owner will do it. We
+        work with a competitor of his that gets bad reviews and we get good ones for
+        them so he thinks were a great a idea owner just likes to think about everything.
+        didnt offer a discount.wk 4. said it sounds good. wants to talk to owner though!?!.
+        Didnt get much feedback but need to ask. told him I would call back towards
+        the end of the day.\r\n(J) 1/18 - wk 2. /3. told him the account was going
+        to expire soon. showed him fabo. told him why we took down those 2 reviews
+        and said it wont happen with every neg. review. he likes it, said nothing
+        bad. lm with poppy she said he would call back\r\n(J) 1/11 - Poppy called
+        me and we withdrawl requested the review on the basis that the service wasn''t
+        done in the last 12 months. she was happy.\r\n(J) 1/6 -wk 1. effectively--
+        got a fake review in. he challenged it (he thinks its an ex employee). told
+        him it will go down and he gave me more names. on vaca till the 17\r\n(J)
+        1/5 - said he forgot yesterday-is going to call back.--i called back and left  a
+        message.\r\n1/4 - be back around 1215-said he would call me back and give
+        me more CCs\r\n12/28 - got more CCs and told him his button is live.\r\n(J)
+        12/27 - got a different login. hopefully it works.\r\n(J) 12/23 - Scott was
+        receptive and easy to sign up. Doesn''t collect emails, showed the flyer,
+        says he isn''t doing anything to get reviews now.got CCs and log in. should
+        be a great account.12","trial_source":"outbound","activation_code":"5144b3c11d1f213f7","account_level_id":19,"freetrial_start_date":"2010-12-23
+        11:47:17 UTC","is_active":true,"sales_user_name":"Mike Rich","system_of_record":"","direct_connect_status":"file_selected","direct_connect_status_date":"2017-08-30","split_field_name":null,"split_field_file":null,"split_mapping_type":null,"categories":[{"id":17,"name":"plumbers
+        & sewer repair","salesforce_name":"plumbers & sewer repair","default_services":["Plumbing
+        repairs & fixtures","Drain cleaning, Emergency services","Tankless water heater,
+        Trenchless sewer"],"repeat_marketing_campaign_enabled":true,"threshold":"0.85","min_days_between_mailings":60,"roi":"0.2","accelerator":"2.0","mail_delay_offset":15,"transaction_grouping_interval":30,"generate_marketing_insights":true,"created_at":"2013-01-23
+        19:00:46 UTC","updated_at":"2015-09-29 23:38:47 UTC"}],"company_termination":null,"company_setting":{"id":10437,"company_id":5565,"no_review_reminder_status":false,"no_review_reminder_frequency":null,"invitation_delay_interval":0,"no_review_reminder_period":null,"no_review_reminder_last_sent_at":null,"no_contact_reminder_status":true,"no_contact_reminder_frequency":30,"no_contact_reminder_last_sent_at":"2013-08-03
+        15:00:32 UTC","reviews_per_page":5,"reviews_page_enabled":true,"request_appointments_enabled":true,"send_appointment_emails_to":"scott@aceplumbing.com","accept_contact_suggestions":true,"auto_publish_high_score_reviews":false,"auto_publish_pending_low_score_notification":true,"auto_email_invitation":true,"auto_queue_customer_calls":true,"syndicate_low_score_reviews":false,"syndicate_reviews":true,"wants_invoice_emails":true,"send_invoice_emails_to":"scott@aceplumbing.com","smart_call_queuing":true,"reviews_interval_days":1,"reviews_daily_max":3,"ignore_auto_invites_for_commercial":false,"auto_invite_transaction_threshold":"10.0","widget_color":"#37445b","unhappy_customer_feedback":false,"review_page_display_element":"map"},"smart_invite_setting":{"enabled":true,"google_long_url":"https://www.google.com/search?q=Ace+Plumbing%2C+Heating+%26+Air&oq=Ace+Plumbing%2C+Heating+%26+Air&aqs=chrome..69i57j0l3.720j0j9&sourceid=chrome&es_sm=0&ie=UTF-8#lrd=0x809ad9ebb4bffa87:0xe52fbc6b1c1eafd6,3,5","google_short_url":"https://goo.gl/xPDyGS","yelp_long_url":"","yelp_short_url":null,"angies_list_active":false,"angies_list_long_url":"","angies_list_short_url":null,"facebook_long_url":"","facebook_short_url":null,"custom_display_name_1":null,"custom_long_url_1":null,"custom_short_url_1":null,"custom_display_name_2":null,"custom_long_url_2":null,"custom_short_url_2":null,"custom_display_name_3":null,"custom_long_url_3":null,"custom_short_url_3":null},"private_feedback_topics":[{"id":15151,"topic_name":"How
+        did you first hear about them?","current_order":1},{"id":15154,"topic_name":"Do
+        you have any comments on members of their team?","current_order":2},{"id":15153,"topic_name":"Will
+        you use them again?","current_order":3}],"review_topics":[{"id":19541,"topic_name":"Service","current_order":1,"average_score":"0.97"},{"id":19542,"topic_name":"Will
+        Recommend","current_order":2,"average_score":"0.96"},{"id":19543,"topic_name":"Total
+        Experience","current_order":3,"average_score":"0.96"}],"account_level":{"account_class_id":19,"account_class":"complete","description":"Complete
+        Account","call_credit_cost":"19.0","default_promo_id":null,"rank":12,"enabled":true,"monthly_call_credit_allowance":2,"ccall_credits_accumulate":true,"monthly_handwritten_credit_allowance":0,"handwritten_credits_accumulate":false,"conversion_handwritten_credit_grant":0,"conversion_ccall_credit_grant":2,"paid":true,"created_at":"2015-01-09
+        00:32:39 UTC","updated_at":"2015-01-23 01:57:55 UTC","monthly_fee":"199.0","setup_fee":"199.0","cost_per_postcard":"1.0","customer_count_lower_bound":0,"customer_count_upper_bound":30000,"has_review_reminders":true,"has_contact_reminders":true,"has_member_calls":true,"has_kiosk":true,"has_customer_calls":true,"has_handwritten_reviews":false,"supported":true,"visible":true,"internal":false,"requires_button":true,"campaign_enabled":true,"has_email_invitations":true}},"urls":{"company_url":"http://localhost:3000/v2/companies/5565","metrics_url":"http://localhost:3000/v2/companies/5565/company_metrics"}}'
+    http_version: 
+  recorded_at: Wed, 27 Sep 2017 17:21:12 GMT
+recorded_with: VCR 3.0.0
