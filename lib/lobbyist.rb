@@ -183,6 +183,10 @@ require 'lobbyist/v2/direct_connect_event'
 require 'lobbyist/v2/admin/campaign_iteration'
 require 'lobbyist/v2/admin/communication_piece'
 
+# Library v2/paysimple/gateway
+require 'lobbyist/v2/paysimple/gateway/token'
+require 'lobbyist/v2/paysimple/gateway/customer_token'
+
 module Lobbyist
 
   @@api_base = 'http://localhost:3000'
