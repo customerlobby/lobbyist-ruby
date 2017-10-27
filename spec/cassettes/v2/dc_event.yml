@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/direct_connect_events.json
+    body:
+      encoding: UTF-8
+      string: '{"company_id":5565,"event":"collection_in_progress","payload":{"current_step":"collection","next_step":"processing","progress":60}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"7a21bc67a220bc36dfc91655a038da97"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - db051190-68d8-42e6-8a4e-f41f8233ae83
+      x-runtime:
+      - '10.785301'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"direct_connect_event":{"current_step":"collection","next_step":"processing","progress":60}}'
+    http_version: 
+  recorded_at: Fri, 27 Oct 2017 00:56:22 GMT
+recorded_with: VCR 3.0.0

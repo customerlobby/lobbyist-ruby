@@ -1,3 +1,9 @@
+=== 0.7.51
+* added an endpoint to create direct connect events
+
+=== 0.7.50
+* added an endpoint to get and update direct connect setup steps
+
 === 0.7.49
 * added an endpoint to get direct connect import counts on V2::Company
 

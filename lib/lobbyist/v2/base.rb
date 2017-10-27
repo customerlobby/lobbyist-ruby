@@ -28,6 +28,16 @@ module Lobbyist
         return Collection.new(create_from_response(response['items']), response['count'], response['total'], response['rpp'], response['page'])
       end
 
+      def self.create_collection_from_response_with_model_name(response)
+        if response.has_key?("#{entity_name.to_s}s")
+          list = []
+          response["#{entity_name.to_s}s"].each do |element|
+            list << self.new(element)
+          end
+          return list
+        end
+      end
+
       def self.build_entity(data)
         if data.has_key?(entity_name.to_s)
           entity = self.new(data.delete(entity_name))

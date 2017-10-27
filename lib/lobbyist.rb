@@ -176,6 +176,8 @@ require 'lobbyist/v2/summary'
 require 'lobbyist/v2/urls'
 require 'lobbyist/v2/workflow_system'
 require 'lobbyist/v2/workflow_system_template'
+require 'lobbyist/v2/direct_connect_setup_step'
+require 'lobbyist/v2/direct_connect_event'
 
 #Library V2/admin/
 require 'lobbyist/v2/admin/campaign_iteration'
