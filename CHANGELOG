@@ -1,3 +1,6 @@
+=== 0.7.51
+* added an endpoint to create direct connect events
+
 === 0.7.50
 * added an endpoint to get and update direct connect setup steps
 
