@@ -1,3 +1,6 @@
+=== 0.7.51
+* added an endpoints to list, find and update  on V2::GlobalCampaignSetting
+
 === 0.7.49
 * added an endpoint to get direct connect import counts on V2::Company
 
