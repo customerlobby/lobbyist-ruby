@@ -27,6 +27,18 @@ describe Lobbyist::V2::GlobalCampaignSetting do
     end    
   end
 
+  describe "#update" do
+    it 'should create and return category' do
+      VCR.use_cassette("/v2/global_campaign_settings/update") do
+        global_campaign = Lobbyist::V2::GlobalCampaignSetting.find_by_company(239)
+        global_campaign = Lobbyist::V2::GlobalCampaignSetting.update(239, params())
+        expect(global_campaign).to be_a(Lobbyist::V2::GlobalCampaignSetting)
+        expect(global_campaign.tag_line).to eq("tag line is now changed")
+      end
+    end    
+  end
+
+
   def params()
     {
       "tag_line"       => "tag line is now changed",
