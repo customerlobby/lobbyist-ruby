@@ -1,3 +1,6 @@
+=== 0.7.52
+* added an endpoints to list, find and update  on V2::GlobalCampaignSetting
+
 === 0.7.51
 * added an endpoint to create direct connect events
 

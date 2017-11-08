@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/global_campaign_settings/find-by-company/239.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"4c5affb52e1806cb87295d3922c8ab2c"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 41568572-d233-46dd-8091-65c5c69ff331
+      x-runtime:
+      - '0.608651'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"global_campaign_setting":{"id":403,"company_id":239,"logo_filename":"logo_239_Htiw5V-i-CI.png","tag_line":"Plumber
+        Referred by your Friends","regulatory_info":"CA. State Lic. 414359","review_type":"recent"}}'
+    http_version: 
+  recorded_at: Thu, 02 Nov 2017 02:28:50 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/v2/global_campaign_settings/239.json
+    body:
+      encoding: UTF-8
+      string: '{"tag_line":"tag line is now changed"}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"8b2a3c706d7c69fa89e487a7aadb870b"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - b520d521-d108-4b9c-ae51-ff89d8774cc2
+      x-runtime:
+      - '0.044282'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"global_campaign_setting":{"id":239,"company_id":42641,"logo_filename":"logo_42641_KTqZFlDliAg.jpg","tag_line":"tag
+        line is now changed","regulatory_info":"","review_type":"recent"}}'
+    http_version: 
+  recorded_at: Thu, 02 Nov 2017 02:28:51 GMT
+recorded_with: VCR 3.0.0
