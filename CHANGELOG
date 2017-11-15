@@ -1,3 +1,6 @@
+=== 0.7.52
+* update attribute accessors for V2::Filter
+
 === 0.7.51
 * added an endpoint to create direct connect events
 
