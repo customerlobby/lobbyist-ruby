@@ -15,6 +15,7 @@ module Lobbyist
       attr_accessor :direct_connect_status, :account_manager_id
       attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
       attr_accessor :paysimple_id, :paysimple_enabled
+      attr_accessor :dc_wizard_step, :dc_wizard_status, :dc_wizard_skip_setup
 
       def categories
         @categories
