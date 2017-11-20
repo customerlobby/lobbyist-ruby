@@ -62,7 +62,7 @@ describe Lobbyist::V2::Company, customer_call: true do
       VCR.use_cassette('v2/company_communication_campaigns_results') do
         results = Lobbyist::V2::Company.campaign_results(5565)
         expect(results).to be_a(Lobbyist::V2::CommunicationCampaign)
-        expect(results.company_id).to be(5565)
+        expect(results.responses).to be(1341)
       end
     end
   end
