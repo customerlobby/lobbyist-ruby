@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.9.2
+      - Faraday v0.13.1
       Accept:
       - application/json
       Authorization:
@@ -29,20 +29,20 @@ http_interactions:
       vary:
       - Origin
       etag:
-      - W/"992745a9919292effce9dac5d7e28228"
+      - W/"9d5720f6bb8ad78a0f829146a3621f3d"
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 7189a1ab-62c2-499f-8508-d4f722ac0d9f
+      - 21518a03-db63-4561-b2eb-0c003efb3f3b
       x-runtime:
-      - '0.047433'
+      - '0.410488'
       connection:
       - close
       server:
       - thin 1.5.1 codename Straight Razor
     body:
       encoding: UTF-8
-      string: '{"communication_campaign":{"overall_roi":66,"postcards_sent":13658,"emails_sent":0,"responses":1341,"response_rate":"11.11","completed":{"postcards_sent":12071,"cost":"12071.0","revenue":"860916.01","roi":"4351.55","iteration_count":61,"transactions_referred_count":1783,"responses":1341,"emails_sent":0,"response_rate":"11.1093"},"in_progress":{"postcards_sent":1587,"cost":"1587.0","revenue":"37368.51","roi":"161.59","iteration_count":7,"transactions_referred_count":101,"responses":82,"emails_sent":0,"response_rate":"5.167"}}}'
+      string: '{"communication_campaigns":[{"overall_roi":70,"postcards_sent":15838,"emails_sent":0,"responses":1654,"response_rate":"11.29","completed":{"postcards_sent":14647,"cost":"14647.0","revenue":"1069975.38","roi":"5343.44","iteration_count":73,"transactions_referred_count":2218,"responses":1654,"emails_sent":0,"response_rate":"11.2924148"},"in_progress":{"postcards_sent":1191,"cost":"1191.0","revenue":"40924.71","roi":"206.98","iteration_count":6,"transactions_referred_count":76,"responses":57,"emails_sent":0,"response_rate":"4.7858942"}}]}'
     http_version: 
-  recorded_at: Thu, 29 Jun 2017 21:52:47 GMT
-recorded_with: VCR 3.0.0
+  recorded_at: Tue, 21 Nov 2017 03:31:12 GMT
+recorded_with: VCR 3.0.3
