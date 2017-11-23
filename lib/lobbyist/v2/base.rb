@@ -35,6 +35,7 @@ module Lobbyist
             list << self.new(element)
           end
           return list
+        end
       end
 
       def self.build_entity(data)
