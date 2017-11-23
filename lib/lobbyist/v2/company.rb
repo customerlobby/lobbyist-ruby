@@ -187,7 +187,7 @@ module Lobbyist
       end
 
       def self.campaign_results(company_id)
-        create_collection_from_response_with_model_name(get("/v2/companies/#{company_id}/campaign-results.json"))
+        create_from_response(get("/v2/companies/#{company_id}/campaign-results.json"))
       end
     end
   end
