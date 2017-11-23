@@ -35,13 +35,6 @@ module Lobbyist
             list << self.new(element)
           end
           return list
-        elsif response[response.keys.first.to_s].is_a?(Array)
-          list = []
-          response[response.keys.first.to_s].each do |element|
-            list << Object.const_get("Lobbyist").const_get("V2").const_get(response.keys.first.classify).new(element)
-          end
-          return list
-        end
       end
 
       def self.build_entity(data)
