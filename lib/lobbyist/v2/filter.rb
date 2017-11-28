@@ -14,6 +14,10 @@ module Lobbyist
       def self.destroy_tags(company_id, params = {})
         create_from_response(post("/v2/companies/#{company_id}/filters/destroy-tags.json", params))
       end
+
+      def self.list(company_id, params = {})
+        create_collection_from_response(get("/v2/companies/#{company_id}/filters.json", params))
+      end
     end
   end
 end
