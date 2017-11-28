@@ -3,6 +3,7 @@ require 'faraday'
 require 'faraday_middleware'
 require 'multi_json'
 require 'active_support/all'
+require 'hashie'
 
 # Errors
 require 'lobbyist/error/error'
@@ -71,6 +72,7 @@ require 'lobbyist/workflow_system'
 
 # Library V2
 require 'lobbyist/v2/base'
+require 'lobbyist/v2/http_base'
 require 'lobbyist/v2/account_level'
 require 'lobbyist/v2/account_manager_metrics'
 require 'lobbyist/v2/account_manager_todo'
@@ -91,6 +93,7 @@ require 'lobbyist/v2/category_default_offer_template'
 require 'lobbyist/v2/category'
 require 'lobbyist/v2/category_insight_metrics'
 require 'lobbyist/v2/communication_campaign'
+require 'lobbyist/v2/communication_campaign_result'
 require 'lobbyist/v2/communication_piece'
 require 'lobbyist/v2/company_customer_call'
 require 'lobbyist/v2/company_mail_credit_audit'
