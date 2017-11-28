@@ -1,8 +1,11 @@
-=== 0.7.53
+=== 0.7.54
 * added new api endpoint to get campaign results for a company
 
-=== 0.7.52
+=== 0.7.53
 * update attribute accessors for V2::Filter
+
+=== 0.7.52
+* added an endpoints to list, find and update  on V2::GlobalCampaignSetting
 
 === 0.7.51
 * added an endpoint to create direct connect events

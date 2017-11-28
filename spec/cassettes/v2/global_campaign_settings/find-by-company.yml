@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/global_campaign_settings/find-by-company/239.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"4c5affb52e1806cb87295d3922c8ab2c"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - cd4a0d0b-fff0-4825-a5fa-9afd915e6af5
+      x-runtime:
+      - '0.046406'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"global_campaign_setting":{"id":403,"company_id":239,"logo_filename":"logo_239_Htiw5V-i-CI.png","tag_line":"Plumber
+        Referred by your Friends","regulatory_info":"CA. State Lic. 414359","review_type":"recent"}}'
+    http_version: 
+  recorded_at: Wed, 01 Nov 2017 22:56:50 GMT
+recorded_with: VCR 3.0.0
