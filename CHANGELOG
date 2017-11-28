@@ -1,3 +1,6 @@
+=== 0.7.53
+* Updated list campaigns endpoint to return filter_id and filter_category_name
+
 === 0.7.52
 * added an endpoints to list, find and update  on V2::GlobalCampaignSetting
 
