@@ -72,7 +72,7 @@ require 'lobbyist/workflow_system'
 
 # Library V2
 require 'lobbyist/v2/base'
-require 'lobbyist/v2/http_base'
+require 'lobbyist/v2/hashie_base'
 require 'lobbyist/v2/account_level'
 require 'lobbyist/v2/account_manager_metrics'
 require 'lobbyist/v2/account_manager_todo'

@@ -1,6 +1,6 @@
 module Lobbyist
   module V2
-    class HttpBase
+    class HashieBase
 
       protected
 
