@@ -17,7 +17,7 @@ module Lobbyist
       end
 
       def self.list(company_id, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/filters/filters.json", params))
+        create_from_response(get("/v2/companies/#{company_id}/filters.json", params))
       end
     end
   end
