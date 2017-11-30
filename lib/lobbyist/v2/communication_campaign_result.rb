@@ -9,8 +9,8 @@ module Lobbyist
         create_response(get("/v2/campaign-results/#{id}.json", params))
       end
 
-      def self.summary(company_id, params = {})
-        create_response(get("/v2/campaign-results/summary/#{company_id}.json", params))
+      def self.summary(params = {})
+        create_response(get("/v2/campaign-results/summary.json", params))
       end
     end
   end

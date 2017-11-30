@@ -22,7 +22,7 @@ describe Lobbyist::V2::CommunicationCampaignResult, customer_call: true do
 
     it 'get communication campaigns result summary for a company' do
       VCR.use_cassette('v2/campaign_result_summary') do
-        result = Lobbyist::V2::CommunicationCampaignResult.summary(5565)
+        result = Lobbyist::V2::CommunicationCampaignResult.summary(company_id: 5565)
         expect(result).not_to be(nil)
       end
     end
