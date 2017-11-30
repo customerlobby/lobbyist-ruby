@@ -16,8 +16,8 @@ module Lobbyist
         create_from_response(post("/v2/companies/#{company_id}/filters/destroy-tags.json", params))
       end
 
-      def self.list(company_id, params = {})
-        create_from_response(get("/v2/companies/#{company_id}/filters.json", params))
+      def self.list(params = {})
+        create_collection_from_response_with_model_name(get('/v2/filters.json', params))
       end
     end
   end
