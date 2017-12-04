@@ -1,3 +1,6 @@
+=== 0.7.55
+* added campaign credit summary for a company
+
 === 0.7.53
 * added an endpoints to list, show and get summary of campaign results
 
