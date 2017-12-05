@@ -1,3 +1,9 @@
+=== 0.7.55
+* added new api endpoint to get campaign results for a company
+
+=== 0.7.54
+* update attribute accessors for V2::Filter
+
 === 0.7.53
 * added an endpoints to list, show and get summary of campaign results
 

@@ -185,6 +185,10 @@ module Lobbyist
       def self.direct_connect_setting(company_id)
         create_from_response(get("/v2/companies/#{company_id}/direct-connect-setting.json"))
       end
+
+      def self.campaign_results(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/campaign-results.json"))
+      end
     end
   end
 end
