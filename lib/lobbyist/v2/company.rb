@@ -186,8 +186,8 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{company_id}/direct-connect-setting.json"))
       end
 
-      def self.campaign_credit_summary(company_id)
-        create_from_response(get("/v2/companies/#{company_id}/campaign-credit-summary.json"))
+      def self.campaigns_credit_summary(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/campaigns-credit-summary.json"))
       end
     end
   end
