@@ -5,6 +5,7 @@ gem 'faraday'
 gem 'faraday_middleware'
 gem 'multi_json'
 gem 'activesupport'
+gem 'hashie'
 
 group :test do
   gem 'rspec'
