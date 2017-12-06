@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class Filter < Lobbyist::V2::Base
-      attr_accessor :id, :company_id, :name, :short_name, :defined_by
+      attr_accessor :id, :company_id, :name, :short_name, :defined_by, :display_name, :visible
       attr_accessor :default_filter_id, :feature, :category_name, :description, :customers_count, :created_at, :updated_at
 
       def self.create(company_id, params = {})
