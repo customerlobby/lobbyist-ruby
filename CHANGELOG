@@ -1,8 +1,14 @@
 === 0.7.56
 * added response rate in communication campaign
 
-=== 0.7.53
+=== 0.7.55
 * added an endpoints to list, show and get summary of campaign results
+
+=== 0.7.54
+* update attribute accessors for V2::Filter
+
+=== 0.7.53
+* Add list for V2::Filter
 
 === 0.7.52
 * added an endpoints to list, find and update  on V2::GlobalCampaignSetting

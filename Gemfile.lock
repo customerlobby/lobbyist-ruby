@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.7.53)
+    lobbyist-ruby (0.7.55)
       activesupport
       faraday
       faraday_middleware
@@ -68,4 +68,4 @@ DEPENDENCIES
   vcr
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2
