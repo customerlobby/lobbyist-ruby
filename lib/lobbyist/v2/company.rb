@@ -56,7 +56,7 @@ module Lobbyist
       def workflow_system_template=(attributes)
         @workflow_system_template = WorkflowSystemTemplate.new(attributes)
       end
-      
+
       def suggestion_topics
         @suggestion_topics
       end
@@ -124,14 +124,14 @@ module Lobbyist
       end
 
       def self.create(company_params = {}, user_params = nil)
-        params = {company: company_params}
-        params.merge!({company_user: user_params}) unless user_params.nil?
+        params = { company: company_params }
+        params.merge!({ company_user: user_params }) unless user_params.nil?
 
         create_from_response(post("/v2/companies.json", params))
       end
 
       def self.update(id, params = {})
-        create_from_response(put("/v2/companies/#{id}.json", {'company' => params}))
+        create_from_response(put("/v2/companies/#{id}.json", { 'company' => params }))
       end
 
       # disconnect direct connect for a company
@@ -140,13 +140,13 @@ module Lobbyist
       end
 
       def self.activate(id)
-        create_from_response(put("/v2/companies/#{id}/activate.json", {'company' => {'is_active' => 'true','status' => 'active'}}))
+        create_from_response(put("/v2/companies/#{id}/activate.json", { 'company' => { 'is_active' => 'true', 'status' => 'active' } }))
       end
 
       def self.terminate(id, termination_params)
         create_from_response(put("/v2/companies/#{id}/terminate.json",
-          {'company' => {'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s},
-          'termination' => termination_params}))
+                                 { 'company'     => { 'account_terminated' => 'true', 'is_active' => 'false', 'termination_date' => Time.now.to_s },
+                                   'termination' => termination_params }))
       end
 
       def self.reactivate(id, params={})
@@ -158,7 +158,7 @@ module Lobbyist
       end
 
       def self.debit(company_id, campaign_iteration_id, amount)
-        create_from_response(post("/v2/companies/#{company_id}/debit.json", {campaign_iteration_id: campaign_iteration_id, amount: amount}))
+        create_from_response(post("/v2/companies/#{company_id}/debit.json", { campaign_iteration_id: campaign_iteration_id, amount: amount }))
       end
 
       def self.filtered_list(params = {})
@@ -188,6 +188,10 @@ module Lobbyist
 
       def self.campaign_results(company_id)
         create_from_response(get("/v2/companies/#{company_id}/campaign-results.json"))
+      end
+
+      def self.campaigns_credit_summary(company_id)
+        create_from_response(get("/v2/companies/#{company_id}/campaigns-credit-summary.json"))
       end
     end
   end
