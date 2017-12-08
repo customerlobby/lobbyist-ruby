@@ -1,3 +1,7 @@
+=== 0.7.57
+* added credit summary for individual campaign
+* rename credit_summary so can be used for communication_campaign and company
+
 === 0.7.56
 * added approved field to communication campaign.
 
