@@ -13,7 +13,7 @@ module Lobbyist
       end
 
       def filter=(attributes)
-        @filter = filter.new(attributes)
+        @filter = Filter.new(attributes)
       end
       
       def self.list(params = {})
