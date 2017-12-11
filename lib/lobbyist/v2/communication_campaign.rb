@@ -8,6 +8,14 @@ module Lobbyist
         :monthly_budget, :recommended_budget, :current_balance, :tag_line, :regulatory_info, :email_first_name, :email_last_name, :email, :created_at, :updated_at,
         :mail_delay_offset, :send_followup_email, :send_sample_postcard, :completed, :in_progress, :iterations_count, :filter_id, :frequency_per_year, :target_mail_date
 
+      def filter
+        @filter
+      end
+
+      def filter=(attributes)
+        @filter = filter.new(attributes)
+      end
+      
       def self.list(params = {})
         create_collection_from_response(get("/v2/campaigns.json", params))
       end
