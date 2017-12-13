@@ -1,3 +1,6 @@
+=== 0.7.57
+* added filter object as a node to campaign node
+
 === 0.7.56
 * added response rate in communication campaign
 * added approved field to communication campaign.
