@@ -1,4 +1,5 @@
 === 0.7.56
+* added response rate in communication campaign
 * added approved field to communication campaign.
 
 === 0.7.55
