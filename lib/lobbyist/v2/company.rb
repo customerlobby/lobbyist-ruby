@@ -193,6 +193,10 @@ module Lobbyist
       def self.campaigns_credit_summary(company_id)
         create_from_response(get("/v2/companies/#{company_id}/campaigns-credit-summary.json"))
       end
+
+      def self.purchase_campaign_credits(company_id)
+        create_from_response(post("/v2/companies/#{company_id}/purchase-campaign-credits.json"))
+      end
     end
   end
 end
