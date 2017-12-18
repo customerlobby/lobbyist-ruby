@@ -1,3 +1,6 @@
+=== 0.7.59
+* added balance_payable to V2::CampaignsCreditSummary
+
 === 0.7.58
 * added end point POST(purchase_campaign_credits) to V2::Company
 

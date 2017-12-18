@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class CampaignsCreditSummary < Lobbyist::V2::Base
-      attr_accessor :credit_balance, :approved_credits, :in_progress_credits, :pending_credits
+      attr_accessor :credit_balance, :approved_credits, :in_progress_credits, :pending_credits, :balance_payable
     end
   end
 end
