@@ -1,3 +1,6 @@
+=== 0.7.60
+* added approved to V2::GlobalCampaignSetting
+
 === 0.7.59
 * added balance_payable to V2::CampaignsCreditSummary
 
