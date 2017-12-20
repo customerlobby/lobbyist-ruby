@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/companies/5565/campaign-results.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"9052e48b7266c340495b44a92449c2df"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - de1830ff-f15f-40fc-980f-e5f17b0dc526
+      x-runtime:
+      - '3.568932'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"company_communication_campaign_result":{"overall_roi":68,"postcards_sent":16438,"emails_sent":0,"responses":1692,"response_rate":"11.25","completed":{"company_id":5565,"postcards_sent":15045,"cost":"15045.0","revenue":"1102208.64","roi":"5506.58","iteration_count":75,"transactions_referred_count":2270,"responses":1692,"emails_sent":0,"response_rate":"11.2463"},"in_progress":{"company_id":5565,"postcards_sent":1393,"cost":"1393.0","revenue":"16611.55","roi":"83.95","iteration_count":7,"transactions_referred_count":42,"responses":35,"emails_sent":0,"response_rate":"2.5126"}}}'
+    http_version: 
+  recorded_at: Thu, 23 Nov 2017 08:23:44 GMT
+recorded_with: VCR 3.0.3

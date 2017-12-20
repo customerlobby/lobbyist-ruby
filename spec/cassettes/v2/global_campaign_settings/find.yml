@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/global_campaign_settings/239.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"c386186816f1737e41c283504d771fe5"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - b6c68be3-a7c0-492c-95df-3c6ace94abb0
+      x-runtime:
+      - '0.043471'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"global_campaign_setting":{"id":239,"company_id":42641,"logo_filename":"logo_42641_KTqZFlDliAg.jpg","tag_line":"When
+        you''re concerned enough to use the best.","regulatory_info":"","review_type":"recent"}}'
+    http_version: 
+  recorded_at: Wed, 01 Nov 2017 18:24:08 GMT
+recorded_with: VCR 3.0.0
