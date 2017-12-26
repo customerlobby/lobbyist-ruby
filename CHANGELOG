@@ -1,3 +1,6 @@
+=== 0.7.62
+* Add the mail_balance to the company response
+
 === 0.7.61
 * update charge end point to take credits for a campaign and follow the convention of lobbyist
 
