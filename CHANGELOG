@@ -1,3 +1,7 @@
+
+=== 0.7.61
+* added status_description to V2::CommunicationCampaign
+
 === 0.7.60
 * added approved to V2::GlobalCampaignSetting
 
