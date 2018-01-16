@@ -1,3 +1,6 @@
+=== 0.7.63
+* added approved to V2::GlobalCampaignSetting
+
 === 0.7.61
 * update charge end point to take credits for a campaign and follow the convention of lobbyist
 
