@@ -1,3 +1,6 @@
+=== 0.7.64
+* using recommended_credits instead of budget
+
 === 0.7.63
 * added approved to V2::GlobalCampaignSetting
 
