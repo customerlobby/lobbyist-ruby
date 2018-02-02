@@ -1,3 +1,6 @@
+=== 0.7.65
+* added endpoint for receipt.
+
 === 0.7.64
 * using recommended_credits instead of budget
 
