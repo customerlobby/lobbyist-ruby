@@ -194,8 +194,8 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{company_id}/campaigns-credit-summary.json"))
       end
 
-      def self.purchase_campaign_credits(company_id)
-        create_from_response(post("/v2/companies/#{company_id}/purchase-campaign-credits.json"))
+      def self.purchase_campaign_credits(company_id, params = {})
+        create_from_response(post("/v2/companies/#{company_id}/purchase-campaign-credits.json", params))
       end
     end
   end

@@ -1,9 +1,20 @@
-
-=== 0.7.61
+=== 0.7.66
 * added status_description to V2::CommunicationCampaign
 
-=== 0.7.60
+=== 0.7.65
+* added endpoint for receipt.
+
+=== 0.7.64
+* using recommended_credits instead of budget
+
+=== 0.7.63
 * added approved to V2::GlobalCampaignSetting
+
+=== 0.7.61
+* update charge end point to take credits for a campaign and follow the convention of lobbyist
+
+=== 0.7.60
+* added option to send additional params to end point POST(purchase_campaign_credits) to V2::Company
 
 === 0.7.59
 * added balance_payable to V2::CampaignsCreditSummary
