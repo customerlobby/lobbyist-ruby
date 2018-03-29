@@ -75,11 +75,18 @@ module Lobbyist
 
     private
 
+    def self.request_id
+      Thread.current[:request_id] rescue nil
+    end
+
     def self.get(path, params = {})
       add_nonce(params)
       handle_response do
         http.get do |request|
           request.url path, params
+          if request_id.present?
+            request.headers['X-Request-Id']  = request_id
+          end
           request.headers['Accept'] = 'application/json'
           request.headers['Authorization'] = auth_header('get', path, params)
         end
@@ -92,6 +99,9 @@ module Lobbyist
         http.post do |request|
           request.url path
           request.body = params
+          if request_id.present?
+            request.headers['X-Request-Id']  = request_id
+          end
           request.headers['Accept'] = 'application/json'
           request.headers['Content-Type'] = 'application/json'
           request.headers['Authorization'] = auth_header('post', path, params)
@@ -105,6 +115,9 @@ module Lobbyist
         http.put do |request|
           request.url path
           request.body = params
+          if request_id.present?
+            request.headers['X-Request-Id']  = request_id
+          end
           request.headers['Accept'] = 'application/json'
           request.headers['Content-Type'] = 'application/json'
           request.headers['Authorization'] = auth_header('put', path, params)
@@ -117,11 +130,15 @@ module Lobbyist
       handle_response do
         http.delete do |request|
           request.url path, params
+          if request_id.present?
+            request.headers['X-Request-Id']  = request_id
+          end
           request.headers['Accept'] = 'application/json'
           request.headers['Authorization'] = auth_header('delete', path, params)
         end
       end
     end
+    
 
     def self.add_nonce(params)
       params.merge!({'nonce' => nonce})

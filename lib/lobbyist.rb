@@ -195,6 +195,7 @@ require 'lobbyist/v2/admin/communication_piece'
 require 'lobbyist/v2/paysimple/gateway/token'
 require 'lobbyist/v2/paysimple/gateway/customer_token'
 
+
 module Lobbyist
 
   @@api_base = 'http://localhost:3000'
@@ -227,6 +228,9 @@ module Lobbyist
 
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
+      p faraday
+      p '*' * 50
+      p Thread.current[:request_id]
       faraday.request  :multipart
       faraday.request  :url_encoded             # for GET params
       faraday.request  :json                    # for PUT/POST params

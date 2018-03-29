@@ -54,12 +54,19 @@ module Lobbyist
         return self.name.demodulize.underscore
       end
 
+      def self.request_id
+        Thread.current[:request_id] rescue nil
+      end
+
       def self.get(path, params = {})
         handle_response do
           http.get do |request|
             request.url path, params
             request.headers['Accept'] = 'application/json'
             request.headers['Authorization'] = auth_header
+            if request_id.present?
+              request.headers['X-Request-Id']  = request_id
+            end
           end
         end
       end
@@ -73,6 +80,9 @@ module Lobbyist
               request.headers['Accept'] = 'application/json'
               request.headers['Content-Type'] = 'application/json'
             end
+            if request_id.present?
+              request.headers['X-Request-Id']  = request_id
+            end
             request.headers['Authorization'] = auth_header
           end
         end
@@ -83,6 +93,9 @@ module Lobbyist
           http.put do |request|
             request.url path
             request.body = params
+            if request_id.present?
+              request.headers['X-Request-Id']  = request_id
+            end
             request.headers['Accept'] = 'application/json'
             request.headers['Content-Type'] = 'application/json'
             request.headers['Authorization'] = auth_header
@@ -94,6 +107,9 @@ module Lobbyist
         handle_response do
           http.delete do |request|
             request.url path, params
+            if request_id.present?
+              request.headers['X-Request-Id']  = request_id
+            end
             request.headers['Accept'] = 'application/json'
             request.headers['Authorization'] = auth_header
           end
@@ -129,8 +145,8 @@ module Lobbyist
           response = MultiJson.load(response.body)
           return response
         end
-      rescue MultiJson::DecodeError
-        raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
+      # rescue MultiJson::DecodeError
+      #   raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
       end
 
       def process_attributes(attributes)
