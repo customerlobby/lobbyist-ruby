@@ -1,5 +1,8 @@
-=== 0.7.66
+=== 0.7.67
 * added status_description to V2::CommunicationCampaign
+
+=== 0.7.66
+* adding X-Request-Id header to be passed with all requests.
 
 === 0.7.65
 * added endpoint for receipt.
