@@ -175,6 +175,7 @@ require 'lobbyist/v2/review_flag'
 require 'lobbyist/v2/review_withdrawal_request'
 require 'lobbyist/v2/review'
 require 'lobbyist/v2/reviews_count'
+require 'lobbyist/v2/receipt_generator'
 require 'lobbyist/v2/scotty_setting'
 require 'lobbyist/v2/smart_invite_setting'
 require 'lobbyist/v2/social_network_page'
@@ -193,6 +194,7 @@ require 'lobbyist/v2/admin/communication_piece'
 # Library v2/paysimple/gateway
 require 'lobbyist/v2/paysimple/gateway/token'
 require 'lobbyist/v2/paysimple/gateway/customer_token'
+
 
 module Lobbyist
 
@@ -226,6 +228,9 @@ module Lobbyist
 
   def self.http
     @@connection ||= Faraday.new(:url => @@api_base) do |faraday|
+      p faraday
+      p '*' * 50
+      p Thread.current[:request_id]
       faraday.request  :multipart
       faraday.request  :url_encoded             # for GET params
       faraday.request  :json                    # for PUT/POST params

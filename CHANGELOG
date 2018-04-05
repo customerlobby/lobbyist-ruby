@@ -1,3 +1,15 @@
+=== 0.7.67
+* added status_description to V2::CommunicationCampaign
+
+=== 0.7.66
+* adding X-Request-Id header to be passed with all requests.
+
+=== 0.7.65
+* added endpoint for receipt.
+
+=== 0.7.64
+* using recommended_credits instead of budget
+
 === 0.7.63
 * added approved to V2::GlobalCampaignSetting
 
