@@ -1,3 +1,9 @@
+=== 0.7.68
+* adding filter_changeable to campaign
+
+=== 0.7.67
+* adding status description to campaign
+
 === 0.7.66
 * adding X-Request-Id header to be passed with all requests.
 
