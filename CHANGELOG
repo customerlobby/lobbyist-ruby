@@ -1,3 +1,6 @@
+=== 0.7.67
+* added clone_campaign end point V2::CommunicationCampaign.
+
 === 0.7.66
 * adding X-Request-Id header to be passed with all requests.
 
