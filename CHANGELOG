@@ -1,3 +1,6 @@
+=== 0.7.69
+* update the sum method on collection to convert string to float instead on string to int, to not loose the fractions
+
 === 0.7.68
 * adding filter_changeable to campaign
 
