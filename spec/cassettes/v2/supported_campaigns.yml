@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/supported_campaigns.json?company_id=239
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"b0a6bd11cd57f635682ff4d450b1c2ab"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 1a79564b-af55-482e-98c5-d4bafdfb15fb
+      x-runtime:
+      - '0.056271'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"company_id":239,"campaign_categories":["drip","blast","branding"],"filters":[{"id":114313,"company_id":239,"name":"manual-service-contracts","short_name":"manual_service_contracts","customers_count":0,"defined_by":"customerlobby","default_filter_id":null,"feature":null,"category_name":"service_contracts","description":"customers
+        with service contracts","created_at":"2017-10-04T17:26:18.000Z","updated_at":"2017-11-07T15:04:53.000Z","status":"active"},{"id":494179,"company_id":239,"name":"repeat_marketing_customers","short_name":"repeat_marketing_customers","customers_count":0,"defined_by":"customerlobby","default_filter_id":13,"feature":null,"category_name":"repeat_customers","description":"Algorithmic
+        Campaign for marketing to your repeat customers","created_at":"2017-11-13T15:43:55.000Z","updated_at":"2017-11-13T15:43:55.000Z","status":"active"},{"id":503731,"company_id":239,"name":"active_customers","short_name":"active_customers","customers_count":12210,"defined_by":"customerlobby","default_filter_id":1,"feature":null,"category_name":"active_customers","description":"Had
+        transaction in the last 3 years","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503732,"company_id":239,"name":"at_risk_customers","short_name":"at_risk_customers","customers_count":6025,"defined_by":"customerlobby","default_filter_id":2,"feature":null,"category_name":"at_risk_customers","description":"Last
+        transaction 18 mo. to 3 years ago","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503733,"company_id":239,"name":"commercial_customers","short_name":"commercial_customers","customers_count":964,"defined_by":"customerlobby","default_filter_id":3,"feature":null,"category_name":"commercial_customers","description":"Non-residential
+        customers","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503734,"company_id":239,"name":"do_not_call","short_name":"do_not_call","customers_count":772,"defined_by":"customerlobby","default_filter_id":4,"feature":null,"category_name":"do_not_call","description":"We
+        will not call them for a review","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503735,"company_id":239,"name":"do_not_direct_mail","short_name":"do_not_direct_mail","customers_count":759,"defined_by":"customerlobby","default_filter_id":5,"feature":null,"category_name":"do_not_direct_mail","description":"We
+        will not send direct mail to them","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503736,"company_id":239,"name":"do_not_email","short_name":"do_not_email","customers_count":1406,"defined_by":"customerlobby","default_filter_id":6,"feature":null,"category_name":"do_not_email","description":"We
+        will not send email to them","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503737,"company_id":239,"name":"email","short_name":"email","customers_count":18221,"defined_by":"customerlobby","default_filter_id":7,"feature":null,"category_name":"email","description":"Has
+        an email address and will accept emails","created_at":"2017-12-18T20:33:40.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503738,"company_id":239,"name":"first_transaction_only","short_name":"first_transaction_only","customers_count":10782,"defined_by":"customerlobby","default_filter_id":8,"feature":null,"category_name":"first_transaction_only","description":"Has
+        only one transaction","created_at":"2017-12-18T20:33:41.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503739,"company_id":239,"name":"lapsed_customers","short_name":"lapsed_customers","customers_count":12028,"defined_by":"customerlobby","default_filter_id":9,"feature":null,"category_name":"lapsed_customers","description":"No
+        transactions in the last 3 years","created_at":"2017-12-18T20:33:41.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503740,"company_id":239,"name":"no_transactions","short_name":"no_transactions","customers_count":12408,"defined_by":"customerlobby","default_filter_id":10,"feature":null,"category_name":"no_transactions","description":"No
+        transactions associated with these customers","created_at":"2017-12-18T20:33:41.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"},{"id":503741,"company_id":239,"name":"phone","short_name":"phone","customers_count":32799,"defined_by":"customerlobby","default_filter_id":11,"feature":null,"category_name":"phone","description":"Has
+        a phone number and will accept phone calls","created_at":"2017-12-18T20:33:41.000Z","updated_at":"2018-01-23T11:22:49.000Z","status":"active"}]}'
+    http_version: 
+  recorded_at: Tue, 03 Apr 2018 17:41:10 GMT
+recorded_with: VCR 3.0.0
