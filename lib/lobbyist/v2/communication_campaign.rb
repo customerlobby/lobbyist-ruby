@@ -53,8 +53,8 @@ module Lobbyist
         create_from_response(post("/v2/campaigns/#{id}/charge.json", params))
       end
 
-      def self.clone_campaign(id, company_id)
-        create_from_response(post("/v2/campaigns/#{id}/clone_campaign.json", { company_id: company_id }))
+      def self.clone(id)
+        create_from_response(post("/v2/campaigns/#{id}/clone.json"))
       end
     end
 
