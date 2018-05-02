@@ -16,8 +16,8 @@ module Lobbyist
         @elements.select { |element| valid_element? element, conditions }
 
       selected.inject(0) do |sum, element|
-        num = element.send(column).to_i
-        sum + Float(num)
+        num = element.send(column).to_f
+        sum + num
       end
     end
 
