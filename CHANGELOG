@@ -1,5 +1,8 @@
-=== 0.7.71
+=== 0.7.72
 * added create branding campaign end point V2::CommunicationCampaign.
+
+=== 0.7.71
+* added clone_campaign end point V2::CommunicationCampaign.
 
 === 0.7.70
 * adding new resource V2::SupportedCampaigns
