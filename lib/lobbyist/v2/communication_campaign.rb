@@ -33,6 +33,10 @@ module Lobbyist
         create_from_response(post("/v2/campaigns.json", {company_id: company_id, communication_campaign: params}))
       end
 
+      def self.create_branding_campaign(company_id, params={})
+        create_from_response(post("/v2/campaigns/create_branding_campaign.json", {company_id: company_id, communication_campaign: params}))
+      end
+
       def self.update(id, params)
         create_from_response(put("/v2/campaigns/#{id}.json", {communication_campaign: params}))
       end

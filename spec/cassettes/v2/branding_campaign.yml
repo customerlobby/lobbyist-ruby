@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/campaigns/create_branding_campaign.json
+    body:
+      encoding: UTF-8
+      string: '{"company_id":5565,"communication_campaign":{}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"dfb8441790b428e3ac632b7c39f88cb3"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 8e510e2e-098e-4802-8b2d-3dccf0cafbf1
+      x-runtime:
+      - '2.902977'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"communication_campaign":{"id":24898,"company_id":5565,"name":"Branding
+        Campaign","description":"6x9 Postcard Campaign","threshold":"0.85","approved_credits":0,"approved":false,"recommended_budget":2090,"monthly_budget":"2090.0","current_balance":"955.0","front_image_optimization_enabled":true,"recommended_credits":2090,"minimum_roi":"0.15","accelerator":"2.0","transaction_grouping_interval":30,"min_days_between_mailings":60,"ignore_thirty_day_bucket":false,"status":"inactive","run_count":2,"call_to_action_tracking":"Call
+        Now! (916) 455-4548","communications_sent":0,"monthly_target_count":0,"include_commercial_customers":true,"include_customers_in_contract":false,"review_type":"recent","services_offered":["Plumbing
+        repairs & fixtures","Drain cleaning, Emergency services","Tankless water heater,
+        Trenchless sewer"],"regulatory_info":"","filter_changeable":false,"created_at":"2018-05-08
+        05:51:24 UTC","updated_at":"2018-05-08 05:51:24 UTC","mail_delay_offset":15,"send_followup_email":true,"send_sample_postcard":false,"response_rate":0,"filter_id":178915,"frequency_per_year":6,"target_mail_date":null,"status_description":"Approval
+        Needed","category":"branding","front_template_ids":[],"front_template_metrics":[],"background_color":null,"text_color":null,"errors":null,"filter":{"id":178915,"company_id":5565,"name":"repeat_marketing_customers","short_name":"repeat_marketing_customers","defined_by":"customerlobby","default_filter_id":25,"feature":null,"category_name":"repeat_customers","description":"Algorithmic
+        Campaign for marketing to your repeat customers","customers_count":2090,"created_at":"2017-11-14
+        04:40:12 UTC","updated_at":"2018-02-24 09:06:44 UTC"}}}'
+    http_version: 
+  recorded_at: Tue, 08 May 2018 05:51:26 GMT
+recorded_with: VCR 3.0.0
