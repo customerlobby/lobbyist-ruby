@@ -21,6 +21,10 @@ module Lobbyist
         create_collection_from_response(get("/v2/campaigns.json", params))
       end
 
+      def self.reset_branding_campaign(company_id, params = {})
+        create_from_response(put("/v2/campaigns/reset_branding_campaign.json", {company_id: company_id, communication_campaign: params}))
+      end
+
       def self.find(id, params = {})
         create_from_response(get("/v2/campaigns/#{id}.json", params))
       end
