@@ -1,3 +1,6 @@
+=== 0.7.74
+* added reset branding campaign end point V2::CommunicationCampaign.
+
 === 0.7.73
 * added create branding campaign end point V2::CommunicationCampaign.
 
