@@ -1,3 +1,6 @@
+=== 0.7.75
+* added campaign algo_metadata fields in attr_accessor list.
+
 === 0.7.74
 * added reset branding campaign end point V2::CommunicationCampaign.
 
