@@ -14,9 +14,7 @@ module Lobbyist
       attr_accessor :mail_delay_offset, :send_followup_email, :send_sample_postcard
       attr_accessor :completed, :in_progress, :iterations_count, :response_rate
       attr_accessor :filter_id, :communications_sent, :filter_changeable, :status_description
-
-      attr_accessor :threshold, :minimum_roi, :accelerator, :transaction_grouping_interval
-      attr_accessor :frequency_per_year, :start_date, :repeat_interval
+      attr_accessor :algo_metadata
 
       def filter
         @filter
