@@ -1,5 +1,8 @@
-=== 0.7.74
+=== 0.7.75
 * add params for monthly recurring revenue to allow passing flags such as upsell.
+
+=== 0.7.74
+* added reset branding campaign end point V2::CommunicationCampaign.
 
 === 0.7.73
 * added create branding campaign end point V2::CommunicationCampaign.

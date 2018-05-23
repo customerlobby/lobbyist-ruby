@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/campaigns/reset_branding_campaign.json
+    body:
+      encoding: UTF-8
+      string: '{"company_id":5565,"communication_campaign":{}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"38704899d81e3c92d32aeb93a92af006"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 713dbab3-ba94-41d2-9480-a9cf37b4e639
+      x-runtime:
+      - '3.179698'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"communication_campaign":{"id":3,"company_id":5565,"name":"Branding
+        Campaign","description":"6x9 Postcard Campaign","threshold":"0.682","approved_credits":400,"approved":false,"recommended_budget":0,"monthly_budget":"400.0","current_balance":"0.0","front_image_optimization_enabled":false,"recommended_credits":2210,"minimum_roi":"0.2","accelerator":"2.0","transaction_grouping_interval":30,"min_days_between_mailings":60,"ignore_thirty_day_bucket":false,"status":"not_recommended_level","run_count":2,"call_to_action_tracking":"Call
+        Now! (916) 455-4548","communications_sent":14649,"monthly_target_count":400,"include_commercial_customers":false,"include_customers_in_contract":true,"review_type":"recent","services_offered":["Plumbing
+        repairs & fixtures","Heating & air conditioning","Trenchless sewer, Tankless
+        water heater"],"regulatory_info":"","filter_changeable":false,"created_at":"2014-05-30
+        21:11:38 UTC","updated_at":"2018-05-14 16:01:48 UTC","mail_delay_offset":15,"send_followup_email":true,"send_sample_postcard":false,"response_rate":"11.12","filter_id":495871,"frequency_per_year":6,"target_mail_date":null,"status_description":"Cannot
+        Approve until Branding Campaign is at recommended level","category":"branding","front_template_ids":[],"front_template_metrics":[{"front_template_id":65283,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65284,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65285,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65286,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65287,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65288,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65289,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65290,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65291,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65292,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65293,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65294,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65295,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65296,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65297,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65298,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65299,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65300,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65301,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65302,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65303,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65304,"response_rate":"0.0","weight":"1.0"},{"front_template_id":65305,"response_rate":"0.0","weight":"1.0"}],"background_color":null,"text_color":null,"errors":null,"filter":{"id":495871,"company_id":5565,"name":"repeat_marketing_customers","short_name":"repeat_marketing_customers","defined_by":"customerlobby","default_filter_id":13,"feature":null,"category_name":"repeat_customers","description":"Algorithmic
+        Campaign for marketing to your repeat customers","customers_count":0,"created_at":"2017-11-13
+        15:44:37 UTC","updated_at":"2017-11-13 15:44:37 UTC"}}}'
+    http_version: 
+  recorded_at: Mon, 14 May 2018 16:07:41 GMT
+recorded_with: VCR 3.0.0
