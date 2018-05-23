@@ -115,8 +115,8 @@ module Lobbyist
         create_from_response(get("/v2/companies/#{id}/direct-connect-summary.json"))
       end
 
-      def self.monthly_recurring_revenue(id)
-        create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json"))
+      def self.monthly_recurring_revenue(id, params = {})
+        create_from_response(get("/v2/companies/#{id}/monthly-recurring-revenue.json", params))
       end
 
       def self.insights(id)
