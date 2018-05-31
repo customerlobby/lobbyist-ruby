@@ -1,5 +1,11 @@
-=== 0.7.75
+=== 0.7.77
 * add params for monthly recurring revenue to allow passing flags such as upsell.
+
+=== 0.7.76
+* added campaign algo_metadata field instead of all its keys for communication campaign.
+
+=== 0.7.75
+* added campaign algo_metadata fields in attr_accessor list for communication campaign.
 
 === 0.7.74
 * added reset branding campaign end point V2::CommunicationCampaign.
