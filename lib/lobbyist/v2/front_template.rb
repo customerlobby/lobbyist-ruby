@@ -16,6 +16,10 @@ module Lobbyist
       def self.update(id, params = {})
         create_from_response(put("/v2/front-templates/#{id}.json", front_template: params))
       end
+
+      def self.update_campaign_front_template(id, params = {})
+        create_from_response(put("/v2/front-templates/#{id}/update-campaign-front-template.json", params))
+      end
     end
   end
 end
