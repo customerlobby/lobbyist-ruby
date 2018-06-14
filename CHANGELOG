@@ -1,3 +1,6 @@
+=== 0.7.78
+* added CategoryDefaultFrontTemplate.
+
 === 0.7.77
 * added Tag and added attributes in category and front template.
 
