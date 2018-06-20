@@ -19,6 +19,11 @@ module Lobbyist
       def self.update(id, params = {})
         create_from_response(put("/v2/tags/#{id}.json", params))
       end
+
+      def self.destroy(id, params = {})
+        create_from_response(delete("/v2/tags/#{id}.json", params))
+      end
+
     end
 
   end

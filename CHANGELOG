@@ -1,3 +1,9 @@
+=== 0.7.80
+* added CategoryDefaultFrontTemplate communication_campaigns API.
+
+=== 0.7.79
+* added Tag destroy API.
+
 === 0.7.78
 * added CategoryDefaultFrontTemplate.
 

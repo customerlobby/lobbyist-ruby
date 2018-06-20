@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Lobbyist
   module V2
     class CategoryDefaultFrontTemplate < Lobbyist::V2::Base
@@ -17,6 +19,11 @@ module Lobbyist
       def self.find(id, params = {})
         response = get("/v2/category-default-front-templates/#{id}.json", params)
         create_from_response(response)
+      end
+
+      def self.communication_campaigns(id, params = {})
+        response = get("/v2/category-default-front-templates/#{id}/communication_campaigns.json", params)
+        create_collection_from_response(response)
       end
     end
   end
