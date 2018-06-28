@@ -1,3 +1,15 @@
+=== 0.7.80
+* added CategoryDefaultFrontTemplate communication_campaigns API.
+
+=== 0.7.79
+* added Tag destroy API.
+
+=== 0.7.78
+* added CategoryDefaultFrontTemplate.
+
+=== 0.7.77
+* added Tag and added attributes in category and front template.
+
 === 0.7.76
 * added campaign algo_metadata field instead of all its keys for communication campaign.
 
