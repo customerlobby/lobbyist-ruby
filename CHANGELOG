@@ -1,3 +1,6 @@
+=== 0.7.81
+* added attribute in Tag.
+
 === 0.7.80
 * added CategoryDefaultFrontTemplate communication_campaigns API.
 
