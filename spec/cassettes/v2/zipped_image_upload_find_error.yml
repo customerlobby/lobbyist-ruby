@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/zipped_image_uploads/999.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      cache-control:
+      - no-cache
+      x-request-id:
+      - 04ceceeb-16ae-49e8-91c1-0cbdea80d17e
+      x-runtime:
+      - '0.040250'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"errors":"Record Not Found."}'
+    http_version: 
+  recorded_at: Thu, 05 Jul 2018 07:35:32 GMT
+recorded_with: VCR 3.0.0
