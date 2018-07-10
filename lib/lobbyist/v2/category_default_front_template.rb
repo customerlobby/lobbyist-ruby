@@ -5,7 +5,7 @@ module Lobbyist
     class CategoryDefaultFrontTemplate < Lobbyist::V2::Base
       attr_accessor :id, :category_id, :image_filename
       attr_accessor :message_position, :content, :status
-      attr_accessor :tags, :communication_campaigns
+      attr_accessor :tags, :communication_campaigns, :image_urls
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/category-default-front-templates.json', params))
