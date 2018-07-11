@@ -1,5 +1,8 @@
-=== 0.7.84
+=== 0.7.85
 * added new resource V2::ZippedImageUpload
+
+=== 0.7.84
+* added attribute in Tag.
 
 === 0.7.82
 * added image_urls to v2/category_default_front_templates API
