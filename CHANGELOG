@@ -1,3 +1,12 @@
+=== 0.7.84
+* added new resource V2::ZippedImageUpload
+
+=== 0.7.82
+* added image_urls to v2/category_default_front_templates API
+
+=== 0.7.81
+* added image_urls to v2/front_templates API
+
 === 0.7.80
 * added CategoryDefaultFrontTemplate communication_campaigns API.
 
