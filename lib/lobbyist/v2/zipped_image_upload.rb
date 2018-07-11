@@ -8,15 +8,15 @@ module Lobbyist
       attr_accessor :processed_at, :created_at, :updated_at
 
       def self.create(params = {})
-        create_from_response(post('/v2/zipped_image_uploads.json', { 'zipped_image_upload' => params }, true))
+        create_from_response post('/v2/zipped_image_uploads.json', { zipped_image_upload: params }, true)
       end
 
       def self.find(id)
-        create_from_response(get("/v2/zipped_image_uploads/#{id}.json"))
+        create_from_response get("/v2/zipped_image_uploads/#{id}.json")
       end
 
       def self.update(id, params = {})
-        create_from_response(put("/v2/zipped_image_uploads/#{id}.json", 'zipped_image_upload' => params))
+        create_from_response put("/v2/zipped_image_uploads/#{id}.json", { zipped_image_upload: params })
       end
     end
   end
