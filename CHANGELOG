@@ -1,3 +1,6 @@
+=== 0.7.86
+* added Retry request if connection fails
+
 === 0.7.85
 * added new resource V2::ZippedImageUpload
 
