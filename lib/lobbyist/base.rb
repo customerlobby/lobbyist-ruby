@@ -3,6 +3,8 @@ module Lobbyist
     # Initialize the nonce to nil.
     @@nonce = nil
 
+    RETRY_INTERVAL = 2
+
     def initialize(attributes)
       attributes.each do |k,v|
         define_attribute(k, v.is_a?(Hash)) unless self.respond_to?("#{k}=")
@@ -153,7 +155,12 @@ module Lobbyist
     end
 
     def self.handle_response
-      response = yield
+      begin
+        response = yield
+      rescue Faraday::ConnectionFailed
+        sleep RETRY_INTERVAL
+        retry
+      end
       case response.status
       when 400
         raise Lobbyist::Error::BadRequest.new(response.body)

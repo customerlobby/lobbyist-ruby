@@ -2,6 +2,9 @@ module Lobbyist
   module V2
 
     class Base
+
+      RETRY_INTERVAL = 2
+
       def initialize(attributes)
         process_attributes(attributes)
       end
@@ -125,7 +128,12 @@ module Lobbyist
       end
 
       def self.handle_response
-        response = yield
+        begin
+          response = yield
+        rescue Faraday::ConnectionFailed
+          sleep RETRY_INTERVAL
+          retry
+        end
         case response.status
         when 400
           raise Lobbyist::Error::BadRequest.new(response.body)
