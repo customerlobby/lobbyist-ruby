@@ -14,10 +14,14 @@ module Lobbyist
       end
 
       def self.destroy(company_id, id)
-        create_response(delete("/v2/filters/#{id}.json"))
+        create_response(delete("/v2/filters/#{id}.json", company_id: company_d))
       end
 
-      def self.list(company_id, params = {})
+      def self.update(company_id, id, params = {})
+        create_response(put("/v2/filters/#{id}.json", company_id: company_id, filter: params))
+      end
+
+      def self.list(params = {})
         create_response(get('/v2/filters.json', params))
       end
     end
