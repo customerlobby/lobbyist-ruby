@@ -10,11 +10,11 @@ module Lobbyist
       end
 
       def self.find(company_id, id)
-        create_response(get("/v2/filters/#{id}.json"))
+        create_response(get("/v2/filters/#{id}.json", company_id: company_id))
       end
 
       def self.destroy(company_id, id)
-        create_response(delete("/v2/filters/#{id}.json", company_id: company_d))
+        create_response(delete("/v2/filters/#{id}.json", company_id: company_id))
       end
 
       def self.update(company_id, id, params = {})
