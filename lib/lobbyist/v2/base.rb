@@ -2,7 +2,6 @@ module Lobbyist
   module V2
 
     class Base
-
       RETRY_INTERVAL = 2
 
       def initialize(attributes)
