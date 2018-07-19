@@ -9,6 +9,10 @@ module Lobbyist
         create_response(post("v2/filters.json", params))
       end
 
+      def self.clone(company_id, params = {})
+        create_response(post("v2/filters/clone.json", params))
+      end
+
       def self.find(company_id, id)
         create_response(get("/v2/filters/#{id}.json"))
       end
