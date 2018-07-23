@@ -29,46 +29,28 @@ http_interactions:
       vary:
       - Origin
       etag:
-      - W/"d4e3f6f20e18d1e6691d205039fa7f35"
+      - W/"7a405288785abfb5d94d192901873aad"
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - 16d371c2-07c7-4597-aca5-b2f27fbd910b
+      - a959a427-7049-498e-ac75-bd575c37e5a3
       x-runtime:
-      - '0.343284'
+      - '0.062178'
       connection:
       - close
       server:
       - thin 1.5.1 codename Straight Razor
     body:
       encoding: UTF-8
-      string: '{"filters":[{"id":494157,"company_id":45485,"name":"automatic_service_contracts","short_name":"automatic_service_contracts","defined_by":"customerlobby","default_filter_id":12,"feature":null,"category_name":"service_contracts","description":"Customers
-        that have at least one ServiceContract record","customers_count":3574,"display_name":"Automatic
-        Service Contracts","visible":true,"created_at":"2017-11-09T23:59:19.000Z","updated_at":"2017-11-10T21:23:47.000Z"},{"id":494156,"company_id":45485,"name":"repeat_marketing_customers","short_name":"repeat_marketing_customers","defined_by":"customerlobby","default_filter_id":13,"feature":null,"category_name":"repeat_customers","description":"Algorithmic
-        Campaign for marketing to your repeat customers","customers_count":0,"display_name":"Repeat
-        Marketing Customers","visible":false,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T19:27:27.000Z"},{"id":494154,"company_id":45485,"name":"phone","short_name":"phone","defined_by":"customerlobby","default_filter_id":11,"feature":null,"category_name":"other","description":"Has
-        a phone number and will accept phone calls","customers_count":20448,"display_name":"Phone","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T19:27:52.000Z"},{"id":494153,"company_id":45485,"name":"no_transactions","short_name":"no_transactions","defined_by":"customerlobby","default_filter_id":10,"feature":null,"category_name":"other","description":"No
-        transactions associated with these customers","customers_count":6918,"display_name":"No
-        Transactions","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-14T20:25:40.000Z"},{"id":494152,"company_id":45485,"name":"lapsed_customers","short_name":"lapsed_customers","defined_by":"customerlobby","default_filter_id":9,"feature":null,"category_name":"other","description":"No
-        transactions in the last 3 years","customers_count":10168,"display_name":"Lapsed
-        Customers","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-15T09:59:41.000Z"},{"id":494151,"company_id":45485,"name":"first_transaction_only","short_name":"first_transaction_only","defined_by":"customerlobby","default_filter_id":8,"feature":null,"category_name":"other","description":"Has
-        only one transaction","customers_count":7800,"display_name":"First Transaction
-        Only","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T19:27:52.000Z"},{"id":494150,"company_id":45485,"name":"email","short_name":"email","defined_by":"customerlobby","default_filter_id":7,"feature":null,"category_name":"other","description":"Has
-        an email address and will accept emails","customers_count":3887,"display_name":"Email","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T22:25:21.000Z"},{"id":494149,"company_id":45485,"name":"do_not_email","short_name":"do_not_email","defined_by":"customerlobby","default_filter_id":6,"feature":null,"category_name":"other","description":"We
-        will not send email to them","customers_count":1235,"display_name":"Do Not
-        Email","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T22:25:21.000Z"},{"id":494148,"company_id":45485,"name":"do_not_direct_mail","short_name":"no_transactions","defined_by":"customerlobby","default_filter_id":5,"feature":null,"category_name":"other","description":"We
-        will not send direct mail to them","customers_count":1155,"display_name":"Do
-        Not Direct Mail","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-14T20:25:40.000Z"},{"id":494147,"company_id":45485,"name":"do_not_call","short_name":"do_not_call","defined_by":"customerlobby","default_filter_id":4,"feature":null,"category_name":"other","description":"We
-        will not call them for a review","customers_count":1192,"display_name":"Do
-        Not Call","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-15T09:59:41.000Z"},{"id":494146,"company_id":45485,"name":"commercial_customers","short_name":"commercial_customers","defined_by":"customerlobby","default_filter_id":3,"feature":null,"category_name":"other","description":"Non-residential
-        customers","customers_count":315,"display_name":"Commercial Customers","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-09T19:27:51.000Z"},{"id":494145,"company_id":45485,"name":"at_risk_customers","short_name":"at_risk_customers","defined_by":"customerlobby","default_filter_id":2,"feature":null,"category_name":"other","description":"Last
-        transaction 18 mo. to 3 years ago","customers_count":1853,"display_name":"At
-        Risk Customers","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-15T09:59:40.000Z"},{"id":494144,"company_id":45485,"name":"active_customers","short_name":"active_customers","defined_by":"customerlobby","default_filter_id":1,"feature":null,"category_name":"other","description":"Had
-        transaction in the last 3 years","customers_count":4428,"display_name":"Active
-        Customers","visible":true,"created_at":"2017-11-09T19:27:27.000Z","updated_at":"2017-11-15T09:59:40.000Z"},{"id":142771,"company_id":45485,"name":"service-contracts-2017","short_name":"service_contracts_2017","defined_by":"customerlobby","default_filter_id":null,"feature":null,"category_name":"service_contracts","description":"2017
-        sc","customers_count":8,"display_name":"Service Contracts 2017","visible":true,"created_at":"2017-10-16T19:32:16.000Z","updated_at":"2017-11-14T20:24:43.000Z"},{"id":141137,"company_id":45485,"name":"manual-service-contracts","short_name":"manual_service_contracts","defined_by":"customerlobby","default_filter_id":null,"feature":null,"category_name":"service_contracts","description":"customers
-        with service contracts","customers_count":9,"display_name":"Manual Service
-        Contracts","visible":true,"created_at":"2017-10-04T17:30:13.000Z","updated_at":"2017-11-21T23:26:43.000Z"}]}'
+      string: '{"page":1,"rpp":20,"offset":0,"items":[{"id":895611,"company_id":45485,"name":"recently_moved","defined_by":"customerlobby","default_filter_id":31,"category_name":"Test","visible":true,"customers_count":0,"created_at":"2018-06-01T22:46:09.000Z","updated_at":"2018-06-01T22:46:09.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Recently
+        Moved"},{"id":805125,"company_id":45485,"name":"july4_2018","defined_by":"customerlobby","default_filter_id":27,"category_name":"Test","visible":true,"customers_count":0,"created_at":"2018-04-23T22:34:45.000Z","updated_at":"2018-04-23T22:34:45.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"July4
+        2018"},{"id":667005,"company_id":45485,"name":"repeat_marketing_customers","defined_by":"customerlobby","default_filter_id":25,"category_name":"Test","visible":false,"customers_count":210,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-03T09:24:47.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Repeat
+        Marketing Customers"},{"id":667003,"company_id":45485,"name":"automatic_service_contracts","defined_by":"customerlobby","default_filter_id":23,"category_name":"Test","visible":true,"customers_count":7391,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-02-15T23:01:17.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Automatic
+        Service Contracts"},{"id":666999,"company_id":45485,"name":"no_transactions","defined_by":"customerlobby","default_filter_id":19,"category_name":"Test","visible":true,"customers_count":14406,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-05T23:00:53.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Prospects"},{"id":666997,"company_id":45485,"name":"lapsed_customers","defined_by":"customerlobby","default_filter_id":17,"category_name":"Test","visible":true,"customers_count":20448,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-05T23:00:53.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Lapsed
+        Customers"},{"id":666995,"company_id":45485,"name":"first_transaction_only","defined_by":"customerlobby","default_filter_id":15,"category_name":"Test","visible":true,"customers_count":15578,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-05T23:00:53.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"First
+        Transaction Only"},{"id":666993,"company_id":45485,"name":"email","defined_by":"customerlobby","default_filter_id":13,"category_name":"Test","visible":true,"customers_count":8427,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-05T23:00:53.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Email"},{"id":666985,"company_id":45485,"name":"commercial_customers","defined_by":"customerlobby","default_filter_id":5,"category_name":"Test","visible":true,"customers_count":650,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-02-27T23:01:03.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"Commercial
+        Customers"},{"id":666983,"company_id":45485,"name":"at_risk_customers","defined_by":"customerlobby","default_filter_id":3,"category_name":"Test","visible":true,"customers_count":3545,"created_at":"2017-11-14T06:28:57.000Z","updated_at":"2018-03-05T23:00:52.000Z","status":"active","meta_data":null,"company_meta_data":null,"display_name":"At
+        Risk Customers"}],"count":10}'
     http_version: 
-  recorded_at: Thu, 07 Dec 2017 09:19:08 GMT
+  recorded_at: Mon, 23 Jul 2018 21:49:08 GMT
 recorded_with: VCR 3.0.0

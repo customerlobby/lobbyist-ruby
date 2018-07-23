@@ -1,6 +1,5 @@
 module Lobbyist
   module V2
-
     class CommunicationCampaign < Lobbyist::V2::Base
       attr_accessor :id, :company_id, :name, :description, :cost_per_postcard
       attr_accessor :approved_credits, :recommended_credits, :approved
@@ -16,44 +15,40 @@ module Lobbyist
       attr_accessor :filter_id, :communications_sent, :filter_changeable, :status_description
       attr_accessor :algo_metadata
 
-      def filter
-        @filter
-      end
+      attr_reader :filter
 
       def filter=(attributes)
-        @filter = Filter.new(attributes)
+        @filter = Filter.create_response(attributes)
       end
 
       def self.list(params = {})
-        create_collection_from_response(get("/v2/campaigns.json", params))
+        create_collection_from_response(get('/v2/campaigns.json', params))
       end
 
       def self.reset_branding_campaign(company_id, params = {})
-        create_from_response(put("/v2/campaigns/reset_branding_campaign.json", {company_id: company_id, communication_campaign: params}))
+        create_from_response(put('/v2/campaigns/reset_branding_campaign.json',
+                                 company_id:             company_id,
+                                 communication_campaign: params))
       end
 
       def self.find(id, params = {})
         create_from_response(get("/v2/campaigns/#{id}.json", params))
       end
 
-      def self.destroy(id, company_id)
-        create_from_response(delete("/v2/company_users/#{id}.json", { company_id: company_id }))
-      end
-
       def self.create(company_id, params)
-        create_from_response(post("/v2/campaigns.json", {company_id: company_id, communication_campaign: params}))
+        create_from_response(post('/v2/campaigns.json', company_id: company_id, communication_campaign: params))
       end
 
-      def self.create_branding_campaign(company_id, params={})
-        create_from_response(post("/v2/campaigns/create_branding_campaign.json", {company_id: company_id, communication_campaign: params}))
+      def self.create_branding_campaign(company_id, params = {})
+        create_from_response(post('/v2/campaigns/create_branding_campaign.json', company_id: company_id, communication_campaign: params))
       end
 
       def self.update(id, params)
-        create_from_response(put("/v2/campaigns/#{id}.json", {communication_campaign: params}))
+        create_from_response(put("/v2/campaigns/#{id}.json", communication_campaign: params))
       end
 
       def self.destroy(id, company_id)
-        create_from_response(delete("/v2/campaigns/#{id}.json", { company_id: company_id }))
+        create_from_response(delete("/v2/campaigns/#{id}.json", company_id: company_id))
       end
 
       def self.results(id, params = {})
@@ -61,7 +56,7 @@ module Lobbyist
       end
 
       def self.search(params = {})
-        create_from_response(get("/v2/campaigns/search.json", params))
+        create_from_response(get('/v2/campaigns/search.json', params))
       end
 
       def self.charge(id, params = {})
@@ -72,6 +67,5 @@ module Lobbyist
         create_from_response(post("/v2/campaigns/#{id}/clone.json"))
       end
     end
-
   end
 end
