@@ -1,6 +1,6 @@
 module Lobbyist
   module V2
-    class CustomersSegmentation < Lobbyist::V2::Base
+    class CustomersSegmentation < Lobbyist::V2::HashieBase
       attr_accessor :customers_count, :customers_in_segment, :repeat_customer_rate
 
       def self.list(company_id, params = {})

@@ -1,4 +1,7 @@
-=== 0.7.87
+=== 0.8.0
+* Filters V3
+* separate custom_filters from filters
+* added Lobbyist::V2::CustomFilter
 * added Customer Segmentation resource
 
 === 0.7.86
