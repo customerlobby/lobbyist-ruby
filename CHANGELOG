@@ -3,6 +3,7 @@
 * separate custom_filters from filters
 * added Lobbyist::V2::CustomFilter
 * added Customer Segmentation resource
+* added Lobbyist::V2::Filter.query 
 
 === 0.7.86
 * added Retry request if connection fails

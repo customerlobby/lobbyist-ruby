@@ -20,6 +20,11 @@ module Lobbyist
         create_response(get("/v2/filters/#{id}.json", params))
       end
 
+      def self.query(company_id, id, params = {})
+        params[:company_id] = company_id
+        create_response(get("/v2/filters/#{id}/query.json", params))
+      end
+
       def self.destroy(company_id, id, params = {})
         params[:company_id] = company_id
         create_response(delete("/v2/filters/#{id}.json", params))
