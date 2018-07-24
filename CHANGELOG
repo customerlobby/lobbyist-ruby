@@ -2,6 +2,34 @@
 * Filters V3
 * separate custom_filters from filters
 * added Lobbyist::V2::CustomFilter
+* added Customer Segmentation resource
+
+=== 0.7.86
+* added Retry request if connection fails
+
+=== 0.7.85
+* added new resource V2::ZippedImageUpload
+
+=== 0.7.84
+* added attribute in Tag.
+
+=== 0.7.82
+* added image_urls to v2/category_default_front_templates API
+
+=== 0.7.81
+* added image_urls to v2/front_templates API
+
+=== 0.7.80
+* added CategoryDefaultFrontTemplate communication_campaigns API.
+
+=== 0.7.79
+* added Tag destroy API.
+
+=== 0.7.78
+* added CategoryDefaultFrontTemplate.
+
+=== 0.7.77
+* added Tag and added attributes in category and front template.
 
 === 0.7.76
 * added campaign algo_metadata field instead of all its keys for communication campaign.

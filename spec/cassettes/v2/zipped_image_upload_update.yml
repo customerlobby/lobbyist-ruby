@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:3000/v2/zipped_image_uploads/24.json
+    body:
+      encoding: UTF-8
+      string: '{"zipped_image_upload":{"imported_count":1}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"c74b3816305ce65ca89500556f89bfe8"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 471ffef7-80a4-4c91-8d9e-ded0e63e73ad
+      x-runtime:
+      - '0.056790'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"zipped_image_upload":{"id":24,"filename":"CL_Image_Uploads_20180629_01.zip","status":"imported","row_count":2,"imported_count":1,"processed_at":"2018-07-05
+        07:21:14 UTC","created_at":"2018-07-05 07:18:18 UTC","updated_at":"2018-07-05
+        07:35:33 UTC"}}'
+    http_version: 
+  recorded_at: Thu, 05 Jul 2018 07:35:33 GMT
+recorded_with: VCR 3.0.0
