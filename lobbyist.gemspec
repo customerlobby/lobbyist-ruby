@@ -25,6 +25,5 @@ spec = Gem::Specification.new do |s|
   s.add_dependency('hashie')
 
   s.add_development_dependency('vcr')
-  s.add_development_dependency('pry')
   s.add_development_dependency('bundler')
 end
