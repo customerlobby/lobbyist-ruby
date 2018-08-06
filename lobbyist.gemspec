@@ -17,13 +17,13 @@ spec = Gem::Specification.new do |s|
   s.files                 = `git ls-files`.split("\n")
   s.test_files            = `git ls-files -- spec/*`.split("\n")
   s.has_rdoc              = false
-  
+
   s.add_dependency('faraday')
   s.add_dependency('faraday_middleware')
   s.add_dependency('multi_json')
   s.add_dependency('activesupport')
   s.add_dependency('hashie')
-  
+
   s.add_development_dependency('vcr')
   s.add_development_dependency('bundler')
 end

@@ -1,3 +1,6 @@
+=== 0.7.87
+* added offset in CategoryDefaultFrontTemplate.
+
 === 0.7.86
 * added Retry request if connection fails
 
