@@ -1,3 +1,10 @@
+=== 0.8.0
+* Filters V3
+* separate custom_filters from filters
+* added Lobbyist::V2::CustomFilter
+* added Customer Segmentation resource
+* added Lobbyist::V2::Filter.query 
+
 === 0.7.87
 * added offset in CategoryDefaultFrontTemplate.
 
