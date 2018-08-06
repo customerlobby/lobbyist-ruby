@@ -6,6 +6,7 @@ module Lobbyist
       attr_accessor :id, :category_id, :image_filename
       attr_accessor :message_position, :content, :status
       attr_accessor :tags, :communication_campaigns, :image_urls
+      attr_accessor :offset
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/category-default-front-templates.json', params))
