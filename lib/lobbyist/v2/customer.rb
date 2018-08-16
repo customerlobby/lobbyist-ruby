@@ -7,7 +7,7 @@ module Lobbyist
       attr_accessor :notes, :wants_emails, :wants_sms, :wants_calls, :wants_direct_mail, :unsubscribe_reason
       attr_accessor :unsubscribed_at, :exclude_referral_marketing, :exclude_retention_marketing
       attr_accessor :auto_review_id, :auto_invite_id, :auto_customer_call_id, :auto_review_draft_key
-      attr_accessor :created_at, :updated_at
+      attr_accessor :created_at, :updated_at, :review_date
       attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id, :company_name, :commercial, :status
       attr_accessor :has_activity, :has_customer_call, :has_email_invitation, :customer_call_allowed, :email_invitation_allowed
       
@@ -24,7 +24,7 @@ module Lobbyist
       end
 
       def self.list(company_id, params = {})
-        create_collection_from_response(get("/v2/companies/#{company_id}/customers.json", params))
+        create_collection_from_response(post("/v2/companies/#{company_id}/customers/list.json", params))
       end
 
     end
