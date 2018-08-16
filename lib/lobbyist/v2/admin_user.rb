@@ -6,11 +6,15 @@ module Lobbyist
                     :persistence_token, :role, :employment_type
 
       def self.create(params = {})
-        create_from_response(post("/v2/admin_users.json", { "admin_user" => params }))
+        create_from_response(post('/v2/admin_users.json', 'admin_user' => params))
       end
 
       def self.update(id, params = {})
-        create_from_response(put("/v2/admin_users/#{id}.json", { "admin_user" => params }))
+        create_from_response(put("/v2/admin_users/#{id}.json", 'admin_user' => params))
+      end
+
+      def self.reset_password(id)
+        create_from_response(get("/v2/admin_users/#{id}/reset-password.json"))
       end
     end
   end
