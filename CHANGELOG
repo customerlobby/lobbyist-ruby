@@ -1,3 +1,6 @@
+=== 0.8.1
+* Add reset password functionality for admin users
+
 === 0.8.0
 * Filters V3
 * separate custom_filters from filters
