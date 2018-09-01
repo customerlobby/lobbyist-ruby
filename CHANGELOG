@@ -1,3 +1,8 @@
+
+=== 0.8.2
+* customers list to post call to accommodate for huge parameter meta_data
+* adding more fields to customer endpoints
+
 === 0.8.1
 * Add reset password functionality for admin users
 
