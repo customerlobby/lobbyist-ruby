@@ -17,6 +17,7 @@ module Lobbyist
       signature = OpenSSL::HMAC.hexdigest('sha256', credentials[:api_secret], message(sorted))
 
       # Remove parameters that will be generated automaticaly by Rails.
+      # Added comment line to test lobbyist gem
       params.delete('method')
       params.delete('id')
       params.delete('activation_code')
