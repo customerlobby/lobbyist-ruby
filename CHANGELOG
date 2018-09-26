@@ -1,3 +1,6 @@
+=== 0.8.4
+* added Lobbyist::V2::WebhookSubscription
+
 === 0.8.3
 * added Lobbyist::V2::IterationResults
 
@@ -13,7 +16,7 @@
 * separate custom_filters from filters
 * added Lobbyist::V2::CustomFilter
 * added Customer Segmentation resource
-* added Lobbyist::V2::Filter.query 
+* added Lobbyist::V2::Filter.query
 
 === 0.7.87
 * added offset in CategoryDefaultFrontTemplate.
