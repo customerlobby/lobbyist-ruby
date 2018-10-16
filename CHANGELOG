@@ -1,3 +1,6 @@
+=== 0.8.5
+* added Lobbyist::V2::Report
+
 === 0.8.4
 * added Lobbyist::V2::WebhookSubscription
 
