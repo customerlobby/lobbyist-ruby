@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/reports/companies/239/campaign-analysis.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"f8e59b99880a0cb9527c89a905fbb378"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 52e01676-593a-4f3a-bb32-d0c54281e18a
+      x-runtime:
+      - '0.038196'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"company":{"url":"https://s3.amazonaws.com/customerlobby-scotty-development/239/campaign-analysis/CLP_Reports_20181015124109PM.csv"}}'
+    http_version: 
+  recorded_at: Mon, 22 Oct 2018 11:15:16 GMT
+recorded_with: VCR 3.0.0
