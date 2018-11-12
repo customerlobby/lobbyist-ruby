@@ -1,3 +1,6 @@
+=== 0.8.10
+* Added include_in_results flag in Lobbyist::V2::CommunicationCampaign
+
 === 0.8.8
 * Added Activity Summary Keys
 
