@@ -1,3 +1,9 @@
+=== 0.8.11
+* Fix for Lobbyist::V2::IterationResults.generate_results_file parse response
+
+=== 0.8.10
+* Added include_in_results flag in Lobbyist::V2::CommunicationCampaign
+
 === 0.8.9
 * Added V2 CommunicationCampaign.list_by_filters
 

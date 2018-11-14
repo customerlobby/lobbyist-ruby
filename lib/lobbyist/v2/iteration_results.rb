@@ -12,7 +12,7 @@ module Lobbyist
 
       def self.generate_results_file(id, params = {})
         response = post("v2/iteration-results/#{id}/generate-file.json", params)
-        create_from_response(response)
+        create_response(response)
       end
     end
   end
