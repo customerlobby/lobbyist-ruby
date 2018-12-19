@@ -8,6 +8,10 @@ module Lobbyist
         create_response(post("v2/companies/#{company_id}/custom_filters.json", params))
       end
 
+      def self.update(company_id, id, params = {})
+        create_response(put("/v2/companies/#{company_id}/custom_filters/#{id}.json", params))
+      end
+
       def self.destroy(company_id, id)
         create_response(delete("/v2/companies/#{company_id}/custom_filters/#{id}.json"))
       end
