@@ -1,3 +1,6 @@
+=== 0.8.14
+* Added Lobbyist::V2::CampaignsFrontTemplates
+
 === 0.8.13
 * Added update method in Lobbyist::V2::CustomFilter
 
