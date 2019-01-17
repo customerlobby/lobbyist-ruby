@@ -1,3 +1,6 @@
+=== 0.8.14
+* Added destroy method in Lobbyist::V2::OfferTemplate
+
 === 0.8.13
 * Added update method in Lobbyist::V2::CustomFilter
 
