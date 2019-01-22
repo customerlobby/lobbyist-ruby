@@ -6,7 +6,7 @@ module Lobbyist
       attr_accessor :customers_count
 
       def self.create(company_id, params = {})
-        create_from_response(post("/v2/companies/#{company_id}/csv-uploads.json", {csv_upload: params}))
+        create_from_response(post("/v2/companies/#{company_id}/csv-uploads.json", { csv_upload: params }, true))
       end
 
       def self.list(company_id, params = {})
