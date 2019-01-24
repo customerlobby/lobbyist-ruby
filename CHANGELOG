@@ -1,3 +1,6 @@
+=== 0.8.17
+* Added multipart true for in Lobbyist::V2::CsvUpload.create
+
 === 0.8.16
 * Added multipart true for in Lobbyist::V2::FrontTemplate.create
 
