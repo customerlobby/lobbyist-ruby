@@ -1,3 +1,7 @@
+=== 0.8.19
+* Handled multipart flag for put method in Lobbyist::V2::Base
+* Added multipart true in Lobbyist::V2::GlobalCampaignSetting.update
+
 === 0.8.13
 * Added update method in Lobbyist::V2::CustomFilter
 
