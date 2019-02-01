@@ -1,3 +1,22 @@
+=== 0.8.19
+* Handled multipart flag for put method in Lobbyist::V2::Base
+* Added multipart true in Lobbyist::V2::GlobalCampaignSetting.update
+
+=== 0.8.18
+* Added multipart true in CustomFilterUpload.create
+
+=== 0.8.17
+* Added multipart true for in Lobbyist::V2::CsvUpload.create
+
+=== 0.8.16
+* Added multipart true for in Lobbyist::V2::FrontTemplate.create
+
+=== 0.8.15
+* Added destroy method in Lobbyist::V2::OfferTemplate
+
+=== 0.8.14
+* Added Lobbyist::V2::CampaignsFrontTemplates
+
 === 0.8.13
 * Added update method in Lobbyist::V2::CustomFilter
 

@@ -90,16 +90,18 @@ module Lobbyist
         end
       end
 
-      def self.put(path, params = {})
+      def self.put(path, params = {}, multipart = false)
         handle_response do
           http.put do |request|
             request.url path
             request.body = params
+            if !multipart
+              request.headers['Accept'] = 'application/json'
+              request.headers['Content-Type'] = 'application/json'
+            end
             if request_id.present?
               request.headers['X-Request-Id']  = request_id
             end
-            request.headers['Accept'] = 'application/json'
-            request.headers['Content-Type'] = 'application/json'
             request.headers['Authorization'] = auth_header
           end
         end
