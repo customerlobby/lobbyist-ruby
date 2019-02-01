@@ -16,6 +16,9 @@ module Lobbyist
         create_from_response(put("/v2/offer-templates/#{id}.json", params))
       end
 
+      def self.destroy(id)
+        create_from_response(delete("/v2/offer-templates/#{id}.json"))
+      end
     end
 
   end

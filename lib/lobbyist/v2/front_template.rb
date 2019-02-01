@@ -10,7 +10,7 @@ module Lobbyist
       end
 
       def self.create(params = {})
-        create_from_response(post('/v2/front-templates.json', front_template: params))
+        create_from_response(post('/v2/front-templates.json', { front_template: params }, true))
       end
 
       def self.update(id, params = {})
