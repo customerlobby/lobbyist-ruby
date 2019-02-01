@@ -1,3 +1,6 @@
+=== 0.8.20
+* Added explanation in Lobbyist::V2::Filter
+
 === 0.8.13
 * Added update method in Lobbyist::V2::CustomFilter
 
