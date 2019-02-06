@@ -3,7 +3,8 @@ module Lobbyist
     class Filter < Lobbyist::V2::HashieBase
       attr_accessor :id, :company_id, :name, :defined_by, :display_name, :visible
       attr_accessor :default_filter_id, :category_name, :customers_count
-      attr_accessor :created_at, :updated_at, :meta_data, :company_meta_data 
+      attr_accessor :created_at, :updated_at, :meta_data, :company_meta_data
+      attr_accessor :explanation
 
       def self.create(company_id, params = {})
         params[:company_id] = company_id
