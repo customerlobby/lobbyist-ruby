@@ -13,7 +13,7 @@ module Lobbyist
       attr_accessor :mail_delay_offset, :send_followup_email, :send_sample_postcard
       attr_accessor :completed, :in_progress, :iterations_count, :response_rate
       attr_accessor :filter_id, :communications_sent, :filter_changeable, :status_description
-      attr_accessor :algo_metadata
+      attr_accessor :algo_metadata, :include_in_results, :paused, :resume_date
 
       attr_reader :filter
 
@@ -23,6 +23,10 @@ module Lobbyist
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/campaigns.json', params))
+      end
+
+      def self.list_by_filter(params = {})
+        create_collection_from_response(get('/v2/campaigns/list_by_filter.json', params))
       end
 
       def self.reset_branding_campaign(company_id, params = {})
