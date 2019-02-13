@@ -1,3 +1,6 @@
+=== 0.8.21
+* Added gmail_only field in Lobbyist::V2::SmartInviteSetting
+
 === 0.8.20
 * Added explanation in Lobbyist::V2::Filter
 
