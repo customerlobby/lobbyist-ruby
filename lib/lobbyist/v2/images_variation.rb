@@ -17,7 +17,7 @@ module Lobbyist
       end
 
       def self.create(params = {})
-        create_from_response(post('/v2/campaigns-images.json', { front_template: params }, true))
+        create_from_response(post('/v2/images-variations.json', { images_variation: params }, true))
       end
 
       def self.find(id, params = {})
