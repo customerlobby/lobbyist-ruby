@@ -1,3 +1,6 @@
+=== 0.8.22
+Prefixing global_campaign_setting #update params with required key
+
 === 0.8.21
 * Added gmail_only field in Lobbyist::V2::SmartInviteSetting
 
