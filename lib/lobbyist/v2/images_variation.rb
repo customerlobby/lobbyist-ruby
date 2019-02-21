@@ -5,7 +5,7 @@ module Lobbyist
     class ImagesVariation < Lobbyist::V2::Base
       attr_accessor :id, :image_filename
       attr_accessor :message_position, :content
-      attr_accessor :message_offset
+      attr_accessor :message_offset, :image_urls
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/images-variations.json', params))

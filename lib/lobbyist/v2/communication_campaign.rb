@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Lobbyist
   module V2
     class CommunicationCampaign < Lobbyist::V2::Base
