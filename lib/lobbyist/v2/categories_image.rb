@@ -12,8 +12,8 @@ module Lobbyist
         create_collection_from_response(get('/v2/categories-images.json', params))
       end
 
-      def self.update(id, params = {})
-        response = put("/v2/categories-images/#{id}.json", category_default_front_template: params)
+      def self.delete_multiple(params = {})
+        response = delete("/v2/categories-images.json", params)
         create_from_response(response)
       end
 

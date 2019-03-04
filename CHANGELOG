@@ -1,5 +1,6 @@
 === 0.8.22
-* Added image classes in Lobbyist::V2::CampaignsImage, Lobbyist::V2::CategoriesImage, Lobbyist::V2::ImagesVariation
+* Added image classes in Lobbyist::V2::CampaignsImage, Lobbyist::V2::CategoriesImage, Lobbyist::V2::ImagesVariation,
+CategoriesImage delete_multiple
 
 === 0.8.20
 * Added explanation in Lobbyist::V2::Filter
