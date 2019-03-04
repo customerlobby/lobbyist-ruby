@@ -1,4 +1,4 @@
-=== 0.8.22
+=== 0.8.23
 * Added image classes in Lobbyist::V2::CampaignsImage, Lobbyist::V2::CategoriesImage, Lobbyist::V2::ImagesVariation,
 CategoriesImage delete_multiple
 
