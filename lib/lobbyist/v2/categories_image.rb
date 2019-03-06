@@ -13,7 +13,7 @@ module Lobbyist
       end
 
       def self.delete_multiple(params = {})
-        response = delete("/v2/categories-images.json", params)
+        response = delete("/v2/categories-images/destroy-multiple.json", params)
         create_from_response(response)
       end
 

@@ -29,6 +29,11 @@ module Lobbyist
         response = get("/v2/images-variations/#{id}/communication_campaigns.json", params)
         create_collection_from_response(response)
       end
+
+      def self.unselect_campaigns(id, params = {})
+        response = put("/v2/images-variations/#{id}/unselect-campaigns.json", images_variation: params)
+        create_from_response(response)
+      end
     end
   end
 end
