@@ -12,15 +12,11 @@ module Lobbyist
       end
 
       def self.select_images(params = {})
-        create_from_response(post('/v2/select-images.json', params))
+        create_collection_from_response(post('/v2/select-images.json', params))
       end
 
       def self.update(id, params = {})
         create_from_response(put("/v2/campaigns-images/#{id}.json", campaigns_image: params))
-      end
-
-      def self.update_campaign_image(id, params = {})
-        create_from_response(put("/v2/campaigns-images/#{id}/update-campaign-image.json", params))
       end
 
       def self.destroy(id, params = {})

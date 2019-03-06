@@ -32,7 +32,7 @@ module Lobbyist
 
       def self.unselect_campaigns(id, params = {})
         response = put("/v2/images-variations/#{id}/unselect-campaigns.json", params)
-        create_from_response(response)
+        create_collection_from_response(response)
       end
     end
   end
