@@ -11,8 +11,8 @@ module Lobbyist
         create_collection_from_response(get('/v2/campaigns-images.json', params))
       end
 
-      def self.select_images(params = {})
-        create_collection_from_response(post('/v2/select-images.json', params))
+      def self.bulk_select(params = {})
+        create_collection_from_response(post('/v2/campaigns-images/bulk-select.json', params))
       end
 
       def self.update(id, params = {})
