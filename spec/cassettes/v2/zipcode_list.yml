@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/v2/zipcodes.json?company_id=239
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"ddfd34e79fe010e2d8948931090afa18"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - dad519bd-8dc5-44b3-bde7-a1e792f41f91
+      x-runtime:
+      - '0.035331'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"zipcodes":[{"zipcode":"94611","customer_count":3254},{"zipcode":"94707","customer_count":2269},{"zipcode":"94703","customer_count":2085},{"zipcode":"94705","customer_count":2071},{"zipcode":"94708","customer_count":2064},{"zipcode":"94702","customer_count":1846},{"zipcode":"94618","customer_count":1843},{"zipcode":"94610","customer_count":1648},{"zipcode":"94602","customer_count":1533},{"zipcode":"94706","customer_count":1448},{"zipcode":"94530","customer_count":1432},{"zipcode":"94609","customer_count":1334},{"zipcode":"94608","customer_count":1251},{"zipcode":"94619","customer_count":1015},{"zipcode":"94605","customer_count":988},{"zipcode":"94709","customer_count":925},{"zipcode":"94704","customer_count":859},{"zipcode":"94501","customer_count":793},{"zipcode":"94710","customer_count":756},{"zipcode":"94804","customer_count":632}],"total_count":912}'
+    http_version: 
+  recorded_at: Fri, 15 Mar 2019 12:42:16 GMT
+recorded_with: VCR 4.0.0
