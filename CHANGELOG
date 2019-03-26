@@ -1,3 +1,6 @@
+=== 0.8.24
+Added automotive_features attribute Lobbyist::V2::Category
+
 === 0.8.23
 Added API for listing zipcodes for a company
 
