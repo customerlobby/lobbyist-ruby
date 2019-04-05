@@ -6,7 +6,7 @@ module Lobbyist
                     :salesforce_name, :threshold, :min_days_between_mailings, :roi,
                     :accelerator, :mail_delay_offset, :transaction_grouping_interval,
                     :generate_marketing_insights, :created_at, :updated_at,
-                    :companies_count
+                    :companies_count, :automotive_features
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/categories.json', params))
