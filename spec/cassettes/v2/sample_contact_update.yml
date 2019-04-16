@@ -31,13 +31,13 @@ http_interactions:
       vary:
       - Origin
       etag:
-      - W/"750f9d38fffda7a3b4d8fcbfbd53d7d3"
+      - W/"d7c5426cb4fa742a8628ab7520d8ba5a"
       cache-control:
       - max-age=0, private, must-revalidate
       x-request-id:
-      - b3c7712e-0a82-447c-97e0-04435999d834
+      - 35ca7e49-1e90-4161-a051-040833289fbc
       x-runtime:
-      - '5.062875'
+      - '5.062404'
       connection:
       - close
       server:
@@ -46,7 +46,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"contact":{"name":"Albert Nahman","first_name":"Albert","last_name":"Nahman","company_id":239,"email":"john@doe.com","address2":null,"address1":"3333
         martin luther king jr. way","city":"berkeley","state":"ca","zip":"94703","country":"US","phone_daytime":null,"phone_daytime_ext":null,"phone_alt":null,"phone_alt_ext":null,"phone_mobile":null,"last_service_date":null,"notes":null,"created_at":"2015-03-06
-        01:41:30 UTC","updated_at":"2019-04-10 12:09:17 UTC","communication_preferences":4095,"wants_email":true,"wants_call":true,"wants_sms":true,"wants_mail":true,"dc_wants_email":true,"dc_wants_call":true,"dc_wants_sms":true,"dc_wants_mail":true,"member_wants_email":true,"member_wants_call":true,"member_wants_sms":true,"member_wants_mail":true,"customer_wants_email":true,"customer_wants_call":true,"customer_wants_sms":true,"customer_wants_mail":true,"url":"http://localhost:3000/v1/contacts/4863287"},"urls":{"company_url":"http://localhost:3000/v2/companies/239"}}'
+        01:41:30 UTC","updated_at":"2019-04-16 03:57:24 UTC","communication_preferences":4095,"wants_email":true,"wants_call":true,"wants_sms":true,"wants_mail":true,"dc_wants_email":true,"dc_wants_call":true,"dc_wants_sms":true,"dc_wants_mail":true,"member_wants_email":true,"member_wants_call":true,"member_wants_sms":true,"member_wants_mail":true,"customer_wants_email":true,"customer_wants_call":true,"customer_wants_sms":true,"customer_wants_mail":true,"url":"http://localhost:3000/v1/contacts/4863287"},"urls":{"company_url":"http://localhost:3000/v2/companies/239"}}'
     http_version: 
-  recorded_at: Wed, 10 Apr 2019 12:09:22 GMT
+  recorded_at: Tue, 16 Apr 2019 03:57:29 GMT
 recorded_with: VCR 3.0.0
