@@ -12,17 +12,18 @@ module Lobbyist
       attr_accessor :phone_daytime_ext, :phone_alt_ext, :phone_mobile, :external_id, :company_name, :commercial, :status
 
       def self.find(company_id)
-        create_from_response(get("/v2/sample-contact/#{company_id}.json"))
+        create_from_response(get('/v2/sample-contact.json',
+                                 { 'company_id' => company_id }))
       end
 
       def self.create(company_id, params = {})
-        create_from_response(post("/v2/sample-contact.json",
-                                  {'company_id' => company_id, 'contact' => params}))
+        create_from_response(post('/v2/sample-contact.json',
+                                  { 'company_id' => company_id, 'contact' => params }))
       end
 
       def self.update(company_id, params = {})
-        create_from_response(put("/v2/sample-contact.json",
-                                 {'company_id' => company_id, 'contact' => params}))
+        create_from_response(put('/v2/sample-contact.json',
+                                 { 'company_id' => company_id, 'contact' => params }))
       end
     end
 
