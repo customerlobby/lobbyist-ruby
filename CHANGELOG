@@ -1,3 +1,6 @@
+=== 0.8.29
+Added Lobbyist::V2::SampleContact for sample contacts APIs
+
 === 0.8.28
 Added API end point destroy for FrontTemplates
 
