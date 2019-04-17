@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/v2/sample-contact.json
+    body:
+      encoding: UTF-8
+      string: '{"company_id":239,"contact":{}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="Jz43pwlU1rb4ewhgltWO"
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      content-type:
+      - application/json; charset=utf-8
+      vary:
+      - Origin
+      etag:
+      - W/"577e8f0e562f68d842d8fdbc74dabf9a"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 13f0ce42-f76f-4056-b4cc-3e45dde5f36c
+      x-runtime:
+      - '2.065561'
+      connection:
+      - close
+      server:
+      - thin 1.5.1 codename Straight Razor
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"name":"Albert Nahman","first_name":"Albert","last_name":"Nahman","company_id":239,"email":null,"address2":null,"address1":"3333
+        martin luther king jr. way","city":"berkeley","state":"ca","zip":"94703","country":"US","phone_daytime":null,"phone_daytime_ext":null,"phone_alt":null,"phone_alt_ext":null,"phone_mobile":null,"last_service_date":null,"notes":null,"created_at":"2015-03-06
+        01:41:30 UTC","updated_at":"2019-04-16 03:57:22 UTC","communication_preferences":4095,"wants_email":true,"wants_call":true,"wants_sms":true,"wants_mail":true,"dc_wants_email":true,"dc_wants_call":true,"dc_wants_sms":true,"dc_wants_mail":true,"member_wants_email":true,"member_wants_call":true,"member_wants_sms":true,"member_wants_mail":true,"customer_wants_email":true,"customer_wants_call":true,"customer_wants_sms":true,"customer_wants_mail":true,"url":"http://localhost:3000/v1/contacts/4863287"},"urls":{"company_url":"http://localhost:3000/v2/companies/239"}}'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2019 03:57:24 GMT
+recorded_with: VCR 3.0.0
