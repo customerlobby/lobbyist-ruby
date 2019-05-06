@@ -5,7 +5,8 @@ module Lobbyist
       attr_accessor :last_data_imported_at, :last_successful_transaction_at, :last_transaction_status, :mail_ready
       
       def self.update(campaign_id, params = {})
-        create_from_response(put("/v2/campaign-checklist/#{campaign_id}.json", params))
+        create_from_response(put('/v2/campaign-checklists.json',
+                                 { 'campaign_id' => campaign_id }))
       end
     end
   end
