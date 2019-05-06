@@ -1,5 +1,5 @@
 === 0.8.30
-Added Lobbyist::V2::CampaignChecklist for calculate_readiness api end point on checklist
+Added Lobbyist::V2::CampaignChecklist for update api end point on checklist
 
 === 0.8.29
 Added Lobbyist::V2::SampleContact for sample contacts APIs
