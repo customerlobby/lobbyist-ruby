@@ -6,7 +6,7 @@ module Lobbyist
       
       def self.update(campaign_id, params = {})
         create_from_response(put('/v2/campaign-checklists.json',
-                                 { 'campaign_id' => campaign_id }))
+                                 { 'campaign_id' => campaign_id, 'campaign_checklist' => params }))
       end
     end
   end
