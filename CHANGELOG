@@ -1,14 +1,17 @@
+=== 0.8.30
+* Added Lobbyist::V2::MemberInsights.
+
 === 0.8.29
-Added Lobbyist::V2::SampleContact for sample contacts APIs
+* Added Lobbyist::V2::SampleContact for sample contacts APIs
 
 === 0.8.28
-Added API end point destroy for FrontTemplates
+* Added API end point destroy for FrontTemplates
 
 === 0.8.23
-Added API for listing zipcodes for a company
+* Added API for listing zipcodes for a company
 
 === 0.8.22
-Prefixing global_campaign_setting #update params with required key
+* Prefixing global_campaign_setting #update params with required key
 
 === 0.8.21
 * Added gmail_only field in Lobbyist::V2::SmartInviteSetting
