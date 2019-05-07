@@ -1,3 +1,6 @@
+=== 0.8.31
+* Added Lobbyist::V2::CampaignChecklist for update api end point on checklist
+
 === 0.8.30
 * Added Lobbyist::V2::MemberInsights.
 
