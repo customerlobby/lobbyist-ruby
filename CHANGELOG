@@ -1,3 +1,6 @@
+=== 0.8.35
+* Added Lobbyist::V2::SkippedPayment for fetch the company skipped payments
+
 === 0.8.34
 * Added Lobbyist::V2::Review.bulk_update
 
