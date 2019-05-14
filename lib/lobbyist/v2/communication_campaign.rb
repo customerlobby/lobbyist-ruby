@@ -13,7 +13,7 @@ module Lobbyist
       attr_accessor :mail_delay_offset, :send_followup_email, :send_sample_postcard
       attr_accessor :completed, :in_progress, :iterations_count, :response_rate
       attr_accessor :filter_id, :communications_sent, :filter_changeable, :status_description
-      attr_accessor :algo_metadata, :include_in_results, :paused, :resume_date
+      attr_accessor :algo_metadata, :include_in_results, :paused, :resume_date, :mail_dates
 
       attr_reader :filter
 
