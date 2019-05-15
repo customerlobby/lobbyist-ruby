@@ -1,3 +1,6 @@
+=== 0.8.33
+* Added Lobbyist::V2::Company.free_postcard_credits_this_month
+
 === 0.8.32
 * Added mail_dates attribute to Lobbyist::V2::CommunicationCampaign
 
