@@ -15,6 +15,7 @@ module Lobbyist
       attr_accessor :direct_connect_status, :account_manager_id
       attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
       attr_accessor :paysimple_id, :paysimple_enabled, :projected_termination_date
+      attr_accessor :free_postcard_credits_this_month
 
       def categories
         @categories
