@@ -1,3 +1,6 @@
+=== 0.8.34
+* Added Lobbyist::V2::Review.bulk_update
+
 === 0.8.33
 * Added Lobbyist::V2::Company.free_postcard_credits_this_month
 
