@@ -1,5 +1,11 @@
-=== 0.8.32
+=== 0.8.34
 * Added Lobbyist::V2::Review.bulk_update
+
+=== 0.8.33
+* Added Lobbyist::V2::Company.free_postcard_credits_this_month
+
+=== 0.8.32
+* Added mail_dates attribute to Lobbyist::V2::CommunicationCampaign
 
 === 0.8.31
 * Added Lobbyist::V2::CampaignChecklist for update api end point on checklist
