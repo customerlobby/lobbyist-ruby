@@ -86,7 +86,7 @@ module Lobbyist
       end
 
       def self.bulk_update(company_id, params = {})
-        create_collection_from_response(post("/v2/companies/#{company_id}/reviews/bulk_update.json", {reviews: params}))
+        create_collection_from_response(post("/v2/companies/#{company_id}/reviews/bulk-update.json", {reviews: params}))
       end
     end
 
