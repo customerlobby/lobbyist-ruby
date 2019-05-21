@@ -1,3 +1,6 @@
+=== 0.8.37
+* Changed version since code expected in 0.8.35 was not deployed due to conflicts during merge.
+
 === 0.8.36
 * Added Lobbyist::V2::SkippedPayment for fetch the company skipped payments
 
