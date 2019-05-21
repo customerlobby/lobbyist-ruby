@@ -1,4 +1,4 @@
-=== 0.8.35
+=== 0.8.36
 * Added Lobbyist::V2::SkippedPayment for fetch the company skipped payments
 
 === 0.8.34
