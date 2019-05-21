@@ -10,9 +10,8 @@ module Lobbyist
       end
 
       def self.find(company_id, params = {})
-        create_collection_from_response(get("/v2/companies/#{company_id}/company_transactions/active-skip-payment.json", params))
+        create_from_response(get("/v2/companies/#{company_id}/company_transactions/active-skip-payment.json", params))
       end
-
     end
   end
 end
