@@ -1,3 +1,4 @@
+require 'ddtrace'
 module Lobbyist
   class Base
     # Initialize the nonce to nil.

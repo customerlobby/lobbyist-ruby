@@ -1,3 +1,4 @@
+require 'ddtrace'
 module Lobbyist
   module V2
 
