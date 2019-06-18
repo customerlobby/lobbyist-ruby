@@ -1,3 +1,4 @@
+require 'ddtrace'
 module Lobbyist
   class Base
     # Initialize the nonce to nil.
@@ -86,6 +87,7 @@ module Lobbyist
       handle_response do
         http.get do |request|
           request.url path, params
+          set_datadog_trace(request)
           if request_id.present?
             request.headers['X-Request-Id']  = request_id
           end
@@ -101,6 +103,7 @@ module Lobbyist
         http.post do |request|
           request.url path
           request.body = params
+          set_datadog_trace(request)
           if request_id.present?
             request.headers['X-Request-Id']  = request_id
           end
@@ -117,6 +120,7 @@ module Lobbyist
         http.put do |request|
           request.url path
           request.body = params
+          set_datadog_trace(request)
           if request_id.present?
             request.headers['X-Request-Id']  = request_id
           end
@@ -132,6 +136,7 @@ module Lobbyist
       handle_response do
         http.delete do |request|
           request.url path, params
+          set_datadog_trace(request)
           if request_id.present?
             request.headers['X-Request-Id']  = request_id
           end
@@ -186,6 +191,14 @@ module Lobbyist
       raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
     end
 
+    def self.set_datadog_trace(request)
+      Datadog.tracer.trace('web.call') do |span|
+        env = {}
+        Datadog::HTTPPropagator.inject!(span.context, env)
+        request.headers.merge!(env)
+      end
+    end
+
     private
 
     # Create the getter and setter for the attribute named 'name'. If reference is true
@@ -198,6 +211,5 @@ module Lobbyist
         self.class_eval("def #{name}=(val);@#{name}=val;end")
       end
     end
-
   end
 end
