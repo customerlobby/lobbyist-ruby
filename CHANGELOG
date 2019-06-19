@@ -1,3 +1,6 @@
+=== 0.8.39
+* Added Lobbyist::V2::CommunicationCampaign.scheduled_at.
+
 === 0.8.38
 * Added datadog metadata to http requests.
 
