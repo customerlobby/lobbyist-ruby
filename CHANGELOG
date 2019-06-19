@@ -1,3 +1,6 @@
+=== 0.8.38
+* Added datadog metadata to http requests.
+
 === 0.8.37
 * Changed version since code expected in 0.8.35 was not deployed due to conflicts during merge.
 
