@@ -1,3 +1,6 @@
+=== 0.8.40
+* Added Lobbyist::V2::ScottySetting.merge_contacts.
+
 === 0.8.39
 * Added Lobbyist::V2::CommunicationCampaign.scheduled_at.
 
