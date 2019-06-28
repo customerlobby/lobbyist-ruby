@@ -71,6 +71,10 @@ module Lobbyist
       def self.clone(id)
         create_from_response(post("/v2/campaigns/#{id}/clone.json"))
       end
+
+      def self.generate_preview(id, front_template_id)
+        create_from_response(get("/v2/campaigns/#{id}/generate-preview?front_template_id=#{front_template_id}"))
+      end
     end
   end
 end
