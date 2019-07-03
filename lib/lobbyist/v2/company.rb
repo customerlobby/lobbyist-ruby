@@ -15,7 +15,7 @@ module Lobbyist
       attr_accessor :direct_connect_status, :account_manager_id
       attr_accessor :split_field_name, :split_field_file, :split_mapping_type, :insights
       attr_accessor :paysimple_id, :paysimple_enabled, :projected_termination_date
-      attr_accessor :free_postcard_credits_this_month
+      attr_accessor :free_postcard_credits_this_month, :text_unread_count
 
       def categories
         @categories
@@ -197,6 +197,10 @@ module Lobbyist
 
       def self.purchase_campaign_credits(company_id, params = {})
         create_from_response(post("/v2/companies/#{company_id}/purchase-campaign-credits.json", params))
+      end
+
+      def self.text_unread_count(params = {})
+        create_from_response(get("/v2/companies/#{company_id}/text-unread-count.json", params))
       end
     end
   end
