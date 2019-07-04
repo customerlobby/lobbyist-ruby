@@ -199,7 +199,7 @@ module Lobbyist
         create_from_response(post("/v2/companies/#{company_id}/purchase-campaign-credits.json", params))
       end
 
-      def self.text_unread_count(params = {})
+      def self.text_unread_count(company_id, params = {})
         create_from_response(get("/v2/companies/#{company_id}/text-unread-count.json", params))
       end
     end
