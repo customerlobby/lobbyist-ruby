@@ -9,6 +9,7 @@ module Lobbyist
       attr_accessor :background_color, :text_color, :marketing_message_template_content, :services_offered
       attr_accessor :call_to_action_tracking, :offer_content, :disclaimers, :review_type, :logo_file_name, :tagline
       attr_accessor :regulatory_info, :company_website, :form_factor, :custom_back_image, :created_at, :updated_at
+      attr_accessor :errors
     end
   end
 end
