@@ -1,3 +1,9 @@
+=== 0.8.43
+* Added Lobbyist::V2::Company.text_unread_count.
+
+=== 0.8.42
+* Added Lobbyist::V2::Company.text_unread_count.
+
 === 0.8.41
 * Added Lobbyist::V2::CommunicationCampaign.generate_preview.
 
