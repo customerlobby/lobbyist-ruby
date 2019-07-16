@@ -1,3 +1,6 @@
+=== 0.8.45
+* Added Lobbyist::V2::CreditGrant.summary
+
 === 0.8.43
 * Added Lobbyist::V2::Company.text_unread_count.
 
