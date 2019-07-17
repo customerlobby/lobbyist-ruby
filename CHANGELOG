@@ -1,3 +1,6 @@
+=== 0.8.46
+* Fixed version bug
+
 === 0.8.45
 * Added Lobbyist::V2::CreditGrant.summary
 
