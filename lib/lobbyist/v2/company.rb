@@ -202,6 +202,10 @@ module Lobbyist
       def self.text_unread_count(company_id, params = {})
         create_from_response(get("/v2/companies/#{company_id}/text-unread-count.json", params))
       end
+
+      def self.enable_texting(id, params={})
+        create_from_response(put("/v2/companies/#{id}/enable-texting.json", params))
+      end
     end
   end
 end
