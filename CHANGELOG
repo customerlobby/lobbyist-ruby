@@ -1,8 +1,7 @@
 === 0.8.47
 * added new field texting_grants to Lobbyist::V2::Promo table and Lobbyist::V2::CompanySubscription table
-* added new field texting_enabled  to Lobbyist::V2::Company table 
-* added method enable_texting to Lobbyist::V2::Company table 
-
+* added new field texting_enabled  to Lobbyist::V2::Company
+* added summary for texting credits to Lobbyist::V2::CreditGrant
 === 0.8.46
 * Fixed version bug
 

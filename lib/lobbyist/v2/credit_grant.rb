@@ -13,6 +13,12 @@ module Lobbyist
             get("/v2/companies/#{company_id}/credit_grants/summary.json")
         )
       end
+
+      def self.texting_summary(company_id)
+        create_from_response(
+            get("/v2/companies/#{company_id}/credit_grants/texting-summary.json")
+        )
+      end
     end
 
   end
