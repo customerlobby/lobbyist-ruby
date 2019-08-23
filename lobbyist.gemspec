@@ -23,6 +23,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency('multi_json')
   s.add_dependency('activesupport')
   s.add_dependency('hashie')
+  s.add_dependency('deepsort')
 
   s.add_development_dependency('vcr')
   s.add_development_dependency('bundler')

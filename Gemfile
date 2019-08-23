@@ -8,6 +8,7 @@ gem 'activesupport'
 gem 'hashie'
 gem 'ddtrace'
 gem 'dogstatsd-ruby'
+gem 'deepsort'
 
 group :test do
   gem 'rspec'
