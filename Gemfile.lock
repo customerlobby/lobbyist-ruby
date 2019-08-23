@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    lobbyist-ruby (0.8.38)
+    lobbyist-ruby (0.8.49)
       activesupport
+      deepsort
       faraday
       faraday_middleware
       hashie
@@ -19,6 +20,7 @@ GEM
       tzinfo (~> 1.1)
     ddtrace (0.24.0)
       msgpack
+    deepsort (0.4.2)
     diff-lcs (1.3)
     dogstatsd-ruby (4.2.0)
     faraday (0.9.2)
@@ -62,6 +64,7 @@ DEPENDENCIES
   activesupport
   bundler
   ddtrace
+  deepsort
   dogstatsd-ruby
   faraday
   faraday_middleware
