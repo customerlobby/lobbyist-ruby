@@ -1,5 +1,3 @@
-=== 0.8.50
-* Added Lobbyist::V2::CustomerCall.convert_to_email
 === 0.8.48
 * added new field geocoding_enabled field in Lobbyist::V2::Company
 === 0.8.47

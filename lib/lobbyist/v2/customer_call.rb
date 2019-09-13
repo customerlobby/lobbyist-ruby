@@ -38,12 +38,6 @@ module Lobbyist
       def self.destroy(id)
         create_from_response(delete("/v2/customer_calls/#{id}.json"))
       end
-
-      def self.convert_to_email(id, params = {})
-        create_from_response(
-          put("/v2/customer_calls/#{id}/convert_to_email.json", 'customer_call' => params)
-        )
-      end
     end
   end
 end
