@@ -1,5 +1,4 @@
 require 'openssl'
-require 'deepsort'
 
 module Lobbyist
   class BasicAuth
@@ -12,7 +11,8 @@ module Lobbyist
     
     def self.generate_signature(method, params, credentials)
       params['method'] = method.to_s.downcase
-      sorted = params.with_indifferent_access.deep_sort
+
+      sorted = params.with_indifferent_access.sort
 
       signature = OpenSSL::HMAC.hexdigest('sha256', credentials[:api_secret], message(sorted))
 
