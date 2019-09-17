@@ -4,7 +4,7 @@ module Lobbyist
   module V2
     # Lobbyist endpoint for default-text-message-templates
     class DefaultTextMessageTemplate < Lobbyist::V2::HashieBase
-      attr_accessor :id, :title, :message, :is_default
+      attr_accessor :id, :title, :content, :is_default
       attr_accessor :status, :created_at, :updated_at
 
       def self.list(params = {})
