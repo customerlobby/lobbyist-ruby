@@ -1,5 +1,5 @@
 === 0.8.56
-* Added parent_company attribute to Lobbyist::DataUpload
+* Added parent_company_id attribute to Lobbyist::DataUpload
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
