@@ -11,6 +11,10 @@ module Lobbyist
       def self.create(params = {})
         create_response(post('/v2/images.json', { image: params }, true))
       end
+
+      def self.update_selected(params = {})
+        create_response(put('/v2/images.json', params))
+      end
     end
   end
 end
