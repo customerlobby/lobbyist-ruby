@@ -1,3 +1,6 @@
+=== 0.8.57
+* Added Lobbyist::V2::Image for postcard ack images
+
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
