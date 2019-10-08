@@ -1,3 +1,9 @@
+=== 0.8.57
+* Added parent_company_id attribute to Lobbyist::DataUpload
+
+=== 0.8.56
+* Rails5 Upgrade
+
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
