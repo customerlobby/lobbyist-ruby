@@ -1,5 +1,6 @@
 === 0.8.56
 * Added kiosk_enabled attribute to Lobbyist::V2::Company
+* Added Lobbyist::V2::ReviewInvitation
 
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
