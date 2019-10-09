@@ -1,3 +1,6 @@
+=== 0.8.57.1
+* Added Lobbyist::V2::Image for postcard back images
+
 === 0.8.57
 * Added parent_company_id attribute to Lobbyist::DataUpload
 
