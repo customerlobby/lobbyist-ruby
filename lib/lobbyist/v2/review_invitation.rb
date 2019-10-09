@@ -10,8 +10,8 @@ module Lobbyist
         create_collection_from_response(get("/v2/review-invitations.json", params))
       end
 
-      def self.find(id)
-        create_from_response(get("/v2/review-invitations/#{id}.json"))
+      def self.find(uuid)
+        create_from_response(get("/v2/review-invitations/#{uuid}.json"))
       end
 
       def self.update(id, params = {})
