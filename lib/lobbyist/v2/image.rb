@@ -12,8 +12,8 @@ module Lobbyist
         create_response(post('/v2/images.json', { image: params }, true))
       end
 
-      def self.update_selected(params = {})
-        create_response(put('/v2/images.json', params))
+      def self.update(id, params = {})
+        create_response(put("/v2/images/#{id}.json", params))
       end
     end
   end
