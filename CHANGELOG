@@ -1,9 +1,17 @@
+=== 0.8.55
+* Added Lobbyist::V2::DefaultTextMessageTemplate#list
+
+=== 0.8.53
+* Added Lobbyist::V2::CustomerCall.convert_to_email
+
 === 0.8.48
 * added new field geocoding_enabled field in Lobbyist::V2::Company
+
 === 0.8.47
 * added new field texting_grants to Lobbyist::V2::Promo table and Lobbyist::V2::CompanySubscription table
 * added new field texting_enabled  to Lobbyist::V2::Company
 * added summary for texting credits to Lobbyist::V2::CreditGrant
+
 === 0.8.46
 * Fixed version bug
 
