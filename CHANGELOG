@@ -1,3 +1,6 @@
+=== 0.8.57.2
+* Added Lobbyist::V2::UrlConversion#create
+
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
