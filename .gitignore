@@ -6,5 +6,5 @@
 .idea
 .ruby-version
 .ruby-gemset
-.gem
+*.gem
 .bundle
