@@ -6,6 +6,12 @@
 
 === 0.8.56
 * Rails5 Upgrade
+=======
+=== 0.8.57.4
+* Added CommunicationCampaign#preview_text end point
+
+=== 0.8.57.2
+* Added Lobbyist::V2::UrlConversion#create
 
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
