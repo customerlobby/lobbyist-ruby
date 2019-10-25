@@ -1,3 +1,12 @@
+=== 0.8.57.1
+* Added Lobbyist::V2::Image for postcard back images
+
+=== 0.8.57
+* Added parent_company_id attribute to Lobbyist::DataUpload
+
+=== 0.8.56
+* Rails5 Upgrade
+=======
 === 0.8.57.4
 * Added CommunicationCampaign#preview_text end point
 
