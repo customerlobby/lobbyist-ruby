@@ -75,6 +75,10 @@ module Lobbyist
       def self.generate_preview(id, front_template_id)
         create_from_response(get("/v2/campaigns/#{id}/generate-preview?front_template_id=#{front_template_id}"))
       end
+
+      def self.preview_text(id, _params = {})
+        create_from_response(get("/v2/campaigns/#{id}/preview_text.json"))
+      end
     end
   end
 end
