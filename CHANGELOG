@@ -1,3 +1,6 @@
+=== 0.8.58
+* Consolidated build for 2019.r21
+
 === 0.8.57.4
 * Added CommunicationCampaign#preview_text end point
 
