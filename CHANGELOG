@@ -1,3 +1,6 @@
+=== 0.8.55.01
+* Added Lobbyist::V2::CompanySubscription#update_billing
+
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
