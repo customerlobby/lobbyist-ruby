@@ -1,3 +1,6 @@
+=== 0.8.58.3
+* Added google connection attributes to Lobbyist::V2::SmartInviteSetting
+
 === 0.8.58.2
 * Added CommunicationCampaign#preview_text end point
 
