@@ -9,6 +9,7 @@ module Lobbyist
       attr_accessor :custom_display_name_1, :custom_long_url_1, :custom_short_url_1
       attr_accessor :custom_display_name_2, :custom_long_url_2, :custom_short_url_2
       attr_accessor :custom_display_name_3, :custom_long_url_3, :custom_short_url_3
+      attr_accessor :google_access_token, :google_refresh_token, :google_connection_status
 
       def self.update(company_id, params)
         create_from_response(put("/v2/companies/#{company_id}/smart_invite_settings.json", {smart_invite_setting: params}))
