@@ -13,7 +13,14 @@ module Lobbyist
       def self.list(company_id, params = {})
         create_from_response(get("/v2/companies/#{company_id}/company_metrics.json", params))
       end
-      
+
+      def google_invitations_sent
+        @google_invitations_sent
+      end
+
+      def google_reviews_received
+        @google_reviews_received
+      end
     end
 
   end
