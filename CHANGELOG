@@ -1,3 +1,7 @@
+=== 0.8.59.3
+* Added Google auth fields to smart invite settings
+* Added Google review results to company metrics
+
 === 0.8.59.2
 * Added destination attribute to Lobbyist::V2::ReviewInvitation
 
