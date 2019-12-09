@@ -1,3 +1,8 @@
+== 0.8.59.4
+* Added owner and source_id attributes in V2::Company
+* Added new endpoint regenerate_demo_data to V2::Company
+* Added new endpoint reset_demo_data to V2::Company
+
 === 0.8.55
 * Added Lobbyist::V2::DefaultTextMessageTemplate#list
 
