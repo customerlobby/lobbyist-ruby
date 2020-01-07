@@ -17,6 +17,7 @@ module Lobbyist
       attr_accessor :paysimple_id, :paysimple_enabled, :projected_termination_date
       attr_accessor :free_postcard_credits_this_month, :text_unread_count, :texting_enabled
       attr_accessor :kiosk_enabled
+      attr_accessor :owner, :source_id
 
       def categories
         @categories
@@ -206,6 +207,14 @@ module Lobbyist
 
       def self.enable_texting(id, params={})
         create_from_response(put("/v2/companies/#{id}/enable-texting.json", params))
+      end
+
+      def self.regenerate_demo_data(id, params={})
+        create_from_response(put("/v2/companies/#{id}/regenerate-demo-data.json", params))
+      end
+
+      def self.reset_demo_data(id, params={})
+        create_from_response(put("/v2/companies/#{id}/reset-demo-data.json", params))
       end
     end
   end
