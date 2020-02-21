@@ -1,3 +1,6 @@
+== 0.8.61
+*adding :text_credits, :postcard_credits, :overage_postcard_cost, :overage_postcard_cost to promo
+
 == 0.8.60
 * gem version for release 2019.r26
 
