@@ -102,6 +102,17 @@ module Lobbyist
         @smart_invite_setting
       end
 
+      def review_destinations
+        @review_destination
+      end
+
+      def review_destination=(attributes)
+        @review_destinations = []
+        attributes.each do |review_destinations|
+          @review_destinations << ReviewDestination.new(attribute)
+        end
+      end
+
       def smart_invite_setting=(attributes)
         @smart_invite_setting = SmartInviteSetting.new(attributes)
       end
