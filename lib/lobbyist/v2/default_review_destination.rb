@@ -12,11 +12,11 @@ module Lobbyist
       end
 
       def self.create(company_id, params)
-        create_from_response(post("/v2/default_review_destinations.json", review_destination: params ))
+        create_from_response(post("/v2/default_review_destinations.json", default_review_destination: params ))
       end
 
       def self.update(id, company_id, params)
-        create_from_response(put("/v2/default_review_destinations/#{id}.json", review_destination: params ))
+        create_from_response(put("/v2/default_review_destinations/#{id}.json", default_review_destination: params ))
       end
 
       def self.destroy(id, company_id)
