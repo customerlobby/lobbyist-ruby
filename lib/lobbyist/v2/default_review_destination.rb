@@ -7,19 +7,19 @@ module Lobbyist
         create_collection_from_response(get('/v2/default_review_destinations.json', params))
       end
 
-      def self.find(id, company_id)
-        create_from_response(get("/v2/default_review_destinations/#{id}.json", company_id: company_id ))
+      def self.find(id)
+        create_from_response(get("/v2/default_review_destinations/#{id}.json" ))
       end
 
-      def self.create(company_id, params)
+      def self.create(params)
         create_from_response(post("/v2/default_review_destinations.json", default_review_destination: params ))
       end
 
-      def self.update(id, company_id, params)
+      def self.update(id, params)
         create_from_response(put("/v2/default_review_destinations/#{id}.json", default_review_destination: params ))
       end
 
-      def self.destroy(id, company_id)
+      def self.destroy(id)
         create_from_response(delete("/v2/default_review_destinations/#{id}.json"))
       end
     end
