@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class DefaultReviewDestination < Lobbyist::V2::Base
-      attr_accessor :id, :display_name, :domain
+      attr_accessor :id, :display_name, :domain, :button_filename
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/default_review_destinations.json', params))

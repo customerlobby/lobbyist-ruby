@@ -1,3 +1,6 @@
+== 0.8.67
+* add button_filename to DefaultReviewDestination
+
 == 0.8.66
 * add methods to DefaultReviewDestination
 
