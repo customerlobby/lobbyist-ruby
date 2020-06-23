@@ -1,3 +1,9 @@
+== 0.8.67
+* add button_filename to DefaultReviewDestination
+
+== 0.8.66
+* add methods to DefaultReviewDestination
+
 == 0.8.63
 * gem version for release 2020.r9 review_settings
 
