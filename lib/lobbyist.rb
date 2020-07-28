@@ -21,6 +21,8 @@ require 'lobbyist/error/precondition_failed'
 require 'lobbyist/error/service_unavailable'
 require 'lobbyist/error/unauthorized'
 require 'lobbyist/error/unprocessable_entity'
+require 'lobbyist/error/protocol_unsupported'
+require 'lobbyist/error/not_implemented'
 
 # Library V1
 require 'lobbyist/base'

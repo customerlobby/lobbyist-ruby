@@ -1,3 +1,6 @@
+== 0.8.70
+* added seperated all error classes for code between 500 to 505
+
 == 0.8.69
 * added email_grants to Promo
 
