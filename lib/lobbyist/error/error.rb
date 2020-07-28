@@ -6,7 +6,8 @@ module Lobbyist
     
     def initialize(messages)
       if messages.blank?
-        super(self.class.name)
+        message = self.class::MESSAGE || self.class.name
+        super(message)
       else
         if messages.respond_to?("shift")
           super(messages.shift)

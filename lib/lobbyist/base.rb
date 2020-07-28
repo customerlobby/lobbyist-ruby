@@ -181,8 +181,18 @@ module Lobbyist
         raise Lobbyist::Error::PreconditionFailed.new(response.body)
       when 422
         raise Lobbyist::Error::UnprocessableEntity.new(response.body)
-      when 500...505
-        raise Lobbyist::Error::InternalServerError.new("There was an error processing that request. If the problem persists contact Customer Lobby Support.")
+      when 500
+        raise Lobbyist::Error::InternalServerError.new("")
+      when 501
+        raise Lobbyist::Error::NotImplemented.new("")
+      when 502
+        raise Lobbyist::Error::BadGateway.new("")
+      when 503
+        raise Lobbyist::Error::ServiceUnavailable.new("")
+      when 504
+        raise Lobbyist::Error::GatewayTimeout.new("")
+      when 505
+        raise Lobbyist::Error::ProtocolUnsupported.new("")
       else
         response = MultiJson.load(response.body)
         return response
