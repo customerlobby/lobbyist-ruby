@@ -52,6 +52,10 @@ module Lobbyist
         create_from_response(put("/v2/campaigns/#{id}.json", communication_campaign: params))
       end
 
+      def self.upload_front_logo(id, params = {}, multi_part = false)
+        create_from_response(put("/v2/campaigns/#{id}/front_logo.json", {communication_campaign: params}, multi_part))
+      end
+
       def self.destroy(id, company_id)
         create_from_response(delete("/v2/campaigns/#{id}.json", company_id: company_id))
       end
