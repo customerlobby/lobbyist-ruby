@@ -1,3 +1,6 @@
+== 0.8.71
+* added front_logo field to V2::CommunicationCampaign
+
 == 0.8.70
 * added separation all error classes for code between 500 to 505
 
