@@ -1,3 +1,6 @@
+== 0.8.72
+* added partner integration company user login
+
 == 0.8.71
 * added front_logo field to V2::CommunicationCampaign
 
