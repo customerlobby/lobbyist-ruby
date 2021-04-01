@@ -7,7 +7,7 @@ module Lobbyist
       attr_accessor :confirm_reset_password, :name, :first_name, :last_name
       attr_accessor :is_active, :is_manager, :primary_contact, :accepts_terms
       attr_accessor :sugar_contact_id, :created_at, :updated_at, :role, :status
-      attr_accessor :otp
+      attr_accessor :otp, :partner_user_id
 
       def self.list(params = {})
         create_collection_from_response(get('/v2/company_users.json', params))
