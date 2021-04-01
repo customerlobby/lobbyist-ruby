@@ -18,6 +18,7 @@ module Lobbyist
       attr_accessor :free_postcard_credits_this_month, :text_unread_count, :texting_enabled
       attr_accessor :kiosk_enabled
       attr_accessor :owner, :source_id
+      attr_accessor :partner_company_id
 
       def categories
         @categories

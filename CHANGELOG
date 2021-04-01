@@ -1,3 +1,6 @@
+== 0.8.73
+* added partner_company_id to company and partner_user_id to company user
+
 == 0.8.72
 * added partner integration company user login
 

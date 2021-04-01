@@ -4,7 +4,7 @@ module Lobbyist
     attr_accessor :company_user_id, :company_id, :date_added, :email
     attr_accessor :confirm_reset_password, :first_name, :last_name, :is_active
     attr_accessor :is_manager, :primary_contact, :accepts_terms, :created_at
-    attr_accessor :sugar_contact_id, :updated_at
+    attr_accessor :sugar_contact_id, :updated_at, :partner_user_id
 
     def self.list(params = {})
       create_from_response(get('/v1/company_users.json', params))
