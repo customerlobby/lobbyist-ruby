@@ -228,6 +228,11 @@ module Lobbyist
       def self.reset_demo_data(id, params={})
         create_from_response(put("/v2/companies/#{id}/reset-demo-data.json", params))
       end
+
+      def self.tax_pct(company_id)
+        res = get("/v2/companies/#{company_id}/tax-pct.json")
+        JSON.parse(res.to_json, object_class: OpenStruct)
+      end
     end
   end
 end
