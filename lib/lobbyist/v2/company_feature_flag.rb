@@ -9,7 +9,7 @@ module Lobbyist
         end
 
         def update(company_id, params = {})
-          create_from_response(put("/v2/companies/#{company_id}/company_feature_flags.json", { company_feature_flag: params }))
+          create_collection_from_response(put("/v2/companies/#{company_id}/company_feature_flags.json", params))
         end
       end
     end
