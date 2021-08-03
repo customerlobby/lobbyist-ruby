@@ -1,7 +1,7 @@
 module Lobbyist
   module V2
     class CompanyFeatureFlag < Lobbyist::V2::Base
-      attr_accessor :id, :component, :operation, :parent_id, :enabled
+      attr_accessor :id, :component, :operation, :parent_id, :enabled, :updated_at
 
       class << self
         def list(company_id, params = {})
