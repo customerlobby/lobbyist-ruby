@@ -215,6 +215,7 @@ require 'lobbyist/v2/workflow_system'
 require 'lobbyist/v2/workflow_system_template'
 require 'lobbyist/v2/zipcode'
 require 'lobbyist/v2/zipped_image_upload'
+require 'lobbyist/v2/company_feature_flag'
 
 
 #Library V2/admin/
