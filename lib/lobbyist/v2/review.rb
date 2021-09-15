@@ -76,6 +76,10 @@ module Lobbyist
         create_collection_from_response(get("/v2/companies/#{company_id}/reviews.json", params))
       end
 
+      def self.list_with_source(company_id, params = {})
+        create_collection_from_response(get("/v2/companies/#{company_id}/reviews/reviews_with_source.json", params))
+      end
+
       def self.enterprise_list(enterprise_id, params = {})
         create_collection_from_response(get("/v2/enterprises/#{enterprise_id}/enterprise-reviews.json", params))
       end
