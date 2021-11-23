@@ -18,6 +18,12 @@ module Lobbyist
         create_from_response(
             get("/v2/companies/#{company_id}/credit_grants/texting-summary.json")
         )
+        end
+
+      def self.email_summary(company_id)
+        create_from_response(
+            get("/v2/companies/#{company_id}/credit_grants/email-summary.json")
+        )
       end
     end
 
