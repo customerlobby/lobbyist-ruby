@@ -2,7 +2,7 @@ module Lobbyist
   class Version
     MAJOR = 0 unless defined? Lobbyist::Version::MAJOR
     MINOR = 8 unless defined? Lobbyist::Version::MINOR
-    PATCH = 77 unless defined? Lobbyist::Version::PATCH
+    PATCH = 78 unless defined? Lobbyist::Version::PATCH
 
     class << self
       # @return [String]
