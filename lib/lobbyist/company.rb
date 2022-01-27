@@ -9,7 +9,7 @@ module Lobbyist
       :last_synd_stat_date, :last_credit_grant, :sales_status, :date_live, :country, :user_notes,
       :smart_invite, :last_handwritten_review_credit_grant, :created_at, :updated_at, :status,
       :system_of_record, :category_name, :split_field_name, :split_field_file, :split_mapping_type, :logo_filename,
-      :partner_company_id
+      :partner_company_id, :tz_abbreviation
 
     def setting
       @setting
