@@ -13,7 +13,9 @@ module Lobbyist
         create_collection_from_response(get('/v2/partner_users.json', params))
       end
 
+      def self.update(id, params = {})
+        create_from_response(post("/v2/partner_users/#{id}/update.json", params))
+      end
     end
-    
   end
 end
