@@ -14,6 +14,10 @@ module Lobbyist
         create_from_response(get("/v2/pulse_m_promos/#{id}.json", params))
       end
 
+      def self.validate(params)
+        create_collection_from_response(get("/v2/pulse_m_promos/validate.json", params))
+      end
+
       def self.update(id, params = {})
         create_from_response(put("/v2/pulse_m_promos/#{id}.json", params))
       end
