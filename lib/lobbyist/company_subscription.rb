@@ -22,7 +22,8 @@ module Lobbyist
     end
 
     def self.update_billing(id, company_id, params = {})
-      create_from_response(put("/v1/company_subscriptions/#{id}/update_billing.json", params.slice(:billing,:card,:company,:company_id,:account_level_transition).merge(company_subscription: {company_id: company_id})))
+      create_from_response(put("/v1/company_subscriptions/#{id}/update_billing.json",
+                               params.slice(:billing,:card,:company,:company_id,:account_level_transition, :pulse_m_subscription).merge(company_subscription: {company_id: company_id})))
     end
     
     def self.skip(company_id)
