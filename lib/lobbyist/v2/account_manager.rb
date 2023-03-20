@@ -5,7 +5,7 @@ module Lobbyist
     class AccountManager < Lobbyist::V2::Base
       attr_accessor :summary_result, :admin_user_id, :first_name, :last_name, :email,
       :name, :is_total_admin, :is_active, :status, :screen_name, :sales_team_id,
-      :created_at, :updated_at, :role, :employment_type, :last_request_at
+      :created_at, :updated_at, :old_role, :employment_type, :last_request_at
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/account-managers.json", params))
