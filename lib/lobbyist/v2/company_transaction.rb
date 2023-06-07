@@ -3,8 +3,8 @@ module Lobbyist
 
     class CompanyTransaction < Lobbyist::V2::Base
       attr_accessor :id, :company_id, :event_type, :event_description, :source
-      attr_accessor :status, :status_description, :requiest_id, :reconciliation_id, :reconciled
-      attr_accessor :amount, :transaction_date, :created_at, :updated_at
+      attr_accessor :status, :status_description, :request_id, :reconciliation_id, :reconciled
+      attr_accessor :amount, :transaction_date, :created_at, :updated_at, :user_id, :user_type
 
       def self.list(company_id, params = {})
         create_collection_from_response(get("/v2/companies/#{company_id}/company_transactions.json", params))
