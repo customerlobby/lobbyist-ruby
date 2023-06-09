@@ -15,6 +15,7 @@ module Lobbyist
       attr_accessor :filter_id, :communications_sent, :filter_changeable, :status_description
       attr_accessor :algo_metadata, :include_in_results, :paused, :resume_date, :mail_dates
       attr_accessor :scheduled_at, :default_text_message_template_id, :front_logo, :review_source, :review_category
+      attr_accessor :follow_up_email_settings, :tracking, :results, :review_settings
 
       attr_reader :filter
 
