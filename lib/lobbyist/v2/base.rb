@@ -1,4 +1,3 @@
-require 'ddtrace'
 module Lobbyist
   module V2
 
@@ -67,7 +66,7 @@ module Lobbyist
             request.url path, params
             request.headers['Accept'] = 'application/json'
             request.headers['Authorization'] = auth_header
-            set_datadog_trace(request)
+            set_sentry_trace(request)
             if request_id.present?
               request.headers['X-Request-Id']  = request_id
             end
@@ -80,7 +79,7 @@ module Lobbyist
           http.post do |request|
             request.url path
             request.body = params
-            set_datadog_trace(request)
+            set_sentry_trace(request)
             if !multipart
               request.headers['Accept'] = 'application/json'
               request.headers['Content-Type'] = 'application/json'
@@ -98,7 +97,7 @@ module Lobbyist
           http.put do |request|
             request.url path
             request.body = params
-            set_datadog_trace(request)
+            set_sentry_trace(request)
             if !multipart
               request.headers['Accept'] = 'application/json'
               request.headers['Content-Type'] = 'application/json'
@@ -115,7 +114,7 @@ module Lobbyist
         handle_response do
           http.delete do |request|
             request.url path, params
-            set_datadog_trace(request)
+            set_sentry_trace(request)
             if request_id.present?
               request.headers['X-Request-Id']  = request_id
             end
@@ -173,12 +172,8 @@ module Lobbyist
       #   raise Lobbyist::Error::DecodeError.new "Unparsable Response: #{response.body}"
       end
 
-      def self.set_datadog_trace(request)
-        Datadog.tracer.trace('web.call') do |span|
-          env = {}
-          Datadog::HTTPPropagator.inject!(span.context, env)
-          request.headers.merge!(env)
-        end
+      # TODO:
+      def self.set_sentry_trace(request)
       end
 
       def process_attributes(attributes)
