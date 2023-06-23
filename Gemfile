@@ -6,8 +6,6 @@ gem 'faraday_middleware'
 gem 'multi_json'
 gem 'activesupport'
 gem 'hashie'
-gem 'ddtrace'
-gem 'dogstatsd-ruby'
 
 group :test do
   gem 'rspec'

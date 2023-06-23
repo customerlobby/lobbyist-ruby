@@ -6,6 +6,7 @@ module Lobbyist
       attr_accessor :transactions_count, :created_at, :updated_at, :vehicles_count
       attr_accessor :mileages_count, :to_be_processed, :mapper_used, :workflow_system_used
       attr_accessor :file_presigned_url, :upload_type
+      attr_accessor :batch_id
 
       # this requires us to do a multipart upload
       # hence we pass true as a parameter
@@ -27,6 +28,10 @@ module Lobbyist
 
       def self.process_file(id, params = {})
         create_from_response(put("/v2/data_uploads/#{id}/process-file.json", params))
+      end
+
+      def self.process_batch_uploads(params = {})
+        put("/v2/data_uploads/process-batch-uploads.json", params)
       end
     end
   end
