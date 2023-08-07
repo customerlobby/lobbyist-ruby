@@ -1,4 +1,7 @@
 
+== 0.8.88
+* Fix bad request error message
+
 == 0.8.87
 * add dcp_setting in ScottySetting
 
