@@ -1,6 +1,9 @@
 == 0.8.88
 * add twilio_setting support
 
+== 0.8.88
+* Fix bad request error message
+
 == 0.8.87
 * add dcp_setting in ScottySetting
 
