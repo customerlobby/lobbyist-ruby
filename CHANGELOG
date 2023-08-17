@@ -2,6 +2,9 @@
 * Fix bad request error message
 
 == 0.8.88
+* Changes related to pulseM subscription
+
+== 0.8.88
 * add twilio_setting support
 
 == 0.8.87
