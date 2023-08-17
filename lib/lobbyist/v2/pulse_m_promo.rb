@@ -4,7 +4,7 @@ module Lobbyist
     class PulseMPromo < Lobbyist::V2::Base
       attr_accessor :id, :account_level, :code, :description, :active, :expires_at, :setup_fee
       attr_accessor :setup_fee, :monthly_fee, :employee_rewards, :contact_card, :twm, :technician_count
-      attr_accessor :pulse_m_account_level_id
+      attr_accessor :pulse_m_account_level_id, :universal_inbox
 
       def self.list(params = {})
         create_collection_from_response(get("/v2/pulse_m_promos.json", params))
