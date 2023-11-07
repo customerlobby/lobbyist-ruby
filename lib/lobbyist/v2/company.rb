@@ -181,6 +181,10 @@ module Lobbyist
                                    'termination' => termination_params }))
       end
 
+      def self.pulse_m_terminate(id)
+        create_from_response(put("/v2/companies/#{id}/pulse_m_terminate.json"))
+      end
+
       def self.reactivate(id, params={})
         create_from_response(put("/v2/companies/#{id}/reactivate.json", params))
       end
