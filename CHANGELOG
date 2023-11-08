@@ -1,3 +1,6 @@
+= 0.8.93
+* Added terminate pulseM subscription support
+
 = 0.8.92
 * Added new fields for twilio settings
 
