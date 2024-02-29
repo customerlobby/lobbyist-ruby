@@ -223,7 +223,7 @@ require 'lobbyist/v2/workflow_system_template'
 require 'lobbyist/v2/zipcode'
 require 'lobbyist/v2/zipped_image_upload'
 require 'lobbyist/v2/app_integration'
-
+require 'lobbyist/v2/prospect_checklist'
 
 #Library V2/admin/
 require 'lobbyist/v2/admin/campaign_iteration'
