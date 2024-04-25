@@ -1,3 +1,6 @@
+= 0.8.97
+* Updated pulseM for soft terminate
+
 = 0.8.96
 * Added generate api token
 
