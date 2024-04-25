@@ -224,6 +224,7 @@ require 'lobbyist/v2/zipcode'
 require 'lobbyist/v2/zipped_image_upload'
 require 'lobbyist/v2/app_integration'
 require 'lobbyist/v2/prospect_checklist'
+require 'lobbyist/v2/api_token'
 
 #Library V2/admin/
 require 'lobbyist/v2/admin/campaign_iteration'
