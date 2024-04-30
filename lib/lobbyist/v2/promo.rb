@@ -7,7 +7,7 @@ module Lobbyist
       attr_accessor :promo_description, :is_current, :is_visible, :setup_fee
       attr_accessor :monthly_fee, :texting_grants, :first_month_fee
       attr_accessor :split_activation_fee, :days_available, :cost_per_postcard, :email_add_ons
-      attr_accessor :prospect_marketing, :prospect_add_ons
+      attr_accessor :prospect_marketing, :prospect_add_ons, :cost_per_magnet_mailer
 
       def add_ons
         @add_ons
