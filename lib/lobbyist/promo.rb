@@ -6,7 +6,7 @@ module Lobbyist
                   :first_month_fee, :split_activation_fee, :days_available,
                   :cost_per_postcard, :customer_count_lower_bound, :customer_count_upper_bound,
                   :tax_exempt, :email_grants, :add_ons, :email_add_ons, :prospect_add_ons,
-                  :cost_per_magnet_mailer
+                  :cost_per_magnet_mailer, :prospect_marketing
 
     def self.create(params = {})
       create_from_response(post('/v1/promos.json', { 'promo' => params }))
