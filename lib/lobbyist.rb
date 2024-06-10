@@ -72,6 +72,7 @@ require 'lobbyist/termination_notice'
 require 'lobbyist/topic'
 require 'lobbyist/version'
 require 'lobbyist/workflow_system'
+require 'lobbyist/tracker'
 
 # Library V2
 require 'lobbyist/v2/base'
