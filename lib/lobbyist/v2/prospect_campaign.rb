@@ -16,7 +16,7 @@ module Lobbyist
       end
 
       def self.update(id, params)
-        create_from_response(put("/v2/prospect_campaigns/#{id}.json", prospect_campaign: params))
+        create_from_response(put("/v2/prospect_campaigns/#{id}.json", params))
       end
     end
 
