@@ -20,5 +20,9 @@ module Lobbyist
       create_from_response(put("/v1/promos/#{id}.json", { 'promo' => params }))
     end
 
+
+    def self.show(id, params = {})
+      create_from_response(get("/v1/promos/#{id}.json"))
+    end
   end
 end
