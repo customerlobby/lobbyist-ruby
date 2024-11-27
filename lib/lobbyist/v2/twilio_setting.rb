@@ -4,7 +4,8 @@ module Lobbyist
 
       attr_accessor :id, :company_id, :phone, :phone_sid, :message_service_sid, :customer_profile_sid, :cpbi_sid,
                     :authorized_representative_sid, :address_sid, :supporting_document_sid, :trust_products_sid, :mpi_sid,
-                    :brand_sid, :campaign_sid, :response, :created_at, :updated_at, :campaign_status
+                    :brand_sid, :campaign_sid, :response, :created_at, :updated_at, :campaign_status, :prospect_phone,
+                    :prospect_phone_sid
 
       def self.find(company_id, params = {})
         create_from_response(get("/v2/companies/#{company_id}/twilio_settings.json", params))
