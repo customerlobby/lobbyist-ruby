@@ -254,6 +254,11 @@ module Lobbyist
         res = get("/v2/companies/#{company_id}/tax-pct.json")
         JSON.parse(res.to_json, object_class: OpenStruct)
       end
+
+      def self.subscription_details(company_id)
+        res = get("/v2/companies/#{company_id}/subscription-details.json")
+        JSON.parse(res.to_json, object_class: OpenStruct)
+      end
     end
   end
 end
